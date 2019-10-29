@@ -1,0 +1,33 @@
+{#
+/**
+ * @file
+ * Default theme implementation for field collection items.
+ *
+ * Available variables:
+ * - content: An array of comment items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {% hide(content.field_example) %} to temporarily suppress the printing
+ *   of a given element.
+ * - title: The (sanitized) field collection item label.
+ * - url: Direct url of the current entity if specified.
+ * - page: Flag for the full page state.
+ * - attributes: HTML attributes for the surrounding element.
+ *    Attributes include the 'class' information.
+ * - content_attributes: HTML attributes for the content element.
+ *
+ * @see template_preprocess()
+ * @see template_preprocess_entity()
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="title">
+<img src="{{ content.field_icon_image_pitd|field_value }}" width="50" height="50" class="icon">
+<h2>{{ content.field_heading_pitd|field_value }}</h2>	
+</div>
+<div class="content">
+	{{ content.field_description_pitd|field_value }}
+	{% if content.field_link_text_pitd|render is not empty %}
+		<a href="{{ content.field_link_pitd|field_value }}" class="button">{{ content.field_link_text_pitd|field_value }}</a>
+	{% endif %}
+</div>

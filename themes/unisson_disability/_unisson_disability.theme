@@ -1,0 +1,111 @@
+<?php
+//for breadcrumbs
+/*function unisson_disability_preprocess_breadcrumb(&$variables){
+   
+	   $request = \Drupal::request();
+	   $route_match = \Drupal::routeMatch();
+	   $page_title = \Drupal::service('title_resolver')->getTitle($request, $route_match->getRouteObject());
+	   
+	   $variables['breadcrumb'][] = array(
+	   	'text' => $page_title
+	   );
+	
+}*/
+
+function unisson_disability_preprocess_item_list(&$variables) {
+  $total = null;
+  // get the total number of results from the $GLOBALS
+  if(isset($GLOBALS['pager_total_items'])){
+    $total = $GLOBALS['pager_total_items'][0];
+  }
+  
+  $variables['count_items'] = $total;
+  
+  /*get search term*/
+  $variables['get']['keys'] = \Drupal\Component\Utility\Xss::filter($_GET['keys']);
+  
+}
+
+function unisson_disability_preprocess_page(&$variables) {
+}
+
+//for theming content types - create specific page templates
+function unisson_disability_theme_suggestions_page_alter(array &$suggestions, array $variables) {
+	if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'page__'.$content_type;
+  }
+}
+
+
+function unisson_disability_form_search_block_form_alter(&$form, &$form_state) {
+  $form['keys']['#attributes']['placeholder'][] = t('Search here...');
+  $form['actions']['submit']['#value'] = "Find";
+  $form['actions']['submit']['#attributes']['class'][] = 'search-button';
+}
+
+
+function unisson_disability_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state, $form_id) {
+
+  if ($form_id == 'views_exposed_form' && $form['#id'] == 'views-exposed-form-taxonomy-term-page-1') {
+  	
+    // initial page load
+    $parameters = \Drupal::routeMatch()->getRawParameters();
+    $this_term_id = $parameters->get('taxonomy_term');
+
+    // ajax refresh via apply button
+    if (!isset($this_term_id)) {
+		$this_term_id = $_REQUEST['view_args'];
+    }
+
+    // get children of $this_term_id
+    $tree = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadTree('website_categories', $parent = $this_term_id, $max_depth = 1, $load_entities = FALSE);
+	
+	// get rid of all options except default
+    $all_option = $form['tid']['#options']['All'];
+    unset($form['tid']['#options']);
+    $form['tid']['#options']['All'] = $all_option;
+    if(sizeof($tree)==0) {
+	    $form['tid']['#attributes']['class'][] = 'hide-tags';
+    }
+    
+    // add child terms
+    foreach ($tree as $term) {
+      $option = new stdClass();
+      $option->option[$term->tid]=$term->name;
+      $form['tid']['#options'][] = $option;
+      $form['field_content_tags_target_id']['#attributes']['class'][] = 'hide-tags';
+    }
+  } 
+  
+  if ($form_id == 'views_exposed_form' && $form['#id'] == 'views-exposed-form-events-overview-block-1') {
+	  $form['field_events_cost_type_value']['#prefix'] = "<div class='column oneQuarter'>";
+      $form['field_events_cost_type_value']['#suffix'] = "</div>";
+      
+      $form['field_events_calculated_dates_value']['#prefix'] = "<div class='column oneHalf'>";
+      $form['field_events_calculated_dates_value']['#suffix'] = "</div>";
+      
+      $form['term_node_tid_depth']['#prefix'] = "<div class='column oneThird'>";
+      $form['term_node_tid_depth']['#suffix'] = "</div>";
+      
+      $form['combine']['#prefix'] = "<div class='column twoThirds'>";
+      $form['combine']['#suffix'] = "</div>";
+      
+  }
+  
+  if ($form_id == 'views_exposed_form' && $form['#id'] == 'views-exposed-form-events-overview-weekend-block-1') {
+	  $form['field_events_cost_type_value_weekend']['#prefix'] = "<div class='column oneQuarter'>";
+      $form['field_events_cost_type_value_weekend']['#suffix'] = "</div>";
+      
+      $form['field_events_calculated_dates_value_3']['#prefix'] = "<div class='column oneHalf'>";
+      $form['field_events_calculated_dates_value_3']['#suffix'] = "</div>";
+      
+      $form['term_node_tid_depth_weekend']['#prefix'] = "<div class='column oneThird'>";
+      $form['term_node_tid_depth_weekend']['#suffix'] = "</div>";
+      
+      $form['combine_weekend']['#prefix'] = "<div class='column twoThirds'>";
+      $form['combine_weekend']['#suffix'] = "</div>";
+      
+  }
+   	  
+}

@@ -1,0 +1,16 @@
+name = Mailchimp eCommerce
+description = Integrates Drupal-based shopping carts with Mailchimp eCommerce.
+package = Mailchimp
+core = 7.x
+php = 5.5
+
+dependencies[] = mailchimp
+dependencies[] = mailchimp_lists
+
+files[] = tests/mailchimp_ecommerce.test
+
+; Information added by Drupal.org packaging script on 2019-06-20
+version = "8.x-1.5"
+core = "8.x"
+project = "mailchimp_ecommerce"
+datestamp = "1561055287"

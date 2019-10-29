@@ -1,0 +1,12 @@
+name: Siteimprove Plugin
+type: module
+description: Siteimprove allows users to continuously test, fix and optimize their work through actionable content and analytics insights.
+# core: 8.x
+package: Statistics
+configure: siteimprove.settings_form
+
+# Information added by Drupal.org packaging script on 2019-01-18
+version: '8.x-1.1'
+core: '8.x'
+project: 'siteimprove'
+datestamp: 1547810161
