@@ -1,0 +1,8 @@
+uuid: 3f8eda02-3eb3-46ea-bbce-b10b169f1dd5
+langcode: en
+status: true
+dependencies: {  }
+id: text-resize---menu
+label: 'Text Resize - Menu'
+description: 'Text Resize - Menu'
+locked: false

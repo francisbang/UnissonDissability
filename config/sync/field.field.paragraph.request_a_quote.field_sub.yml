@@ -1,0 +1,21 @@
+uuid: d2859389-564a-4791-9403-6ecb491f8662
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sub
+    - paragraphs.paragraphs_type.request_a_quote
+  module:
+    - text
+id: paragraph.request_a_quote.field_sub
+field_name: field_sub
+entity_type: paragraph
+bundle: request_a_quote
+label: 'Sub Copy'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

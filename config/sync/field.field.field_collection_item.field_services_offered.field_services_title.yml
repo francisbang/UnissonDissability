@@ -1,0 +1,19 @@
+uuid: 547d050d-6d37-4db7-bae7-d922893a73c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_services_title
+    - field_collection.field_collection.field_services_offered
+id: field_collection_item.field_services_offered.field_services_title
+field_name: field_services_title
+entity_type: field_collection_item
+bundle: field_services_offered
+label: 'Services - Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,27 @@
+uuid: 22d893cb-4cd4-45ce-9ad2-11561c4efc1e
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_paragraph_image_placement
+field_name: field_paragraph_image_placement
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: img-left
+      label: 'Left To Text'
+    -
+      value: img-right
+      label: 'Right To Text'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

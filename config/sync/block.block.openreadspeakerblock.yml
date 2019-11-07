@@ -1,0 +1,28 @@
+uuid: 2b56e12b-2d93-42b1-84fb-5d184b609eba
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - open_readspeaker
+  theme:
+    - sunshine
+third_party_settings:
+  block_class:
+    classes: readspeaker
+id: openreadspeakerblock
+theme: sunshine
+region: header_tools
+weight: -4
+provider: null
+plugin: open_readspeaker_block
+settings:
+  id: open_readspeaker_block
+  label: 'Open readspeaker block'
+  provider: open_readspeaker
+  label_display: '0'
+  open_readspeaker_buttonstyle: open-readspeaker-button
+  open_readspeaker_buttontext: Listen
+  open_readspeaker_reading_area: content
+  open_readspeaker_reading_area_class: region-content
+visibility: {  }

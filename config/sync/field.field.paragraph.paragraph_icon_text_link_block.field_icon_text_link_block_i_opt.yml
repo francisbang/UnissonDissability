@@ -1,0 +1,23 @@
+uuid: c0f565de-dd90-4a5e-92c8-934d12a2ca6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon_text_link_block_i_opt
+    - paragraphs.paragraphs_type.paragraph_icon_text_link_block
+  module:
+    - options
+id: paragraph.paragraph_icon_text_link_block.field_icon_text_link_block_i_opt
+field_name: field_icon_text_link_block_i_opt
+entity_type: paragraph
+bundle: paragraph_icon_text_link_block
+label: 'Icon Text Link Block - Image - Yes / No'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'yes'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

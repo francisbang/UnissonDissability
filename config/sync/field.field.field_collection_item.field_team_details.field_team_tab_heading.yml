@@ -1,0 +1,19 @@
+uuid: 5f36ee9b-9b9c-48bb-b2e3-68ab4e9214f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_team_tab_heading
+    - field_collection.field_collection.field_team_details
+id: field_collection_item.field_team_details.field_team_tab_heading
+field_name: field_team_tab_heading
+entity_type: field_collection_item
+bundle: field_team_details
+label: 'Team - Tab Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

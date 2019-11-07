@@ -1,0 +1,19 @@
+uuid: 05676814-191b-4fc4-a288-a09f6840dc4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_facc_title
+    - paragraphs.paragraphs_type.paragraph_featured_accomodations
+id: paragraph.paragraph_featured_accomodations.field_para_facc_title
+field_name: field_para_facc_title
+entity_type: paragraph
+bundle: paragraph_featured_accomodations
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

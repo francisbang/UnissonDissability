@@ -1,0 +1,22 @@
+uuid: 609ad0d6-3d78-4b7e-8d23-a32651a5886e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_find_us_fields
+    - paragraphs.paragraphs_type.paragraph_find_us
+  module:
+    - field_collection
+id: paragraph.paragraph_find_us.field_find_us_fields
+field_name: field_find_us_fields
+entity_type: paragraph
+bundle: paragraph_find_us
+label: 'Find Us - Fields'
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_collection

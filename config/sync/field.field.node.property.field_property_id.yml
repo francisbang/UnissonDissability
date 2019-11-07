@@ -1,0 +1,23 @@
+uuid: 180db680-7ff8-4483-b28e-3e40f0b3a2ba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_property_id
+    - node.type.property
+  module:
+    - serial
+id: node.property.field_property_id
+field_name: field_property_id
+entity_type: node
+bundle: property
+label: 'Property ID'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: '1'
+default_value_callback: ''
+settings: {  }
+field_type: serial

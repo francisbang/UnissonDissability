@@ -1,0 +1,21 @@
+uuid: 2ce992de-3445-4395-8d7b-d18ff36f5bdc
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_collection
+id: field_collection_item.field_careers_heading
+field_name: field_careers_heading
+entity_type: field_collection_item
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

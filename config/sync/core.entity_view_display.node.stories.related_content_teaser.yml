@@ -1,0 +1,43 @@
+uuid: f178fa81-22f1-4c5b-aaaf-e34c582e6d5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.related_content_teaser
+    - field.field.node.stories.field_body_content
+    - field.field.node.stories.field_feature_image
+    - field.field.node.stories.field_header_image
+    - field.field.node.stories.field_header_image_mobile
+    - field.field.node.stories.field_meta_tags
+    - field.field.node.stories.field_overview_snippet
+    - field.field.node.stories.field_related_content
+    - node.type.stories
+  module:
+    - image
+    - user
+id: node.stories.related_content_teaser
+targetEntityType: node
+bundle: stories
+mode: related_content_teaser
+content:
+  field_feature_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_body_content: true
+  field_header_image: true
+  field_header_image_mobile: true
+  field_meta_tags: true
+  field_overview_snippet: true
+  field_related_content: true

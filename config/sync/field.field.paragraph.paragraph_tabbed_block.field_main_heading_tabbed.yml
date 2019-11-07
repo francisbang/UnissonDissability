@@ -1,0 +1,19 @@
+uuid: eed38529-c252-4881-b79f-2dbde731cc66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_main_heading_tabbed
+    - paragraphs.paragraphs_type.paragraph_tabbed_block
+id: paragraph.paragraph_tabbed_block.field_main_heading_tabbed
+field_name: field_main_heading_tabbed
+entity_type: paragraph
+bundle: paragraph_tabbed_block
+label: 'Main Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

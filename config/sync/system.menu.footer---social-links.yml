@@ -1,0 +1,8 @@
+uuid: 03bf22c6-00dd-439e-ac0f-e85f54639df2
+langcode: en
+status: true
+dependencies: {  }
+id: footer---social-links
+label: 'Footer - Social Links'
+description: 'This add social links to the website'
+locked: false

@@ -1,0 +1,29 @@
+uuid: a6d4e553-a9bd-4503-974d-56654f429fce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_services_region
+    - node.type.find_us_services
+    - taxonomy.vocabulary.find_us_regions
+id: node.find_us_services.field_services_region
+field_name: field_services_region
+entity_type: node
+bundle: find_us_services
+label: 'Services - Region'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      find_us_regions: find_us_regions
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

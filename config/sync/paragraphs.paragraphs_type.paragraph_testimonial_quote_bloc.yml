@@ -1,0 +1,9 @@
+uuid: 708718bd-6932-4c0a-a94f-50eb287d8cc7
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_testimonial_quote_bloc
+label: 'Paragraph - Testimonial / Quote Block'
+icon_uuid: null
+description: 'This is used to add a testimonial or quote block across the website.'
+behavior_plugins: {  }

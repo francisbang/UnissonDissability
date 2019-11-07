@@ -1,0 +1,33 @@
+uuid: 2c2306f3-3e93-4548-83f7-2145b9b5ffc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_quicklinks_description.field_paragraph_description
+    - field.field.paragraph.paragraph_quicklinks_description.field_quicklinks_desc_fieldset
+    - paragraphs.paragraphs_type.paragraph_quicklinks_description
+  module:
+    - field_collection
+    - text
+id: paragraph.paragraph_quicklinks_description.default
+targetEntityType: paragraph
+bundle: paragraph_quicklinks_description
+mode: default
+content:
+  field_paragraph_description:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_quicklinks_desc_fieldset:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_embed
+    region: content
+hidden:
+  created: true
+  status: true

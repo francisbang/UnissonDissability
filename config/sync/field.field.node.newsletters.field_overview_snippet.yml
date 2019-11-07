@@ -1,0 +1,21 @@
+uuid: 68b07e58-c546-4e3a-8420-d597931f9563
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_overview_snippet
+    - node.type.newsletters
+  module:
+    - text
+id: node.newsletters.field_overview_snippet
+field_name: field_overview_snippet
+entity_type: node
+bundle: newsletters
+label: 'Overview - Snippet'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

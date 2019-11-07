@@ -1,0 +1,29 @@
+uuid: 0b9f3cc1-d782-4e5d-a5ac-58b8bb4aaa82
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_add_form:920598ce-9ef5-4255-8bad-f3dfdbc33ef2'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - stark
+third_party_settings:
+  block_class:
+    classes: newsletter-signup
+id: stark_newslettersignupblock
+theme: stark
+region: sidebar_first
+weight: -7
+provider: null
+plugin: 'block_content:920598ce-9ef5-4255-8bad-f3dfdbc33ef2'
+settings:
+  id: 'block_content:920598ce-9ef5-4255-8bad-f3dfdbc33ef2'
+  label: 'Newsletter - Signup Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,27 @@
+uuid: 15a77bbf-8ae2-49ce-b7f0-3734757863df
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_media_type
+field_name: field_media_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: image
+      label: Image
+    -
+      value: video
+      label: Video
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

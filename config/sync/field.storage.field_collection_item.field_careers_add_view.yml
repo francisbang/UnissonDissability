@@ -1,0 +1,21 @@
+uuid: 67e82723-7eed-4eca-938a-1c07dd7ffa7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_collection
+    - viewfield
+    - views
+id: field_collection_item.field_careers_add_view
+field_name: field_careers_add_view
+entity_type: field_collection_item
+type: viewfield
+settings:
+  target_type: view
+module: viewfield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

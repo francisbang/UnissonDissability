@@ -1,0 +1,37 @@
+uuid: d3985510-f243-4775-a81b-5b7ba739b945
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.stories_previous_next
+  module:
+    - block_class
+    - ctools
+    - views
+  theme:
+    - unisson_disability
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__stories_previous_next_block_3
+theme: unisson_disability
+region: page_navigation
+weight: -13
+provider: null
+plugin: 'views_block:stories_previous_next-block_3'
+settings:
+  id: 'views_block:stories_previous_next-block_3'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      stories: stories
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,19 @@
+uuid: f9d75148-6f86-4d9f-be73-060fd2600e6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_careers_services
+    - node.type.careers
+id: node.careers.field_careers_services
+field_name: field_careers_services
+entity_type: node
+bundle: careers
+label: 'Careers - Services'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

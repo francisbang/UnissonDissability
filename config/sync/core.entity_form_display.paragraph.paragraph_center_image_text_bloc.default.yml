@@ -1,0 +1,79 @@
+uuid: 62fb7945-0027-4907-b683-9cf441aa7945
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.browse_files_modal
+    - field.field.paragraph.paragraph_center_image_text_bloc.field_image_citb
+    - field.field.paragraph.paragraph_center_image_text_bloc.field_link_citb
+    - field.field.paragraph.paragraph_center_image_text_bloc.field_link_text_citb
+    - field.field.paragraph.paragraph_center_image_text_bloc.field_text_field_citb
+    - paragraphs.paragraphs_type.paragraph_center_image_text_bloc
+  module:
+    - entity_browser
+    - field_group
+    - link
+    - text
+third_party_settings:
+  field_group:
+    group_center_image_text_block:
+      children:
+        - field_image_citb
+        - field_text_field_citb
+        - field_link_citb
+        - field_link_text_citb
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Center Image Text Block'
+id: paragraph.paragraph_center_image_text_bloc.default
+targetEntityType: paragraph
+bundle: paragraph_center_image_text_bloc
+mode: default
+content:
+  field_image_citb:
+    weight: 1
+    settings:
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      preview_image_style: thumbnail
+      field_widget_edit: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_browser_file
+    region: content
+  field_link_citb:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_link_text_citb:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_text_field_citb:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

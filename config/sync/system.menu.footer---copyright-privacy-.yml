@@ -1,0 +1,8 @@
+uuid: 3af357b2-f5ff-45c5-a0df-c14602fe3486
+langcode: en
+status: true
+dependencies: {  }
+id: footer---copyright-privacy-
+label: 'Footer - Copyright / Privacy Policy Links'
+description: ''
+locked: false

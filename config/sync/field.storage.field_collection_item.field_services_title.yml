@@ -1,0 +1,21 @@
+uuid: adbcb821-e244-48f9-bd33-141b5e451613
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_collection
+id: field_collection_item.field_services_title
+field_name: field_services_title
+entity_type: field_collection_item
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

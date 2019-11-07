@@ -1,0 +1,30 @@
+uuid: 136197a3-006c-4c71-8a1b-771a465f4795
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - paragraphs
+id: paragraph.field_contact_us_background_imag
+field_name: field_contact_us_background_imag
+entity_type: paragraph
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: dbf1c269-8457-4c0c-a89f-03c623df8b5f
+    alt: ''
+    title: ''
+    width: 285
+    height: 650
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

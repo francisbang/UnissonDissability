@@ -1,0 +1,127 @@
+uuid: b7d6546c-f30c-4661-ab47-fd056c8511a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_contact_form_address.field_abn
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_address
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_background_imag
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_block_reference
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_email
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_fax_number
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_heading
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_link
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_link_text
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_misc_text
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_telephone
+    - paragraphs.paragraphs_type.paragraph_contact_form_address
+  module:
+    - image
+    - link
+    - text
+id: paragraph.paragraph_contact_form_address.default
+targetEntityType: paragraph
+bundle: paragraph_contact_form_address
+mode: default
+content:
+  field_abn:
+    weight: 8
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_us_:
+    weight: 9
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_us_address:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_contact_us_background_imag:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    type: image_url
+    region: content
+  field_contact_us_block_reference:
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_contact_us_email:
+    weight: 11
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_us_fax_number:
+    weight: 7
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_us_heading:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_us_link:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_contact_us_link_text:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_us_misc_text:
+    weight: 12
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_contact_us_telephone:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

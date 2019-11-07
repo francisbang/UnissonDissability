@@ -5,7 +5,14 @@
     "license": "GPL-2.0-or-later",
     "require": {
         "composer/installers": "^1.0.24",
-        "wikimedia/composer-merge-plugin": "^1.4"
+        "wikimedia/composer-merge-plugin": "^1.4",
+        "drupal/geocoder": "^2.3",
+        "drupal/geofield": "^1.6",
+        "drupal/address": "^1.7",
+        "drupal/better_exposed_filters": "^4.0",
+        "drupal/geofield_map": "^2.49",
+        "drupal/serial": "^1.0",
+        "drupal/entity_type_clone": "^1.3"
     },
     "replace": {
         "drupal/core": "^8.6"

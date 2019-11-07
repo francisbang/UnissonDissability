@@ -1,0 +1,21 @@
+uuid: 23b02d28-8227-41f9-9c36-547698021472
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_quicklinks_desc_fieldset
+    - paragraphs.paragraphs_type.paragraph_quicklinks_description
+  module:
+    - field_collection
+id: paragraph.paragraph_quicklinks_description.field_quicklinks_desc_fieldset
+field_name: field_quicklinks_desc_fieldset
+entity_type: paragraph
+bundle: paragraph_quicklinks_description
+label: 'Quicklinks Description Fieldset'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_collection

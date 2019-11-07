@@ -1,0 +1,21 @@
+uuid: 128e7a1c-41ce-49ba-8332-defe86617846
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_careers_job_description
+    - node.type.careers
+  module:
+    - text
+id: node.careers.field_careers_job_description
+field_name: field_careers_job_description
+entity_type: node
+bundle: careers
+label: 'Careers - Job Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

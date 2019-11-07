@@ -1,0 +1,20 @@
+uuid: 86a07359-61f8-45bb-a495-e11109667c69
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - paragraphs
+id: paragraph.field_contact_us_block_reference
+field_name: field_contact_us_block_reference
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: block_content
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

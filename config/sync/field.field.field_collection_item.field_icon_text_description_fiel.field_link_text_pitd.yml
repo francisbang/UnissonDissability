@@ -1,0 +1,19 @@
+uuid: 2031afdf-2af6-4af2-be55-d45f223b6001
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_link_text_pitd
+    - field_collection.field_collection.field_icon_text_description_fiel
+id: field_collection_item.field_icon_text_description_fiel.field_link_text_pitd
+field_name: field_link_text_pitd
+entity_type: field_collection_item
+bundle: field_icon_text_description_fiel
+label: 'Link Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

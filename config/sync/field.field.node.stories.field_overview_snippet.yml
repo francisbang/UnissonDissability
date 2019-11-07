@@ -1,0 +1,21 @@
+uuid: b40b06b9-f3d9-4bbd-b9aa-d20b470d5276
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_overview_snippet
+    - node.type.stories
+  module:
+    - text
+id: node.stories.field_overview_snippet
+field_name: field_overview_snippet
+entity_type: node
+bundle: stories
+label: 'Overview - Snippet'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

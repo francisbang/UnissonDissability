@@ -1,0 +1,38 @@
+uuid: c0b02056-4ce0-4014-a740-338b32c06ce3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_feature_image
+    - node.type.contact_us
+  module:
+    - image
+id: node.contact_us.field_feature_image
+field_name: field_feature_image
+entity_type: node
+bundle: contact_us
+label: 'Feature - Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: feature-image
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: d974a5f1-c113-4b67-b86c-f86a4508ff9c
+    alt: ''
+    title: ''
+    width: 320
+    height: 210
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,9 @@
+uuid: b7eadac3-7b6c-42c9-83c7-b6254a686175
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_careers
+label: 'Paragraph - Careers'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

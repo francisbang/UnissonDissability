@@ -1,0 +1,22 @@
+uuid: 3b8ed5a1-77b2-43da-92c5-b9c7ff4037be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_careers_job_location
+    - node.type.careers
+  module:
+    - field_collection
+id: node.careers.field_careers_job_location
+field_name: field_careers_job_location
+entity_type: node
+bundle: careers
+label: 'Careers - Job Location'
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_collection

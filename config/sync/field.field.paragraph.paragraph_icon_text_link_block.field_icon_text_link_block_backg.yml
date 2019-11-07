@@ -1,0 +1,23 @@
+uuid: 0956ea4a-936d-40ca-87e3-493fba946251
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon_text_link_block_backg
+    - paragraphs.paragraphs_type.paragraph_icon_text_link_block
+  module:
+    - options
+id: paragraph.paragraph_icon_text_link_block.field_icon_text_link_block_backg
+field_name: field_icon_text_link_block_backg
+entity_type: paragraph
+bundle: paragraph_icon_text_link_block
+label: 'Icon Text Link Block - Background'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: grey-heading
+default_value_callback: ''
+settings: {  }
+field_type: list_string

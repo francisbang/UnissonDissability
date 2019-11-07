@@ -1,0 +1,9 @@
+uuid: 539838a4-2fe2-4f25-a380-c823f89ee837
+langcode: en
+status: true
+dependencies: {  }
+id: service_block
+label: 'Service Block'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

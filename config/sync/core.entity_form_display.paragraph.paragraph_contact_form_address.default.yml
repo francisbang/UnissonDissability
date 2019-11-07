@@ -1,0 +1,145 @@
+uuid: 125c4b72-d871-4db5-b2fa-4b976cb608bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_contact_form_address.field_abn
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_address
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_background_imag
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_block_reference
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_email
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_fax_number
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_heading
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_link
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_link_text
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_misc_text
+    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_telephone
+    - paragraphs.paragraphs_type.paragraph_contact_form_address
+  module:
+    - field_group
+    - link
+    - text
+third_party_settings:
+  field_group:
+    group_contact_us_block_fields:
+      children:
+        - field_contact_us_block_reference
+        - field_contact_us_heading
+        - field_contact_us_address
+        - field_contact_us_telephone
+        - field_contact_us_fax_number
+        - field_contact_us_email
+        - field_abn
+        - field_contact_us_
+        - field_contact_us_misc_text
+        - field_contact_us_link_text
+        - field_contact_us_link
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Contact Us Block - Fields'
+id: paragraph.paragraph_contact_form_address.default
+targetEntityType: paragraph
+bundle: paragraph_contact_form_address
+mode: default
+content:
+  field_abn:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_contact_us_:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_contact_us_address:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_contact_us_block_reference:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_contact_us_email:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_contact_us_fax_number:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_contact_us_heading:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_contact_us_link:
+    weight: 11
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_contact_us_link_text:
+    weight: 10
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_contact_us_misc_text:
+    weight: 9
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_contact_us_telephone:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  field_contact_us_background_imag: true
+  status: true
+  uid: true

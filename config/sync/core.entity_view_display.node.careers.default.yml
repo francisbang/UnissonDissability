@@ -1,0 +1,64 @@
+uuid: 1c612cba-b43c-476e-b1ff-75e9de1e3126
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.careers.field_careers_job_description
+    - field.field.node.careers.field_careers_job_location
+    - field.field.node.careers.field_careers_job_title
+    - field.field.node.careers.field_careers_region
+    - field.field.node.careers.field_careers_services
+    - node.type.careers
+  module:
+    - field_collection
+    - text
+    - user
+id: node.careers.default
+targetEntityType: node
+bundle: careers
+mode: default
+content:
+  field_careers_job_description:
+    weight: 104
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_careers_job_location:
+    weight: 103
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_items
+    region: content
+  field_careers_job_title:
+    weight: 101
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_careers_region:
+    weight: 105
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_careers_services:
+    weight: 102
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

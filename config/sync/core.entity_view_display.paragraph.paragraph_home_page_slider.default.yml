@@ -1,0 +1,22 @@
+uuid: 3fd68e00-f741-4240-bf9d-942cc53b1990
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_home_page_slider.field_slider_fields
+    - paragraphs.paragraphs_type.paragraph_home_page_slider
+  module:
+    - field_collection
+id: paragraph.paragraph_home_page_slider.default
+targetEntityType: paragraph
+bundle: paragraph_home_page_slider
+mode: default
+content:
+  field_slider_fields:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_items
+    region: content
+hidden: {  }

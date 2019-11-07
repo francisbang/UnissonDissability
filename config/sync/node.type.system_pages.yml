@@ -1,0 +1,18 @@
+uuid: afc2063f-d37b-49b5-b230-2c02feaa96e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'System Pages'
+type: system_pages
+description: 'This is used for search pages, 404 and 403 page'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

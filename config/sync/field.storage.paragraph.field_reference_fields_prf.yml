@@ -1,0 +1,20 @@
+uuid: b202e358-9ad2-44d4-b2cf-b8015a54406c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - paragraphs
+id: paragraph.field_reference_fields_prf
+field_name: field_reference_fields_prf
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,22 @@
+uuid: 8ee7e644-7efc-4553-af4c-a9925f48226f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_services_offered
+    - node.type.find_us_services
+  module:
+    - field_collection
+id: node.find_us_services.field_services_offered
+field_name: field_services_offered
+entity_type: node
+bundle: find_us_services
+label: 'Services - Offered'
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_collection

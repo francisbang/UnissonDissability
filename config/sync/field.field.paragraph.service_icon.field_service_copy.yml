@@ -1,0 +1,21 @@
+uuid: 58e91a5d-3462-40df-9eea-09dc0b0a8c66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_service_copy
+    - paragraphs.paragraphs_type.service_icon
+  module:
+    - text
+id: paragraph.service_icon.field_service_copy
+field_name: field_service_copy
+entity_type: paragraph
+bundle: service_icon
+label: 'Service Copy'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

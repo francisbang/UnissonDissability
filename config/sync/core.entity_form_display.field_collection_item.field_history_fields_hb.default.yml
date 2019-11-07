@@ -1,0 +1,58 @@
+uuid: c248fbcd-6c3d-4dbf-bff4-708cd79ec26b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_history_fields_hb.field_history_description
+    - field.field.field_collection_item.field_history_fields_hb.field_history_heading
+    - field.field.field_collection_item.field_history_fields_hb.field_history_year
+    - field_collection.field_collection.field_history_fields_hb
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_history_fields:
+      children:
+        - field_history_year
+        - field_history_heading
+        - field_history_description
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'History - Fields'
+id: field_collection_item.field_history_fields_hb.default
+targetEntityType: field_collection_item
+bundle: field_history_fields_hb
+mode: default
+content:
+  field_history_description:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_history_heading:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_history_year:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden: {  }

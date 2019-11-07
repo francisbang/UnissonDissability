@@ -1,0 +1,19 @@
+uuid: d224892c-41f3-4ef7-bf93-9b47506972da
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_collection
+    - paragraphs
+id: paragraph.field_icon_text_description_fiel
+field_name: field_icon_text_description_fiel
+entity_type: paragraph
+type: field_collection
+settings: {  }
+module: field_collection
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,15 @@
+uuid: d08a7d14-ddf1-4ee9-acf1-504e7e86ad98
+langcode: en
+status: true
+dependencies: {  }
+name: image_center_style
+label: 'Image - Center Style'
+effects:
+  d3bb7e3a-d8ce-4360-9549-243d041315e6:
+    uuid: d3bb7e3a-d8ce-4360-9549-243d041315e6
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1000
+      height: 452
+      anchor: center-center

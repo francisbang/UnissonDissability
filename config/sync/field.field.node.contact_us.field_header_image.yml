@@ -1,0 +1,38 @@
+uuid: 1f66b2b6-bde3-4cf3-a2bf-83b398b7f953
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_image
+    - node.type.contact_us
+  module:
+    - image
+id: node.contact_us.field_header_image
+field_name: field_header_image
+entity_type: node
+bundle: contact_us
+label: 'Header - Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: header-images
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '500 KB'
+  max_resolution: ''
+  min_resolution: 1480x580
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 524552ed-5d49-4999-86df-3aa72ae233cf
+    alt: ''
+    title: ''
+    width: 1480
+    height: 580
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

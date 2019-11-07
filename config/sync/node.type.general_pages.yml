@@ -1,0 +1,18 @@
+uuid: df10c0d1-ebe1-4a17-b367-bb3b5c063c88
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'General Pages'
+type: general_pages
+description: 'This is used to add general pages across the website.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

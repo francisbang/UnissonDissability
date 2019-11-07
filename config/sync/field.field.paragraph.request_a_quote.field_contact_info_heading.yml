@@ -1,0 +1,19 @@
+uuid: 057f3d1b-8846-4180-badb-072126159edc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_info_heading
+    - paragraphs.paragraphs_type.request_a_quote
+id: paragraph.request_a_quote.field_contact_info_heading
+field_name: field_contact_info_heading
+entity_type: paragraph
+bundle: request_a_quote
+label: 'Contact Info Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

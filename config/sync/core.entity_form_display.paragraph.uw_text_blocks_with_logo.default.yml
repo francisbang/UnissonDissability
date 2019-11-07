@@ -1,0 +1,45 @@
+uuid: e481a7e5-349f-40d2-877d-47818566742b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.uw_text_blocks_with_logo.field_uw_blocks
+    - paragraphs.paragraphs_type.uw_text_blocks_with_logo
+  module:
+    - field_group
+    - paragraphs
+third_party_settings:
+  field_group:
+    group_blocks:
+      children:
+        - field_uw_blocks
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Blocks
+id: paragraph.uw_text_blocks_with_logo.default
+targetEntityType: paragraph
+bundle: uw_text_blocks_with_logo
+mode: default
+content:
+  field_uw_blocks:
+    type: entity_reference_paragraphs
+    weight: 1
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

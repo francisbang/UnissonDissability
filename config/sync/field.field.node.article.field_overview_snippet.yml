@@ -1,0 +1,21 @@
+uuid: d9f7d215-3541-4db1-9985-e4877be3ad8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_overview_snippet
+    - node.type.article
+  module:
+    - text
+id: node.article.field_overview_snippet
+field_name: field_overview_snippet
+entity_type: node
+bundle: article
+label: 'Overview - Snippet'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

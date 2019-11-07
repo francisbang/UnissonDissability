@@ -1,0 +1,23 @@
+uuid: a5e60b6a-bc93-410e-b9f4-1498c3f1e658
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_set_background
+    - paragraphs.paragraphs_type.paragraph_add_view
+  module:
+    - options
+id: paragraph.paragraph_add_view.field_set_background
+field_name: field_set_background
+entity_type: paragraph
+bundle: paragraph_add_view
+label: 'Set Background'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'yes'
+default_value_callback: ''
+settings: {  }
+field_type: list_string

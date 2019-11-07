@@ -1,0 +1,19 @@
+uuid: 15b51e56-0798-4583-81af-abb4a4eeb669
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_services_phone_number
+    - field_collection.field_collection.field_services_offered
+id: field_collection_item.field_services_offered.field_services_phone_number
+field_name: field_services_phone_number
+entity_type: field_collection_item
+bundle: field_services_offered
+label: 'Services - Phone Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

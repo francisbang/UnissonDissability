@@ -1,0 +1,18 @@
+uuid: d0d50512-a9b5-4d90-859f-5cd2d716aae3
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Careers
+type: careers
+description: 'This helps to add careers / jobs to the website'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

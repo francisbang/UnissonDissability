@@ -1,0 +1,38 @@
+uuid: e6d00f00-ff9e-431f-a20f-1cf3edff7221
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_feature_image
+    - node.type.stories
+  module:
+    - image
+id: node.stories.field_feature_image
+field_name: field_feature_image
+entity_type: node
+bundle: stories
+label: 'Feature - Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: feature-image
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '150 KB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: e82a6829-f6e6-416e-851f-c9e128655bfd
+    alt: ''
+    title: ''
+    width: 320
+    height: 210
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

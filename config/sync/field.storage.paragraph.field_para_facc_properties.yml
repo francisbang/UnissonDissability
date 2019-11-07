@@ -1,0 +1,20 @@
+uuid: 13d2e36f-c38a-46df-975e-b3440d92351e
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - paragraphs
+id: paragraph.field_para_facc_properties
+field_name: field_para_facc_properties
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 2
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

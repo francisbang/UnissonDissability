@@ -1,0 +1,52 @@
+uuid: 34eca9c6-ecb7-411e-8af3-88e1bb8d033d
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
+id: anonymous
+label: 'Anonymous user'
+weight: 0
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view paragraph content paragraph_add_view'
+  - 'view paragraph content paragraph_attach_form'
+  - 'view paragraph content paragraph_call_to_action'
+  - 'view paragraph content paragraph_careers'
+  - 'view paragraph content paragraph_center_image_text_bloc'
+  - 'view paragraph content paragraph_contact_form_address'
+  - 'view paragraph content paragraph_faq_fields'
+  - 'view paragraph content paragraph_find_us'
+  - 'view paragraph content paragraph_history_block'
+  - 'view paragraph content paragraph_home_page_slider'
+  - 'view paragraph content paragraph_icon_heading_descripti'
+  - 'view paragraph content paragraph_icon_text_link_block'
+  - 'view paragraph content paragraph_image_left_right_text_'
+  - 'view paragraph content paragraph_image_text'
+  - 'view paragraph content paragraph_image_text_description'
+  - 'view paragraph content paragraph_just_image'
+  - 'view paragraph content paragraph_left_aligned_text_bloc'
+  - 'view paragraph content paragraph_overview_image_text_li'
+  - 'view paragraph content paragraph_quote_block'
+  - 'view paragraph content paragraph_reference_block'
+  - 'view paragraph content paragraph_tabbed_block'
+  - 'view paragraph content paragraph_team_block'
+  - 'view paragraph content paragraph_testimonial_quote_bloc'
+  - 'view paragraph content paragraph_text_block'
+  - 'view paragraph content paragraph_text_block_two_columns'
+  - 'view paragraph content paragraph_text_image_right_slide'
+  - 'view paragraph content paragraph_title_description'
+  - 'view paragraph content request_a_quote'
+  - 'view paragraph content service_block'
+  - 'view paragraph content service_icon'
+  - 'view paragraph content service_icons'
+  - 'view paragraph content services_blocks'
+  - 'view paragraph content uw_find_out_more'
+  - 'view paragraph content uw_text_block'
+  - 'view paragraph content uw_text_blocks_with_logo'
+  - 'view paragraph content video_and_text'

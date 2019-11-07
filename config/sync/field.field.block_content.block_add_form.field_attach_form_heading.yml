@@ -1,0 +1,19 @@
+uuid: 66ed3688-eb29-4725-bafc-6e2abaadc402
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_add_form
+    - field.storage.block_content.field_attach_form_heading
+id: block_content.block_add_form.field_attach_form_heading
+field_name: field_attach_form_heading
+entity_type: block_content
+bundle: block_add_form
+label: 'Attach Form - Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

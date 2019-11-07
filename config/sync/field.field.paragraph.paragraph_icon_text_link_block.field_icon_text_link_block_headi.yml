@@ -1,0 +1,19 @@
+uuid: 604b46cc-044b-4b5b-a91b-c8fd728f4781
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon_text_link_block_headi
+    - paragraphs.paragraphs_type.paragraph_icon_text_link_block
+id: paragraph.paragraph_icon_text_link_block.field_icon_text_link_block_headi
+field_name: field_icon_text_link_block_headi
+entity_type: paragraph
+bundle: paragraph_icon_text_link_block
+label: 'Icon Text Link Block - Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

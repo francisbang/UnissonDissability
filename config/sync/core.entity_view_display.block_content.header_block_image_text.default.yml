@@ -1,0 +1,90 @@
+uuid: 82b03ee9-5f11-43ae-be4b-3e9545d69233
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.header_block_image_text
+    - field.field.block_content.header_block_image_text.field_header_block_image
+    - field.field.block_content.header_block_image_text.field_header_block_main_heading
+    - field.field.block_content.header_block_image_text.field_header_block_sub_heading
+  module:
+    - bg_image_formatter
+    - field_group
+third_party_settings:
+  field_group:
+    group_heading_html:
+      children:
+        - field_header_block_main_heading
+        - group_heading_span
+      parent_name: ''
+      weight: 1
+      format_type: html_element
+      format_settings:
+        label: 'Heading HTML'
+        element: h1
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: ''
+      label: 'Heading HTML'
+    group_heading_span:
+      children:
+        - field_header_block_sub_heading
+      parent_name: group_heading_html
+      weight: 3
+      format_type: html_element
+      format_settings:
+        id: ''
+        classes: yellow
+        element: span
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+      label: 'Heading Span'
+id: block_content.header_block_image_text.default
+targetEntityType: block_content
+bundle: header_block_image_text
+mode: default
+content:
+  field_header_block_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      css_settings:
+        bg_image_selector: section.title-header.general
+        bg_image_z_index: auto
+        bg_image_color: '#FFFFFF'
+        bg_image_x: left
+        bg_image_y: top
+        bg_image_attachment: scroll
+        bg_image_repeat: no-repeat
+        bg_image_background_size: cover
+        bg_image_background_size_ie8: '1'
+        bg_image_media_query: all
+        bg_image_important: '1'
+    third_party_settings: {  }
+    type: bg_image_formatter
+    region: content
+  field_header_block_main_heading:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_header_block_sub_heading:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

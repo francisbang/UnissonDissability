@@ -1,0 +1,37 @@
+uuid: 93ef1993-67c3-490e-a48e-572175ac948c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.research_previous_next
+  module:
+    - block_class
+    - ctools
+    - views
+  theme:
+    - unisson_disability
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__research_previous_next_block_2
+theme: unisson_disability
+region: page_navigation
+weight: -16
+provider: null
+plugin: 'views_block:research_previous_next-block_2'
+settings:
+  id: 'views_block:research_previous_next-block_2'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      research: research
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

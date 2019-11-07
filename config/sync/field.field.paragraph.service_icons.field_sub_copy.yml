@@ -1,0 +1,21 @@
+uuid: 33f9e13b-0cd7-4351-a736-a98fc6772851
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sub_copy
+    - paragraphs.paragraphs_type.service_icons
+  module:
+    - text
+id: paragraph.service_icons.field_sub_copy
+field_name: field_sub_copy
+entity_type: paragraph
+bundle: service_icons
+label: 'Sub Copy'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

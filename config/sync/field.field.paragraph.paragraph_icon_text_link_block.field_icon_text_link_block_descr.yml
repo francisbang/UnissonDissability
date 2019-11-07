@@ -1,0 +1,21 @@
+uuid: 31d3606f-ae44-4ee5-85df-9a2a98e86c24
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon_text_link_block_descr
+    - paragraphs.paragraphs_type.paragraph_icon_text_link_block
+  module:
+    - text
+id: paragraph.paragraph_icon_text_link_block.field_icon_text_link_block_descr
+field_name: field_icon_text_link_block_descr
+entity_type: paragraph
+bundle: paragraph_icon_text_link_block
+label: 'Icon Text Link Block - Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

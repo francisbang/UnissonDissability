@@ -1,0 +1,37 @@
+uuid: 934e2b6b-5bc2-4735-a80f-a534c31f3df2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.icon_link_block
+    - field.field.block_content.icon_link_block.field_icon_image_ilb
+    - field.field.block_content.icon_link_block.field_icon_link_ilb
+  module:
+    - image
+    - link
+id: block_content.icon_link_block.default
+targetEntityType: block_content
+bundle: icon_link_block
+mode: default
+content:
+  field_icon_image_ilb:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    type: image_url
+    region: content
+  field_icon_link_ilb:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

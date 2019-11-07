@@ -1,0 +1,9 @@
+uuid: 2568f545-1127-4331-b307-7dca675b5667
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_tabbed_block
+label: 'Paragraph - Tabbed Block'
+icon_uuid: null
+description: 'This is used to add paragraph tabbed block across the website.'
+behavior_plugins: {  }

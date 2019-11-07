@@ -1,0 +1,19 @@
+uuid: d257391e-e81d-4a54-b235-efa671c60e85
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_us_
+    - paragraphs.paragraphs_type.paragraph_contact_form_address
+id: paragraph.paragraph_contact_form_address.field_contact_us_
+field_name: field_contact_us_
+entity_type: paragraph
+bundle: paragraph_contact_form_address
+label: 'Contact Us - ACN'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

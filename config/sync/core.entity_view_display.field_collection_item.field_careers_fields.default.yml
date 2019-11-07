@@ -1,0 +1,34 @@
+uuid: 26a516d0-3dd4-4d8f-b892-57086b79a9b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_careers_fields.field_careers_add_view
+    - field.field.field_collection_item.field_careers_fields.field_careers_heading
+    - field_collection.field_collection.field_careers_fields
+  module:
+    - viewfield
+id: field_collection_item.field_careers_fields.default
+targetEntityType: field_collection_item
+bundle: field_careers_fields
+mode: default
+content:
+  field_careers_add_view:
+    weight: 1
+    label: hidden
+    settings:
+      view_title: hidden
+      always_build_output: 0
+      empty_view_title: hidden
+    third_party_settings: {  }
+    type: viewfield_default
+    region: content
+  field_careers_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

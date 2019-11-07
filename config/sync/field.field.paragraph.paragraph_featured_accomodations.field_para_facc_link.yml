@@ -1,0 +1,28 @@
+uuid: f3da577c-4aa9-4d92-bb5d-ee0ef1983b79
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_facc_link
+    - paragraphs.paragraphs_type.paragraph_featured_accomodations
+  module:
+    - link
+id: paragraph.paragraph_featured_accomodations.field_para_facc_link
+field_name: field_para_facc_link
+entity_type: paragraph
+bundle: paragraph_featured_accomodations
+label: 'View All Link'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    attributes: {  }
+    uri: 'internal:/accomodation-search'
+    title: 'View All'
+    options: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 1
+field_type: link

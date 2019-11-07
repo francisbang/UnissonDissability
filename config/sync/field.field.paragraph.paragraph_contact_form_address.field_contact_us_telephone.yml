@@ -1,0 +1,19 @@
+uuid: 16e73709-a35b-4938-9cb1-7f511928c4bb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_us_telephone
+    - paragraphs.paragraphs_type.paragraph_contact_form_address
+id: paragraph.paragraph_contact_form_address.field_contact_us_telephone
+field_name: field_contact_us_telephone
+entity_type: paragraph
+bundle: paragraph_contact_form_address
+label: 'Contact Us - Telephone'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

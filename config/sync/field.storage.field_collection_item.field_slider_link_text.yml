@@ -1,0 +1,21 @@
+uuid: 88b6ddf8-2635-4ddf-b84a-91f73d51b33b
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_collection
+id: field_collection_item.field_slider_link_text
+field_name: field_slider_link_text
+entity_type: field_collection_item
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

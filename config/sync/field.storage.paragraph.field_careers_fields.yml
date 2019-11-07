@@ -1,0 +1,19 @@
+uuid: 5d1c50c7-6917-44b7-95ed-7da1633f55ee
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_collection
+    - paragraphs
+id: paragraph.field_careers_fields
+field_name: field_careers_fields
+entity_type: paragraph
+type: field_collection
+settings: {  }
+module: field_collection
+locked: false
+cardinality: 6
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

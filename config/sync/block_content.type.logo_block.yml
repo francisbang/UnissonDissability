@@ -1,0 +1,8 @@
+uuid: 3df6846f-9c3d-4534-86ed-b6ac913401bb
+langcode: en
+status: true
+dependencies: {  }
+id: logo_block
+label: 'Logo block'
+revision: 0
+description: 'This is used for footer logo'

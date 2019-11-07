@@ -1,0 +1,30 @@
+uuid: a7763857-d3ef-48c0-8863-bf54c1775b29
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.careers.field_careers_job_description
+    - field.field.node.careers.field_careers_job_location
+    - field.field.node.careers.field_careers_job_title
+    - field.field.node.careers.field_careers_region
+    - field.field.node.careers.field_careers_services
+    - node.type.careers
+  module:
+    - user
+id: node.careers.teaser
+targetEntityType: node
+bundle: careers
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_careers_job_description: true
+  field_careers_job_location: true
+  field_careers_job_title: true
+  field_careers_region: true
+  field_careers_services: true

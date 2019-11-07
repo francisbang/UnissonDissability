@@ -1,0 +1,10 @@
+uuid: be44e490-e034-484c-8091-dd6076eac2f0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.related_content_teaser
+label: 'Related Content - Teaser'
+targetEntityType: node
+cache: true

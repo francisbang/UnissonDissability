@@ -1,0 +1,21 @@
+uuid: 044d7b99-cdca-4fcf-ae11-bb3596508f5c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_banner_type
+    - node.type.unisson_works
+  module:
+    - options
+id: node.unisson_works.field_header_banner_type
+field_name: field_header_banner_type
+entity_type: node
+bundle: unisson_works
+label: 'Header Banner Type'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

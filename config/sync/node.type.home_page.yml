@@ -1,0 +1,18 @@
+uuid: 957e6d50-022e-4a6e-a22e-9ef90dbd1160
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Home Page'
+type: home_page
+description: 'This is used for creating home page for the website'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

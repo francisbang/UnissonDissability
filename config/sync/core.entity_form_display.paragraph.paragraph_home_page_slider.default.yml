@@ -1,0 +1,39 @@
+uuid: 4615ce9e-c9cd-4495-b86b-37f952e17de5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_home_page_slider.field_slider_fields
+    - paragraphs.paragraphs_type.paragraph_home_page_slider
+  module:
+    - field_collection
+    - field_group
+third_party_settings:
+  field_group:
+    group_slider_fields:
+      children:
+        - field_slider_fields
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Slider - Fields'
+id: paragraph.paragraph_home_page_slider.default
+targetEntityType: paragraph
+bundle: paragraph_home_page_slider
+mode: default
+content:
+  field_slider_fields:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_embed
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

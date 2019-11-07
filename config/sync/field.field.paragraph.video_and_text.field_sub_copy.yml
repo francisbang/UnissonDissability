@@ -1,0 +1,21 @@
+uuid: 86b1f9ee-bed9-4880-ac76-77587b0fc7a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sub_copy
+    - paragraphs.paragraphs_type.video_and_text
+  module:
+    - text
+id: paragraph.video_and_text.field_sub_copy
+field_name: field_sub_copy
+entity_type: paragraph
+bundle: video_and_text
+label: 'Sub Copy'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

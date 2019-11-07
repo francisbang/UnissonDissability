@@ -1,0 +1,8 @@
+uuid: 6abfb5c8-a20f-40a7-a609-2f585728a4a4
+langcode: en
+status: true
+dependencies: {  }
+id: header_block_image_text
+label: 'Header Block - Image Text'
+revision: 0
+description: 'This is used on the article pages.'

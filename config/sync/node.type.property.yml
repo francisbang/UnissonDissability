@@ -1,0 +1,18 @@
+uuid: dfadb653-2121-4a32-a087-286fcb5be349
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Property
+type: property
+description: 'This is used to add property to find available accomodations'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

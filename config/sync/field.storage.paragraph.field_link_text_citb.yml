@@ -1,0 +1,21 @@
+uuid: 57fc9358-94d0-4f8c-8dcc-34c279ac5eab
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_link_text_citb
+field_name: field_link_text_citb
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

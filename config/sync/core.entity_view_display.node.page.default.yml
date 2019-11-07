@@ -1,0 +1,44 @@
+uuid: dff9c5ad-54aa-4dda-9ee4-918aebd191cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.page.field_body_content
+    - field.field.node.page.field_feature_image
+    - field.field.node.page.field_header_image
+    - field.field.node.page.field_header_image_mobile
+    - field.field.node.page.field_header_main_heading
+    - field.field.node.page.field_header_sub_heading
+    - field.field.node.page.field_overview_snippet
+    - node.type.page
+  module:
+    - entity_reference_revisions
+    - user
+_core:
+  default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
+id: node.page.default
+targetEntityType: node
+bundle: page
+mode: default
+content:
+  field_body_content:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_feature_image: true
+  field_header_image: true
+  field_header_image_mobile: true
+  field_header_main_heading: true
+  field_header_sub_heading: true
+  field_overview_snippet: true

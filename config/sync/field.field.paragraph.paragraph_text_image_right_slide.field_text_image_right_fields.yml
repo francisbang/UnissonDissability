@@ -1,0 +1,22 @@
+uuid: c9a5ae01-6a5a-4376-b2d3-0d06d9f4a672
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_image_right_fields
+    - paragraphs.paragraphs_type.paragraph_text_image_right_slide
+  module:
+    - field_collection
+id: paragraph.paragraph_text_image_right_slide.field_text_image_right_fields
+field_name: field_text_image_right_fields
+entity_type: paragraph
+bundle: paragraph_text_image_right_slide
+label: 'Text Image Right Fields'
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_collection

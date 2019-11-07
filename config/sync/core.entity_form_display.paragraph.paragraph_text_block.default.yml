@@ -1,0 +1,79 @@
+uuid: 30f97fcb-3f25-4a3c-9c29-8a1bf20b0f74
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_text_block.field_text_alignment
+    - field.field.paragraph.paragraph_text_block.field_text_block_description
+    - field.field.paragraph.paragraph_text_block.field_text_block_file
+    - field.field.paragraph.paragraph_text_block.field_text_block_file_link_text
+    - field.field.paragraph.paragraph_text_block.field_text_block_heading
+    - paragraphs.paragraphs_type.paragraph_text_block
+  module:
+    - field_group
+    - file
+    - text
+third_party_settings:
+  field_group:
+    group_paragraph_text_block:
+      children:
+        - field_text_alignment
+        - field_text_block_heading
+        - field_text_block_description
+        - field_text_block_file_link_text
+        - field_text_block_file
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Paragraph - Text Block'
+id: paragraph.paragraph_text_block.default
+targetEntityType: paragraph
+bundle: paragraph_text_block
+mode: default
+content:
+  field_text_alignment:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_text_block_description:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_text_block_file:
+    weight: 7
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+    region: content
+  field_text_block_file_link_text:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_text_block_heading:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

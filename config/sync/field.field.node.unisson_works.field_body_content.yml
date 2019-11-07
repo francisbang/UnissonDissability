@@ -1,0 +1,180 @@
+uuid: 9cef4076-73f2-4604-9ce1-080eebc43659
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_content
+    - node.type.unisson_works
+    - paragraphs.paragraphs_type.paragraph_add_view
+    - paragraphs.paragraphs_type.paragraph_call_to_action
+    - paragraphs.paragraphs_type.paragraph_careers
+    - paragraphs.paragraphs_type.paragraph_find_us
+    - paragraphs.paragraphs_type.paragraph_history_block
+    - paragraphs.paragraphs_type.paragraph_icon_heading_descripti
+    - paragraphs.paragraphs_type.paragraph_icon_text_link_block
+    - paragraphs.paragraphs_type.paragraph_image_left_right_text_
+    - paragraphs.paragraphs_type.paragraph_image_text_description
+    - paragraphs.paragraphs_type.paragraph_just_image
+    - paragraphs.paragraphs_type.paragraph_overview_image_text_li
+    - paragraphs.paragraphs_type.paragraph_reference_block
+    - paragraphs.paragraphs_type.paragraph_tabbed_block
+    - paragraphs.paragraphs_type.paragraph_team_block
+    - paragraphs.paragraphs_type.paragraph_testimonial_quote_bloc
+    - paragraphs.paragraphs_type.paragraph_text_block
+    - paragraphs.paragraphs_type.paragraph_text_block_two_columns
+    - paragraphs.paragraphs_type.request_a_quote
+    - paragraphs.paragraphs_type.service_icons
+    - paragraphs.paragraphs_type.services_blocks
+    - paragraphs.paragraphs_type.uw_find_out_more
+    - paragraphs.paragraphs_type.uw_text_blocks_with_logo
+    - paragraphs.paragraphs_type.video_and_text
+  module:
+    - entity_reference_revisions
+id: node.unisson_works.field_body_content
+field_name: field_body_content
+entity_type: node
+bundle: unisson_works
+label: 'Body Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      paragraph_icon_text_link_block: paragraph_icon_text_link_block
+      paragraph_image_left_right_text_: paragraph_image_left_right_text_
+      paragraph_overview_image_text_li: paragraph_overview_image_text_li
+      paragraph_icon_heading_descripti: paragraph_icon_heading_descripti
+      paragraph_call_to_action: paragraph_call_to_action
+      paragraph_text_block: paragraph_text_block
+      paragraph_text_block_two_columns: paragraph_text_block_two_columns
+      paragraph_tabbed_block: paragraph_tabbed_block
+      paragraph_team_block: paragraph_team_block
+      paragraph_careers: paragraph_careers
+      paragraph_find_us: paragraph_find_us
+      paragraph_add_view: paragraph_add_view
+      paragraph_history_block: paragraph_history_block
+      paragraph_reference_block: paragraph_reference_block
+      paragraph_just_image: paragraph_just_image
+      paragraph_image_text_description: paragraph_image_text_description
+      paragraph_testimonial_quote_bloc: paragraph_testimonial_quote_bloc
+      uw_text_blocks_with_logo: uw_text_blocks_with_logo
+      services_blocks: services_blocks
+      service_icons: service_icons
+      uw_find_out_more: uw_find_out_more
+      request_a_quote: request_a_quote
+      video_and_text: video_and_text
+    target_bundles_drag_drop:
+      paragraph_icon_text_link_block:
+        enabled: true
+        weight: -73
+      paragraph_image_left_right_text_:
+        enabled: true
+        weight: -72
+      paragraph_overview_image_text_li:
+        enabled: true
+        weight: -71
+      paragraph_icon_heading_descripti:
+        enabled: true
+        weight: -70
+      paragraph_call_to_action:
+        enabled: true
+        weight: -69
+      paragraph_text_block:
+        enabled: true
+        weight: -68
+      paragraph_text_block_two_columns:
+        enabled: true
+        weight: -67
+      paragraph_tabbed_block:
+        enabled: true
+        weight: -66
+      paragraph_team_block:
+        enabled: true
+        weight: -65
+      paragraph_careers:
+        enabled: true
+        weight: -64
+      paragraph_find_us:
+        enabled: true
+        weight: -63
+      paragraph_add_view:
+        enabled: true
+        weight: -62
+      paragraph_history_block:
+        enabled: true
+        weight: -61
+      paragraph_reference_block:
+        enabled: true
+        weight: -60
+      paragraph_just_image:
+        enabled: true
+        weight: -59
+      paragraph_image_text_description:
+        enabled: true
+        weight: -58
+      paragraph_testimonial_quote_bloc:
+        enabled: true
+        weight: -57
+      uw_text_blocks_with_logo:
+        enabled: true
+        weight: -56
+      services_blocks:
+        enabled: true
+        weight: -55
+      service_icons:
+        enabled: true
+        weight: -54
+      uw_find_out_more:
+        enabled: true
+        weight: -53
+      request_a_quote:
+        enabled: true
+        weight: -52
+      video_and_text:
+        enabled: true
+        weight: -51
+      paragraph_center_image_text_bloc:
+        weight: -50
+        enabled: false
+      paragraph_contact_form_address:
+        weight: -49
+        enabled: false
+      paragraph_faq_fields:
+        weight: -48
+        enabled: false
+      paragraph_home_page_slider:
+        weight: -47
+        enabled: false
+      paragraph_image_text:
+        weight: -46
+        enabled: false
+      paragraph_left_aligned_text_bloc:
+        weight: -45
+        enabled: false
+      paragraph_quote_block:
+        weight: -44
+        enabled: false
+      paragraph_test:
+        weight: -43
+        enabled: false
+      paragraph_text_image_right_slide:
+        weight: -42
+        enabled: false
+      paragraph_title_description:
+        weight: -41
+        enabled: false
+      service_block:
+        weight: -40
+        enabled: false
+      service_icon:
+        weight: -39
+        enabled: false
+      uw_text_block:
+        weight: -38
+        enabled: false
+field_type: entity_reference_revisions

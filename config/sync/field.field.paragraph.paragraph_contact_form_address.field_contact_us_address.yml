@@ -1,0 +1,21 @@
+uuid: ac1305ca-ec17-4698-8eb8-9d1a0f9d90ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_us_address
+    - paragraphs.paragraphs_type.paragraph_contact_form_address
+  module:
+    - text
+id: paragraph.paragraph_contact_form_address.field_contact_us_address
+field_name: field_contact_us_address
+entity_type: paragraph
+bundle: paragraph_contact_form_address
+label: 'Contact Us - Address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

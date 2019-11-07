@@ -1,0 +1,19 @@
+uuid: 8217a136-fe89-421d-9acd-be070865cce6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading_hb
+    - paragraphs.paragraphs_type.paragraph_history_block
+id: paragraph.paragraph_history_block.field_heading_hb
+field_name: field_heading_hb
+entity_type: paragraph
+bundle: paragraph_history_block
+label: Heading
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,15 @@
+uuid: 6dc19114-beba-4ed0-9a46-9f09c8e4d720
+langcode: en
+status: true
+dependencies: {  }
+name: header_image_mobile
+label: 'Header Image - Mobile'
+effects:
+  ec5613a3-94c4-4898-aa0c-9ed52b2d25cc:
+    uuid: ec5613a3-94c4-4898-aa0c-9ed52b2d25cc
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1080
+      height: 1160
+      anchor: center-center

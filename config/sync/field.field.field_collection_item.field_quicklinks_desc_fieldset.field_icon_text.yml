@@ -1,0 +1,19 @@
+uuid: 6f7d1c88-ccf3-442e-8c17-4ea40c595f4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_icon_text
+    - field_collection.field_collection.field_quicklinks_desc_fieldset
+id: field_collection_item.field_quicklinks_desc_fieldset.field_icon_text
+field_name: field_icon_text
+entity_type: field_collection_item
+bundle: field_quicklinks_desc_fieldset
+label: 'Icon - Text'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 7e95a178-9161-4c93-9cde-02eb15df1b10
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta_url
+    - paragraphs.paragraphs_type.uw_text_block
+id: paragraph.uw_text_block.field_cta_url
+field_name: field_cta_url
+entity_type: paragraph
+bundle: uw_text_block
+label: 'CTA URL'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

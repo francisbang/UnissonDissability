@@ -1,0 +1,19 @@
+uuid: 6b77cb43-91e2-4443-be6b-7414cf2e3fb7
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_collection
+    - paragraphs
+id: paragraph.field_quicklinks_desc_fieldset
+field_name: field_quicklinks_desc_fieldset
+entity_type: paragraph
+type: field_collection
+settings: {  }
+module: field_collection
+locked: false
+cardinality: 4
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

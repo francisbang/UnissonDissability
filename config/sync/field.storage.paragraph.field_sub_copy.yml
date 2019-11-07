@@ -1,0 +1,19 @@
+uuid: 4b6a5d1e-2100-46a1-a6d3-683e82bee0d4
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_sub_copy
+field_name: field_sub_copy
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

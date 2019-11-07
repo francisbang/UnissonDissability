@@ -1,0 +1,24 @@
+uuid: 36240627-9acf-4a34-854f-d9d58dde17a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.html_markup_block
+    - field.storage.block_content.field_html_markup_field
+  module:
+    - text
+id: block_content.html_markup_block.field_html_markup_field
+field_name: field_html_markup_field
+entity_type: block_content
+bundle: html_markup_block
+label: 'HTMl Markup - Field'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: "<p>&lt;div class=\"menu-mob\"&gt;&lt;input id=\"show-mobile\" type=\"checkbox\" /&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;span&gt;&lt;/span&gt;&lt;/div&gt;</p>\r\n"
+    format: full_html
+default_value_callback: ''
+settings: {  }
+field_type: text_long

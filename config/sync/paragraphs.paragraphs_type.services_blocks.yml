@@ -1,0 +1,9 @@
+uuid: 02ab3974-14a9-4001-9cd7-69bd057dbeab
+langcode: en
+status: true
+dependencies: {  }
+id: services_blocks
+label: 'Services Blocks'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

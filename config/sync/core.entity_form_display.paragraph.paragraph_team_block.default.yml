@@ -1,0 +1,39 @@
+uuid: 8c9d1023-e13b-488b-b859-0690ac313bb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_team_block.field_team_details
+    - paragraphs.paragraphs_type.paragraph_team_block
+  module:
+    - field_collection
+    - field_group
+third_party_settings:
+  field_group:
+    group_team_details:
+      children:
+        - field_team_details
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Team - Details'
+id: paragraph.paragraph_team_block.default
+targetEntityType: paragraph
+bundle: paragraph_team_block
+mode: default
+content:
+  field_team_details:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_embed
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,23 @@
+uuid: c3fb54ca-c3a8-485b-ae53-607082a7deba
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_image_placement
+    - paragraphs.paragraphs_type.paragraph_image_left_right_text_
+  module:
+    - options
+id: paragraph.paragraph_image_left_right_text_.field_paragraph_image_placement
+field_name: field_paragraph_image_placement
+entity_type: paragraph
+bundle: paragraph_image_left_right_text_
+label: 'Paragraph - Image Placement'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: img-left
+default_value_callback: ''
+settings: {  }
+field_type: list_string

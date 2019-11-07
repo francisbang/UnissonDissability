@@ -1,0 +1,9 @@
+uuid: 1c4aac65-711a-4214-9041-4e3ec9322d52
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_reference_block
+label: 'Paragraph - Reference Block'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

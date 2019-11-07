@@ -1,0 +1,34 @@
+uuid: 96a8c008-922c-461f-b647-6cf7e629fa15
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.unisson_works.field_banner_logo
+    - field.field.node.unisson_works.field_body_content
+    - field.field.node.unisson_works.field_header_banner_type
+    - field.field.node.unisson_works.field_header_image
+    - field.field.node.unisson_works.field_header_image_mobile
+    - field.field.node.unisson_works.field_header_main_heading
+    - field.field.node.unisson_works.field_header_sub_heading
+    - node.type.unisson_works
+  module:
+    - user
+id: node.unisson_works.teaser
+targetEntityType: node
+bundle: unisson_works
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_banner_logo: true
+  field_body_content: true
+  field_header_banner_type: true
+  field_header_image: true
+  field_header_image_mobile: true
+  field_header_main_heading: true
+  field_header_sub_heading: true

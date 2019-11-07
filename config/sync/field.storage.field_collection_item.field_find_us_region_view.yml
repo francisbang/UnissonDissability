@@ -1,0 +1,21 @@
+uuid: 54b7a339-d287-4f2a-aec0-ee5b3fb0ab5a
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_collection
+    - viewfield
+    - views
+id: field_collection_item.field_find_us_region_view
+field_name: field_find_us_region_view
+entity_type: field_collection_item
+type: viewfield
+settings:
+  target_type: view
+module: viewfield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

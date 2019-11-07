@@ -1,0 +1,58 @@
+uuid: d9b1c79b-7c30-4ef9-9e73-cd60a36612a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_text_block.field_text_alignment
+    - field.field.paragraph.paragraph_text_block.field_text_block_description
+    - field.field.paragraph.paragraph_text_block.field_text_block_file
+    - field.field.paragraph.paragraph_text_block.field_text_block_file_link_text
+    - field.field.paragraph.paragraph_text_block.field_text_block_heading
+    - paragraphs.paragraphs_type.paragraph_text_block
+  module:
+    - file
+    - options
+    - text
+id: paragraph.paragraph_text_block.default
+targetEntityType: paragraph
+bundle: paragraph_text_block
+mode: default
+content:
+  field_text_alignment:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_text_block_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_text_block_file:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_url_plain
+    region: content
+  field_text_block_file_link_text:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_text_block_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

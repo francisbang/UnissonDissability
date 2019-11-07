@@ -1,0 +1,21 @@
+uuid: a9ab804c-7af9-4774-93d0-6d6b7a0b01ed
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_extra_section_cta_label
+field_name: field_extra_section_cta_label
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

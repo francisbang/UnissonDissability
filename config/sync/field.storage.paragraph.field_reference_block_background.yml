@@ -1,0 +1,27 @@
+uuid: 94d44c55-2e3f-4216-a25a-6fafe74195e3
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_reference_block_background
+field_name: field_reference_block_background
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: white-bg
+      label: 'White Background'
+    -
+      value: grey-bg
+      label: 'Grey Background'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

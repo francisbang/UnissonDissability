@@ -1,0 +1,9 @@
+uuid: 5e0924d4-12d5-4422-8ab4-e0ceddd31d34
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_call_to_action
+label: 'Paragraph - Call To Action'
+icon_uuid: null
+description: 'This is used to add a call to action section across the website.'
+behavior_plugins: {  }

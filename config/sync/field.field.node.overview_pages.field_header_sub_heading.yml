@@ -1,0 +1,19 @@
+uuid: 456944c7-4396-40e2-a0ed-b10689f7d162
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_sub_heading
+    - node.type.overview_pages
+id: node.overview_pages.field_header_sub_heading
+field_name: field_header_sub_heading
+entity_type: node
+bundle: overview_pages
+label: 'Header - Second Line'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

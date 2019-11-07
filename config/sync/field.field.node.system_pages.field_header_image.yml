@@ -1,0 +1,38 @@
+uuid: f6d03fa4-7c56-43c1-b3bc-eeb1239db5dd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_image
+    - node.type.system_pages
+  module:
+    - image
+id: node.system_pages.field_header_image
+field_name: field_header_image
+entity_type: node
+bundle: system_pages
+label: 'Header - Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: header-images
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '500 KB'
+  max_resolution: ''
+  min_resolution: 1480x580
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 4d51f437-4058-45a8-b6d1-06d9cb20d977
+    alt: ''
+    title: ''
+    width: 1480
+    height: 580
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

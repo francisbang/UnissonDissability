@@ -1,0 +1,18 @@
+uuid: 7800d635-e030-4d36-89c0-3709630db1df
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Research
+type: research
+description: 'This is used to add research page to the website'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

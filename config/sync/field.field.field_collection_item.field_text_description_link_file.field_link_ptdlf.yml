@@ -1,0 +1,23 @@
+uuid: 11b214b4-4da6-4884-b60f-c6088993bc48
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_link_ptdlf
+    - field_collection.field_collection.field_text_description_link_file
+  module:
+    - link
+id: field_collection_item.field_text_description_link_file.field_link_ptdlf
+field_name: field_link_ptdlf
+entity_type: field_collection_item
+bundle: field_text_description_link_file
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

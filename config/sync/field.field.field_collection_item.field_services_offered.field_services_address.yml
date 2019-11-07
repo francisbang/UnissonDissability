@@ -1,0 +1,21 @@
+uuid: c06e2758-32b4-41ec-a2fd-fb120d9d2677
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_services_address
+    - field_collection.field_collection.field_services_offered
+  module:
+    - text
+id: field_collection_item.field_services_offered.field_services_address
+field_name: field_services_address
+entity_type: field_collection_item
+bundle: field_services_offered
+label: 'Services - Address'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

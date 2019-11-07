@@ -1,0 +1,105 @@
+uuid: e0b996cd-f988-4fc2-bb37-8544768cab5a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_content
+    - node.type.page
+    - paragraphs.paragraphs_type.paragraph_faq_fields
+    - paragraphs.paragraphs_type.paragraph_text_block
+  module:
+    - entity_reference_revisions
+id: node.page.field_body_content
+field_name: field_body_content
+entity_type: node
+bundle: page
+label: 'Body Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      paragraph_faq_fields: paragraph_faq_fields
+      paragraph_text_block: paragraph_text_block
+    target_bundles_drag_drop:
+      paragraph_add_view:
+        weight: 25
+        enabled: false
+      paragraph_faq_fields:
+        enabled: true
+        weight: 26
+      paragraph_call_to_action:
+        weight: 26
+        enabled: false
+      paragraph_careers:
+        weight: 27
+        enabled: false
+      paragraph_center_image_text_bloc:
+        weight: 28
+        enabled: false
+      paragraph_contact_form_address:
+        weight: 29
+        enabled: false
+      paragraph_find_us:
+        weight: 30
+        enabled: false
+      paragraph_history_block:
+        weight: 31
+        enabled: false
+      paragraph_home_page_slider:
+        weight: 32
+        enabled: false
+      paragraph_icon_heading_descripti:
+        weight: 33
+        enabled: false
+      paragraph_icon_text_link_block:
+        weight: 34
+        enabled: false
+      paragraph_image_left_right_text_:
+        weight: 35
+        enabled: false
+      paragraph_image_text:
+        weight: 36
+        enabled: false
+      paragraph_just_image:
+        weight: 37
+        enabled: false
+      paragraph_overview_image_text_li:
+        weight: 38
+        enabled: false
+      paragraph_quote_block:
+        weight: 39
+        enabled: false
+      paragraph_reference_block:
+        weight: 40
+        enabled: false
+      paragraph_tabbed_block:
+        weight: 41
+        enabled: false
+      paragraph_team_block:
+        weight: 42
+        enabled: false
+      paragraph_test:
+        weight: 43
+        enabled: false
+      paragraph_testimonial_quote_bloc:
+        weight: 44
+        enabled: false
+      paragraph_text_block:
+        enabled: true
+        weight: 45
+      paragraph_text_block_two_columns:
+        weight: 46
+        enabled: false
+      paragraph_text_image_right_slide:
+        weight: 47
+        enabled: false
+      paragraph_title_description:
+        weight: 48
+        enabled: false
+field_type: entity_reference_revisions

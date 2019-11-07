@@ -1,0 +1,53 @@
+uuid: fde98119-e724-4eaf-80cf-78e4ccf87934
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.service_icons.field_heading
+    - field.field.paragraph.service_icons.field_icons
+    - field.field.paragraph.service_icons.field_sub_copy
+    - field.field.paragraph.service_icons.field_wide
+    - paragraphs.paragraphs_type.service_icons
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.service_icons.default
+targetEntityType: paragraph
+bundle: service_icons
+mode: default
+content:
+  field_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_icons:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_sub_copy:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_wide:
+    weight: 3
+    label: hidden
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    type: boolean
+    region: content
+hidden: {  }

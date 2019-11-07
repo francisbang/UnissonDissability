@@ -1,0 +1,21 @@
+uuid: a6ab6855-cfbe-47ee-96b0-2699538f3df3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_overview_snippet
+    - node.type.contact_us
+  module:
+    - text
+id: node.contact_us.field_overview_snippet
+field_name: field_overview_snippet
+entity_type: node
+bundle: contact_us
+label: 'Overview - Snippet'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

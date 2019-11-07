@@ -1,0 +1,18 @@
+uuid: 405af9a8-4f11-421e-ac50-8f8530c798aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Newsletters
+type: newsletters
+description: 'This is used to add community and friends newsletters'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

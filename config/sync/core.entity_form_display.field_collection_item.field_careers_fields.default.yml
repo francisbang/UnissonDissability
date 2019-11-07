@@ -1,0 +1,46 @@
+uuid: f3d5bfd7-e27d-4d13-b507-442bc0334242
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_careers_fields.field_careers_add_view
+    - field.field.field_collection_item.field_careers_fields.field_careers_heading
+    - field_collection.field_collection.field_careers_fields
+  module:
+    - field_group
+    - viewfield
+third_party_settings:
+  field_group:
+    group_careers_fields:
+      children:
+        - field_careers_heading
+        - field_careers_add_view
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Careers - Fields'
+id: field_collection_item.field_careers_fields.default
+targetEntityType: field_collection_item
+bundle: field_careers_fields
+mode: default
+content:
+  field_careers_add_view:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: viewfield_select
+    region: content
+  field_careers_heading:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden: {  }

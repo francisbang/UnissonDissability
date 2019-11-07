@@ -1,0 +1,9 @@
+uuid: a4a10fb1-83a1-4f15-83e5-9d14a1b8e80b
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_image_text_description
+label: 'Paragraph - Image Text Description Link File'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,19 @@
+uuid: c1eaf670-ffb9-4741-857b-97ac352e277c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_slider_main_heading
+    - field_collection.field_collection.field_slider_fields
+id: field_collection_item.field_slider_fields.field_slider_main_heading
+field_name: field_slider_main_heading
+entity_type: field_collection_item
+bundle: field_slider_fields
+label: 'Slider - Main Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

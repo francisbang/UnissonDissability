@@ -1,0 +1,59 @@
+uuid: 8520e139-42d0-4029-a6a8-ec21a5032ef4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.service_block.field_cta_label
+    - field.field.paragraph.service_block.field_cta_url
+    - field.field.paragraph.service_block.field_service_description
+    - field.field.paragraph.service_block.field_service_image
+    - field.field.paragraph.service_block.field_service_logo
+    - paragraphs.paragraphs_type.service_block
+  module:
+    - image
+    - text
+id: paragraph.service_block.default
+targetEntityType: paragraph
+bundle: service_block
+mode: default
+content:
+  field_cta_label:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cta_url:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_service_description:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_service_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    type: image_url
+    region: content
+  field_service_logo:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    type: image_url
+    region: content
+hidden: {  }

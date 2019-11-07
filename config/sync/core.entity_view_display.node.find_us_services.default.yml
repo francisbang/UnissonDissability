@@ -1,0 +1,55 @@
+uuid: cee8cb59-6234-4db4-be0f-ab1e68dcf4aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.find_us_services.field_services_location
+    - field.field.node.find_us_services.field_services_offered
+    - field.field.node.find_us_services.field_services_region
+    - field.field.node.find_us_services.field_services_sort_order
+    - node.type.find_us_services
+  module:
+    - field_collection
+    - options
+    - user
+id: node.find_us_services.default
+targetEntityType: node
+bundle: find_us_services
+mode: default
+content:
+  field_services_location:
+    weight: 101
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_services_offered:
+    weight: 103
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_items
+    region: content
+  field_services_region:
+    weight: 102
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_services_sort_order:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

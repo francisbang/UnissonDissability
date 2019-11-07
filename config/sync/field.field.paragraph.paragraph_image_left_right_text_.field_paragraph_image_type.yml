@@ -1,0 +1,23 @@
+uuid: 7d4e0f73-6fe4-4dc5-a758-4aa42050080d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_image_type
+    - paragraphs.paragraphs_type.paragraph_image_left_right_text_
+  module:
+    - options
+id: paragraph.paragraph_image_left_right_text_.field_paragraph_image_type
+field_name: field_paragraph_image_type
+entity_type: paragraph
+bundle: paragraph_image_left_right_text_
+label: 'Paragraph - Image Type'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: normal
+default_value_callback: ''
+settings: {  }
+field_type: list_string

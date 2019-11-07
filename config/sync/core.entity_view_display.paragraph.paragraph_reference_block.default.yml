@@ -1,0 +1,41 @@
+uuid: cd3d2cb5-aadc-4743-8e1b-d53baadddaf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_reference_block.field_heading_prh
+    - field.field.paragraph.paragraph_reference_block.field_reference_block_background
+    - field.field.paragraph.paragraph_reference_block.field_reference_fields_prf
+    - paragraphs.paragraphs_type.paragraph_reference_block
+  module:
+    - options
+id: paragraph.paragraph_reference_block.default
+targetEntityType: paragraph
+bundle: paragraph_reference_block
+mode: default
+content:
+  field_heading_prh:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_reference_block_background:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_reference_fields_prf:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

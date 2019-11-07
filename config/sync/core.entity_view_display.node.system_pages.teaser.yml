@@ -1,0 +1,32 @@
+uuid: df7c57af-1dd2-4e8a-a58f-499b2446ca64
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.system_pages.field_body_content
+    - field.field.node.system_pages.field_feature_image
+    - field.field.node.system_pages.field_header_image
+    - field.field.node.system_pages.field_header_image_mobile
+    - field.field.node.system_pages.field_header_main_heading
+    - field.field.node.system_pages.field_header_sub_heading
+    - node.type.system_pages
+  module:
+    - user
+id: node.system_pages.teaser
+targetEntityType: node
+bundle: system_pages
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_body_content: true
+  field_feature_image: true
+  field_header_image: true
+  field_header_image_mobile: true
+  field_header_main_heading: true
+  field_header_sub_heading: true

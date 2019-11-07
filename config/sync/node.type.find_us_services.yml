@@ -1,0 +1,18 @@
+uuid: ce1603e2-9c58-4bc7-9896-9828520a191d
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Find Us - Services'
+type: find_us_services
+description: 'This is used to add services to find us page.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

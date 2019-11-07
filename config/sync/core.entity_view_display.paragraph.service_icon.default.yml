@@ -1,0 +1,41 @@
+uuid: 5b9001b0-7709-4776-a744-6639ba86a6c3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.service_icon.field_service_copy
+    - field.field.paragraph.service_icon.field_service_icon
+    - field.field.paragraph.service_icon.field_sub_heading
+    - paragraphs.paragraphs_type.service_icon
+  module:
+    - image
+    - text
+id: paragraph.service_icon.default
+targetEntityType: paragraph
+bundle: service_icon
+mode: default
+content:
+  field_service_copy:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_service_icon:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    type: image_url
+    region: content
+  field_sub_heading:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

@@ -1,0 +1,31 @@
+uuid: 520bb5ae-5af5-4799-ae15-da7c88bf132c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.html_markup_block
+    - field.field.block_content.html_markup_block.field_html_markup_field
+  module:
+    - text
+id: block_content.html_markup_block.default
+targetEntityType: block_content
+bundle: html_markup_block
+mode: default
+content:
+  field_html_markup_field:
+    weight: 26
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

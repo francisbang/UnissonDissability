@@ -1,0 +1,31 @@
+uuid: 4214e0b9-3c29-414e-a96b-a50a0f9bb32e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_tabbed_block.field_main_heading_tabbed
+    - field.field.paragraph.paragraph_tabbed_block.field_tabbed_block_fields
+    - paragraphs.paragraphs_type.paragraph_tabbed_block
+  module:
+    - field_collection
+id: paragraph.paragraph_tabbed_block.default
+targetEntityType: paragraph
+bundle: paragraph_tabbed_block
+mode: default
+content:
+  field_main_heading_tabbed:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_tabbed_block_fields:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_items
+    region: content
+hidden: {  }

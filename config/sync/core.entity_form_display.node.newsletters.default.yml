@@ -1,0 +1,147 @@
+uuid: b718f4fb-8b8b-45cf-8e12-ff5df746f36f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.newsletters.body
+    - field.field.node.newsletters.field_feature_image
+    - field.field.node.newsletters.field_header_image
+    - field.field.node.newsletters.field_header_image_mobile
+    - field.field.node.newsletters.field_meta_tags
+    - field.field.node.newsletters.field_overview_snippet
+    - image.style.thumbnail
+    - node.type.newsletters
+  module:
+    - field_group
+    - image
+    - metatag
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_overview:
+      children: {  }
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        label: 'Page - Overview'
+        required_fields: true
+        id: ''
+        classes: ''
+        open: false
+      label: 'Page - Overview'
+    group_body:
+      children: {  }
+      parent_name: ''
+      weight: 6
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: Body
+id: node.newsletters.default
+targetEntityType: node
+bundle: newsletters
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 9
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_feature_image:
+    weight: 10
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_header_image:
+    weight: 11
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_header_image_mobile:
+    weight: 12
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_meta_tags:
+    weight: 13
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_overview_snippet:
+    weight: 14
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  path:
+    type: path
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

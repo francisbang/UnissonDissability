@@ -1,0 +1,31 @@
+uuid: 3566eb91-5980-483d-b86d-f1b40478c1ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_quicklinks.field_paragraph_description
+    - field.field.paragraph.paragraph_quicklinks.field_quicklinks_fieldset
+    - paragraphs.paragraphs_type.paragraph_quicklinks
+  module:
+    - field_collection
+    - text
+id: paragraph.paragraph_quicklinks.default
+targetEntityType: paragraph
+bundle: paragraph_quicklinks
+mode: default
+content:
+  field_paragraph_description:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_quicklinks_fieldset:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_list
+    region: content
+hidden: {  }

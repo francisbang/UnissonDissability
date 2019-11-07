@@ -1,0 +1,19 @@
+uuid: 24f2324d-aad1-450f-9fc7-eba5d176b9d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_main_heading
+    - node.type.general_pages
+id: node.general_pages.field_header_main_heading
+field_name: field_header_main_heading
+entity_type: node
+bundle: general_pages
+label: 'Header - First Line'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

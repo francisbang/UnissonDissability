@@ -1,0 +1,8 @@
+uuid: d2d5d890-ba8b-44ab-bc7e-4ae55e0c2948
+langcode: en
+status: true
+dependencies: {  }
+id: icon_text_block
+label: 'Icon - Text Block'
+revision: 0
+description: 'This is used for the Address block in the footer'

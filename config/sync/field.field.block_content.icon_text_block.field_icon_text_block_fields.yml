@@ -1,0 +1,22 @@
+uuid: c242d67c-e5ee-4479-b7e2-4f1b74fb7e80
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.icon_text_block
+    - field.storage.block_content.field_icon_text_block_fields
+  module:
+    - field_collection
+id: block_content.icon_text_block.field_icon_text_block_fields
+field_name: field_icon_text_block_fields
+entity_type: block_content
+bundle: icon_text_block
+label: 'Icon - Text Block - Fields'
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_collection

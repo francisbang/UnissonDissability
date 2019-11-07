@@ -1,0 +1,15 @@
+uuid: ed9c0240-1478-49f9-8814-4842d03e8f04
+langcode: en
+status: true
+dependencies: {  }
+name: home_page_slider_image
+label: 'Home Page Slider - Image'
+effects:
+  d68149c1-c151-40b0-bd7b-a1d32c6e4fe2:
+    uuid: d68149c1-c151-40b0-bd7b-a1d32c6e4fe2
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1480
+      height: 710
+      anchor: center-center

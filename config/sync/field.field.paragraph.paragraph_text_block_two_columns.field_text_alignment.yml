@@ -1,0 +1,23 @@
+uuid: fdefc0e8-875f-4f01-a00d-bd50fc65ae0d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_alignment
+    - paragraphs.paragraphs_type.paragraph_text_block_two_columns
+  module:
+    - options
+id: paragraph.paragraph_text_block_two_columns.field_text_alignment
+field_name: field_text_alignment
+entity_type: paragraph
+bundle: paragraph_text_block_two_columns
+label: 'Text Alignment'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: left-align
+default_value_callback: ''
+settings: {  }
+field_type: list_string

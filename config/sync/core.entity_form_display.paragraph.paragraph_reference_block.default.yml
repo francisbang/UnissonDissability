@@ -1,0 +1,60 @@
+uuid: 5197da2d-a95b-4dc7-a451-1e7f2ffb6a19
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_reference_block.field_heading_prh
+    - field.field.paragraph.paragraph_reference_block.field_reference_block_background
+    - field.field.paragraph.paragraph_reference_block.field_reference_fields_prf
+    - paragraphs.paragraphs_type.paragraph_reference_block
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_reference_fields:
+      children:
+        - field_reference_block_background
+        - field_heading_prh
+        - field_reference_fields_prf
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        label: 'Paragraph - Reference Block'
+        required_fields: true
+        id: ''
+        classes: ''
+        open: false
+      label: 'Paragraph - Reference Block'
+id: paragraph.paragraph_reference_block.default
+targetEntityType: paragraph
+bundle: paragraph_reference_block
+mode: default
+content:
+  field_heading_prh:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_reference_block_background:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_reference_fields_prf:
+    weight: 7
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

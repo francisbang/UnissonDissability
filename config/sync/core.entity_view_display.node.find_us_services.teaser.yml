@@ -1,0 +1,28 @@
+uuid: 6efd7f16-5e7f-4326-8675-e7bbd3c9b3e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.find_us_services.field_services_location
+    - field.field.node.find_us_services.field_services_offered
+    - field.field.node.find_us_services.field_services_region
+    - field.field.node.find_us_services.field_services_sort_order
+    - node.type.find_us_services
+  module:
+    - user
+id: node.find_us_services.teaser
+targetEntityType: node
+bundle: find_us_services
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_services_location: true
+  field_services_offered: true
+  field_services_region: true
+  field_services_sort_order: true

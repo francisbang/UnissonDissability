@@ -1,0 +1,39 @@
+uuid: 95910e6d-81e4-4db0-912d-32808a14c7be
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_history_block.field_heading_hb
+    - field.field.paragraph.paragraph_history_block.field_history_fields_hb
+    - field.field.paragraph.paragraph_history_block.field_intro_text_hb
+    - paragraphs.paragraphs_type.paragraph_history_block
+  module:
+    - field_collection
+id: paragraph.paragraph_history_block.default
+targetEntityType: paragraph
+bundle: paragraph_history_block
+mode: default
+content:
+  field_heading_hb:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_history_fields_hb:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_items
+    region: content
+  field_intro_text_hb:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

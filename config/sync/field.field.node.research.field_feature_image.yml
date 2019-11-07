@@ -1,0 +1,38 @@
+uuid: d1e12fcf-c039-4e90-95f5-037d4b622437
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_feature_image
+    - node.type.research
+  module:
+    - image
+id: node.research.field_feature_image
+field_name: field_feature_image
+entity_type: node
+bundle: research
+label: 'Feature - Image'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: feature-image
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '150 KB'
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 718f3b98-605e-44c1-ae46-eb6ad38e7e7e
+    alt: ''
+    title: ''
+    width: 320
+    height: 210
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

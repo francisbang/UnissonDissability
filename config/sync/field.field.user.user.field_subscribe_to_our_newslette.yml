@@ -1,0 +1,37 @@
+uuid: 23b08125-6eb3-4478-bada-9a7eb466bd5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_subscribe_to_our_newslette
+  module:
+    - mailchimp_lists
+    - user
+id: user.user.field_subscribe_to_our_newslette
+field_name: field_subscribe_to_our_newslette
+entity_type: user
+bundle: user
+label: 'Subscribe to our Newsletter'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    allow_unsubscribe: true
+    subscribe: true
+    interest_groups: null
+default_value_callback: ''
+settings:
+  subscribe_checkbox_label: Subscribe
+  show_interest_groups: false
+  hide_subscribe_checkbox: false
+  interest_groups_hidden: false
+  interest_groups_label: 'Interest Groups'
+  merge_fields:
+    EMAIL: mail
+    ADDRESS: ''
+    FNAME: name
+    LNAME: ''
+    PHONE: ''
+  unsubscribe_on_delete: false
+field_type: mailchimp_lists_subscription

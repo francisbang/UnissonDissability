@@ -1,0 +1,31 @@
+uuid: 7163f007-bc59-4d30-a0ab-949f480616b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.contact_our_ceo
+    - field.field.contact_message.contact_our_ceo.field_contact_our_ceo
+  module:
+    - webform
+id: contact_message.contact_our_ceo.default
+targetEntityType: contact_message
+bundle: contact_our_ceo
+mode: default
+content:
+  field_contact_our_ceo:
+    weight: 1
+    label: above
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  message:
+    type: string
+    weight: 0
+    label: above
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden: {  }

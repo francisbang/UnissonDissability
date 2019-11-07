@@ -1,0 +1,21 @@
+uuid: 7daeee43-20e8-4bf8-b2fb-4d26123904a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - serial
+id: node.field_property_id
+field_name: field_property_id
+entity_type: node
+type: serial
+settings:
+  start_value: '1000'
+  init_existing_entities: '1'
+module: serial
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

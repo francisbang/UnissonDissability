@@ -1,0 +1,57 @@
+uuid: 4b37a3fa-d0f9-4e67-bf1f-7e6583b9ee63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_add_view.field_add_view_pa
+    - field.field.paragraph.paragraph_add_view.field_heading_pa
+    - field.field.paragraph.paragraph_add_view.field_set_background
+    - paragraphs.paragraphs_type.paragraph_add_view
+  module:
+    - field_group
+    - viewfield
+third_party_settings:
+  field_group:
+    group_paragraph_add_view_fields:
+      children:
+        - field_set_background
+        - field_heading_pa
+        - field_add_view_pa
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Paragraph - Add View - Fields'
+id: paragraph.paragraph_add_view.default
+targetEntityType: paragraph
+bundle: paragraph_add_view
+mode: default
+content:
+  field_add_view_pa:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: viewfield_select
+    region: content
+  field_heading_pa:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_set_background:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

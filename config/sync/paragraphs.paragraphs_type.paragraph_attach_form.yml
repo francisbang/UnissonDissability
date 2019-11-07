@@ -1,0 +1,9 @@
+uuid: 7753f9c8-fe72-40f7-9d67-4fccadc3fb81
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_attach_form
+label: 'Paragraph - Attach Form'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

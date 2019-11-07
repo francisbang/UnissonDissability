@@ -1,0 +1,30 @@
+uuid: 9fe428fb-c4ac-4be8-ab38-01bfc2c51416
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - paragraphs
+id: paragraph.field_call_to_action_image
+field_name: field_call_to_action_image
+entity_type: paragraph
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: 16d4d613-f7b5-4851-a6e3-88f8d1a38b40
+    alt: ''
+    title: ''
+    width: 1482
+    height: 395
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

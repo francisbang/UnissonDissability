@@ -1,0 +1,9 @@
+uuid: 4024e184-f822-43e5-9f49-ecad47f70500
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_home_page_slider
+label: 'Paragraph - Home Page - Slider'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

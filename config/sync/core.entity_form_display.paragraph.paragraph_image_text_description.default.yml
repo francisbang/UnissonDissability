@@ -1,0 +1,39 @@
+uuid: 4c6b0e41-242d-4fe3-b9f4-d88a7569722c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_image_text_description.field_text_description_link_file
+    - paragraphs.paragraphs_type.paragraph_image_text_description
+  module:
+    - field_collection
+    - field_group
+third_party_settings:
+  field_group:
+    group_text_description_link_file:
+      children:
+        - field_text_description_link_file
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Text Description Link File - Fields'
+id: paragraph.paragraph_image_text_description.default
+targetEntityType: paragraph
+bundle: paragraph_image_text_description
+mode: default
+content:
+  field_text_description_link_file:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_embed
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

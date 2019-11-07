@@ -1,0 +1,24 @@
+uuid: 26df2fba-6f2b-4db0-933d-9fd20ae48218
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_faq_fields.field_faq_fields
+    - paragraphs.paragraphs_type.paragraph_faq_fields
+  module:
+    - field_collection
+id: paragraph.paragraph_faq_fields.default
+targetEntityType: paragraph
+bundle: paragraph_faq_fields
+mode: default
+content:
+  field_faq_fields:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_embed
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,130 @@
+uuid: bfcfbe55-4f21-42df-a150-0e864e81a9bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.careers.field_careers_job_description
+    - field.field.node.careers.field_careers_job_location
+    - field.field.node.careers.field_careers_job_title
+    - field.field.node.careers.field_careers_region
+    - field.field.node.careers.field_careers_services
+    - node.type.careers
+  module:
+    - field_collection
+    - field_group
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_careers_fields:
+      children:
+        - title
+        - field_careers_job_title
+        - field_careers_region
+        - field_careers_services
+        - field_careers_job_location
+        - field_careers_job_description
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Careers - Fields'
+id: node.careers.default
+targetEntityType: node
+bundle: careers
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_careers_job_description:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_careers_job_location:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_embed
+    region: content
+  field_careers_job_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_careers_region:
+    weight: 3
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_careers_services:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  path:
+    type: path
+    weight: 6
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 4
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 5
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

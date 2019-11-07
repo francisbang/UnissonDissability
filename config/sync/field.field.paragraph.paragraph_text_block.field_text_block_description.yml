@@ -1,0 +1,21 @@
+uuid: caf73b00-006b-40ed-b227-eb37cc533248
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_block_description
+    - paragraphs.paragraphs_type.paragraph_text_block
+  module:
+    - text
+id: paragraph.paragraph_text_block.field_text_block_description
+field_name: field_text_block_description
+entity_type: paragraph
+bundle: paragraph_text_block
+label: 'Text Block - Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

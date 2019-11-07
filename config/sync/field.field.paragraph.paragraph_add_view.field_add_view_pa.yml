@@ -1,0 +1,64 @@
+uuid: 250a0fff-a68b-4828-87e5-38fc4607502d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_add_view_pa
+    - paragraphs.paragraphs_type.paragraph_add_view
+  module:
+    - viewfield
+id: paragraph.paragraph_add_view.field_add_view_pa
+field_name: field_add_view_pa
+entity_type: paragraph
+bundle: paragraph_add_view
+label: 'Add View'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  force_default: 0
+  allowed_views:
+    articles_header: 0
+    body_content: 0
+    careers_by_region: 0
+    comment: 0
+    content: 0
+    block_content: 0
+    file_entity_browser: 0
+    files: 0
+    frontpage: 0
+    header_section: 0
+    header_section_contact_pages: 0
+    header_section_general_pages: 0
+    news_article_left_sidebar: 0
+    news_articles_previous_next: 0
+    autocompletion_callbacks_nodes: 0
+    user_admin_people: 0
+    comments_recent: 0
+    content_recent: 0
+    research_header: 0
+    research_left_sidebar: 0
+    research_previous_next: 0
+    services_by_region: 0
+    stories_header: 0
+    stories_previous_next: 0
+    taxonomy_term: 0
+    team_members_board_of_directors: 0
+    team_members_executive_and_senior_leaders: 0
+    autocompletion_callbacks_users: 0
+    watchdog: 0
+    who_s_new: 0
+    who_s_online: 0
+    autocompletion_callbacks_words: 0
+  allowed_display_types:
+    block: block
+    autocompletion_callback: 0
+    entity_browser: 0
+    feed: 0
+    default: 0
+    page: 0
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewfield

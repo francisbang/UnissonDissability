@@ -1,0 +1,27 @@
+uuid: 91a26be5-85a7-4202-871b-fd9e91c8a5a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_header_banner_type
+field_name: field_header_banner_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'Big Image with UW Logo'
+    -
+      value: '2'
+      label: 'Background Image with Dark Overlay'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

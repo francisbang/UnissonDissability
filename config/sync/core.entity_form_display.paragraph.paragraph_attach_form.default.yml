@@ -1,0 +1,50 @@
+uuid: 3a7e3d8b-be51-4169-b416-bce377da7b8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_attach_form.field_attac
+    - field.field.paragraph.paragraph_attach_form.field_attach_form_heading
+    - paragraphs.paragraphs_type.paragraph_attach_form
+  module:
+    - field_group
+    - webform
+third_party_settings:
+  field_group:
+    group_attach_pdfs_fields:
+      children:
+        - field_attach_form_heading
+        - field_attac
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Attach Forms - Fields'
+id: paragraph.paragraph_attach_form.default
+targetEntityType: paragraph
+bundle: paragraph_attach_form
+mode: default
+content:
+  field_attac:
+    weight: 2
+    settings:
+      default_data: true
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+  field_attach_form_heading:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

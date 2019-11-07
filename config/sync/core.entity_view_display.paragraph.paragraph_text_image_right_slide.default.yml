@@ -1,0 +1,22 @@
+uuid: 4fba5811-f8b5-4458-a07b-4f4388669b2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_text_image_right_slide.field_text_image_right_fields
+    - paragraphs.paragraphs_type.paragraph_text_image_right_slide
+  module:
+    - field_collection
+id: paragraph.paragraph_text_image_right_slide.default
+targetEntityType: paragraph
+bundle: paragraph_text_image_right_slide
+mode: default
+content:
+  field_text_image_right_fields:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_items
+    region: content
+hidden: {  }

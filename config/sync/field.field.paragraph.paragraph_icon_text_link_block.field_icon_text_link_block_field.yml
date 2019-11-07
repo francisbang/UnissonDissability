@@ -1,0 +1,25 @@
+uuid: 721d1b92-f342-40a0-9f96-539030388149
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon_text_link_block_field
+    - paragraphs.paragraphs_type.paragraph_icon_text_link_block
+  module:
+    - field_collection
+id: paragraph.paragraph_icon_text_link_block.field_icon_text_link_block_field
+field_name: field_icon_text_link_block_field
+entity_type: paragraph
+bundle: paragraph_icon_text_link_block
+label: 'Icon Text Link Block - Fields'
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+  - {  }
+  - {  }
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_collection

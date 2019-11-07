@@ -1,0 +1,26 @@
+uuid: a15d885c-8a91-4469-a939-9ca9f8910890
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_slider_fields
+    - paragraphs.paragraphs_type.paragraph_home_page_slider
+  module:
+    - field_collection
+id: paragraph.paragraph_home_page_slider.field_slider_fields
+field_name: field_slider_fields
+entity_type: paragraph
+bundle: paragraph_home_page_slider
+label: 'Slider - Fields'
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+  - {  }
+  - {  }
+  - {  }
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_collection

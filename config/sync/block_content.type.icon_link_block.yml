@@ -1,0 +1,8 @@
+uuid: c7a7b819-3633-40b5-898d-9516e57892c5
+langcode: en
+status: true
+dependencies: {  }
+id: icon_link_block
+label: 'Icon - Link Block'
+revision: 0
+description: 'This is used for mobile navigation.'

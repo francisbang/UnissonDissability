@@ -1,0 +1,85 @@
+uuid: eac0bc34-da07-45fb-b083-f1b834ec1257
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_text_description_link_file.field_description_ptdlf
+    - field.field.field_collection_item.field_text_description_link_file.field_file_name_ptdlf
+    - field.field.field_collection_item.field_text_description_link_file.field_file_ptdlf
+    - field.field.field_collection_item.field_text_description_link_file.field_heading_ptdlf
+    - field.field.field_collection_item.field_text_description_link_file.field_image_ptdlf
+    - field.field.field_collection_item.field_text_description_link_file.field_link_ptdlf
+    - field.field.field_collection_item.field_text_description_link_file.field_link_text_ptdlf
+    - field_collection.field_collection.field_text_description_link_file
+  module:
+    - file
+    - image
+    - link
+    - smart_trim
+id: field_collection_item.field_text_description_link_file.default
+targetEntityType: field_collection_item
+bundle: field_text_description_link_file
+mode: default
+content:
+  field_description_ptdlf:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: '150'
+      trim_type: chars
+      trim_suffix: ...
+      more_link: '0'
+      more_text: More
+      trim_options:
+        text: 0
+      more_class: more-link
+      summary_handler: full
+    third_party_settings: {  }
+    type: smart_trim
+    region: content
+  field_file_ptdlf:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_url_plain
+    region: content
+  field_heading_ptdlf:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_image_ptdlf:
+    weight: 5
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_link_ptdlf:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_link_text_ptdlf:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  field_file_name_ptdlf: true

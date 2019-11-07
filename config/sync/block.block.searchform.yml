@@ -1,0 +1,24 @@
+uuid: 65b68904-8bd9-44dc-84c8-7750d9cd43a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - search
+  theme:
+    - sunshine
+third_party_settings:
+  block_class:
+    classes: search
+id: searchform
+theme: sunshine
+region: header_tools
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+visibility: {  }

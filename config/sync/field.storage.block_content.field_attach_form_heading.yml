@@ -1,0 +1,21 @@
+uuid: 9950ca9a-95eb-46f1-8fa0-39b5e03afba3
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.field_attach_form_heading
+field_name: field_attach_form_heading
+entity_type: block_content
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

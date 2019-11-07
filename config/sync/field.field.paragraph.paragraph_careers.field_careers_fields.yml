@@ -1,0 +1,23 @@
+uuid: ba8ee2bf-bc2d-4f91-bcb0-7b5afeb866ac
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_careers_fields
+    - paragraphs.paragraphs_type.paragraph_careers
+  module:
+    - field_collection
+id: paragraph.paragraph_careers.field_careers_fields
+field_name: field_careers_fields
+entity_type: paragraph
+bundle: paragraph_careers
+label: 'Careers - Fields'
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_collection

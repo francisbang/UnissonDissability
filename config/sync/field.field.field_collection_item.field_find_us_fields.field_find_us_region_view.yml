@@ -1,0 +1,55 @@
+uuid: c8b7b463-61f9-4b83-8f30-0669d73b3d98
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_find_us_region_view
+    - field_collection.field_collection.field_find_us_fields
+  module:
+    - viewfield
+id: field_collection_item.field_find_us_fields.field_find_us_region_view
+field_name: field_find_us_region_view
+entity_type: field_collection_item
+bundle: field_find_us_fields
+label: 'Find Us - Region View'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  force_default: 0
+  allowed_views:
+    body_content: 0
+    comment: 0
+    content: 0
+    block_content: 0
+    file_entity_browser: 0
+    files: 0
+    frontpage: 0
+    header_block_reference: 0
+    header_section: 0
+    header_section_contact_pages: 0
+    header_section_general_pages: 0
+    autocompletion_callbacks_nodes: 0
+    user_admin_people: 0
+    comments_recent: 0
+    content_recent: 0
+    taxonomy_term: 0
+    team_members_board_of_directors: 0
+    team_members_executive_and_senior_leaders: 0
+    autocompletion_callbacks_users: 0
+    watchdog: 0
+    who_s_new: 0
+    who_s_online: 0
+    autocompletion_callbacks_words: 0
+  allowed_display_types:
+    block: block
+    autocompletion_callback: 0
+    entity_browser: 0
+    feed: 0
+    default: 0
+    page: 0
+  handler: 'default:view'
+  handler_settings: {  }
+field_type: viewfield

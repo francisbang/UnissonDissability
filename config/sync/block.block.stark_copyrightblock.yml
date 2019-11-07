@@ -1,0 +1,29 @@
+uuid: 712acdc2-415b-4e15-ab11-e3c05b721ce1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text_block:76405bed-8486-40df-ab02-0997445750b7'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - stark
+third_party_settings:
+  block_class:
+    classes: ''
+id: stark_copyrightblock
+theme: stark
+region: sidebar_first
+weight: -8
+provider: null
+plugin: 'block_content:76405bed-8486-40df-ab02-0997445750b7'
+settings:
+  id: 'block_content:76405bed-8486-40df-ab02-0997445750b7'
+  label: 'Copyright Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

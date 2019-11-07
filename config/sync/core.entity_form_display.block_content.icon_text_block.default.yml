@@ -1,0 +1,38 @@
+uuid: f90fbc58-2567-4100-979f-6e67c2d26b53
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.icon_text_block
+    - field.field.block_content.icon_text_block.field_icon_text_block_fields
+    - field.field.block_content.icon_text_block.field_icon_text_block_heading
+  module:
+    - field_collection
+id: block_content.icon_text_block.default
+targetEntityType: block_content
+bundle: icon_text_block
+mode: default
+content:
+  field_icon_text_block_fields:
+    weight: 27
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_embed
+    region: content
+  field_icon_text_block_heading:
+    weight: 26
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

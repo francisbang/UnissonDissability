@@ -1,0 +1,9 @@
+uuid: 1c116ab9-4ac4-4d6f-a567-701a1679a368
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_text_image_right_slide
+label: 'Paragraph - Text Image Right Slider'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

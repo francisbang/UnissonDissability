@@ -1,0 +1,23 @@
+uuid: 5c93c91d-4074-4d7c-ba7d-16f0bd6bc37d
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.icon_link_block
+    - field.storage.block_content.field_icon_link_ilb
+  module:
+    - link
+id: block_content.icon_link_block.field_icon_link_ilb
+field_name: field_icon_link_ilb
+entity_type: block_content
+bundle: icon_link_block
+label: 'Icon - Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

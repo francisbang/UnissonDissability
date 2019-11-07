@@ -1,0 +1,23 @@
+uuid: abe9529e-db4a-446b-9234-4e82e9f575f0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_of_room_available
+    - node.type.property
+id: node.property.field_number_of_room_available
+field_name: field_number_of_room_available
+entity_type: node
+bundle: property
+label: 'Number of Room Available'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

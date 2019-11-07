@@ -1,0 +1,21 @@
+uuid: 6b0a3806-18ad-4c7c-b9b9-23102dc86c09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_faq_question
+    - field_collection.field_collection.field_faq_fields
+  module:
+    - text
+id: field_collection_item.field_faq_fields.field_faq_question
+field_name: field_faq_question
+entity_type: field_collection_item
+bundle: field_faq_fields
+label: 'FAQ - Question'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

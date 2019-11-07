@@ -1,0 +1,9 @@
+uuid: 04759406-ab21-41f8-8632-c8852559fdca
+langcode: en
+status: true
+dependencies: {  }
+id: newsletter_signup
+label: 'Newsletter Signup'
+category: ''
+likert: false
+options: "'Yes': 'Sign up to newsletter'\n"

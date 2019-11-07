@@ -1,0 +1,22 @@
+uuid: fe153334-ed05-4824-9a00-f514a2ebd10b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_team_block.field_team_details
+    - paragraphs.paragraphs_type.paragraph_team_block
+  module:
+    - field_collection
+id: paragraph.paragraph_team_block.default
+targetEntityType: paragraph
+bundle: paragraph_team_block
+mode: default
+content:
+  field_team_details:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_items
+    region: content
+hidden: {  }

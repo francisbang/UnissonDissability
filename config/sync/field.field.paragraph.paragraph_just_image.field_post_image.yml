@@ -1,0 +1,38 @@
+uuid: bfc25adb-5690-4286-8fc5-a8fc74aeb4a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_post_image
+    - paragraphs.paragraphs_type.paragraph_just_image
+  module:
+    - image
+id: paragraph.paragraph_just_image.field_post_image
+field_name: field_post_image
+entity_type: paragraph
+bundle: paragraph_just_image
+label: 'Post Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: post-images
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '300 KB'
+  max_resolution: ''
+  min_resolution: 660x270
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

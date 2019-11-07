@@ -1,0 +1,9 @@
+uuid: 6927a49e-8c89-49ee-91fe-d0ef7e1e75a4
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_title_description
+label: 'Paragraph - Title / Description'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

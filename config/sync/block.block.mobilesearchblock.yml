@@ -1,0 +1,29 @@
+uuid: 542bd37e-e6ee-4563-8554-69a307d16f67
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:icon_link_block:ae26cc47-c95e-491d-82b1-94a9b49bbddb'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - unisson_disability
+third_party_settings:
+  block_class:
+    classes: ''
+id: mobilesearchblock
+theme: unisson_disability
+region: header_tools_mobile
+weight: -11
+provider: null
+plugin: 'block_content:ae26cc47-c95e-491d-82b1-94a9b49bbddb'
+settings:
+  id: 'block_content:ae26cc47-c95e-491d-82b1-94a9b49bbddb'
+  label: 'Mobile - Search Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

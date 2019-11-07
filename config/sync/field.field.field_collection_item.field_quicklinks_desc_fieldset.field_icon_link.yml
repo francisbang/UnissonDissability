@@ -1,0 +1,23 @@
+uuid: 19d981a3-b3e5-428f-aa59-2801c3886a8d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_icon_link
+    - field_collection.field_collection.field_quicklinks_desc_fieldset
+  module:
+    - link
+id: field_collection_item.field_quicklinks_desc_fieldset.field_icon_link
+field_name: field_icon_link
+entity_type: field_collection_item
+bundle: field_quicklinks_desc_fieldset
+label: 'Icon - Link'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 1
+  title: 0
+field_type: link

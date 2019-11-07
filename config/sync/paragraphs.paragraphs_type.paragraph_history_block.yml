@@ -1,0 +1,9 @@
+uuid: b328c093-dc41-49a0-b45d-c80080b3f9e4
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_history_block
+label: 'Paragraph - History Block'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

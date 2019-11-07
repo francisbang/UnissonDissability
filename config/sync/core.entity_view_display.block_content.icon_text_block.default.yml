@@ -1,0 +1,31 @@
+uuid: ec135d93-e089-4085-80f1-a43e4eecc343
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.icon_text_block
+    - field.field.block_content.icon_text_block.field_icon_text_block_fields
+    - field.field.block_content.icon_text_block.field_icon_text_block_heading
+  module:
+    - field_collection
+id: block_content.icon_text_block.default
+targetEntityType: block_content
+bundle: icon_text_block
+mode: default
+content:
+  field_icon_text_block_fields:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_items
+    region: content
+  field_icon_text_block_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

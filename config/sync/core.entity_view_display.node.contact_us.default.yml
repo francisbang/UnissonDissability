@@ -1,0 +1,51 @@
+uuid: 740d30ea-d09c-4627-af3a-e4dbb393df18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contact_us.field_body_content
+    - field.field.node.contact_us.field_feature_image
+    - field.field.node.contact_us.field_header_image
+    - field.field.node.contact_us.field_header_image_mobile
+    - field.field.node.contact_us.field_header_main_heading
+    - field.field.node.contact_us.field_header_sub_heading
+    - field.field.node.contact_us.field_meta_tags
+    - field.field.node.contact_us.field_overview_snippet
+    - node.type.contact_us
+  module:
+    - entity_reference_revisions
+    - metatag
+    - user
+id: node.contact_us.default
+targetEntityType: node
+bundle: contact_us
+mode: default
+content:
+  field_body_content:
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_meta_tags:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_feature_image: true
+  field_header_image: true
+  field_header_image_mobile: true
+  field_header_main_heading: true
+  field_header_sub_heading: true
+  field_overview_snippet: true

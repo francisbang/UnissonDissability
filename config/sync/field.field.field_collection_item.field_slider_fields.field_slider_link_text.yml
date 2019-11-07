@@ -1,0 +1,19 @@
+uuid: 616d5073-344a-407c-9dac-d6477d288aa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_slider_link_text
+    - field_collection.field_collection.field_slider_fields
+id: field_collection_item.field_slider_fields.field_slider_link_text
+field_name: field_slider_link_text
+entity_type: field_collection_item
+bundle: field_slider_fields
+label: 'Slider - Link Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

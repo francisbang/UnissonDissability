@@ -1,0 +1,8 @@
+uuid: 0c096972-9d49-439a-9b45-4b9b85d50866
+langcode: en
+status: true
+dependencies: {  }
+name: 'Property Type'
+vid: property_type
+description: 'Rental property type categories'
+weight: 0

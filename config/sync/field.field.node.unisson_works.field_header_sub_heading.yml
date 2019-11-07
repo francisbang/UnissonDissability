@@ -1,0 +1,19 @@
+uuid: eb493e29-f615-45ac-88fc-31be1e5e9b7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_sub_heading
+    - node.type.unisson_works
+id: node.unisson_works.field_header_sub_heading
+field_name: field_header_sub_heading
+entity_type: node
+bundle: unisson_works
+label: 'Header - Second Line'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

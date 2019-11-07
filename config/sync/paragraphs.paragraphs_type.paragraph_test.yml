@@ -1,0 +1,9 @@
+uuid: 42dd5968-3f02-4048-ae53-72b1cfeb5dde
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_test
+label: 'Paragraph - Test'
+icon_uuid: null
+description: Test
+behavior_plugins: {  }

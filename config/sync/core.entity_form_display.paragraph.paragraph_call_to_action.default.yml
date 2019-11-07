@@ -1,0 +1,73 @@
+uuid: b5dee469-b950-45db-ab45-2605977f701c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_call_to_action.field_call_to_action_image
+    - field.field.paragraph.paragraph_call_to_action.field_call_to_action_link
+    - field.field.paragraph.paragraph_call_to_action.field_call_to_action_link_text
+    - field.field.paragraph.paragraph_call_to_action.field_call_to_action_text_fie_1
+    - field.field.paragraph.paragraph_call_to_action.field_call_to_action_text_fie_2
+    - paragraphs.paragraphs_type.paragraph_call_to_action
+  module:
+    - field_group
+    - link
+third_party_settings:
+  field_group:
+    group_call_to_action:
+      children:
+        - field_call_to_action_text_fie_1
+        - field_call_to_action_text_fie_2
+        - field_call_to_action_link_text
+        - field_call_to_action_link
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Call To Action'
+id: paragraph.paragraph_call_to_action.default
+targetEntityType: paragraph
+bundle: paragraph_call_to_action
+mode: default
+content:
+  field_call_to_action_link:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_call_to_action_link_text:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_call_to_action_text_fie_1:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_call_to_action_text_fie_2:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  field_call_to_action_image: true
+  status: true
+  uid: true

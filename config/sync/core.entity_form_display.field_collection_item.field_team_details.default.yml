@@ -1,0 +1,30 @@
+uuid: 46705be1-88b2-46c7-99a9-9c1cf4a2554d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_team_details.field_team_add_view
+    - field.field.field_collection_item.field_team_details.field_team_tab_heading
+    - field_collection.field_collection.field_team_details
+  module:
+    - viewfield
+id: field_collection_item.field_team_details.default
+targetEntityType: field_collection_item
+bundle: field_team_details
+mode: default
+content:
+  field_team_add_view:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: viewfield_select
+    region: content
+  field_team_tab_heading:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden: {  }

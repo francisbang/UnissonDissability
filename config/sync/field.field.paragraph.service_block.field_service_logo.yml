@@ -1,0 +1,38 @@
+uuid: 82a17906-8bf9-4bee-b330-c5ac3d05b9a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_service_logo
+    - paragraphs.paragraphs_type.service_block
+  module:
+    - image
+id: paragraph.service_block.field_service_logo
+field_name: field_service_logo
+entity_type: paragraph
+bundle: service_block
+label: 'Service Logo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

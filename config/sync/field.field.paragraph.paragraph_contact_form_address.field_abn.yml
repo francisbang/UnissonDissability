@@ -1,0 +1,19 @@
+uuid: 79a071a4-16c0-46fb-b291-0945bf30aa53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_abn
+    - paragraphs.paragraphs_type.paragraph_contact_form_address
+id: paragraph.paragraph_contact_form_address.field_abn
+field_name: field_abn
+entity_type: paragraph
+bundle: paragraph_contact_form_address
+label: 'Contact Us - ABN'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

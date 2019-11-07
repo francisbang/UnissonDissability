@@ -1,0 +1,20 @@
+uuid: 71e3fb23-1a92-4c4a-8e61-c26b56554331
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sunshine
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: sunshine_local_actions
+theme: sunshine
+region: page_actions
+weight: -8
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,23 @@
+uuid: 97fa77c1-7c78-41b2-a277-c425f03951db
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_wide
+    - paragraphs.paragraphs_type.service_icons
+id: paragraph.service_icons.field_wide
+field_name: field_wide
+entity_type: paragraph
+bundle: service_icons
+label: 'Make Row Wide'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: '1'
+  off_label: '0'
+field_type: boolean

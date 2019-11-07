@@ -1,0 +1,30 @@
+uuid: d7922bd0-3d14-4d02-bf17-c5299f5a1b80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_faq_fields.field_faq_answer
+    - field.field.field_collection_item.field_faq_fields.field_faq_question
+    - field_collection.field_collection.field_faq_fields
+  module:
+    - text
+id: field_collection_item.field_faq_fields.default
+targetEntityType: field_collection_item
+bundle: field_faq_fields
+mode: default
+content:
+  field_faq_answer:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_faq_question:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

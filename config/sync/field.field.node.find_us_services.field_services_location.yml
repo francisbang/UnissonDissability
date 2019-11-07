@@ -1,0 +1,19 @@
+uuid: 7896a487-7de6-434e-ad8b-2817fc56f06b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_services_location
+    - node.type.find_us_services
+id: node.find_us_services.field_services_location
+field_name: field_services_location
+entity_type: node
+bundle: find_us_services
+label: 'Services - Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

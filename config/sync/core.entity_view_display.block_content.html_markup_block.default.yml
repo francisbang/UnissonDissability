@@ -1,0 +1,22 @@
+uuid: 6fb20b60-bed1-4f7e-a0e4-f4a3efcc4b2e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.html_markup_block
+    - field.field.block_content.html_markup_block.field_html_markup_field
+  module:
+    - text
+id: block_content.html_markup_block.default
+targetEntityType: block_content
+bundle: html_markup_block
+mode: default
+content:
+  field_html_markup_field:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

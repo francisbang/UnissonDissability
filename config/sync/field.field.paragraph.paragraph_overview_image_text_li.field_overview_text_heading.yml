@@ -1,0 +1,19 @@
+uuid: 3af46b68-fa4a-4e0d-8044-1e7fc1cf3aae
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_overview_text_heading
+    - paragraphs.paragraphs_type.paragraph_overview_image_text_li
+id: paragraph.paragraph_overview_image_text_li.field_overview_text_heading
+field_name: field_overview_text_heading
+entity_type: paragraph
+bundle: paragraph_overview_image_text_li
+label: 'Overview - Text Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

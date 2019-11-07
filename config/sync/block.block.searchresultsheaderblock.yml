@@ -1,0 +1,35 @@
+uuid: b2bd5a75-1a91-49db-9e86-19fe499bef92
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:header_block_image_text:88100609-a0ad-462f-ad09-ec71abc2c2fe'
+  module:
+    - block_class
+    - block_content
+    - system
+  theme:
+    - unisson_disability
+third_party_settings:
+  block_class:
+    classes: ''
+id: searchresultsheaderblock
+theme: unisson_disability
+region: page_header
+weight: -20
+provider: null
+plugin: 'block_content:88100609-a0ad-462f-ad09-ec71abc2c2fe'
+settings:
+  id: 'block_content:88100609-a0ad-462f-ad09-ec71abc2c2fe'
+  label: 'Search Results - Header Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/search/node_search*'
+    negate: false
+    context_mapping: {  }

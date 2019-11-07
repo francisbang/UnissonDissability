@@ -1,0 +1,37 @@
+uuid: 919bc3be-b86a-4bf3-ab79-ae8da6f517c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_article_left_sidebar
+  module:
+    - block_class
+    - ctools
+    - views
+  theme:
+    - unisson_disability
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__news_article_left_sidebar_block_1
+theme: unisson_disability
+region: page_left_side_bar
+weight: -19
+provider: null
+plugin: 'views_block:news_article_left_sidebar-block_1'
+settings:
+  id: 'views_block:news_article_left_sidebar-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

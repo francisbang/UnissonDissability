@@ -1,0 +1,26 @@
+uuid: 73843264-751e-4a02-8ba6-261ffe7a3b63
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer---copyright-privacy-
+  module:
+    - block_class
+    - system
+  theme:
+    - sunshine
+id: footercopyrightprivacypolicylinks
+theme: sunshine
+region: ''
+weight: -9
+provider: null
+plugin: 'system_menu_block:footer---copyright-privacy-'
+settings:
+  id: 'system_menu_block:footer---copyright-privacy-'
+  label: 'Footer - Copyright / Privacy Policy Links'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,19 @@
+uuid: 7705f68a-3b64-464e-9759-15249561e2a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.services_blocks
+id: paragraph.services_blocks.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: services_blocks
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

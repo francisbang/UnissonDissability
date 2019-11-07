@@ -1,0 +1,29 @@
+uuid: 14293fb7-4506-4e87-ae18-09eed2585765
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.text-resize---menu
+  module:
+    - block_class
+    - system
+  theme:
+    - stark
+third_party_settings:
+  block_class:
+    classes: resize
+id: stark_textresizemenu
+theme: stark
+region: sidebar_first
+weight: -5
+provider: null
+plugin: 'system_menu_block:text-resize---menu'
+settings:
+  id: 'system_menu_block:text-resize---menu'
+  label: 'Text Resize - Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

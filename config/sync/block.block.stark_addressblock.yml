@@ -1,0 +1,29 @@
+uuid: 05691a23-e823-40ca-bdda-6446b38ad760
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:icon_text_block:3fe18e72-1431-46be-b7c9-9419dbfa5e60'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - stark
+third_party_settings:
+  block_class:
+    classes: ''
+id: stark_addressblock
+theme: stark
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:3fe18e72-1431-46be-b7c9-9419dbfa5e60'
+settings:
+  id: 'block_content:3fe18e72-1431-46be-b7c9-9419dbfa5e60'
+  label: 'Address Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

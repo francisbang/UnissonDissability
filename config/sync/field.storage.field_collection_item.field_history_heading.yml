@@ -1,0 +1,19 @@
+uuid: 652e7382-163f-45a4-8ca1-17038bb0c3a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_collection
+    - text
+id: field_collection_item.field_history_heading
+field_name: field_history_heading
+entity_type: field_collection_item
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

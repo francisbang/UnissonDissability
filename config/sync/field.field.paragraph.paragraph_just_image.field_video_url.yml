@@ -1,0 +1,19 @@
+uuid: d4638cf1-bf57-406c-84a3-e5807395cbf7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_video_url
+    - paragraphs.paragraphs_type.paragraph_just_image
+id: paragraph.paragraph_just_image.field_video_url
+field_name: field_video_url
+entity_type: paragraph
+bundle: paragraph_just_image
+label: 'Video URL'
+description: "Youtube URL Format - <b>http://www.youtube.com/watch?v=0O2aH4XLbto</b><br>\r\nVimeo URL Format - <b>https://vimeo.com/45830194</b>"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

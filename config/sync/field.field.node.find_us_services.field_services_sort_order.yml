@@ -1,0 +1,21 @@
+uuid: 88b890e3-8e1c-44e7-8e08-db7618f3f88c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_services_sort_order
+    - node.type.find_us_services
+  module:
+    - options
+id: node.find_us_services.field_services_sort_order
+field_name: field_services_sort_order
+entity_type: node
+bundle: find_us_services
+label: 'Services - Sort Order'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

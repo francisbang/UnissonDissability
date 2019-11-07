@@ -1,0 +1,23 @@
+uuid: f0ed313c-9fb4-48a1-b03c-73f37073b637
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_block_background
+    - paragraphs.paragraphs_type.paragraph_text_block_two_columns
+  module:
+    - options
+id: paragraph.paragraph_text_block_two_columns.field_text_block_background
+field_name: field_text_block_background
+entity_type: paragraph
+bundle: paragraph_text_block_two_columns
+label: 'Text Block - Background'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: grey
+default_value_callback: ''
+settings: {  }
+field_type: list_string

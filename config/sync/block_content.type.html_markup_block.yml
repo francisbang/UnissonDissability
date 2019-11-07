@@ -1,0 +1,8 @@
+uuid: 1ee48aa1-9709-4f8c-8cef-01e170623121
+langcode: en
+status: true
+dependencies: {  }
+id: html_markup_block
+label: 'HTML Markup Block'
+revision: 0
+description: 'This is used for adding HTML to a particular block'

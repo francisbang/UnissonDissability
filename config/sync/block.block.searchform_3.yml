@@ -1,0 +1,24 @@
+uuid: a932ffcf-0f35-414b-b1d2-d11a879cfcd0
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - search
+  theme:
+    - unisson_disability
+third_party_settings:
+  block_class:
+    classes: ''
+id: searchform_3
+theme: unisson_disability
+region: header_search_mobile
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+visibility: {  }

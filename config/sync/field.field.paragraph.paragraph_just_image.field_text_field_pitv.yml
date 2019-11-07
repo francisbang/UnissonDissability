@@ -1,0 +1,21 @@
+uuid: f14ee752-a8e1-45eb-89ae-5b7fc0452d16
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_field_pitv
+    - paragraphs.paragraphs_type.paragraph_just_image
+  module:
+    - text
+id: paragraph.paragraph_just_image.field_text_field_pitv
+field_name: field_text_field_pitv
+entity_type: paragraph
+bundle: paragraph_just_image
+label: 'Text Field'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

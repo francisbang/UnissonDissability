@@ -1,0 +1,9 @@
+uuid: 949b5138-1d0f-4457-89a2-798f4df6d7d2
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_team_block
+label: 'Paragraph - Team Block'
+icon_uuid: null
+description: 'This block is used on the team page.'
+behavior_plugins: {  }

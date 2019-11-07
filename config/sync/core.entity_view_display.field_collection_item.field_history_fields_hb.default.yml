@@ -1,0 +1,39 @@
+uuid: 264b3fce-37b0-4153-9346-b05e20dfe12c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_history_fields_hb.field_history_description
+    - field.field.field_collection_item.field_history_fields_hb.field_history_heading
+    - field.field.field_collection_item.field_history_fields_hb.field_history_year
+    - field_collection.field_collection.field_history_fields_hb
+  module:
+    - text
+id: field_collection_item.field_history_fields_hb.default
+targetEntityType: field_collection_item
+bundle: field_history_fields_hb
+mode: default
+content:
+  field_history_description:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_history_heading:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_history_year:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

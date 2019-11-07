@@ -1,0 +1,9 @@
+uuid: 3982dbb8-f220-42eb-a8f0-67ca8c645b91
+langcode: en
+status: true
+dependencies: {  }
+id: uw_text_block
+label: 'UW Text block'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

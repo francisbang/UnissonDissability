@@ -1,0 +1,22 @@
+uuid: b4ac5de0-e306-44f4-94d1-b0cca0bcd133
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_quicklinks_fieldset
+    - paragraphs.paragraphs_type.paragraph_quicklinks
+  module:
+    - field_collection
+id: paragraph.paragraph_quicklinks.field_quicklinks_fieldset
+field_name: field_quicklinks_fieldset
+entity_type: paragraph
+bundle: paragraph_quicklinks
+label: 'Icon Text Link Block - Fields'
+description: ''
+required: true
+translatable: true
+default_value:
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_collection

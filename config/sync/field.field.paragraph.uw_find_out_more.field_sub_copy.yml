@@ -1,0 +1,21 @@
+uuid: 41515216-7b57-4718-8ab4-9cd85c87bd0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sub_copy
+    - paragraphs.paragraphs_type.uw_find_out_more
+  module:
+    - text
+id: paragraph.uw_find_out_more.field_sub_copy
+field_name: field_sub_copy
+entity_type: paragraph
+bundle: uw_find_out_more
+label: 'Sub Copy'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

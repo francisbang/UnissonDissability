@@ -1,0 +1,9 @@
+uuid: 56c40d3e-f35b-4b70-a647-a9050ee5a92d
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_center_image_text_bloc
+label: 'Paragraph - Center Image Text Block'
+icon_uuid: null
+description: 'This is used to add center image with text across the website.'
+behavior_plugins: {  }

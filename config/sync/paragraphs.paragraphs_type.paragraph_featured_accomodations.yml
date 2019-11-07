@@ -1,0 +1,9 @@
+uuid: 39e024ec-3012-4a82-b00f-e513081cd6fb
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_featured_accomodations
+label: 'Paragraph - Featured Accomodations'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

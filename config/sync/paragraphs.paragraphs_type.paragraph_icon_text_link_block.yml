@@ -1,0 +1,9 @@
+uuid: 0baa2692-c1ce-4c87-8287-076d5b36c9b0
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_icon_text_link_block
+label: 'Paragraph - Icon Text Link Block'
+icon_uuid: null
+description: 'This is for icon text link block across the website.'
+behavior_plugins: {  }

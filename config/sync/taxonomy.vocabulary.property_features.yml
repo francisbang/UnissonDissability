@@ -1,0 +1,8 @@
+uuid: 2bd93612-0c20-4f23-b5f7-d572d659bf9a
+langcode: en
+status: true
+dependencies: {  }
+name: 'Property Features'
+vid: property_features
+description: 'Rental property features'
+weight: 0

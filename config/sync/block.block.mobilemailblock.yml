@@ -1,0 +1,29 @@
+uuid: b6d00bdb-c0ed-4b6b-ae4d-1b31624b14e3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:icon_link_block:4f2d285d-6cb7-4d1b-96a0-8d84733fec9b'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - unisson_disability
+third_party_settings:
+  block_class:
+    classes: ''
+id: mobilemailblock
+theme: unisson_disability
+region: header_tools_mobile
+weight: -10
+provider: null
+plugin: 'block_content:4f2d285d-6cb7-4d1b-96a0-8d84733fec9b'
+settings:
+  id: 'block_content:4f2d285d-6cb7-4d1b-96a0-8d84733fec9b'
+  label: 'Mobile - Mail Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

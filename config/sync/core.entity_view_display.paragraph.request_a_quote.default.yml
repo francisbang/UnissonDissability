@@ -1,0 +1,130 @@
+uuid: e53812e8-4b5e-43ec-9243-0f13234c2d91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.request_a_quote.field_contact_info_cta_label
+    - field.field.paragraph.request_a_quote.field_contact_info_cta_url
+    - field.field.paragraph.request_a_quote.field_contact_info_email
+    - field.field.paragraph.request_a_quote.field_contact_info_fax
+    - field.field.paragraph.request_a_quote.field_contact_info_heading
+    - field.field.paragraph.request_a_quote.field_contact_info_phone
+    - field.field.paragraph.request_a_quote.field_extra_section_cra_url
+    - field.field.paragraph.request_a_quote.field_extra_section_cta_label
+    - field.field.paragraph.request_a_quote.field_extra_section_heading
+    - field.field.paragraph.request_a_quote.field_facebook_url
+    - field.field.paragraph.request_a_quote.field_heading
+    - field.field.paragraph.request_a_quote.field_linkedin_url
+    - field.field.paragraph.request_a_quote.field_sub
+    - paragraphs.paragraphs_type.request_a_quote
+  module:
+    - text
+id: paragraph.request_a_quote.default
+targetEntityType: paragraph
+bundle: request_a_quote
+mode: default
+content:
+  field_contact_info_cta_label:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_info_cta_url:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_info_email:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_info_fax:
+    weight: 3
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_info_heading:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_contact_info_phone:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_extra_section_cra_url:
+    weight: 7
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_extra_section_cta_label:
+    weight: 6
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_extra_section_heading:
+    weight: 8
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_facebook_url:
+    weight: 9
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_heading:
+    weight: 10
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_linkedin_url:
+    weight: 11
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sub:
+    weight: 12
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

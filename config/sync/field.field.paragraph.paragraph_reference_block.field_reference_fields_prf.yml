@@ -1,0 +1,34 @@
+uuid: d0257eff-fffb-4347-bbf1-c9d9ddde289c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_reference_fields_prf
+    - node.type.article
+    - node.type.general_pages
+    - node.type.research
+    - node.type.stories
+    - paragraphs.paragraphs_type.paragraph_reference_block
+id: paragraph.paragraph_reference_block.field_reference_fields_prf
+field_name: field_reference_fields_prf
+entity_type: paragraph
+bundle: paragraph_reference_block
+label: 'Reference - Fields'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      general_pages: general_pages
+      article: article
+      research: research
+      stories: stories
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: research
+field_type: entity_reference

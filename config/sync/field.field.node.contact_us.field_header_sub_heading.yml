@@ -1,0 +1,19 @@
+uuid: 37bac483-1124-4eff-b7bf-3430ece4253b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_sub_heading
+    - node.type.contact_us
+id: node.contact_us.field_header_sub_heading
+field_name: field_header_sub_heading
+entity_type: node
+bundle: contact_us
+label: 'Header - Second Line'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

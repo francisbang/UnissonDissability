@@ -1,0 +1,21 @@
+uuid: a3bdb79e-0cad-4263-9b10-558c0118173c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_overview_snippet
+    - node.type.general_pages
+  module:
+    - text
+id: node.general_pages.field_overview_snippet
+field_name: field_overview_snippet
+entity_type: node
+bundle: general_pages
+label: 'Overview - Snippet'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

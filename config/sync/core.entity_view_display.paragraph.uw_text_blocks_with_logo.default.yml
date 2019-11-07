@@ -1,0 +1,24 @@
+uuid: 3d8a3787-2c0a-425e-980f-adf65ac06abb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.uw_text_blocks_with_logo.field_uw_blocks
+    - paragraphs.paragraphs_type.uw_text_blocks_with_logo
+  module:
+    - entity_reference_revisions
+id: paragraph.uw_text_blocks_with_logo.default
+targetEntityType: paragraph
+bundle: uw_text_blocks_with_logo
+mode: default
+content:
+  field_uw_blocks:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

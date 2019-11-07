@@ -1,0 +1,9 @@
+uuid: 3a216c91-fdca-42f1-802c-aabbe16191b8
+langcode: en
+status: true
+dependencies: {  }
+id: service_icons
+label: 'Service Icons'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,23 @@
+uuid: a7a6072f-3f2a-4668-b0ca-2591f68224a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_reference_block_background
+    - paragraphs.paragraphs_type.paragraph_reference_block
+  module:
+    - options
+id: paragraph.paragraph_reference_block.field_reference_block_background
+field_name: field_reference_block_background
+entity_type: paragraph
+bundle: paragraph_reference_block
+label: 'Reference Block - Background'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: white-bg
+default_value_callback: ''
+settings: {  }
+field_type: list_string

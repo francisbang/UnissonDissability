@@ -1,0 +1,46 @@
+uuid: 5c931ef6-6c1f-40a0-ac1c-f9fdd743fb09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_find_us_fields.field_find_us_region_heading
+    - field.field.field_collection_item.field_find_us_fields.field_find_us_region_view
+    - field_collection.field_collection.field_find_us_fields
+  module:
+    - field_group
+    - viewfield
+third_party_settings:
+  field_group:
+    group_find_us_fields:
+      children:
+        - field_find_us_region_heading
+        - field_services_fields
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Find Us - Fields'
+id: field_collection_item.field_find_us_fields.default
+targetEntityType: field_collection_item
+bundle: field_find_us_fields
+mode: default
+content:
+  field_find_us_region_heading:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_find_us_region_view:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: viewfield_select
+    region: content
+hidden: {  }

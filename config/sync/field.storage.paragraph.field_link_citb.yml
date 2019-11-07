@@ -1,0 +1,19 @@
+uuid: 98abfef4-a97b-42fd-9195-579c4561ab3c
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_link_citb
+field_name: field_link_citb
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,29 @@
+uuid: 435dd3d0-0eca-4aea-9966-8553e39be3f5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_careers_region
+    - node.type.careers
+    - taxonomy.vocabulary.find_us_regions
+id: node.careers.field_careers_region
+field_name: field_careers_region
+entity_type: node
+bundle: careers
+label: 'Careers - Region'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      find_us_regions: find_us_regions
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

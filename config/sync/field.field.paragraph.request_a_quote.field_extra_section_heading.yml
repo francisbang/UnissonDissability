@@ -1,0 +1,19 @@
+uuid: 1ea9fcd9-090e-41ab-bb7a-a1a702ba47a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_extra_section_heading
+    - paragraphs.paragraphs_type.request_a_quote
+id: paragraph.request_a_quote.field_extra_section_heading
+field_name: field_extra_section_heading
+entity_type: paragraph
+bundle: request_a_quote
+label: 'Extra Section Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

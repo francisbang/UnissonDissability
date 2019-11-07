@@ -1,0 +1,68 @@
+uuid: 86cd42ef-1826-4d37-bf5f-812fa1d33260
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.uw_find_out_more.field_cta_label
+    - field.field.paragraph.uw_find_out_more.field_cta_url
+    - field.field.paragraph.uw_find_out_more.field_header_first_line
+    - field.field.paragraph.uw_find_out_more.field_header_second_line
+    - field.field.paragraph.uw_find_out_more.field_service_logo
+    - field.field.paragraph.uw_find_out_more.field_sub_copy
+    - paragraphs.paragraphs_type.uw_find_out_more
+  module:
+    - image
+    - text
+id: paragraph.uw_find_out_more.default
+targetEntityType: paragraph
+bundle: uw_find_out_more
+mode: default
+content:
+  field_cta_label:
+    weight: 4
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cta_url:
+    weight: 5
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_header_first_line:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_header_second_line:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_service_logo:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    type: image_url
+    region: content
+  field_sub_copy:
+    weight: 3
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

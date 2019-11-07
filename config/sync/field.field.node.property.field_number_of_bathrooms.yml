@@ -1,0 +1,23 @@
+uuid: f4cab5de-e12e-48be-a3c4-10191ef6da27
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_number_of_bathrooms
+    - node.type.property
+  module:
+    - options
+id: node.property.field_number_of_bathrooms
+field_name: field_number_of_bathrooms
+entity_type: node
+bundle: property
+label: 'Number of Bathrooms'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

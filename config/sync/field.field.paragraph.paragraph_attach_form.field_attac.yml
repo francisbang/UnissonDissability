@@ -1,0 +1,25 @@
+uuid: 2ea51b8d-0a59-4673-9577-d84caae467ee
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_attac
+    - paragraphs.paragraphs_type.paragraph_attach_form
+  module:
+    - webform
+id: paragraph.paragraph_attach_form.field_attac
+field_name: field_attac
+entity_type: paragraph
+bundle: paragraph_attach_form
+label: 'Attach Form'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

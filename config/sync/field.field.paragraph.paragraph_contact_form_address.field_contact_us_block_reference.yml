@@ -1,0 +1,32 @@
+uuid: b7535d07-3c01-4352-b346-70e1c1f55511
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_add_form
+    - field.storage.paragraph.field_contact_us_block_reference
+    - paragraphs.paragraphs_type.paragraph_contact_form_address
+  content:
+    - 'block_content:block_add_form:df25833a-d19d-4949-90ff-c52a1e0b3150'
+id: paragraph.paragraph_contact_form_address.field_contact_us_block_reference
+field_name: field_contact_us_block_reference
+entity_type: paragraph
+bundle: paragraph_contact_form_address
+label: 'Contact Us - Block Reference'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: df25833a-d19d-4949-90ff-c52a1e0b3150
+default_value_callback: ''
+settings:
+  handler: 'default:block_content'
+  handler_settings:
+    target_bundles:
+      block_add_form: block_add_form
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

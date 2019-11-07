@@ -1,0 +1,21 @@
+uuid: aad36690-5f89-461f-91aa-97341b3251b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team_member_sort_order
+    - node.type.team_members
+  module:
+    - options
+id: node.team_members.field_team_member_sort_order
+field_name: field_team_member_sort_order
+entity_type: node
+bundle: team_members
+label: 'Team Member - Sort Order'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer

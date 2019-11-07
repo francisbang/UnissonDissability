@@ -1,0 +1,21 @@
+uuid: 90400ea5-f37a-4796-82b4-77bffa313527
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_collection
+    - viewfield
+    - views
+id: field_collection_item.field_team_add_view
+field_name: field_team_add_view
+entity_type: field_collection_item
+type: viewfield
+settings:
+  target_type: view
+module: viewfield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,24 @@
+uuid: aad9de13-a3e7-46f1-a67f-20bdd5477b86
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - unisson_disability
+third_party_settings:
+  block_class:
+    classes: ''
+id: mainpagecontent
+theme: unisson_disability
+region: content
+weight: -15
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

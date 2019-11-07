@@ -1,0 +1,9 @@
+uuid: 77ff992d-b35f-4187-a6dd-727a63389eb4
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_overview_image_text_li
+label: 'Paragraph - Overview - Image Text Link Block'
+icon_uuid: null
+description: 'This is used for creating an overview block with a continue reading option.'
+behavior_plugins: {  }

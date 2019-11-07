@@ -1,0 +1,65 @@
+uuid: 2e24b11d-efd9-4ec8-bca6-5b4c272e5f77
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.browse_files_modal
+    - field.field.field_collection_item.field_icon_text_link_block_field.field_icon_image
+    - field.field.field_collection_item.field_icon_text_link_block_field.field_icon_link
+    - field.field.field_collection_item.field_icon_text_link_block_field.field_icon_text
+    - field_collection.field_collection.field_icon_text_link_block_field
+  module:
+    - entity_browser
+    - field_group
+    - link
+third_party_settings:
+  field_group:
+    group_icon_text_link_block_field:
+      children:
+        - field_icon_image
+        - field_icon_text
+        - field_icon_link
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Icon Text Link Block - Fields'
+id: field_collection_item.field_icon_text_link_block_field.default
+targetEntityType: field_collection_item
+bundle: field_icon_text_link_block_field
+mode: default
+content:
+  field_icon_image:
+    weight: 1
+    settings:
+      entity_browser: browse_files_modal
+      field_widget_remove: true
+      open: true
+      selection_mode: selection_append
+      preview_image_style: thumbnail
+      field_widget_edit: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_browser_file
+    region: content
+  field_icon_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_icon_text:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden: {  }

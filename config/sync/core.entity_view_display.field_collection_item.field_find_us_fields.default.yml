@@ -1,0 +1,34 @@
+uuid: b1894065-f842-47e6-bd60-5af08e109173
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_find_us_fields.field_find_us_region_heading
+    - field.field.field_collection_item.field_find_us_fields.field_find_us_region_view
+    - field_collection.field_collection.field_find_us_fields
+  module:
+    - viewfield
+id: field_collection_item.field_find_us_fields.default
+targetEntityType: field_collection_item
+bundle: field_find_us_fields
+mode: default
+content:
+  field_find_us_region_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_find_us_region_view:
+    weight: 1
+    label: hidden
+    settings:
+      view_title: hidden
+      always_build_output: 0
+      empty_view_title: hidden
+    third_party_settings: {  }
+    type: viewfield_default
+    region: content
+hidden: {  }

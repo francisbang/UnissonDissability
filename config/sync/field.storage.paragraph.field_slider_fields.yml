@@ -1,0 +1,19 @@
+uuid: 9db2205b-d98c-4f86-bac8-1492ea7fae93
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_collection
+    - paragraphs
+id: paragraph.field_slider_fields
+field_name: field_slider_fields
+entity_type: paragraph
+type: field_collection
+settings: {  }
+module: field_collection
+locked: false
+cardinality: 5
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

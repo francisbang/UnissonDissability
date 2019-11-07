@@ -1,0 +1,39 @@
+uuid: 4f22498d-d150-40a7-96b8-326ac2d92205
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_text_image_right_slide.field_text_image_right_fields
+    - paragraphs.paragraphs_type.paragraph_text_image_right_slide
+  module:
+    - field_collection
+    - field_group
+third_party_settings:
+  field_group:
+    group_text_image_right_fields:
+      children:
+        - field_text_image_right_fields
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Text Image Right Fields'
+id: paragraph.paragraph_text_image_right_slide.default
+targetEntityType: paragraph
+bundle: paragraph_text_image_right_slide
+mode: default
+content:
+  field_text_image_right_fields:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_embed
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

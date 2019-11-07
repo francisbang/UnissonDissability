@@ -1,0 +1,20 @@
+uuid: 45df3bb7-d017-4cb5-a665-efce24b621b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - webform
+id: block_content.field_attach_form
+field_name: field_attach_form
+entity_type: block_content
+type: webform
+settings:
+  target_type: webform
+module: webform
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

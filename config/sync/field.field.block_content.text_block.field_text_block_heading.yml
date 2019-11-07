@@ -1,0 +1,19 @@
+uuid: 480d4c33-2687-45aa-ba0a-51c19cb0f2ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.text_block
+    - field.storage.block_content.field_text_block_heading
+id: block_content.text_block.field_text_block_heading
+field_name: field_text_block_heading
+entity_type: block_content
+bundle: text_block
+label: 'Text Block - Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

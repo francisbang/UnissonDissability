@@ -1,0 +1,121 @@
+uuid: 2b32f3b5-6839-40c4-93fe-7e128f193205
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icons
+    - paragraphs.paragraphs_type.service_icon
+    - paragraphs.paragraphs_type.service_icons
+  module:
+    - entity_reference_revisions
+id: paragraph.service_icons.field_icons
+field_name: field_icons
+entity_type: paragraph
+bundle: service_icons
+label: Icons
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      service_icon: service_icon
+    target_bundles_drag_drop:
+      service_icons:
+        weight: 32
+        enabled: false
+      paragraph_add_view:
+        weight: 33
+        enabled: false
+      paragraph_call_to_action:
+        weight: 34
+        enabled: false
+      paragraph_careers:
+        weight: 35
+        enabled: false
+      paragraph_center_image_text_bloc:
+        weight: 36
+        enabled: false
+      paragraph_contact_form_address:
+        weight: 37
+        enabled: false
+      paragraph_faq_fields:
+        weight: 38
+        enabled: false
+      paragraph_find_us:
+        weight: 39
+        enabled: false
+      paragraph_history_block:
+        weight: 40
+        enabled: false
+      paragraph_home_page_slider:
+        weight: 41
+        enabled: false
+      paragraph_icon_heading_descripti:
+        weight: 42
+        enabled: false
+      paragraph_icon_text_link_block:
+        weight: 43
+        enabled: false
+      paragraph_image_left_right_text_:
+        weight: 44
+        enabled: false
+      paragraph_image_text:
+        weight: 45
+        enabled: false
+      paragraph_image_text_description:
+        weight: 46
+        enabled: false
+      paragraph_just_image:
+        weight: 47
+        enabled: false
+      paragraph_left_aligned_text_bloc:
+        weight: 48
+        enabled: false
+      paragraph_overview_image_text_li:
+        weight: 49
+        enabled: false
+      paragraph_quote_block:
+        weight: 50
+        enabled: false
+      paragraph_reference_block:
+        weight: 51
+        enabled: false
+      paragraph_tabbed_block:
+        weight: 52
+        enabled: false
+      paragraph_team_block:
+        weight: 53
+        enabled: false
+      paragraph_test:
+        weight: 54
+        enabled: false
+      paragraph_testimonial_quote_bloc:
+        weight: 55
+        enabled: false
+      paragraph_text_block:
+        weight: 56
+        enabled: false
+      paragraph_text_block_two_columns:
+        weight: 57
+        enabled: false
+      paragraph_text_image_right_slide:
+        weight: 58
+        enabled: false
+      paragraph_title_description:
+        weight: 59
+        enabled: false
+      request_a_quote:
+        weight: 60
+        enabled: false
+      service_block:
+        weight: 61
+        enabled: false
+      service_icon:
+        enabled: true
+        weight: 62
+field_type: entity_reference_revisions

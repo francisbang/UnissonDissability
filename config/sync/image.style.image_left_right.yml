@@ -1,0 +1,15 @@
+uuid: 4d54fa02-f0e8-4699-8347-a0767674b26e
+langcode: en
+status: true
+dependencies: {  }
+name: image_left_right
+label: 'Image - Left Right - 590-396'
+effects:
+  e368e1b2-b430-45e2-84cf-af60c9009a2a:
+    uuid: e368e1b2-b430-45e2-84cf-af60c9009a2a
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 590
+      height: 396
+      anchor: center-center

@@ -1,4 +1,9 @@
 
+
+/* THEME DEBUG */
+/* THEME HOOK: 'simple_menu_icons_css_item' */
+/* BEGIN OUTPUT from 'modules/zz_archive/simple_menu_icons/templates/simple-menu-icons-css-item.html.twig' */
+
     a.menu-icon-4,
     ul.links li.menu-icon-4 a,
     ul.menu li.menu-icon-4 a {
@@ -47,3 +52,6 @@
         background-repeat: no-repeat;
         background-position: left center;
     }
+
+/* END OUTPUT from 'modules/zz_archive/simple_menu_icons/templates/simple-menu-icons-css-item.html.twig' */
+

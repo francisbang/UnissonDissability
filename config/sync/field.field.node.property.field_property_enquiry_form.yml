@@ -1,0 +1,32 @@
+uuid: 1ab7ba4c-ae13-489c-965d-adead0e40608
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_property_enquiry_form
+    - node.type.property
+    - webform.webform.accomodation_enquiry_form
+  module:
+    - webform
+id: node.property.field_property_enquiry_form
+field_name: field_property_enquiry_form
+entity_type: node
+bundle: property
+label: 'Property Enquiry Form'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_data: 'propertyid: ''[webform_submission:node:field_property_id]'''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: e786c410-c262-4fa6-8074-f26f4fa1c9f2
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

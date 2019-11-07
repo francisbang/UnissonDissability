@@ -1,0 +1,21 @@
+uuid: eca73f3d-9b37-4d10-83a4-8cc6da27b819
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_description
+    - paragraphs.paragraphs_type.paragraph_quicklinks_description
+  module:
+    - text
+id: paragraph.paragraph_quicklinks_description.field_paragraph_description
+field_name: field_paragraph_description
+entity_type: paragraph
+bundle: paragraph_quicklinks_description
+label: 'Paragraph - Description'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,9 @@
+uuid: 04a3c1d7-1133-47b3-9a3a-fee0625f4d7e
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_just_image
+label: 'Paragraph - Add Image / Video / Text'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

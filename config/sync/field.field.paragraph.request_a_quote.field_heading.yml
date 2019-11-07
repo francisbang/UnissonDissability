@@ -1,0 +1,19 @@
+uuid: 74bcd692-f961-4848-90b7-477f62502c82
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading
+    - paragraphs.paragraphs_type.request_a_quote
+id: paragraph.request_a_quote.field_heading
+field_name: field_heading
+entity_type: paragraph
+bundle: request_a_quote
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

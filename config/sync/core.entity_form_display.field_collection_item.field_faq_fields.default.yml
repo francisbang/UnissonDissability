@@ -1,0 +1,48 @@
+uuid: 1a846bc5-9936-49ee-90fb-42d2eda77525
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_faq_fields.field_faq_answer
+    - field.field.field_collection_item.field_faq_fields.field_faq_question
+    - field_collection.field_collection.field_faq_fields
+  module:
+    - field_group
+    - text
+third_party_settings:
+  field_group:
+    group_faq_fields:
+      children:
+        - field_faq_question
+        - field_faq_answer
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'FAQ - Fields'
+id: field_collection_item.field_faq_fields.default
+targetEntityType: field_collection_item
+bundle: field_faq_fields
+mode: default
+content:
+  field_faq_answer:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_faq_question:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden: {  }

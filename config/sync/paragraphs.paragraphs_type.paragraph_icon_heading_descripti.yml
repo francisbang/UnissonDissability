@@ -1,0 +1,9 @@
+uuid: 8f78a7fa-ac18-478d-9eb2-8fbd1fd375ee
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_icon_heading_descripti
+label: 'Paragraph - Icon Heading Description Block'
+icon_uuid: null
+description: 'This is used to icon heading description block across the website.'
+behavior_plugins: {  }

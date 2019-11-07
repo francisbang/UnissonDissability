@@ -1,0 +1,31 @@
+uuid: 1d67f70a-a431-477b-be73-befa3acda057
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_tabbed_block_fields
+    - paragraphs.paragraphs_type.paragraph_tabbed_block
+  module:
+    - field_collection
+id: paragraph.paragraph_tabbed_block.field_tabbed_block_fields
+field_name: field_tabbed_block_fields
+entity_type: paragraph
+bundle: paragraph_tabbed_block
+label: 'Tabbed Block - Fields'
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+  - {  }
+  - {  }
+  - {  }
+  - {  }
+  - {  }
+  - {  }
+  - {  }
+  - {  }
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_collection

@@ -1,0 +1,19 @@
+uuid: 53cc4bc8-1d27-4f61-bc2f-d05b079c1476
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_content
+    - link
+id: block_content.field_icon_link_ilb
+field_name: field_icon_link_ilb
+entity_type: block_content
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

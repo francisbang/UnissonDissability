@@ -1,0 +1,21 @@
+uuid: ccf1aadf-6cd7-4661-a361-aa8551adbe72
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_field_citb
+    - paragraphs.paragraphs_type.paragraph_center_image_text_bloc
+  module:
+    - text
+id: paragraph.paragraph_center_image_text_bloc.field_text_field_citb
+field_name: field_text_field_citb
+entity_type: paragraph
+bundle: paragraph_center_image_text_bloc
+label: 'Text Field'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

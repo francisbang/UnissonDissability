@@ -1,0 +1,19 @@
+uuid: 29a97857-f4a1-4a3d-9beb-ade80cec1588
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_collection
+    - paragraphs
+id: paragraph.field_team_details
+field_name: field_team_details
+entity_type: paragraph
+type: field_collection
+settings: {  }
+module: field_collection
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

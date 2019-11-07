@@ -1,0 +1,36 @@
+uuid: 37587d60-1a16-4fa4-afa9-670a464b7a8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.articles_header
+  module:
+    - block_class
+    - ctools
+    - views
+  theme:
+    - unisson_disability
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__articles_header_block_1
+theme: unisson_disability
+region: page_header
+weight: -14
+provider: null
+plugin: 'views_block:articles_header-block_1'
+settings:
+  id: 'views_block:articles_header-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

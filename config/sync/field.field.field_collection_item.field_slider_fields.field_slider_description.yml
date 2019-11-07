@@ -1,0 +1,19 @@
+uuid: 8ad0ef9e-43aa-4b8a-87cc-b8f032aee2cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_slider_description
+    - field_collection.field_collection.field_slider_fields
+id: field_collection_item.field_slider_fields.field_slider_description
+field_name: field_slider_description
+entity_type: field_collection_item
+bundle: field_slider_fields
+label: 'Slider - Description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

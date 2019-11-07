@@ -1,0 +1,40 @@
+uuid: 14797740-0c39-4bf0-8c18-1df103085576
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_quote_block.field_quote_text_a
+    - paragraphs.paragraphs_type.paragraph_quote_block
+  module:
+    - field_group
+third_party_settings:
+  field_group:
+    group_paragraph_quote_fields:
+      children:
+        - field_quote_text_a
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Paragraph - Quote Fields'
+id: paragraph.paragraph_quote_block.default
+targetEntityType: paragraph
+bundle: paragraph_quote_block
+mode: default
+content:
+  field_quote_text_a:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,29 @@
+uuid: 17535330-6c17-45cd-805e-ab92593bb2e5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:logo_block:8b57a6c5-ffa4-4baf-a5fe-633c0af060d1'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - stark
+third_party_settings:
+  block_class:
+    classes: ''
+id: stark_footerlogo
+theme: stark
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:8b57a6c5-ffa4-4baf-a5fe-633c0af060d1'
+settings:
+  id: 'block_content:8b57a6c5-ffa4-4baf-a5fe-633c0af060d1'
+  label: 'Footer Logo'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: 030d07d5-bc72-4e6f-a713-14dd0487eece
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_text_block_two_columns
+label: 'Paragraph - Text Block - Two Columns'
+icon_uuid: null
+description: 'This is used to add text block with two columns across the website.'
+behavior_plugins: {  }

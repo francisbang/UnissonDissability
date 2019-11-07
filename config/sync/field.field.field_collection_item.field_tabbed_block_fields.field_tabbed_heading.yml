@@ -1,0 +1,19 @@
+uuid: 9165a777-c8ea-4270-97b8-e62673356d87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_tabbed_heading
+    - field_collection.field_collection.field_tabbed_block_fields
+id: field_collection_item.field_tabbed_block_fields.field_tabbed_heading
+field_name: field_tabbed_heading
+entity_type: field_collection_item
+bundle: field_tabbed_block_fields
+label: 'Tabbed Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

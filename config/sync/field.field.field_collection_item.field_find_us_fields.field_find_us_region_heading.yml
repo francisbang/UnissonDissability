@@ -1,0 +1,19 @@
+uuid: 7c8e0ec1-4248-4955-b3a5-d02ee874e941
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_find_us_region_heading
+    - field_collection.field_collection.field_find_us_fields
+id: field_collection_item.field_find_us_fields.field_find_us_region_heading
+field_name: field_find_us_region_heading
+entity_type: field_collection_item
+bundle: field_find_us_fields
+label: 'Find Us - Region Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

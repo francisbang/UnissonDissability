@@ -1,0 +1,24 @@
+uuid: c64769f3-1fa3-413c-b498-10093c6e1348
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_icon_text_description_fiel
+    - paragraphs.paragraphs_type.paragraph_icon_heading_descripti
+  module:
+    - field_collection
+id: paragraph.paragraph_icon_heading_descripti.field_icon_text_description_fiel
+field_name: field_icon_text_description_fiel
+entity_type: paragraph
+bundle: paragraph_icon_heading_descripti
+label: 'Icon Text Description - Fields'
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+  - {  }
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_collection

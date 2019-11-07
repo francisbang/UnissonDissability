@@ -1,0 +1,21 @@
+uuid: 42cfe891-a9a3-4642-bcf4-0a00c1f85f34
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_block_column_one
+    - paragraphs.paragraphs_type.paragraph_text_block_two_columns
+  module:
+    - text
+id: paragraph.paragraph_text_block_two_columns.field_text_block_column_one
+field_name: field_text_block_column_one
+entity_type: paragraph
+bundle: paragraph_text_block_two_columns
+label: 'Text Block - Column One'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

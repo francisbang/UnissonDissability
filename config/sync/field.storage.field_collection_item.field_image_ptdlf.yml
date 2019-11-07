@@ -1,0 +1,30 @@
+uuid: 651681f3-cf1b-4225-b330-b7701de5d913
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_collection
+    - file
+    - image
+id: field_collection_item.field_image_ptdlf
+field_name: field_image_ptdlf
+entity_type: field_collection_item
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

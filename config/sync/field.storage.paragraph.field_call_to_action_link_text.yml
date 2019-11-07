@@ -1,0 +1,21 @@
+uuid: 103d92d3-104c-42db-945a-5acbfdca79d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_call_to_action_link_text
+field_name: field_call_to_action_link_text
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

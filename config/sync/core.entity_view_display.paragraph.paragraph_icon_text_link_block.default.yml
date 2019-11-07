@@ -1,0 +1,90 @@
+uuid: 6306ac04-0207-4ce3-ba68-e5d6b86e8ea4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_icon_text_link_block.field_icon_text_link_block_backg
+    - field.field.paragraph.paragraph_icon_text_link_block.field_icon_text_link_block_descr
+    - field.field.paragraph.paragraph_icon_text_link_block.field_icon_text_link_block_field
+    - field.field.paragraph.paragraph_icon_text_link_block.field_icon_text_link_block_headi
+    - field.field.paragraph.paragraph_icon_text_link_block.field_icon_text_link_block_i_opt
+    - field.field.paragraph.paragraph_icon_text_link_block.field_icon_text_link_block_image
+    - field.field.paragraph.paragraph_icon_text_link_block.field_icon_text_link_block_link
+    - field.field.paragraph.paragraph_icon_text_link_block.field_icon_text_link_block_link_
+    - paragraphs.paragraphs_type.paragraph_icon_text_link_block
+  module:
+    - field_collection
+    - image
+    - link
+    - options
+    - text
+id: paragraph.paragraph_icon_text_link_block.default
+targetEntityType: paragraph
+bundle: paragraph_icon_text_link_block
+mode: default
+content:
+  field_icon_text_link_block_backg:
+    weight: 6
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_icon_text_link_block_descr:
+    weight: 7
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_icon_text_link_block_field:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_items
+    region: content
+  field_icon_text_link_block_headi:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_icon_text_link_block_i_opt:
+    weight: 5
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+  field_icon_text_link_block_image:
+    weight: 3
+    label: hidden
+    settings:
+      image_style: ''
+    third_party_settings: {  }
+    type: image_url
+    region: content
+  field_icon_text_link_block_link:
+    weight: 1
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: true
+      url_plain: true
+      rel: '0'
+      target: '0'
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_icon_text_link_block_link_:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

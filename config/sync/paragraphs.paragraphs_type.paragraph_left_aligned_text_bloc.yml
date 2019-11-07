@@ -1,0 +1,9 @@
+uuid: 4ff2e280-eb98-498d-aeb5-e86329b3b5a5
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_left_aligned_text_bloc
+label: 'Paragraph - Left Aligned Text Block'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

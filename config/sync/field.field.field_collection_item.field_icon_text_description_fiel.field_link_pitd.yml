@@ -1,0 +1,23 @@
+uuid: 018380b3-a4e1-45ad-a347-b6d4a58f2eb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_link_pitd
+    - field_collection.field_collection.field_icon_text_description_fiel
+  module:
+    - link
+id: field_collection_item.field_icon_text_description_fiel.field_link_pitd
+field_name: field_link_pitd
+entity_type: field_collection_item
+bundle: field_icon_text_description_fiel
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

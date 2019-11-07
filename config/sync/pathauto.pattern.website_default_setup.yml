@@ -1,0 +1,31 @@
+uuid: 40e8b422-4be5-46fb-8001-98587b1685f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: website_default_setup
+label: 'Website - Default Setup'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  faceb9de-c513-4ba1-be02-47d7d19b1bbe:
+    id: node_type
+    bundles:
+      system_pages: system_pages
+      article: article
+      contact_us: contact_us
+      general_pages: general_pages
+      home_page: home_page
+      overview_pages: overview_pages
+      page: page
+      research: research
+      stories: stories
+      team_members: team_members
+    negate: false
+    context_mapping:
+      node: node
+    uuid: faceb9de-c513-4ba1-be02-47d7d19b1bbe
+selection_logic: and
+weight: -5
+relationships: {  }

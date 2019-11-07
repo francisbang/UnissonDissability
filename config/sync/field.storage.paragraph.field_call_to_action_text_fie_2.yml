@@ -1,0 +1,21 @@
+uuid: 7c8c4d2f-08d0-4a41-aef9-f138314d7685
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_call_to_action_text_fie_2
+field_name: field_call_to_action_text_fie_2
+entity_type: paragraph
+type: string
+settings:
+  max_length: 30
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

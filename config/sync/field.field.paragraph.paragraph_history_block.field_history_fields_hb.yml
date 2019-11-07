@@ -1,0 +1,23 @@
+uuid: 2109937a-e484-4900-ae41-58c4655c3c02
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_history_fields_hb
+    - paragraphs.paragraphs_type.paragraph_history_block
+  module:
+    - field_collection
+id: paragraph.paragraph_history_block.field_history_fields_hb
+field_name: field_history_fields_hb
+entity_type: paragraph
+bundle: paragraph_history_block
+label: 'History - Fields'
+description: ''
+required: false
+translatable: false
+default_value:
+  - {  }
+  - {  }
+default_value_callback: ''
+settings: {  }
+field_type: field_collection

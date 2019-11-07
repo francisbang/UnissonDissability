@@ -1,0 +1,21 @@
+uuid: 492406ba-bc47-4845-a756-36904208525a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_careers_job_location.field_careers_job_location
+    - field_collection.field_collection.field_careers_job_location
+id: field_collection_item.field_careers_job_location.default
+targetEntityType: field_collection_item
+bundle: field_careers_job_location
+mode: default
+content:
+  field_careers_job_location:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden: {  }

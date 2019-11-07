@@ -807,4 +807,6 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 $settings['install_profile'] = 'standard';
-$config_directories['sync'] = 'sites/default/files/config_nSy3Yaupwfrnl1xK2CH0zTCUt96Q4VkprXjBesZDs4-9ztLGOFjwCG919M_NroLEyxNZuanIiQ/sync';
+
+$config_directories['sync'] = 'config/sync';
+//Bang - 29-10-2019 $config_directories['sync'] = 'sites/default/files/config_nSy3Yaupwfrnl1xK2CH0zTCUt96Q4VkprXjBesZDs4-9ztLGOFjwCG919M_NroLEyxNZuanIiQ/sync';

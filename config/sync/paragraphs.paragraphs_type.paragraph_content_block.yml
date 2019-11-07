@@ -1,0 +1,9 @@
+uuid: 45b71336-91ef-46f2-9e4b-3524d2065af7
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_content_block
+label: 'Paragraph - Content Block'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,29 @@
+uuid: b04c180f-012b-4005-9d04-5d4b7587d69a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:icon_text_block:3fe18e72-1431-46be-b7c9-9419dbfa5e60'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - sunshine
+third_party_settings:
+  block_class:
+    classes: ''
+id: addressblock
+theme: sunshine
+region: footer_second
+weight: 0
+provider: null
+plugin: 'block_content:3fe18e72-1431-46be-b7c9-9419dbfa5e60'
+settings:
+  id: 'block_content:3fe18e72-1431-46be-b7c9-9419dbfa5e60'
+  label: 'Address Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

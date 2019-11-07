@@ -1,0 +1,19 @@
+uuid: a64ed7ba-328c-468b-a89a-b89c49dcfa01
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_history_year
+    - field_collection.field_collection.field_history_fields_hb
+id: field_collection_item.field_history_fields_hb.field_history_year
+field_name: field_history_year
+entity_type: field_collection_item
+bundle: field_history_fields_hb
+label: 'History - Year'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

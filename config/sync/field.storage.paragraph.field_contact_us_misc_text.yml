@@ -1,0 +1,19 @@
+uuid: d706a1c1-7641-4f24-9949-4c0e544c8daa
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.field_contact_us_misc_text
+field_name: field_contact_us_misc_text
+entity_type: paragraph
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

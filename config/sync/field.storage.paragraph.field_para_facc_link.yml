@@ -1,0 +1,19 @@
+uuid: d5951caa-b281-4139-a478-63e901d9cbca
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+id: paragraph.field_para_facc_link
+field_name: field_para_facc_link
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

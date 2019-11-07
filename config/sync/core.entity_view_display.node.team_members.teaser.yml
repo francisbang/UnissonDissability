@@ -1,0 +1,38 @@
+uuid: b6c9a2fc-a414-488c-9606-e80d7d0eb9a5
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.team_members.field_team_member_bio
+    - field.field.node.team_members.field_team_member_image
+    - field.field.node.team_members.field_team_member_job_title
+    - field.field.node.team_members.field_team_member_linkedin_icon
+    - field.field.node.team_members.field_team_member_linkedin_link
+    - field.field.node.team_members.field_team_member_name
+    - field.field.node.team_members.field_team_member_popup_icon
+    - field.field.node.team_members.field_team_member_sort_order
+    - field.field.node.team_members.field_team_member_type
+    - node.type.team_members
+  module:
+    - user
+id: node.team_members.teaser
+targetEntityType: node
+bundle: team_members
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_team_member_bio: true
+  field_team_member_image: true
+  field_team_member_job_title: true
+  field_team_member_linkedin_icon: true
+  field_team_member_linkedin_link: true
+  field_team_member_name: true
+  field_team_member_popup_icon: true
+  field_team_member_sort_order: true
+  field_team_member_type: true

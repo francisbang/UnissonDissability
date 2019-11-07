@@ -1,0 +1,29 @@
+uuid: bfb7c45c-398b-4d6a-a5d6-0f32eda65f19
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:html_markup_block:9937903b-d28f-4368-8c06-ac3be44f9e76'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - unisson_disability
+third_party_settings:
+  block_class:
+    classes: ''
+id: mobilenavigationbars
+theme: unisson_disability
+region: header_tools_mobile
+weight: 0
+provider: null
+plugin: 'block_content:9937903b-d28f-4368-8c06-ac3be44f9e76'
+settings:
+  id: 'block_content:9937903b-d28f-4368-8c06-ac3be44f9e76'
+  label: 'Mobile - Navigation Bars'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

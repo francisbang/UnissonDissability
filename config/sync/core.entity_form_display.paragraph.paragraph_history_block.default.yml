@@ -1,0 +1,59 @@
+uuid: 91e28a74-00fe-4e9e-b234-47d5ee29a0e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_history_block.field_heading_hb
+    - field.field.paragraph.paragraph_history_block.field_history_fields_hb
+    - field.field.paragraph.paragraph_history_block.field_intro_text_hb
+    - paragraphs.paragraphs_type.paragraph_history_block
+  module:
+    - field_collection
+    - field_group
+third_party_settings:
+  field_group:
+    group_history_block_fields:
+      children:
+        - field_heading_hb
+        - field_intro_text_hb
+        - field_history_fields_hb
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'History - Block - Fields'
+id: paragraph.paragraph_history_block.default
+targetEntityType: paragraph
+bundle: paragraph_history_block
+mode: default
+content:
+  field_heading_hb:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_history_fields_hb:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_embed
+    region: content
+  field_intro_text_hb:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

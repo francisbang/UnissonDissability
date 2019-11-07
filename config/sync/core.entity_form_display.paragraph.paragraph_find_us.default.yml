@@ -1,0 +1,39 @@
+uuid: 7aef31f2-e7e2-43be-9b39-b47d4216d167
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_find_us.field_find_us_fields
+    - paragraphs.paragraphs_type.paragraph_find_us
+  module:
+    - field_collection
+    - field_group
+third_party_settings:
+  field_group:
+    group_find_us_fields:
+      children:
+        - field_find_us_region_heading
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Find Us - Fields'
+id: paragraph.paragraph_find_us.default
+targetEntityType: paragraph
+bundle: paragraph_find_us
+mode: default
+content:
+  field_find_us_fields:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_embed
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

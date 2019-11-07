@@ -1,0 +1,29 @@
+uuid: 703a0eda-2821-4009-908c-78157a307060
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.contact-menu
+  module:
+    - block_class
+    - system
+  theme:
+    - stark
+third_party_settings:
+  block_class:
+    classes: contact
+id: stark_contactmenu
+theme: stark
+region: sidebar_first
+weight: -3
+provider: null
+plugin: 'system_menu_block:contact-menu'
+settings:
+  id: 'system_menu_block:contact-menu'
+  label: 'Contact Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

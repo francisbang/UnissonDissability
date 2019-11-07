@@ -1,0 +1,23 @@
+uuid: 48e569ce-82e1-44b7-b590-e1b99250addb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_overview_link
+    - paragraphs.paragraphs_type.paragraph_overview_image_text_li
+  module:
+    - link
+id: paragraph.paragraph_overview_image_text_li.field_overview_link
+field_name: field_overview_link
+entity_type: paragraph
+bundle: paragraph_overview_image_text_li
+label: 'Overview - Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

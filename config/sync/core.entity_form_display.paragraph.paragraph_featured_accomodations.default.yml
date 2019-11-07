@@ -1,0 +1,44 @@
+uuid: bdb26e2f-758c-4153-8b09-992b1fc1e535
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_featured_accomodations.field_para_facc_link
+    - field.field.paragraph.paragraph_featured_accomodations.field_para_facc_properties
+    - field.field.paragraph.paragraph_featured_accomodations.field_para_facc_title
+    - paragraphs.paragraphs_type.paragraph_featured_accomodations
+  module:
+    - link
+id: paragraph.paragraph_featured_accomodations.default
+targetEntityType: paragraph
+bundle: paragraph_featured_accomodations
+mode: default
+content:
+  field_para_facc_link:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_para_facc_properties:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_para_facc_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true

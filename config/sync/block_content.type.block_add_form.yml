@@ -1,0 +1,8 @@
+uuid: ff8cae49-4090-4244-9503-6d78852985f9
+langcode: en
+status: true
+dependencies: {  }
+id: block_add_form
+label: 'Block - Add Form'
+revision: 0
+description: 'This helps to add form as a block across the website'

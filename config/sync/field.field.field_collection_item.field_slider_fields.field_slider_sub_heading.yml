@@ -1,0 +1,19 @@
+uuid: 14462fb0-2232-4ffe-84c4-c0d98e93eec7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_slider_sub_heading
+    - field_collection.field_collection.field_slider_fields
+id: field_collection_item.field_slider_fields.field_slider_sub_heading
+field_name: field_slider_sub_heading
+entity_type: field_collection_item
+bundle: field_slider_fields
+label: 'Slider - Sub Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

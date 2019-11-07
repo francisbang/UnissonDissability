@@ -1,0 +1,21 @@
+uuid: e58d59e0-befc-4a41-8388-6273c9444d0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_overview_snippet
+    - node.type.research
+  module:
+    - text
+id: node.research.field_overview_snippet
+field_name: field_overview_snippet
+entity_type: node
+bundle: research
+label: 'Overview - Snippet'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

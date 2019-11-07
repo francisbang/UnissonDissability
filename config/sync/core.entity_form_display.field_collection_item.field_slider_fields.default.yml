@@ -1,0 +1,88 @@
+uuid: fa6f1e75-7587-47d5-9aff-1a775a89e938
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.field_collection_item.field_slider_fields.field_slider_description
+    - field.field.field_collection_item.field_slider_fields.field_slider_image
+    - field.field.field_collection_item.field_slider_fields.field_slider_link
+    - field.field.field_collection_item.field_slider_fields.field_slider_link_text
+    - field.field.field_collection_item.field_slider_fields.field_slider_main_heading
+    - field.field.field_collection_item.field_slider_fields.field_slider_sub_heading
+    - field_collection.field_collection.field_slider_fields
+    - image.style.thumbnail
+  module:
+    - field_group
+    - image
+    - link
+third_party_settings:
+  field_group:
+    group_slider_fields:
+      children:
+        - field_slider_image
+        - field_slider_main_heading
+        - field_slider_sub_heading
+        - field_slider_description
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Slider - Fields'
+id: field_collection_item.field_slider_fields.default
+targetEntityType: field_collection_item
+bundle: field_slider_fields
+mode: default
+content:
+  field_slider_description:
+    weight: 7
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_slider_image:
+    weight: 4
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_slider_link:
+    weight: 9
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_slider_link_text:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_slider_main_heading:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_slider_sub_heading:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden: {  }

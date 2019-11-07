@@ -1,0 +1,9 @@
+uuid: 80654fe9-09f9-4bab-925e-d480983eccb9
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_quote_block
+label: 'Paragraph - Quote Block'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

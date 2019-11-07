@@ -1,0 +1,29 @@
+uuid: fec9a31c-368c-4eee-b77a-acb66f3789dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer---social-links
+  module:
+    - block_class
+    - system
+  theme:
+    - unisson_disability
+third_party_settings:
+  block_class:
+    classes: socials
+id: unisson_disability_footersociallinks
+theme: unisson_disability
+region: footer_third
+weight: -8
+provider: null
+plugin: 'system_menu_block:footer---social-links'
+settings:
+  id: 'system_menu_block:footer---social-links'
+  label: 'Footer - Social Links'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: b92f4880-86fd-46ad-a905-42e5f8866ca7
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_quicklinks_description
+label: 'Paragraph - Quicklinks Description'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

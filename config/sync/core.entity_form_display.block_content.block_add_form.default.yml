@@ -1,0 +1,41 @@
+uuid: 0f82d64b-63a6-48fc-8571-46536a752bd8
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.block_add_form
+    - field.field.block_content.block_add_form.field_attach_form
+    - field.field.block_content.block_add_form.field_attach_form_heading
+  module:
+    - webform
+id: block_content.block_add_form.default
+targetEntityType: block_content
+bundle: block_add_form
+mode: default
+content:
+  field_attach_form:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: webform_entity_reference_autocomplete
+    region: content
+  field_attach_form_heading:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

@@ -1,0 +1,22 @@
+uuid: e26d75f7-5e72-41c6-8901-9c4a62052c61
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - unisson_disability
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: unisson_disability_help
+theme: unisson_disability
+region: page_actions
+weight: -10
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

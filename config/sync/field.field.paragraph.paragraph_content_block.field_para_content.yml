@@ -1,0 +1,32 @@
+uuid: 97f800e6-c372-415a-b39e-17d94245581a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_content
+    - node.type.article
+    - node.type.research
+    - node.type.stories
+    - paragraphs.paragraphs_type.paragraph_content_block
+id: paragraph.paragraph_content_block.field_para_content
+field_name: field_para_content
+entity_type: paragraph
+bundle: paragraph_content_block
+label: Content
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+      research: research
+      stories: stories
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: article
+field_type: entity_reference

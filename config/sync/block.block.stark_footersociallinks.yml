@@ -1,0 +1,29 @@
+uuid: fe3b15e7-762f-465c-a789-2226a87b3fc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer---social-links
+  module:
+    - block_class
+    - system
+  theme:
+    - stark
+third_party_settings:
+  block_class:
+    classes: socials
+id: stark_footersociallinks
+theme: stark
+region: sidebar_first
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer---social-links'
+settings:
+  id: 'system_menu_block:footer---social-links'
+  label: 'Footer - Social Links'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

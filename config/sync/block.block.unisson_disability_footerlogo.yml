@@ -1,0 +1,29 @@
+uuid: 5285fae8-6919-4a19-b883-74c42c78832b
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:logo_block:8b57a6c5-ffa4-4baf-a5fe-633c0af060d1'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - unisson_disability
+third_party_settings:
+  block_class:
+    classes: ''
+id: unisson_disability_footerlogo
+theme: unisson_disability
+region: footer_logo
+weight: -10
+provider: null
+plugin: 'block_content:8b57a6c5-ffa4-4baf-a5fe-633c0af060d1'
+settings:
+  id: 'block_content:8b57a6c5-ffa4-4baf-a5fe-633c0af060d1'
+  label: 'Footer Logo'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

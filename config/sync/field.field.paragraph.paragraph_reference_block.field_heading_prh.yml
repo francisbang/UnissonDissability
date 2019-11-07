@@ -1,0 +1,19 @@
+uuid: 4872c394-65e3-48c9-a3a6-7f9c9cdeaff3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading_prh
+    - paragraphs.paragraphs_type.paragraph_reference_block
+id: paragraph.paragraph_reference_block.field_heading_prh
+field_name: field_heading_prh
+entity_type: paragraph
+bundle: paragraph_reference_block
+label: Heading
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

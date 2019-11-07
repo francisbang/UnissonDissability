@@ -1,0 +1,49 @@
+uuid: 99014d88-6670-4e08-88ad-f2ced61eb922
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_tabbed_block.field_main_heading_tabbed
+    - field.field.paragraph.paragraph_tabbed_block.field_tabbed_block_fields
+    - paragraphs.paragraphs_type.paragraph_tabbed_block
+  module:
+    - field_collection
+    - field_group
+third_party_settings:
+  field_group:
+    group_tabbed_block_fields:
+      children:
+        - field_main_heading_tabbed
+        - field_tabbed_block_fields
+      parent_name: ''
+      weight: 20
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Tabbed Block - Fields'
+id: paragraph.paragraph_tabbed_block.default
+targetEntityType: paragraph
+bundle: paragraph_tabbed_block
+mode: default
+content:
+  field_main_heading_tabbed:
+    weight: 21
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_tabbed_block_fields:
+    weight: 22
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_embed
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,55 @@
+uuid: e8f6a3c6-b44a-4bd5-8583-b4685b6c99a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.article.field_body_content
+    - field.field.node.article.field_feature_image
+    - field.field.node.article.field_header_image
+    - field.field.node.article.field_header_image_mobile
+    - field.field.node.article.field_meta_tags
+    - field.field.node.article.field_overview_snippet
+    - node.type.article
+  module:
+    - image
+    - smart_trim
+    - user
+_core:
+  default_config_hash: 4NcL2hSQZBpJbYtNuh5jC6kyQTcAc1m5bQpTegEWEso
+id: node.article.teaser
+targetEntityType: node
+bundle: article
+mode: teaser
+content:
+  field_feature_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_overview_snippet:
+    type: smart_trim
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      trim_length: '150'
+      trim_type: chars
+      trim_suffix: ...
+      more_link: '0'
+      more_text: More
+      trim_options:
+        text: 0
+      more_class: more-link
+      summary_handler: full
+    third_party_settings: {  }
+hidden:
+  field_body_content: true
+  field_header_image: true
+  field_header_image_mobile: true
+  field_meta_tags: true
+  links: true

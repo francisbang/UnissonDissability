@@ -1,0 +1,22 @@
+uuid: 78bfb26d-4ccc-4bb9-8635-6ab8f45c3c87
+langcode: en
+status: true
+dependencies:
+  theme:
+    - sunshine
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: sunshine_local_tasks
+theme: sunshine
+region: page_actions
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

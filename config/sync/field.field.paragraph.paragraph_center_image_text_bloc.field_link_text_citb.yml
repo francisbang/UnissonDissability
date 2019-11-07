@@ -1,0 +1,19 @@
+uuid: c246582e-9917-4cf7-8faf-f93e402cbbcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_text_citb
+    - paragraphs.paragraphs_type.paragraph_center_image_text_bloc
+id: paragraph.paragraph_center_image_text_bloc.field_link_text_citb
+field_name: field_link_text_citb
+entity_type: paragraph
+bundle: paragraph_center_image_text_bloc
+label: 'Link Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

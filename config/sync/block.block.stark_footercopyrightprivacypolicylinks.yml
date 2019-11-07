@@ -1,0 +1,26 @@
+uuid: d4f15671-439b-43d3-9ce6-ae8f1d19437d
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer---copyright-privacy-
+  module:
+    - block_class
+    - system
+  theme:
+    - stark
+id: stark_footercopyrightprivacypolicylinks
+theme: stark
+region: sidebar_first
+weight: -9
+provider: null
+plugin: 'system_menu_block:footer---copyright-privacy-'
+settings:
+  id: 'system_menu_block:footer---copyright-privacy-'
+  label: 'Footer - Copyright / Privacy Policy Links'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

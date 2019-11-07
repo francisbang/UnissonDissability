@@ -1,0 +1,19 @@
+uuid: ff43d75d-6126-40ab-a323-40968224800a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_attach_form_heading
+    - paragraphs.paragraphs_type.paragraph_attach_form
+id: paragraph.paragraph_attach_form.field_attach_form_heading
+field_name: field_attach_form_heading
+entity_type: paragraph
+bundle: paragraph_attach_form
+label: 'Attach Form - Heading'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

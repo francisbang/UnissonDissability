@@ -1,0 +1,38 @@
+uuid: 0216b049-f56a-467e-b425-13fb3b2f14a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_feature_image
+    - node.type.overview_pages
+  module:
+    - image
+id: node.overview_pages.field_feature_image
+field_name: field_feature_image
+entity_type: node
+bundle: overview_pages
+label: 'Feature - Image'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: feature-image
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '150 KB'
+  max_resolution: 590x396
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 8205a4a3-b4c4-470d-a43a-588d03aa6921
+    alt: ''
+    title: ''
+    width: 320
+    height: 210
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

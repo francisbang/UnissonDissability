@@ -1,0 +1,21 @@
+uuid: 18c92259-93d3-40e8-a361-88694f00800e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_icon_text_block_text_field
+    - field_collection.field_collection.field_quicklinks_desc_fieldset
+  module:
+    - text
+id: field_collection_item.field_quicklinks_desc_fieldset.field_icon_text_block_text_field
+field_name: field_icon_text_block_text_field
+entity_type: field_collection_item
+bundle: field_quicklinks_desc_fieldset
+label: 'Icon - Text Block - Text Field'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

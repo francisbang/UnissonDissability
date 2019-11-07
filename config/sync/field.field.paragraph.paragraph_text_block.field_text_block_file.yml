@@ -1,0 +1,27 @@
+uuid: 5e6e96eb-a8b7-47ef-ad9d-3f0a0fb03736
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_text_block_file
+    - paragraphs.paragraphs_type.paragraph_text_block
+  module:
+    - file
+id: paragraph.paragraph_text_block.field_text_block_file
+field_name: field_text_block_file
+entity_type: paragraph
+bundle: paragraph_text_block
+label: 'Text Block - File'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: documents
+  file_extensions: 'txt doc docx pdf xls xlsx'
+  max_filesize: '10 MB'
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

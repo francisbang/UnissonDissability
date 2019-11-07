@@ -1,0 +1,45 @@
+uuid: 86f4fe98-b837-4b5c-972a-52cd38484425
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.newsletters.body
+    - field.field.node.newsletters.field_feature_image
+    - field.field.node.newsletters.field_header_image
+    - field.field.node.newsletters.field_header_image_mobile
+    - field.field.node.newsletters.field_meta_tags
+    - field.field.node.newsletters.field_overview_snippet
+    - node.type.newsletters
+  module:
+    - metatag
+    - text
+    - user
+id: node.newsletters.default
+targetEntityType: node
+bundle: newsletters
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_meta_tags:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_feature_image: true
+  field_header_image: true
+  field_header_image_mobile: true
+  field_overview_snippet: true

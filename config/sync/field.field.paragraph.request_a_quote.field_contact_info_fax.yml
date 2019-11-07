@@ -1,0 +1,19 @@
+uuid: 3cf25b67-0f32-479d-a475-603dd7a8742e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_info_fax
+    - paragraphs.paragraphs_type.request_a_quote
+id: paragraph.request_a_quote.field_contact_info_fax
+field_name: field_contact_info_fax
+entity_type: paragraph
+bundle: request_a_quote
+label: 'Contact Info Fax'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,19 @@
+uuid: 60bb3c26-1384-4605-8785-395543c50799
+langcode: en
+status: true
+dependencies:
+  module:
+    - field_collection
+    - text
+id: field_collection_item.field_description_pitd
+field_name: field_description_pitd
+entity_type: field_collection_item
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

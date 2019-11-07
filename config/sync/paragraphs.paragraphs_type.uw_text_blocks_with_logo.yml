@@ -1,0 +1,9 @@
+uuid: 55c1f84c-8a34-481f-91fe-b9f04e72c4f6
+langcode: en
+status: true
+dependencies: {  }
+id: uw_text_blocks_with_logo
+label: 'UW Text Blocks with Logo'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,24 @@
+uuid: 5ab7c20c-5c28-45c8-ba60-188ddac73fe4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_careers.field_careers_fields
+    - paragraphs.paragraphs_type.paragraph_careers
+  module:
+    - field_collection
+id: paragraph.paragraph_careers.default
+targetEntityType: paragraph
+bundle: paragraph_careers
+mode: default
+content:
+  field_careers_fields:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_embed
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,19 @@
+uuid: 893ed4ea-babf-4f9b-ad96-39f45ae34001
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_us_misc_text
+    - paragraphs.paragraphs_type.paragraph_contact_form_address
+id: paragraph.paragraph_contact_form_address.field_contact_us_misc_text
+field_name: field_contact_us_misc_text
+entity_type: paragraph
+bundle: paragraph_contact_form_address
+label: 'Contact Us - Misc Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

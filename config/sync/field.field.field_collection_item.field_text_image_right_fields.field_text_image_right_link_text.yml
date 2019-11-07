@@ -1,0 +1,19 @@
+uuid: e3cca3fb-2e0f-4047-8bfd-73aa9f5af5dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_text_image_right_link_text
+    - field_collection.field_collection.field_text_image_right_fields
+id: field_collection_item.field_text_image_right_fields.field_text_image_right_link_text
+field_name: field_text_image_right_link_text
+entity_type: field_collection_item
+bundle: field_text_image_right_fields
+label: 'Text Image Right - Link Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

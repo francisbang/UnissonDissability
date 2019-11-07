@@ -1,0 +1,37 @@
+uuid: aa28e0a7-5588-4ed2-9011-865301da49b7
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.header_section
+  module:
+    - block_class
+    - ctools
+    - views
+  theme:
+    - sunshine
+third_party_settings:
+  block_class:
+    classes: ''
+id: views_block__header_section_block_1
+theme: sunshine
+region: page_header
+weight: -9
+provider: null
+plugin: 'views_block:header_section-block_1'
+settings:
+  id: 'views_block:header_section-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      overview_pages: overview_pages
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

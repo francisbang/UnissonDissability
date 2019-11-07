@@ -1,0 +1,28 @@
+uuid: 9c3e285d-d3e0-4735-8838-d8ee68025381
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_para_facc_properties
+    - node.type.property
+    - paragraphs.paragraphs_type.paragraph_featured_accomodations
+id: paragraph.paragraph_featured_accomodations.field_para_facc_properties
+field_name: field_para_facc_properties
+entity_type: paragraph
+bundle: paragraph_featured_accomodations
+label: Properties
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      property: property
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: ea7ab6cb-4e03-4ad2-b0f3-97295707fdb7
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+    - webform
+id: paragraph.field_attac
+field_name: field_attac
+entity_type: paragraph
+type: webform
+settings:
+  target_type: webform
+module: webform
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

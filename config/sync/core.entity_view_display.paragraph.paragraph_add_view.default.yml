@@ -1,0 +1,43 @@
+uuid: 911cf4d6-256e-4cf9-8718-53272f33d1df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_add_view.field_add_view_pa
+    - field.field.paragraph.paragraph_add_view.field_heading_pa
+    - field.field.paragraph.paragraph_add_view.field_set_background
+    - paragraphs.paragraphs_type.paragraph_add_view
+  module:
+    - options
+    - viewfield
+id: paragraph.paragraph_add_view.default
+targetEntityType: paragraph
+bundle: paragraph_add_view
+mode: default
+content:
+  field_add_view_pa:
+    weight: 1
+    label: hidden
+    settings:
+      view_title: hidden
+      always_build_output: 0
+      empty_view_title: hidden
+    third_party_settings: {  }
+    type: viewfield_default
+    region: content
+  field_heading_pa:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_set_background:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_key
+    region: content
+hidden: {  }

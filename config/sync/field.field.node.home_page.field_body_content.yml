@@ -1,0 +1,173 @@
+uuid: 9bab8368-c1ff-4a5b-8d06-869d2e9ed5ca
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_content
+    - node.type.home_page
+    - paragraphs.paragraphs_type.paragraph_add_view
+    - paragraphs.paragraphs_type.paragraph_call_to_action
+    - paragraphs.paragraphs_type.paragraph_content_block
+    - paragraphs.paragraphs_type.paragraph_featured_accomodations
+    - paragraphs.paragraphs_type.paragraph_home_page_slider
+    - paragraphs.paragraphs_type.paragraph_icon_heading_descripti
+    - paragraphs.paragraphs_type.paragraph_icon_text_link_block
+    - paragraphs.paragraphs_type.paragraph_just_image
+    - paragraphs.paragraphs_type.paragraph_quicklinks
+    - paragraphs.paragraphs_type.paragraph_quicklinks_description
+    - paragraphs.paragraphs_type.paragraph_testimonial_quote_bloc
+    - paragraphs.paragraphs_type.paragraph_text_block
+  module:
+    - entity_reference_revisions
+id: node.home_page.field_body_content
+field_name: field_body_content
+entity_type: node
+bundle: home_page
+label: 'Body Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      paragraph_add_view: paragraph_add_view
+      paragraph_home_page_slider: paragraph_home_page_slider
+      paragraph_call_to_action: paragraph_call_to_action
+      paragraph_icon_heading_descripti: paragraph_icon_heading_descripti
+      paragraph_icon_text_link_block: paragraph_icon_text_link_block
+      paragraph_just_image: paragraph_just_image
+      paragraph_quicklinks_description: paragraph_quicklinks_description
+      paragraph_testimonial_quote_bloc: paragraph_testimonial_quote_bloc
+      paragraph_text_block: paragraph_text_block
+      paragraph_featured_accomodations: paragraph_featured_accomodations
+      paragraph_content_block: paragraph_content_block
+      paragraph_quicklinks: paragraph_quicklinks
+    target_bundles_drag_drop:
+      paragraph_add_view:
+        enabled: true
+        weight: 24
+      paragraph_home_page_slider:
+        enabled: true
+        weight: 25
+      paragraph_call_to_action:
+        enabled: true
+        weight: 25
+      paragraph_careers:
+        weight: 26
+        enabled: false
+      paragraph_center_image_text_bloc:
+        weight: 27
+        enabled: false
+      paragraph_contact_form_address:
+        weight: 28
+        enabled: false
+      paragraph_find_us:
+        weight: 29
+        enabled: false
+      paragraph_history_block:
+        weight: 30
+        enabled: false
+      paragraph_icon_heading_descripti:
+        enabled: true
+        weight: 31
+      paragraph_icon_text_link_block:
+        enabled: true
+        weight: 32
+      paragraph_image_left_right_text_:
+        weight: 33
+        enabled: false
+      paragraph_image_text:
+        weight: 34
+        enabled: false
+      paragraph_just_image:
+        enabled: true
+        weight: 35
+      paragraph_overview_image_text_li:
+        weight: 36
+        enabled: false
+      paragraph_quote_block:
+        weight: 37
+        enabled: false
+      paragraph_reference_block:
+        weight: 38
+        enabled: false
+      paragraph_attach_form:
+        weight: 39
+        enabled: false
+      paragraph_tabbed_block:
+        weight: 39
+        enabled: false
+      paragraph_team_block:
+        weight: 40
+        enabled: false
+      paragraph_quicklinks_description:
+        enabled: true
+        weight: 41
+      paragraph_test:
+        weight: 41
+        enabled: false
+      paragraph_testimonial_quote_bloc:
+        enabled: true
+        weight: 42
+      paragraph_text_block:
+        enabled: true
+        weight: 43
+      paragraph_text_block_two_columns:
+        weight: 44
+        enabled: false
+      paragraph_faq_fields:
+        weight: 44
+        enabled: false
+      paragraph_text_image_right_slide:
+        weight: 45
+        enabled: false
+      paragraph_title_description:
+        weight: 46
+        enabled: false
+      paragraph_featured_accomodations:
+        enabled: true
+        weight: 46
+      paragraph_content_block:
+        enabled: true
+        weight: 48
+      paragraph_image_text_description:
+        weight: 52
+        enabled: false
+      paragraph_left_aligned_text_bloc:
+        weight: 54
+        enabled: false
+      paragraph_quicklinks:
+        enabled: true
+        weight: 61
+      request_a_quote:
+        weight: 66
+        enabled: false
+      service_block:
+        weight: 67
+        enabled: false
+      service_icon:
+        weight: 68
+        enabled: false
+      service_icons:
+        weight: 69
+        enabled: false
+      services_blocks:
+        weight: 70
+        enabled: false
+      uw_find_out_more:
+        weight: 71
+        enabled: false
+      uw_text_block:
+        weight: 72
+        enabled: false
+      uw_text_blocks_with_logo:
+        weight: 73
+        enabled: false
+      video_and_text:
+        weight: 74
+        enabled: false
+field_type: entity_reference_revisions

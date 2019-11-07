@@ -1,0 +1,53 @@
+uuid: d3e4e605-e247-4c4c-abea-6873d4dbfe7a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.stories.field_body_content
+    - field.field.node.stories.field_feature_image
+    - field.field.node.stories.field_header_image
+    - field.field.node.stories.field_header_image_mobile
+    - field.field.node.stories.field_meta_tags
+    - field.field.node.stories.field_overview_snippet
+    - node.type.stories
+  module:
+    - image
+    - smart_trim
+    - user
+id: node.stories.teaser
+targetEntityType: node
+bundle: stories
+mode: teaser
+content:
+  field_feature_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_overview_snippet:
+    type: smart_trim
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      trim_length: '150'
+      trim_type: chars
+      trim_suffix: ...
+      more_link: '0'
+      more_text: More
+      trim_options:
+        text: 0
+      more_class: more-link
+      summary_handler: full
+    third_party_settings: {  }
+hidden:
+  field_body_content: true
+  field_header_image: true
+  field_header_image_mobile: true
+  field_meta_tags: true
+  links: true

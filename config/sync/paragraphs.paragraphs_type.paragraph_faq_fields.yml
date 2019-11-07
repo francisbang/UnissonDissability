@@ -1,0 +1,9 @@
+uuid: c5045641-4f13-416f-bf05-0d742e99a4ca
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_faq_fields
+label: 'Paragraph - FAQ Fields'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

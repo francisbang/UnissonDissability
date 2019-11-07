@@ -1,0 +1,29 @@
+uuid: f0e5c37e-c234-46d3-91d3-21f8f1dee2de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_testimonial_quote_bloc.field_quote_author
+    - field.field.paragraph.paragraph_testimonial_quote_bloc.field_quote_text
+    - paragraphs.paragraphs_type.paragraph_testimonial_quote_bloc
+id: paragraph.paragraph_testimonial_quote_bloc.default
+targetEntityType: paragraph
+bundle: paragraph_testimonial_quote_bloc
+mode: default
+content:
+  field_quote_author:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_quote_text:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+hidden: {  }

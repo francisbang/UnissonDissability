@@ -1,0 +1,9 @@
+uuid: cfeeae0d-41ca-406a-87d9-8c1499a87373
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_text_block
+label: 'Paragraph - Text Block'
+icon_uuid: null
+description: 'This is used to add text block on the page across the website.'
+behavior_plugins: {  }

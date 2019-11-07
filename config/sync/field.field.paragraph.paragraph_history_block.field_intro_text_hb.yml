@@ -1,0 +1,19 @@
+uuid: 958dae18-f0b4-44ed-9ce6-149ae7b8f937
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_intro_text_hb
+    - paragraphs.paragraphs_type.paragraph_history_block
+id: paragraph.paragraph_history_block.field_intro_text_hb
+field_name: field_intro_text_hb
+entity_type: paragraph
+bundle: paragraph_history_block
+label: 'Intro Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

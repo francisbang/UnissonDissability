@@ -1,0 +1,39 @@
+uuid: 51b0cf15-6f39-412a-bf3c-93dc90da8279
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_icon_heading_descripti.field_icon_text_description_fiel
+    - paragraphs.paragraphs_type.paragraph_icon_heading_descripti
+  module:
+    - field_collection
+    - field_group
+third_party_settings:
+  field_group:
+    group_icon_text_description_fiel:
+      children:
+        - field_icon_text_description_fiel
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Icon Text Description - Fields'
+id: paragraph.paragraph_icon_heading_descripti.default
+targetEntityType: paragraph
+bundle: paragraph_icon_heading_descripti
+mode: default
+content:
+  field_icon_text_description_fiel:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: field_collection_embed
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

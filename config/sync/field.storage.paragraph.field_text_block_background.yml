@@ -1,0 +1,27 @@
+uuid: b5107086-98c5-420d-9ab5-a5ec19dac8b2
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+id: paragraph.field_text_block_background
+field_name: field_text_block_background
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: grey
+      label: 'Grey Background'
+    -
+      value: white
+      label: 'White Background'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

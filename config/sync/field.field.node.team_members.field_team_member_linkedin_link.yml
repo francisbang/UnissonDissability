@@ -1,0 +1,23 @@
+uuid: 55037418-9c1e-4b18-9552-ca494bb03f47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_team_member_linkedin_link
+    - node.type.team_members
+  module:
+    - link
+id: node.team_members.field_team_member_linkedin_link
+field_name: field_team_member_linkedin_link
+entity_type: node
+bundle: team_members
+label: 'Team Member - LinkedIn Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

@@ -1,0 +1,9 @@
+uuid: 5e767d96-bee6-41df-8f32-a51ac8cfb70b
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_image_left_right_text_
+label: 'Paragraph - Image [Left / Right] - Text Block'
+icon_uuid: null
+description: 'This is used for image [left / right] with text block across the website.'
+behavior_plugins: {  }

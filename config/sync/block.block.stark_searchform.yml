@@ -1,0 +1,24 @@
+uuid: 8890211c-6c93-4d3f-91bb-8067dab9f216
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - search
+  theme:
+    - stark
+third_party_settings:
+  block_class:
+    classes: search
+id: stark_searchform
+theme: stark
+region: sidebar_first
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  provider: search
+  label_display: '0'
+visibility: {  }

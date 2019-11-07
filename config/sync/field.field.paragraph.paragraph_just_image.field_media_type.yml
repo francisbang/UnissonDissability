@@ -1,0 +1,23 @@
+uuid: bdd505ef-157f-45de-8417-26483a97c751
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media_type
+    - paragraphs.paragraphs_type.paragraph_just_image
+  module:
+    - options
+id: paragraph.paragraph_just_image.field_media_type
+field_name: field_media_type
+entity_type: paragraph
+bundle: paragraph_just_image
+label: 'Media Type'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: image
+default_value_callback: ''
+settings: {  }
+field_type: list_string

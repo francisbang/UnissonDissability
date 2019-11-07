@@ -1,0 +1,38 @@
+uuid: b4cac857-bfbb-4af8-95cb-4ede080cbf2c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_image_mobile
+    - node.type.overview_pages
+  module:
+    - image
+id: node.overview_pages.field_header_image_mobile
+field_name: field_header_image_mobile
+entity_type: node
+bundle: overview_pages
+label: 'Header - Image Mobile'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: header-images
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: '500 KB'
+  max_resolution: ''
+  min_resolution: 1080x1160
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 4d8802da-29ce-433c-872c-0145942e1ecd
+    alt: ''
+    title: ''
+    width: 1080
+    height: 1160
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image
