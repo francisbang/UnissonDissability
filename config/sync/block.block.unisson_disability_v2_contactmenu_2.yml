@@ -1,0 +1,29 @@
+uuid: 97d2dc47-6d4d-4cad-9384-4cbd2a428a3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.contact-menu
+  module:
+    - block_class
+    - system
+  theme:
+    - unisson_disability_v2
+third_party_settings:
+  block_class:
+    classes: contact
+id: unisson_disability_v2_contactmenu_2
+theme: unisson_disability_v2
+region: header_tools
+weight: -7
+provider: null
+plugin: 'system_menu_block:contact-menu'
+settings:
+  id: 'system_menu_block:contact-menu'
+  label: 'Contact Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

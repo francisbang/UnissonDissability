@@ -1,0 +1,25 @@
+uuid: b05c611f-c9e3-4068-91af-fa7a818ddb96
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text_block:76405bed-8486-40df-ab02-0997445750b7'
+  module:
+    - block_content
+  theme:
+    - unisson_disability_v2
+id: unisson_disability_v2_copyrightblock
+theme: unisson_disability_v2
+region: footer_copyright
+weight: -8
+provider: null
+plugin: 'block_content:76405bed-8486-40df-ab02-0997445750b7'
+settings:
+  id: 'block_content:76405bed-8486-40df-ab02-0997445750b7'
+  label: 'Copyright Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

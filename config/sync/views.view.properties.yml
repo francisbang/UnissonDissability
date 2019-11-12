@@ -8,6 +8,7 @@ dependencies:
     - field.storage.node.field_property_images
     - field.storage.node.field_property_location
     - field.storage.node.field_property_type
+    - image.style.thumbnail
     - node.type.property
     - taxonomy.vocabulary.property_type
   module:
@@ -329,7 +330,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
+            image_style: thumbnail
             image_link: ''
           group_column: ''
           group_columns: {  }

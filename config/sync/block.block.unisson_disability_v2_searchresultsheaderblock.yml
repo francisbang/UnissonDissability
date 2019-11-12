@@ -1,0 +1,31 @@
+uuid: 4fa7ee23-a5fa-4029-85c6-408f7b7ccff1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:header_block_image_text:88100609-a0ad-462f-ad09-ec71abc2c2fe'
+  module:
+    - block_content
+    - system
+  theme:
+    - unisson_disability_v2
+id: unisson_disability_v2_searchresultsheaderblock
+theme: unisson_disability_v2
+region: page_header
+weight: -20
+provider: null
+plugin: 'block_content:88100609-a0ad-462f-ad09-ec71abc2c2fe'
+settings:
+  id: 'block_content:88100609-a0ad-462f-ad09-ec71abc2c2fe'
+  label: 'Search Results - Header Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '/search/node_search*'
+    negate: false
+    context_mapping: {  }

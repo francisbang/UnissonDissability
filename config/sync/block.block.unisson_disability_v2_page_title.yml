@@ -1,0 +1,20 @@
+uuid: 728baa62-5e02-45cf-9275-369532c0ec32
+langcode: en
+status: false
+dependencies:
+  theme:
+    - unisson_disability_v2
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: unisson_disability_v2_page_title
+theme: unisson_disability_v2
+region: content
+weight: -14
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

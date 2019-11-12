@@ -1,0 +1,25 @@
+uuid: c215302e-1365-455c-bbf6-a8c93f828aa2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:icon_link_block:ae26cc47-c95e-491d-82b1-94a9b49bbddb'
+  module:
+    - block_content
+  theme:
+    - unisson_disability_v2
+id: unisson_disability_v2_mobilesearchblock
+theme: unisson_disability_v2
+region: header_tools_mobile
+weight: -11
+provider: null
+plugin: 'block_content:ae26cc47-c95e-491d-82b1-94a9b49bbddb'
+settings:
+  id: 'block_content:ae26cc47-c95e-491d-82b1-94a9b49bbddb'
+  label: 'Mobile - Search Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

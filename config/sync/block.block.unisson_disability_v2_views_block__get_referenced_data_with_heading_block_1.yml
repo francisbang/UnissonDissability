@@ -1,0 +1,35 @@
+uuid: faf4019e-d9c8-4144-a652-527a8a89383e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.get_referenced_data_with_heading
+  module:
+    - ctools
+    - views
+  theme:
+    - unisson_disability_v2
+id: unisson_disability_v2_views_block__get_referenced_data_with_heading_block_1
+theme: unisson_disability_v2
+region: related_content
+weight: 0
+provider: null
+plugin: 'views_block:get_referenced_data_with_heading-block_1'
+settings:
+  id: 'views_block:get_referenced_data_with_heading-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+      research: research
+      stories: stories
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -19,5 +19,5 @@ settings:
   min: null
   max: null
   prefix: ''
-  suffix: ''
+  suffix: ' Room Available '
 field_type: integer

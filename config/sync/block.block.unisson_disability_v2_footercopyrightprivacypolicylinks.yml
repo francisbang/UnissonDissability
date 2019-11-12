@@ -1,0 +1,25 @@
+uuid: 2b1c1df9-9372-498f-b5c1-4d12b57a30d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer---copyright-privacy-
+  module:
+    - system
+  theme:
+    - unisson_disability_v2
+id: unisson_disability_v2_footercopyrightprivacypolicylinks
+theme: unisson_disability_v2
+region: footer_copyright
+weight: -9
+provider: null
+plugin: 'system_menu_block:footer---copyright-privacy-'
+settings:
+  id: 'system_menu_block:footer---copyright-privacy-'
+  label: 'Footer - Copyright / Privacy Policy Links'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 057a2d72-f768-4513-b67a-c9d07bcba0fd
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:text_block:3cb8b35b-7222-4569-9e43-a3ebf9bb7f94'
+  module:
+    - block_content
+  theme:
+    - unisson_disability_v2
+id: unisson_disability_v2_aboutunissondisability
+theme: unisson_disability_v2
+region: footer_first
+weight: -10
+provider: null
+plugin: 'block_content:3cb8b35b-7222-4569-9e43-a3ebf9bb7f94'
+settings:
+  id: 'block_content:3cb8b35b-7222-4569-9e43-a3ebf9bb7f94'
+  label: 'About Unisson Disability'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

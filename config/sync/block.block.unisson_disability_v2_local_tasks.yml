@@ -1,0 +1,22 @@
+uuid: de8fc545-78d4-4fd8-8c1c-49b77bbb7ff6
+langcode: en
+status: true
+dependencies:
+  theme:
+    - unisson_disability_v2
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: unisson_disability_v2_local_tasks
+theme: unisson_disability_v2
+region: page_actions
+weight: -9
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

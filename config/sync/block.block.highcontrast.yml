@@ -1,0 +1,29 @@
+uuid: 72217480-2418-4162-9041-43907a440a85
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - high_contrast
+  theme:
+    - unisson_disability_v2
+third_party_settings:
+  block_class:
+    classes: 'accessibility-row high-contrast'
+id: highcontrast
+theme: unisson_disability_v2
+region: hidden
+weight: -22
+provider: null
+plugin: high_contrast
+settings:
+  id: high_contrast
+  label: 'High contrast'
+  provider: high_contrast
+  label_display: '0'
+  switcher_widget: links
+  high_label: 'High Contrast On'
+  normal_label: 'High Contrast Off'
+  use_ajax: 1
+  toggle_element: 1
+visibility: {  }

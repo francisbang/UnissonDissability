@@ -1,0 +1,25 @@
+uuid: 99c0901f-83bf-47bf-9590-d8f4cf2251a6
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:icon_link_block:4f2d285d-6cb7-4d1b-96a0-8d84733fec9b'
+  module:
+    - block_content
+  theme:
+    - unisson_disability_v2
+id: unisson_disability_v2_mobilemailblock
+theme: unisson_disability_v2
+region: header_tools_mobile
+weight: -10
+provider: null
+plugin: 'block_content:4f2d285d-6cb7-4d1b-96a0-8d84733fec9b'
+settings:
+  id: 'block_content:4f2d285d-6cb7-4d1b-96a0-8d84733fec9b'
+  label: 'Mobile - Mail Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

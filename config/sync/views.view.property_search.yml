@@ -4,19 +4,24 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
-    - field.storage.node.field_property_features
-    - field.storage.node.field_property_type
+    - field.storage.node.field_number_of_room_available
+    - field.storage.node.field_property_images
+    - field.storage.node.field_property_location
+    - image.style.large
     - node.type.property
     - taxonomy.vocabulary.property_features
     - taxonomy.vocabulary.property_type
   module:
+    - address
     - better_exposed_filters
     - geofield
+    - image
     - node
     - options
+    - smart_trim
     - taxonomy
-    - text
     - user
+    - views_infinite_scroll
 id: property_search
 label: 'Property - Search'
 module: views
@@ -50,9 +55,9 @@ display:
       exposed_form:
         type: bef
         options:
-          submit_button: Apply
+          submit_button: Search
           reset_button: true
-          reset_button_label: Reset
+          reset_button_label: 'Reset Search'
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
           sort_asc_label: Asc
@@ -80,23 +85,19 @@ display:
                   rewrite:
                     filter_rewrite_values: '- Any - | All'
                   collapsible: false
-                  is_secondary: true
-                select_all_none: false
+                  is_secondary: false
+                select_all_none: true
                 select_all_none_nested: false
               field_number_of_bedrooms_value:
-                plugin_id: bef_links
+                plugin_id: bef
                 advanced:
                   sort_options: false
                   rewrite:
                     filter_rewrite_values: '- Any -|All'
                   collapsible: false
-                  is_secondary: true
+                  is_secondary: false
                 select_all_none: false
-              combine:
-                plugin_id: default
-                advanced:
-                  collapsible: false
-                  is_secondary: true
+                select_all_none_nested: false
               field_property_features_target_id:
                 plugin_id: bef
                 advanced:
@@ -104,16 +105,24 @@ display:
                   rewrite:
                     filter_rewrite_values: ''
                   collapsible: false
-                  is_secondary: true
-                select_all_none: true
+                  is_secondary: false
+                select_all_none: false
                 select_all_none_nested: false
+              combine:
+                plugin_id: default
+                advanced:
+                  collapsible: false
+                  is_secondary: false
       pager:
-        type: mini
+        type: infinite_scroll
         options:
-          items_per_page: 10
+          items_per_page: 6
           offset: 0
           id: 0
           total_pages: null
+          tags:
+            previous: ‹‹
+            next: ››
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -122,9 +131,9 @@ display:
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
-          tags:
-            previous: ‹‹
-            next: ››
+          views_infinite_scroll:
+            button_text: 'View All'
+            automatically_load_content: false
       style:
         type: default
       row:
@@ -139,39 +148,54 @@ display:
           id: title
           table: node_field_data
           field: title
-          entity_type: node
-          entity_field: title
-          label: ''
-          alter:
-            alter_text: false
-            make_link: false
-            absolute: false
-            trim: false
-            word_boundary: false
-            ellipsis: false
-            strip_tags: false
-            html: false
-          hide_empty: false
-          empty_zero: false
-          settings:
-            link_to_entity: true
-          plugin_id: field
           relationship: none
           group_type: group
           admin_label: ''
+          label: ''
           exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
+          hide_empty: false
+          empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
           type: string
+          settings:
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -182,6 +206,9 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
+          entity_type: node
+          entity_field: title
+          plugin_id: field
         body:
           id: body
           table: node__body
@@ -231,8 +258,20 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: text_default
-          settings: {  }
+          type: smart_trim
+          settings:
+            trim_length: 150
+            trim_type: chars
+            trim_suffix: ...
+            wrap_output: false
+            wrap_class: trimmed
+            more_link: false
+            more_text: More
+            more_class: more-link
+            summary_handler: full
+            trim_options:
+              text: false
+              trim_zero: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -244,10 +283,10 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_property_features:
-          id: field_property_features
-          table: node__field_property_features
-          field: field_property_features
+        field_property_images:
+          id: field_property_images
+          table: node__field_property_images
+          field: field_property_images
           relationship: none
           group_type: group
           admin_label: ''
@@ -293,10 +332,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_label
+          type: image
           settings:
-            link: false
-          group_column: target_id
+            image_style: large
+            image_link: ''
+          group_column: ''
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -307,10 +347,10 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_property_type:
-          id: field_property_type
-          table: node__field_property_type
-          field: field_property_type
+        field_property_location:
+          id: field_property_location
+          table: node__field_property_location
+          field: field_property_location
           relationship: none
           group_type: group
           admin_label: ''
@@ -355,11 +395,74 @@ display:
           hide_empty: false
           empty_zero: false
           hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
+          click_sort_column: langcode
+          type: address_default
+          settings: {  }
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_number_of_room_available:
+          id: field_number_of_room_available
+          table: node__field_number_of_room_available
+          field: field_number_of_room_available
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: number_integer
           settings:
-            link: false
-          group_column: target_id
+            thousand_separator: ''
+            prefix_suffix: true
+          group_column: value
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -433,12 +536,12 @@ display:
           value:
             min: '50'
             max: '200'
-            value: '5'
+            value: ''
           group: 1
           exposed: true
           expose:
             operator_id: field_property_geolocation_proximity_op
-            label: Location
+            label: ''
             description: ''
             use_operator: false
             operator: field_property_geolocation_proximity_op
@@ -451,7 +554,7 @@ display:
               anonymous: '0'
               administrator: '0'
               content_author: '0'
-            placeholder: 'Type a city, suburb or a pincode'
+            placeholder: 'Type a city, suburb or pincode'
             min_placeholder: ''
             max_placeholder: ''
           is_grouped: false
@@ -469,7 +572,7 @@ display:
           units: GEOFIELD_KILOMETERS
           source: geofield_geocode_origin
           source_configuration:
-            exposed_summary: 1
+            exposed_summary: 0
             origin_address: ''
             plugins:
               googlemaps:
@@ -540,14 +643,14 @@ display:
           exposed: true
           expose:
             operator_id: field_property_type_target_id_op
-            label: 'Property Type'
+            label: ''
             description: ''
             use_operator: false
             operator: field_property_type_target_id_op
             identifier: field_property_type_target_id
             required: false
             remember: false
-            multiple: false
+            multiple: true
             remember_roles:
               authenticated: authenticated
               anonymous: '0'
@@ -586,7 +689,7 @@ display:
           exposed: true
           expose:
             operator_id: field_number_of_bedrooms_value_op
-            label: 'Number of Bedrooms'
+            label: ''
             description: ''
             use_operator: false
             operator: field_number_of_bedrooms_value_op
@@ -627,7 +730,7 @@ display:
           exposed: true
           expose:
             operator_id: field_property_features_target_id_op
-            label: 'Property Features'
+            label: ''
             description: ''
             use_operator: false
             operator: field_property_features_target_id_op
@@ -686,7 +789,7 @@ display:
               anonymous: '0'
               administrator: '0'
               content_author: '0'
-            placeholder: ''
+            placeholder: 'eg. nearby shops or train station'
           is_grouped: false
           group_info:
             label: ''
@@ -720,7 +823,20 @@ display:
             label: ''
           granularity: second
       title: 'Property - Search'
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<h3>Use the search function below to filter our available shared living vacancies</h3>'
+            format: full_html
+          plugin_id: text
       footer: {  }
       empty: {  }
       relationships: {  }
@@ -730,6 +846,7 @@ display:
         operator: AND
         groups:
           1: AND
+      use_ajax: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -742,8 +859,31 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_property_features'
-        - 'config:field.storage.node.field_property_type'
+        - 'config:field.storage.node.field_number_of_room_available'
+        - 'config:field.storage.node.field_property_images'
+        - 'config:field.storage.node.field_property_location'
+  block_1:
+    display_plugin: block
+    id: block_1
+    display_title: Block
+    position: 2
+    display_options:
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+        - 'user.node_grants:view'
+        - user.permissions
+      tags:
+        - 'config:field.storage.node.body'
+        - 'config:field.storage.node.field_number_of_room_available'
+        - 'config:field.storage.node.field_property_images'
+        - 'config:field.storage.node.field_property_location'
   page_1:
     display_plugin: page
     id: page_1
@@ -751,7 +891,8 @@ display:
     position: 1
     display_options:
       display_extenders: {  }
-      path: accomodation-search
+      path: shared-living-vacancies
+      exposed_block: true
     cache_metadata:
       max-age: -1
       contexts:
@@ -764,5 +905,6 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.body'
-        - 'config:field.storage.node.field_property_features'
-        - 'config:field.storage.node.field_property_type'
+        - 'config:field.storage.node.field_number_of_room_available'
+        - 'config:field.storage.node.field_property_images'
+        - 'config:field.storage.node.field_property_location'

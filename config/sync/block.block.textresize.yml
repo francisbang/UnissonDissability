@@ -1,0 +1,20 @@
+uuid: 021e08cd-85a6-4514-a5e6-8c0c907898a9
+langcode: en
+status: false
+dependencies:
+  module:
+    - text_resize
+  theme:
+    - unisson_disability_v2
+id: textresize
+theme: unisson_disability_v2
+region: hidden
+weight: -20
+provider: null
+plugin: text_resize_block
+settings:
+  id: text_resize_block
+  label: 'Text Resize'
+  provider: text_resize
+  label_display: '0'
+visibility: {  }

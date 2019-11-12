@@ -1,0 +1,32 @@
+uuid: 4bcea40e-113c-4d78-a55a-fa5c063bbe15
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.stories_header
+  module:
+    - ctools
+    - views
+  theme:
+    - unisson_disability_v2
+id: unisson_disability_v2_views_block__stories_header_block_1
+theme: unisson_disability_v2
+region: page_header
+weight: -12
+provider: null
+plugin: 'views_block:stories_header-block_1'
+settings:
+  id: 'views_block:stories_header-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      stories: stories
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

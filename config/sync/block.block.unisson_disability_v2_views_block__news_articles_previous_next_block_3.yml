@@ -1,0 +1,33 @@
+uuid: 56a5b256-249b-4c14-935c-4dc39cceab4b
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.news_articles_previous_next
+  module:
+    - ctools
+    - views
+  theme:
+    - unisson_disability_v2
+id: unisson_disability_v2_views_block__news_articles_previous_next_block_3
+theme: unisson_disability_v2
+region: page_navigation
+weight: -17
+provider: null
+plugin: 'views_block:news_articles_previous_next-block_3'
+settings:
+  id: 'views_block:news_articles_previous_next-block_3'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

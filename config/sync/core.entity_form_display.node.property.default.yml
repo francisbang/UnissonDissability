@@ -45,19 +45,19 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_number_of_bathrooms:
-    weight: 12
-    settings: {  }
-    third_party_settings: {  }
-    type: options_select
-    region: content
-  field_number_of_bedrooms:
     weight: 11
     settings: {  }
     third_party_settings: {  }
     type: options_select
     region: content
+  field_number_of_bedrooms:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
   field_number_of_room_available:
-    weight: 13
+    weight: 12
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -74,7 +74,7 @@ content:
     type: webform_entity_reference_autocomplete
     region: content
   field_property_features:
-    weight: 14
+    weight: 13
     settings: {  }
     third_party_settings: {  }
     type: options_buttons
@@ -93,7 +93,7 @@ content:
     type: serial_default_widget
     region: content
   field_property_images:
-    weight: 10
+    weight: 14
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail

@@ -1,0 +1,35 @@
+uuid: 07d0509e-0402-47a8-bbd2-e7de48104fbc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_add_form:b730c80f-3604-4008-8953-cfcdd0645722'
+  module:
+    - block_content
+    - ctools
+  theme:
+    - unisson_disability_v2
+id: unisson_disability_v2_leftsidebarnewslettersignupblock
+theme: unisson_disability_v2
+region: page_left_side_bar
+weight: -16
+provider: null
+plugin: 'block_content:b730c80f-3604-4008-8953-cfcdd0645722'
+settings:
+  id: 'block_content:b730c80f-3604-4008-8953-cfcdd0645722'
+  label: 'Left Sidebar Newsletter Sign Up Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+      research: research
+      stories: stories
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

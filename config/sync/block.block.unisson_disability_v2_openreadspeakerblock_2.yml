@@ -1,0 +1,28 @@
+uuid: cc3ef7e7-c2eb-4376-9672-96ced4047fd0
+langcode: en
+status: false
+dependencies:
+  module:
+    - block_class
+    - open_readspeaker
+  theme:
+    - unisson_disability_v2
+third_party_settings:
+  block_class:
+    classes: readspeaker
+id: unisson_disability_v2_openreadspeakerblock_2
+theme: unisson_disability_v2
+region: header_tools
+weight: -8
+provider: null
+plugin: open_readspeaker_block
+settings:
+  id: open_readspeaker_block
+  label: 'Open readspeaker block'
+  provider: open_readspeaker
+  label_display: '0'
+  open_readspeaker_buttonstyle: open-readspeaker-button
+  open_readspeaker_buttontext: Listen
+  open_readspeaker_reading_area: content
+  open_readspeaker_reading_area_class: region-content
+visibility: {  }

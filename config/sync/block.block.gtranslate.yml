@@ -1,0 +1,24 @@
+uuid: 469e7400-6680-4408-8756-1973ffffcf2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - gtranslate
+  theme:
+    - unisson_disability_v2
+third_party_settings:
+  block_class:
+    classes: 'accessibility-row google-translate'
+id: gtranslate
+theme: unisson_disability_v2
+region: hidden
+weight: -19
+provider: null
+plugin: gtranslate_block
+settings:
+  id: gtranslate_block
+  label: GTranslate
+  provider: gtranslate
+  label_display: visible
+visibility: {  }

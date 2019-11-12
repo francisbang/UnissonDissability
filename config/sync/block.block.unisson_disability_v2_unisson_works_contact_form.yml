@@ -1,0 +1,33 @@
+uuid: 3381381a-b1c0-4b52-a611-14bceb3de37c
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.unisson_works_contact_us
+  module:
+    - ctools
+    - webform
+  theme:
+    - unisson_disability_v2
+id: unisson_disability_v2_unisson_works_contact_form
+theme: unisson_disability_v2
+region: contact_us
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'Unisson works contact form'
+  provider: webform
+  label_display: '0'
+  webform_id: unisson_works_contact_us
+  default_data: ''
+  redirect: false
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      unisson_works: unisson_works
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

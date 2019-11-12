@@ -1,0 +1,29 @@
+uuid: 6cfbbb59-5a1c-4037-aa69-f84c5ec75a09
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.text-resize---menu
+  module:
+    - block_class
+    - system
+  theme:
+    - unisson_disability_v2
+third_party_settings:
+  block_class:
+    classes: 'accessibility-row resize'
+id: unisson_disability_v2_textresizemenu_2
+theme: unisson_disability_v2
+region: hidden
+weight: -21
+provider: null
+plugin: 'system_menu_block:text-resize---menu'
+settings:
+  id: 'system_menu_block:text-resize---menu'
+  label: 'Text Resize - Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

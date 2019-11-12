@@ -1,0 +1,29 @@
+uuid: 9391fef4-4ad4-4949-ac56-fd818d901e03
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_add_form:920598ce-9ef5-4255-8bad-f3dfdbc33ef2'
+  module:
+    - block_class
+    - block_content
+  theme:
+    - unisson_disability_v2
+third_party_settings:
+  block_class:
+    classes: newsletter-signup
+id: unisson_disability_v2_newslettersignupblock
+theme: unisson_disability_v2
+region: footer_third
+weight: -23
+provider: null
+plugin: 'block_content:920598ce-9ef5-4255-8bad-f3dfdbc33ef2'
+settings:
+  id: 'block_content:920598ce-9ef5-4255-8bad-f3dfdbc33ef2'
+  label: 'Newsletter - Signup Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

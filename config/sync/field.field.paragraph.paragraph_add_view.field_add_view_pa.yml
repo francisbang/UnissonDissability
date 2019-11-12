@@ -21,6 +21,7 @@ settings:
   force_default: 0
   allowed_views:
     articles_header: 0
+    articles_overview: 0
     body_content: 0
     careers_by_region: 0
     comment: 0
@@ -29,32 +30,45 @@ settings:
     file_entity_browser: 0
     files: 0
     frontpage: 0
+    get_referenced_data: 0
+    get_referenced_data_with_heading: 0
     header_section: 0
+    header_section_basic_pages: 0
     header_section_contact_pages: 0
     header_section_general_pages: 0
+    header_section_system_pages: 0
+    latest_news_research_stories: 0
     news_article_left_sidebar: 0
     news_articles_previous_next: 0
+    newsletters_overview: 0
     autocompletion_callbacks_nodes: 0
     user_admin_people: 0
+    properties: 0
+    property_search: 0
     comments_recent: 0
     content_recent: 0
     research_header: 0
     research_left_sidebar: 0
+    research_overview: 0
     research_previous_next: 0
     services_by_region: 0
     stories_header: 0
+    stories_left_sidebar: 0
+    stories_overview: 0
     stories_previous_next: 0
     taxonomy_term: 0
     team_members_board_of_directors: 0
     team_members_executive_and_senior_leaders: 0
     autocompletion_callbacks_users: 0
     watchdog: 0
+    webform_submissions: 0
     who_s_new: 0
     who_s_online: 0
     autocompletion_callbacks_words: 0
   allowed_display_types:
     block: block
     autocompletion_callback: 0
+    embed: 0
     entity_browser: 0
     feed: 0
     default: 0

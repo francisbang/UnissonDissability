@@ -1,0 +1,25 @@
+uuid: 6141a4bf-f2b3-43b1-81b3-88226a51fc61
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:html_markup_block:9937903b-d28f-4368-8c06-ac3be44f9e76'
+  module:
+    - block_content
+  theme:
+    - unisson_disability_v2
+id: unisson_disability_v2_mobilenavigationbars
+theme: unisson_disability_v2
+region: header_tools_mobile
+weight: 0
+provider: null
+plugin: 'block_content:9937903b-d28f-4368-8c06-ac3be44f9e76'
+settings:
+  id: 'block_content:9937903b-d28f-4368-8c06-ac3be44f9e76'
+  label: 'Mobile - Navigation Bars'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
