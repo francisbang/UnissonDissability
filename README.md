@@ -46,3 +46,15 @@ Old reference doc: https://drive.google.com/file/d/1rigBlpaoD62McNnKjlNd6dPj1CpW
 
    3.1 Provide 777 permissions to files folder will resolve issue
 
+
+
+### Created Own Theme:
+
+1. Copied 'unisson_disability' theme from root > themes and rename that to 'unisson_disability_v2'.
+2. Renamed info, libraries, theme yml files
+3. Changed theme functions name in theme yml file
+4. Renamed few templates file name a well
+5. Changes in page.html.twig if theme path is manually added.
+
+
+

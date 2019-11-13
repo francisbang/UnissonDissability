@@ -1,0 +1,44 @@
+{#
+/**
+ * @file
+ * Default theme implementation for field collection items.
+ *
+ * Available variables:
+ * - content: An array of comment items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {% hide(content.field_example) %} to temporarily suppress the printing
+ *   of a given element.
+ * - title: The (sanitized) field collection item label.
+ * - url: Direct url of the current entity if specified.
+ * - page: Flag for the full page state.
+ * - attributes: HTML attributes for the surrounding element.
+ *    Attributes include the 'class' information.
+ * - content_attributes: HTML attributes for the content element.
+ *
+ * @see template_preprocess()
+ * @see template_preprocess_entity()
+ *
+ * @ingroup themeable
+ */
+#}
+
+{%if content.field_tabbed_media_type|render is not empty%}
+	<div class="col1">
+	{%if 'image' in content.field_tabbed_media_type|render|striptags %}	
+	<div class="media">
+			<a href="{{ content.field_tabbed_image|field_value }}" class="image"><img src="{{ content.field_tabbed_image|field_value }}"></a>
+	</div>
+	{%else%}
+	<div class="media video">
+			<a href="{{ content.field_tabbed_media_video_link|field_value }}" class="mfp-iframe"><img src="{{ content.field_tabbed_image|field_value }}"></a>
+	</div>
+	{%endif%}
+	</div>
+	<div class="col2">
+		<div class="content">
+			{{ content.field_tabbed_description|field_value }}
+		</div>
+	</div>	
+{%else%}
+	{{ content.field_tabbed_description|field_value }}
+{%endif%}

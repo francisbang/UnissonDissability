@@ -1,0 +1,42 @@
+{#
+/**
+ * @file
+ * Default theme implementation for field collection items.
+ *
+ * Available variables:
+ * - content: An array of comment items. Use {{ content }} to print them all,
+ *   or print a subset such as {{ content.field_example }}. Use
+ *   {% hide(content.field_example) %} to temporarily suppress the printing
+ *   of a given element.
+ * - title: The (sanitized) field collection item label.
+ * - url: Direct url of the current entity if specified.
+ * - page: Flag for the full page state.
+ * - attributes: HTML attributes for the surrounding element.
+ *    Attributes include the 'class' information.
+ * - content_attributes: HTML attributes for the content element.
+ *
+ * @see template_preprocess()
+ * @see template_preprocess_entity()
+ *
+ * @ingroup themeable
+ */
+#}
+{%if content.field_image_ptdlf|render is not empty %}
+<div class="image">
+	{{ content.field_image_ptdlf|field_value }}
+</div>
+{%endif%}
+<div class="item-content">
+	{%if content.field_heading_ptdlf|render is not empty %}
+	<h3>{{ content.field_heading_ptdlf|field_value }}</h3>
+	{{ content.field_description_ptdlf|field_value }}
+	{%endif%}
+	{%if content.field_link_text_ptdlf|render is not empty %}
+		{%if content.field_link_ptdlf|render is not empty %}	
+			<a href="{{ content.field_link_ptdlf|field_value }}" class="continue-reading" target="_blank" onClick="_gaq.push(['_trackPageview', '{{ content.field_file_ptdlf|field_value }}']);">{{ content.field_link_text_ptdlf|field_value }}</a>
+		{%else%}
+			<a href="{{ content.field_file_ptdlf|field_value }}" class="continue-reading" target="_blank" onClick="_gaq.push(['_trackPageview', '{{ content.field_file_ptdlf|field_value }}']);">{{ content.field_link_text_ptdlf|field_value }}</a>				
+		{%endif%}
+	{%endif%}
+</div>
+ 

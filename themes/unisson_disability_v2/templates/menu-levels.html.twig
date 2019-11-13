@@ -1,0 +1,47 @@
+	{#
+/**
+ * @file
+ * Default theme implementation to each level of menu.
+ */
+#}
+{% if items|first.menu_level == 0 %}
+<ul class="menu menu-level-{{ items|first.menu_level }} primary">
+{% else %}
+<ul class="menu menu-level-{{ items|first.menu_level }} submenu">
+<div class="wrapper">
+{% endif %}
+{% for key, item in items if key|first != '#' %}
+  {% set menu_item_classes = [
+    'menu-item',
+    item.is_expanded ? 'menu-item--expanded',
+    item.is_collapsed ? 'menu-item--collapsed',
+    item.in_active_trail ? 'menu-item--active-trail',
+  ] %}
+  
+  {% set rendered_content = item.content|without('') %}
+    {% if rendered_content|render %}
+      {% set menu_dropdown_classes = [
+        'menu-dropdown',
+        'menu-dropdown-' ~ item.menu_level,
+        'menu-type-' ~ item.content['#view_mode'],
+      ] %}
+   {% endif %}
+  
+  <li{{ item.attributes.addClass(menu_item_classes) }}>
+    <a href="{{ item.url }}">
+    {% if items|first.menu_level == 0 %}
+    {% else %}
+    <i style="background: url('{{ item.content|render|striptags|trim }}') no-repeat; background-size: 100%;"></i>
+    {% endif %}
+    {{ item.title|raw }}
+    </a>
+  </li>
+  
+  {{ rendered_content }}
+{% endfor %}
+{% if items|first.menu_level == 0 %}
+</ul>
+{% else %}
+</div>
+</ul>
+{% endif %}

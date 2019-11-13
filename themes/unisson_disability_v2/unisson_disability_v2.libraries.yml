@@ -1,0 +1,28 @@
+global-styling:
+  version: VERSION
+  css:
+    base:
+    component:
+      '//fonts.googleapis.com/css?family=Open+Sans:400,600': { type: external, minified: true }
+      css/bootstrap.min.css: {}
+      css/magnific-popup.css: {}
+      css/flexslider.css: {}
+      css/styles.css: {}
+      css/styles-additional.css: {}
+      css/jcf.css: {}
+  js:
+    js/jquery.validate.min.js: {}
+    js/bootstrap.min.js: {}
+    js/bootstrap-tabcollapse.js: {}
+    js/jquery.magnific-popup.min.js: {}
+    js/jquery.flexslider-min.js: {}
+    js/jquery.rwdImageMaps.min.js: {}
+    js/main.js: {}
+    js/additional.js: {}
+    js/jcf.js: {}
+    js/jcf.radio.js: {}
+    js/jcf.select.js: {}
+    js/jcf.checkbox.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

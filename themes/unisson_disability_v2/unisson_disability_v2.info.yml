@@ -1,0 +1,39 @@
+name: Unisson Disability V2
+type: theme
+base theme: classy
+description: 'Unisson Disability V2 - Website'
+package: Core
+libraries:
+  - unisson_disability_v2/global-styling
+regions:
+  header: 'Header'
+  header_tools: 'Header Tools'
+  header_tools_mobile: 'Header Tools - Mobile'
+  header_search_mobile: 'Header Search - Mobile'
+  site_branding: 'Site Branding'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  nav_tabs: 'Nav Tabs'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  highlighted: 'Highlighted'
+  featured_top: 'Featured top'
+  page_actions: 'Page Actions'
+  page_header: 'Page Header'
+  breadcrumb: 'Breadcrumb'
+  content: 'Content'
+  related_content: 'Related Content'
+  page_navigation: 'Page Navigation'
+  page_left_side_bar: 'Page Left Sidebar'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer_first: 'Footer first'
+  footer_second: 'Footer second'
+  footer_third: 'Footer third'
+  footer_logo: 'Footer logo'
+  footer_copyright: 'Footer copyright'
+  contact_us: 'Contact Us'
+  hidden: 'Hidden'
+version: '8.4.0'
+core: '8.x'
+project: 'drupal'

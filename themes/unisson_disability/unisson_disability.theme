@@ -130,5 +130,21 @@ function unisson_disability_form_alter(&$form, \Drupal\Core\Form\FormStateInterf
       $form['combine_weekend']['#suffix'] = "</div>";
       
   }
+
+  if ($form_id == 'views_exposed_form' && $form['#id'] == 'views-exposed-form-property-search-page-1') {
+    //var_dump($form);
+   
+
+    //$form['field_property_geolocation_proximity']['value']['#type'] = 'select';
+    $form['field_property_geolocation_proximity']['value']['#min'] = 0;
+    $form['field_property_geolocation_proximity']['value']['#step'] = 25;
+    $form['field_property_geolocation_proximity']['value']['#default_value'] = 25;
+   
+    //$form['field_property_geolocation_proximity']['value'] = array('#options' => array() );
+    
+    
+    //print('<pre>');print_r($form);
+
+  }
    	  
 }
