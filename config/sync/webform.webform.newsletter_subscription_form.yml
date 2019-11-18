@@ -12,7 +12,7 @@ id: newsletter_subscription_form
 title: 'Newsletter Subscription Form'
 description: ''
 category: ''
-elements: "enter_email_address_:\n  '#type': email\n  '#title': 'Enter email address..'\n  '#title_display': invisible\n  '#description_display': invisible\n  '#placeholder': 'Enter Email Address...'\n  '#required': true\nactions:\n  '#type': webform_actions\n  '#title': Submit\n"
+elements: "'#attributes':\n  class:\n    - newsletter-form\nfirst_name:\n  '#type': textfield\n  '#title': 'First Name'\n  '#title_display': invisible\n  '#placeholder': 'First Name'\nlast_name:\n  '#type': textfield\n  '#title': 'Last Name'\n  '#title_display': invisible\n  '#placeholder': 'Last Name'\nenter_email_address_:\n  '#type': email\n  '#title': 'Enter email address..'\n  '#title_display': invisible\n  '#description_display': invisible\n  '#placeholder': 'Enter Email Address...'\n  '#required': true\nactions:\n  '#type': webform_actions\n  '#title': Submit\n  '#submit__label': Subscribe\n  '#submit__attributes':\n    class:\n      - 'button button-secondary'"
 css: ''
 javascript: ''
 settings:
@@ -21,7 +21,7 @@ settings:
   page: true
   page_submit_path: ''
   page_confirm_path: ''
-  form_title: both
+  form_title: source_entity_webform
   form_submit_once: false
   form_exception_message: ''
   form_open_message: ''

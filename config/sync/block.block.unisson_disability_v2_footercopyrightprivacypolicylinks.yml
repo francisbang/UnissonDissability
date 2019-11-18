@@ -5,13 +5,17 @@ dependencies:
   config:
     - system.menu.footer---copyright-privacy-
   module:
+    - block_class
     - system
   theme:
     - unisson_disability_v2
+third_party_settings:
+  block_class:
+    classes: policy
 id: unisson_disability_v2_footercopyrightprivacypolicylinks
 theme: unisson_disability_v2
-region: footer_copyright
-weight: -9
+region: footer_first
+weight: -22
 provider: null
 plugin: 'system_menu_block:footer---copyright-privacy-'
 settings:

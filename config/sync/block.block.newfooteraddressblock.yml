@@ -1,0 +1,25 @@
+uuid: 5d5aca1c-1865-444c-8400-6989bfb29d03
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:99b17523-8375-4ee5-afd8-d277cc3c4e9e'
+  module:
+    - block_content
+  theme:
+    - unisson_disability_v2
+id: newfooteraddressblock
+theme: unisson_disability_v2
+region: footer_second
+weight: 0
+provider: null
+plugin: 'block_content:99b17523-8375-4ee5-afd8-d277cc3c4e9e'
+settings:
+  id: 'block_content:99b17523-8375-4ee5-afd8-d277cc3c4e9e'
+  label: 'New Footer Address Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

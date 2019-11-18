@@ -86,25 +86,30 @@ function showPosition(position) {
 /******************************************/
 /***********Header menu Dropdown***********/
 /******************************************/
-var sel = jQuery('.sel'),
-    txt = jQuery('.txt'),
-    options = jQuery('.options');
+var acc_clicked = jQuery('.btn-accessibility.clicked'),
+    acc = jQuery('.btn-accessibility'),
+    options = jQuery('.accessibility-list');
 
-sel.click(function (e) {
+/*acc.click(function (e) {
     e.stopPropagation();
-    options.toggle();
+    options.hide();
+});*/
+
+acc.click(function (e) {
+    e.stopPropagation();
+    options.show();
 });
 
 jQuery('body').click(function (e) {
     options.hide();
 });
 
-options.children('div').click(function (e) {
+//options.children('div').click(function (e) {
    // e.stopPropagation();
    // txt.text(jQuery(this).text());
    // $(this).addClass('selected').siblings('div').removeClass('selected');
-   // options.hide();
-});
+   // options.show();
+//});
 
 
 

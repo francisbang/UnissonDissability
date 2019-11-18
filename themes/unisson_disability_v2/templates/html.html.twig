@@ -77,9 +77,76 @@ document.write('<img src="https://ad.doubleclick.net/ddm/activity/src=8283105;ty
     <a href="#main-content" class="visually-hidden focusable skip-link">
       {{ 'Skip to main content'|t }}
     </a>
-    {{ page_top }}
-    {{ page }}
-    {{ page_bottom }}
+    <div class="layout-container">
+
+      <header role="banner">
+        <section class="top-nav">
+        <div class="wrapper">
+            {{ page.header }}
+            <div class="tools">
+                <div class="sel accessibility-bar">
+                    <div class='txt btn-accessibility'>Accessibility</div>
+                    <div class="options accessibility-list" style="display:none;">
+                        {{ page.hidden }}	
+                    </div>
+                </div>
+              {{ page.header_tools }}	
+            </div>
+            <div class="tools-mobile">
+              {{ page.header_tools_mobile }}	
+            </div>
+            
+            <div class="mob-menu-container">
+              <div class="search-mobile">
+                {{ page.header_search_mobile }}
+              </div>
+            </div>
+        </div>
+        </section>
+      </header>
+      
+      <section class="main-nav">
+        {{ page.primary_menu }}
+      </section>
+      
+      {{ page.secondary_menu }}
+      {{ page.breadcrumb }}
+      {{ page.highlighted }}
+      {{ page.help }}
+
+
+            {{ page_top }}
+            {{ page }}
+            {{ page_bottom }}
+
+
+
+      <footer role="contentinfo">
+        <div class="footer-bottom">
+          <div class="wrapper">
+            <div class="cols">	
+              <div class="col1">
+              {{ page.footer_first }}
+              </div>
+              <div class="col2">
+              {{ page.footer_second }}
+              </div>
+              <div class="col3">
+              {{ page.footer_third }}
+              </div>
+            </div>
+            {#<div class="footer-logo">
+              {{ page.footer_logo }}
+            </div>
+            <div class="footer-white">
+              {{ page.footer_copyright }}
+            </div>#}
+          </div>
+        </div>
+      </footer>
+        
+    </div>{# /.layout-container #}  
+
     <js-bottom-placeholder token="{{ placeholder_token }}">
   </body>
 </html>

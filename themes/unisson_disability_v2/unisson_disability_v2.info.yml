@@ -7,6 +7,7 @@ libraries:
   - unisson_disability_v2/global-styling
 regions:
   header: 'Header'
+  header_tools_left: 'Header Tools Left'
   header_tools: 'Header Tools'
   header_tools_mobile: 'Header Tools - Mobile'
   header_search_mobile: 'Header Search - Mobile'
@@ -27,6 +28,7 @@ regions:
   page_left_side_bar: 'Page Left Sidebar'
   sidebar_first: 'Sidebar first'
   sidebar_second: 'Sidebar second'
+  footer_top: 'Footer Top'
   footer_first: 'Footer first'
   footer_second: 'Footer second'
   footer_third: 'Footer third'
@@ -34,6 +36,7 @@ regions:
   footer_copyright: 'Footer copyright'
   contact_us: 'Contact Us'
   hidden: 'Hidden'
+  
 version: '8.4.0'
 core: '8.x'
 project: 'drupal'

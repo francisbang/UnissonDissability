@@ -43,43 +43,7 @@
  * @see html.html.twig
  */
 #}
-<div class="layout-container">
 
-  <header role="banner">
-    <section class="top-nav">
-		<div class="wrapper">
-	    	{{ page.header }}
-	    	<div class="tools">
-	    		{{ page.header_tools }}	
-	    	</div>
-	    	<div class="tools-mobile">
-	    		{{ page.header_tools_mobile }}	
-	    	</div>
-	    	<div class="search-mobile">
-	    	{{ page.header_search_mobile }}
-	    	</div>
-	    	<div class="mob-menu-container"></div>
-		</div>
-    </section>
-  </header>
-  
-  <section class="main-nav">
-	  {{ page.primary_menu }}
-  </section>
-  
-  {{ page.secondary_menu }}
-  {{ page.breadcrumb }}
-  {{ page.highlighted }}
-  {{ page.help }}
-  
-  {#% if page.page_header %}
-  <section class="title-header general">
-    <div class="wrapper">
-  		{{ page.page_header }}      
-    </div> <!-- end.wrapper --> 
-    <a id="go-down-section" href=""><img id="go-down-mobile" src="/themes/unisson_disability/css/images/sprite/go-down-mobile@2x.png" width="63" height="63" alt="Down Arrow"></a>
-   </section>
-   {% endif %#}
    
    {% if page.page_actions %}
     {% if uid > 0 %}
@@ -116,24 +80,4 @@
 
   </main>
 
-  <footer role="contentinfo">
-      <div class="cols">	
-      	<div class="col1">
-      	{{ page.footer_first }}
-      	</div>
-      	<div class="col2">
-	  	{{ page.footer_second }}
-      	</div>
-      	<div class="col3">
-	  	{{ page.footer_third }}
-      	</div>
-      </div>
-      <div class="footer-logo">
-      	{{ page.footer_logo }}
-      </div>
-      <div class="footer-white">
-      	{{ page.footer_copyright }}
-      </div>
-    </footer>
-    
-</div>{# /.layout-container #}
+  

@@ -10,8 +10,8 @@ dependencies:
     - unisson_disability_v2
 id: unisson_disability_v2_copyrightblock
 theme: unisson_disability_v2
-region: footer_copyright
-weight: -8
+region: footer_first
+weight: -21
 provider: null
 plugin: 'block_content:76405bed-8486-40df-ab02-0997445750b7'
 settings:

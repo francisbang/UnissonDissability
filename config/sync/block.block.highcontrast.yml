@@ -12,7 +12,7 @@ third_party_settings:
     classes: 'accessibility-row high-contrast'
 id: highcontrast
 theme: unisson_disability_v2
-region: hidden
+region: header_tools_left
 weight: -22
 provider: null
 plugin: high_contrast

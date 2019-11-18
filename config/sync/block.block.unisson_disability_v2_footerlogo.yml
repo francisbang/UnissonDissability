@@ -10,8 +10,8 @@ dependencies:
     - unisson_disability_v2
 id: unisson_disability_v2_footerlogo
 theme: unisson_disability_v2
-region: footer_logo
-weight: -10
+region: footer_third
+weight: -22
 provider: null
 plugin: 'block_content:8b57a6c5-ffa4-4baf-a5fe-633c0af060d1'
 settings:

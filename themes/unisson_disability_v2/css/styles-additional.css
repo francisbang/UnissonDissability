@@ -17,16 +17,21 @@ ul.menu {
 
 }
 
-section.main-nav ul.submenu i {
+
+/******************* Amar start ***********************/
+/* section.main-nav ul.submenu i {
 	width: 60px;
     height: 60px;
     display: block;
     margin: 0 auto;
-}
+} 
 
 section.main-nav ul.submenu a:hover i {
 	background-position: 0 -60px !important;
 }
+*/
+/******************* Amar end ***********************/
+
 
 .field--name-field-menu-icon-image {
 	display: none;
@@ -90,7 +95,9 @@ div.rsexpanded {
     left: -225px;
 }
 
-.contact ul.menu li {
+/******************* Amar start ***********************/
+
+/* .contact ul.menu li {
 	margin-right: 5px !important;	
 	display: inline-block;
 }
@@ -101,21 +108,22 @@ div.rsexpanded {
 	text-indent: -9999px;
 	padding: 0px !important;
 	width: 30px;
-}
+} */
 
-.search .form-actions {
+
+/* .search .form-actions {
 	display: none;
-}
+} */
 
-.region-header-search-mobile {
+/* .region-header-search-mobile {
 	display: none;
-}
+} */
 
-.search-mobile .form-actions {
+/* .search-mobile .form-actions {
 	display: none;
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 	.region-header-search-mobile {
 		display: none;
 		position: absolute;
@@ -139,9 +147,9 @@ div.rsexpanded {
 		background-position: 98% !important;
 	}
 	
-}
+} */
 
-
+/******************* Amar end ***********************/
 
 footer .cols h4 {
 	text-transform: uppercase;
@@ -195,7 +203,9 @@ footer .cols .col3 .messages--error {
     padding: 10px 20px 15px 35px;
 }
 
-footer .cols .col3 ul.menu {
+/******************* Amar start ***********************/
+
+/* footer .cols .col3 ul.menu {
 	margin-left: 0px;
 }
 
@@ -206,7 +216,9 @@ footer .cols .col3 ul.menu a {
 	padding: 0px !important;
 	width: 30px;
 	height: 30px;
-}
+} */
+/******************* Amar end ***********************/
+
 
 footer .footer-white ul.menu {
 	text-align: center;
@@ -674,7 +686,35 @@ section.add-form {
 /*------------11NOV-----------------*/
 
 /******************************************/
-/***********ACCOMODATION CSS***********/
+/***************** Footer *****************/
+/******************************************/
+
+footer .newsletter-block .newsletter-form{
+	display:inline-block;
+}
+
+footer .newsletter-block .newsletter-form div.form-item,footer .newsletter-block .newsletter-form div.form-actions {
+	float:left;
+}
+
+footer .policy a{
+text-transform: uppercase;
+}
+
+
+footer .policy a.is-active {
+    color: #fcc411;
+}
+
+footer #block-unisson-disability-v2-copyrightblock .field--name-field-text-block-description{
+	line-height: 22px;
+    font-size: 14px;
+}
+
+
+
+/******************************************/
+/************ ACCOMODATION CSS ************/
 /******************************************/
 
 
@@ -711,7 +751,7 @@ section.add-form {
 }
 
 
-
+/*
 .accomodation-search-form .form-group.bedrooms div.form-item {
     float: left;
     width: calc(16.6% - 1px);
@@ -743,7 +783,7 @@ section.add-form {
     width: 240px;
     float: left;
 }
-
+*/
 
 .form-item-field-property-geolocation-proximity-value label, .form-item-field-property-geolocation-proximity-value .description {
 	display:none;
@@ -776,6 +816,13 @@ section.add-form {
 .accomodation-search-form .form-group.location input[type="text"] {
  /*   width: 100%;
     margin-right: 15px;*/
+}
+
+.property-overview .views-infinite-scroll-content-wrapper{
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 
@@ -900,7 +947,7 @@ section.top-nav .tools .accessibility-bar .accessibility-list {
           background-size: contain; }
         section.top-nav .tools .accessibility-bar .accessibility-list .accessibility-row a.google-translate:hover:before {
           background: url(images/icon-translate-hover.png) no-repeat;
-          background-size: contain; }            a{
+          background-size: contain; }           
                
 
 

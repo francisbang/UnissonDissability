@@ -1,0 +1,14 @@
+uuid: 5ab5697d-8526-45ed-9509-0d02f249d1bf
+langcode: en
+status: true
+dependencies: {  }
+name: two_column_image_size_528_330_
+label: 'Two Column Image Size (528 * 330)'
+effects:
+  4e689477-f437-49bf-ac67-4e83fa355b99:
+    uuid: 4e689477-f437-49bf-ac67-4e83fa355b99
+    id: image_resize
+    weight: 1
+    data:
+      width: 528
+      height: 330

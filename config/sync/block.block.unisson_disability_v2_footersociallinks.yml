@@ -14,15 +14,15 @@ third_party_settings:
     classes: socials
 id: unisson_disability_v2_footersociallinks
 theme: unisson_disability_v2
-region: footer_third
-weight: -22
+region: footer_first
+weight: -23
 provider: null
 plugin: 'system_menu_block:footer---social-links'
 settings:
   id: 'system_menu_block:footer---social-links'
-  label: 'Footer - Social Links'
+  label: 'Let''s Connect'
   provider: system
-  label_display: '0'
+  label_display: visible
   level: 1
   depth: 0
   expand_all_items: false
