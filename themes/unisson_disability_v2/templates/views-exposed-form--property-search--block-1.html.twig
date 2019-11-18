@@ -21,8 +21,10 @@
   <div class="form-row">
       <h4>Location</h4>
       <div class="form-group location">
-      {{ form.field_property_geolocation_proximity }}
-      <a href="#" onClick="getLocation();" class="button button-secondary">Use Current Location</a>
+        {{ form.field_property_geolocation_proximity }}
+        <div id="current-location">
+          <a href="#" onClick="getLocation();"  class="button button-secondary">Use Current Location</a>
+        </div>
       </div>
   </div>
   {#<div class="advanced-search">

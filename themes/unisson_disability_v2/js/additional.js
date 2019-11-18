@@ -58,63 +58,63 @@ jQuery(document).ready(function() {
 	        }
 		});*/
 
+
+		/******************************************/
+		/***********Get Current location***********/
+		/******************************************/
+		var x = document.getElementById("edit-field-property-geolocation-proximity-source-configuration-origin-address");
+		function getLocation() { 
+		  if (navigator.geolocation) { 
+			navigator.geolocation.getCurrentPosition(showPosition);
+		  } else {
+			x.value = "Geolocation is not supported by this browser.";
+		  }
+		}
+
+		function showPosition(position) { 
+		  x.value = "Latitude: " + position.coords.latitude +
+		  "<br>Longitude: " + position.coords.longitude;
+		}
+
+		//var cl = jQuery("#current-location").wrap('<p/>').parent().html();
+		//jQuery('.form-item-field-property-geolocation-proximity-value').after(cl);
+		jQuery( "#current-location" ).insertAfter( jQuery( ".form-item-field-property-geolocation-proximity-value" ) );
+
+		/******************************************/
+		/*********** Accessibility Dropdown***********/
+		/******************************************/
+		var acc_clicked = jQuery('.btn-accessibility.clicked'),
+			acc = jQuery('.btn-accessibility'),
+			options = jQuery('.accessibility-list');
+
+
+		acc.click(function (e) { 
+			e.stopPropagation();
+			options.toggle();
+		});
+
+		
+		jQuery(".gtranslate select option[value='']").text('Google Translate');
+		
+
+		/*acc.click(function (e) {
+			e.stopPropagation();
+			options.hide();
+		});*/
+		/*jQuery('body').click(function (e) {
+			options.hide();
+		});*/
+
+		//options.children('div').click(function (e) {
+		   // e.stopPropagation();
+		   // txt.text(jQuery(this).text());
+		   // $(this).addClass('selected').siblings('div').removeClass('selected');
+		   // options.show();
+		//});
+
+		
 		
 });
-
-
-/******************************************/
-/***********Get Current location***********/
-/******************************************/
-var x = document.getElementById("edit-field-property-geolocation-proximity-source-configuration-origin-address");
-function getLocation() { 
-  if (navigator.geolocation) { 
-	navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-	x.value = "Geolocation is not supported by this browser.";
-  }
-}
-
-function showPosition(position) { 
-  x.value = "Latitude: " + position.coords.latitude +
-  "<br>Longitude: " + position.coords.longitude;
-}
-
-
-
-
-
-/******************************************/
-/***********Header menu Dropdown***********/
-/******************************************/
-var acc_clicked = jQuery('.btn-accessibility.clicked'),
-    acc = jQuery('.btn-accessibility'),
-    options = jQuery('.accessibility-list');
-
-/*acc.click(function (e) {
-    e.stopPropagation();
-    options.hide();
-});*/
-
-acc.click(function (e) {
-    e.stopPropagation();
-    options.show();
-});
-
-jQuery('body').click(function (e) {
-    options.hide();
-});
-
-//options.children('div').click(function (e) {
-   // e.stopPropagation();
-   // txt.text(jQuery(this).text());
-   // $(this).addClass('selected').siblings('div').removeClass('selected');
-   // options.show();
-//});
-
-
-
-
-
 
 
 

@@ -640,13 +640,13 @@ section.top-nav .tools .accessibility-bar {
       transform: rotate(-225deg);
       top: 22px; }
   section.top-nav .tools .accessibility-bar ul {
-    position: absolute;
-    width: 270px;
+    width: 240px;
     left: 0;
     top: 0;
     margin: 0;
+     /*position: absolute;
     padding: 45px 15px 10px;
-    /*display: none;*/
+   display: none;*/
     background: #650d6b;
     text-align: left;
     text-transform: uppercase; }

@@ -685,6 +685,8 @@ section.add-form {
 
 /*------------11NOV-----------------*/
 
+
+
 /******************************************/
 /***************** Footer *****************/
 /******************************************/
@@ -860,6 +862,16 @@ footer #block-unisson-disability-v2-copyrightblock .field--name-field-text-block
 }
 */
 
+.gtranslate select{
+    width: 82%;
+    border: 0px;
+    text-transform: uppercase;
+    background-color: #650d6b;
+    color: white;
+    float: right;
+    margin-top: 10px;
+}
+
 
 section.top-nav .tools .accessibility-bar .accessibility-list{
 	position: absolute;
@@ -908,12 +920,12 @@ section.top-nav .tools .accessibility-bar .accessibility-list {
           left: 0;
           top: 50%;
           transform: translateY(-50%); }
-        section.top-nav .tools .accessibility-bar .accessibility-list .accessibility-row a.high-contrast:before {
+        section.top-nav .tools .accessibility-bar .accessibility-list .accessibility-row.high-contrast a:before {
           width: 23px;
           height: 23px;
           background: url(images/icon-contrast.png) no-repeat;
           background-size: contain; }
-        section.top-nav .tools .accessibility-bar .accessibility-list .accessibility-row a.high-contrast:hover:before {
+        section.top-nav .tools .accessibility-bar .accessibility-list .accessibility-row.high-contrast a:hover:before {
           background: url(images/icon-contrast-hover.png) no-repeat;
           background-size: contain; }
         section.top-nav .tools .accessibility-bar .accessibility-list .accessibility-row a.larger-text:before {
@@ -924,6 +936,8 @@ section.top-nav .tools .accessibility-bar .accessibility-list {
         section.top-nav .tools .accessibility-bar .accessibility-list .accessibility-row a.larger-text:hover:before {
           background: url(images/icon-large-text-hover.png) no-repeat;
           background-size: contain; }
+        section.top-nav .tools .accessibility-bar .accessibility-list .accessibility-row a.smaller-text{
+          font-size:100% }
         section.top-nav .tools .accessibility-bar .accessibility-list .accessibility-row a.smaller-text:before {
           width: 30px;
           height: 20px;
@@ -940,12 +954,12 @@ section.top-nav .tools .accessibility-bar .accessibility-list {
         section.top-nav .tools .accessibility-bar .accessibility-list .accessibility-row a.dyslexic-font:hover:before {
           background: url(images/icon-dyslexic-hover.png) no-repeat;
           background-size: contain; }
-        section.top-nav .tools .accessibility-bar .accessibility-list .accessibility-row a.google-translate:before {
+        section.top-nav .tools .accessibility-bar .accessibility-list .accessibility-row .gtranslate select:before {
           width: 23px;
           height: 23px;
           background: url(images/icon-translate.png) no-repeat;
           background-size: contain; }
-        section.top-nav .tools .accessibility-bar .accessibility-list .accessibility-row a.google-translate:hover:before {
+        section.top-nav .tools .accessibility-bar .accessibility-list .accessibility-row .gtranslate select:hover:before {
           background: url(images/icon-translate-hover.png) no-repeat;
           background-size: contain; }           
                
