@@ -81,28 +81,43 @@
   ]
 %}
 
-<article{{ attributes.addClass(classes) }}>
+<div class="property-content"> 
+  <article{{ attributes.addClass(classes) }}>
 
-  {{ title_prefix }}
-  {% if label and not page %}
-    <h2{{ title_attributes }}>
-      <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-    </h2>
-  {% endif %}
-  {{ title_suffix }}
+    {#{{ title_prefix }}
+    {% if label and not page %}
+      <h2{{ title_attributes }}>
+        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+      </h2>
+    {% endif %}
+    {{ title_suffix }}
 
-  {% if display_submitted %}
-    <footer class="node__meta">
-      {{ author_picture }}
-      <div{{ author_attributes.addClass('node__submitted') }}>
-        {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
-        {{ metadata }}
+    {% if display_submitted %}
+      <footer class="node__meta">
+        {{ author_picture }}
+        <div{{ author_attributes.addClass('node__submitted') }}>
+          {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+          {{ metadata }}
+        </div>
+      </footer>
+    {% endif %}#}
+
+
+
+    <div{{ content_attributes.addClass('node__content') }}>
+    
+      <div class="img-holder">
+          {{ content.field_property_images }}
       </div>
-    </footer>
-  {% endif %}
+      <div class="text-holder">
+          <span class="number">{{ content.field_number_of_room_available }}</span>
+          <h3>{{ content.field_property_location }}</h3>
+          {{ content.body }}
+          {{ content.links }}
+          
+      </div>
 
-  <div{{ content_attributes.addClass('node__content') }}>
-    {{ content }}
-  </div>
+    </div>
 
-</article>
+  </article>
+</div>
