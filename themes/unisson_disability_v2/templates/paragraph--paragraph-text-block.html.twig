@@ -49,7 +49,7 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
       <section class="white-heading {{ content.field_text_alignment|field_value }}" id="white-heading">
-      <div class="wrapper-text">
+      <div class="wrapper">
       	{%if content.field_text_block_heading|render is not empty %}
       	<h2>{{ content.field_text_block_heading|field_value }}</h2>
       	{%endif%}

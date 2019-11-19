@@ -250,21 +250,21 @@ div.contact-fields .messages--error {
 	display: inline-block;
 }
 
-.webform-submission-feedback-complaints-form-form .form-item, section.contact-form .form-item {
+/* .webform-submission-feedback-complaints-form-form .form-item, section.contact-form .form-item {
 	max-width: 310px;
 	display: inline-block;
 	vertical-align: top;
-}
+} */
 
 .webform-submission-feedback-complaints-form-form .js-form-type-textarea, section.contact-form .js-form-type-textarea {
 	display: inline;
 }
 
-.webform-submission-feedback-complaints-form-form fieldset.form-item, section.contact-form fieldset.form-item {
+/* .webform-submission-feedback-complaints-form-form fieldset.form-item, section.contact-form fieldset.form-item {
 	margin-top: 40px;
     display: inline-block;
 }
-
+ */
 .webform-submission-feedback-complaints-form-form .form-item input.error, .webform-submission-feedback-complaints-form-form .form-item textarea.error, .webform-submission-feedback-complaints-form-form .form-item select.error, section.contact-form .form-item input.error, section.contact-form .form-item textarea.error, section.contact-form .form-item select.error {
 	    border: 1px solid red !important;
 }
@@ -279,7 +279,7 @@ section.contact-form .js-form-item-sign-up-for-newsletter-yes label {
 	display: inline-block;
 }
 
-.webform-submission-feedback-complaints-form-form input[type=checkbox],
+/* .webform-submission-feedback-complaints-form-form input[type=checkbox],
 section.contact-form input[type=checkbox] {
 	cursor: pointer;
     margin-left: 0px;
@@ -359,7 +359,7 @@ section.contact-form select{
     padding-bottom: 5px;
 	position: relative;
 	line-height: normal;
-}
+} */
 
 section.latest-news .latest-post .newsletter {
 	position: relative;
@@ -547,7 +547,7 @@ section.contact-form .message--error {
 	width: 100%;
 	color: red;
 }
-section.contact-form textarea{margin-top: 70px;}
+/* section.contact-form textarea{margin-top: 70px;} */
 
 section.contact-form .contact-fields {
 	position: relative;
