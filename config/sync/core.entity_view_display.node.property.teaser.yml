@@ -15,6 +15,7 @@ dependencies:
     - field.field.node.property.field_property_images
     - field.field.node.property.field_property_location
     - field.field.node.property.field_property_type
+    - image.style.two_column_image_size_528_330_
     - node.type.property
   module:
     - address
@@ -28,7 +29,7 @@ mode: teaser
 content:
   body:
     type: smart_trim
-    weight: 1
+    weight: 3
     region: content
     label: hidden
     settings:
@@ -47,7 +48,7 @@ content:
     third_party_settings: {  }
   field_number_of_room_available:
     type: number_integer
-    weight: 2
+    weight: 1
     region: content
     label: hidden
     settings:
@@ -60,12 +61,12 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: ''
+      image_style: two_column_image_size_528_330_
       image_link: ''
     third_party_settings: {  }
   field_property_location:
     type: address_default
-    weight: 3
+    weight: 2
     region: content
     label: hidden
     settings: {  }

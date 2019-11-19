@@ -95,27 +95,30 @@ settings:
       paragraph_reference_block:
         weight: 38
         enabled: false
-      paragraph_attach_form:
+      paragraph_tabbed_block:
         weight: 39
         enabled: false
-      paragraph_tabbed_block:
+      paragraph_attach_form:
         weight: 39
         enabled: false
       paragraph_team_block:
         weight: 40
         enabled: false
-      paragraph_quicklinks_description:
-        enabled: true
-        weight: 41
       paragraph_test:
         weight: 41
         enabled: false
+      paragraph_quicklinks_description:
+        enabled: true
+        weight: 41
       paragraph_testimonial_quote_bloc:
         enabled: true
         weight: 42
       paragraph_text_block:
         enabled: true
         weight: 43
+      general_sidebar_link:
+        weight: 43
+        enabled: false
       paragraph_text_block_two_columns:
         weight: 44
         enabled: false

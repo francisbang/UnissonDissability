@@ -20,9 +20,8 @@ content:
     label: hidden
     settings:
       image_style: ''
-      image_link: ''
     third_party_settings: {  }
-    type: image
+    type: image_url
     region: content
   field_icon_link:
     weight: 2
@@ -34,7 +33,7 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    type: link
+    type: link_separate
     region: content
   field_icon_text:
     weight: 1

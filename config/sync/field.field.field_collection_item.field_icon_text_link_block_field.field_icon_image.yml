@@ -20,7 +20,7 @@ default_value_callback: ''
 settings:
   file_directory: paragraph-images
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: '250 KB'
+  max_filesize: '25 KB'
   max_resolution: 100x100
   min_resolution: ''
   alt_field: true

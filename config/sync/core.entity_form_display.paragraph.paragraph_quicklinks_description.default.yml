@@ -8,14 +8,30 @@ dependencies:
     - paragraphs.paragraphs_type.paragraph_quicklinks_description
   module:
     - field_collection
+    - field_group
     - text
+third_party_settings:
+  field_group:
+    group_paragraph_quicklink_detail:
+      children:
+        - field_paragraph_description
+        - field_quicklinks_desc_fieldset
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Paragraph - Quicklink Detail Description Block'
 id: paragraph.paragraph_quicklinks_description.default
 targetEntityType: paragraph
 bundle: paragraph_quicklinks_description
 mode: default
 content:
   field_paragraph_description:
-    weight: 0
+    weight: 1
     settings:
       rows: 5
       placeholder: ''
@@ -23,7 +39,7 @@ content:
     type: text_textarea
     region: content
   field_quicklinks_desc_fieldset:
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     type: field_collection_embed

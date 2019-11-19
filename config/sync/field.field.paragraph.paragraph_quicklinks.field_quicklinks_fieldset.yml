@@ -13,9 +13,11 @@ entity_type: paragraph
 bundle: paragraph_quicklinks
 label: 'Icon Text Link Block - Fields'
 description: ''
-required: true
+required: false
 translatable: true
 default_value:
+  - {  }
+  - {  }
   - {  }
 default_value_callback: ''
 settings: {  }

@@ -26,6 +26,6 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: field_collection_list
+    type: field_collection_items
     region: content
 hidden: {  }

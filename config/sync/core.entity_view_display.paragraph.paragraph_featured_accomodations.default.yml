@@ -16,7 +16,7 @@ mode: default
 content:
   field_para_facc_link:
     weight: 2
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -28,15 +28,16 @@ content:
     region: content
   field_para_facc_properties:
     weight: 1
-    label: above
+    label: hidden
     settings:
-      link: true
+      view_mode: teaser
+      link: false
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_view
     region: content
   field_para_facc_title:
     weight: 0
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
