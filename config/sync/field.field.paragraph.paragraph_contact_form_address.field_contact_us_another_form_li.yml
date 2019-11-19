@@ -1,0 +1,154 @@
+uuid: 53ba7f36-3dca-4727-bf51-5cae8d9da2fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_us_another_form_li
+    - paragraphs.paragraphs_type.general_sidebar_link
+    - paragraphs.paragraphs_type.paragraph_contact_form_address
+  module:
+    - entity_reference_revisions
+id: paragraph.paragraph_contact_form_address.field_contact_us_another_form_li
+field_name: field_contact_us_another_form_li
+entity_type: paragraph
+bundle: paragraph_contact_form_address
+label: 'Contact Us - Another Form Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      general_sidebar_link: general_sidebar_link
+    target_bundles_drag_drop:
+      general_sidebar_link:
+        enabled: true
+        weight: 43
+      paragraph_add_view:
+        weight: 44
+        enabled: false
+      paragraph_attach_form:
+        weight: 45
+        enabled: false
+      paragraph_call_to_action:
+        weight: 46
+        enabled: false
+      paragraph_careers:
+        weight: 47
+        enabled: false
+      paragraph_center_image_text_bloc:
+        weight: 48
+        enabled: false
+      paragraph_contact_form_address:
+        weight: 49
+        enabled: false
+      paragraph_content_block:
+        weight: 50
+        enabled: false
+      paragraph_faq_fields:
+        weight: 51
+        enabled: false
+      paragraph_featured_accomodations:
+        weight: 52
+        enabled: false
+      paragraph_find_us:
+        weight: 53
+        enabled: false
+      paragraph_history_block:
+        weight: 54
+        enabled: false
+      paragraph_home_page_slider:
+        weight: 55
+        enabled: false
+      paragraph_icon_heading_descripti:
+        weight: 56
+        enabled: false
+      paragraph_icon_text_link_block:
+        weight: 57
+        enabled: false
+      paragraph_image_left_right_text_:
+        weight: 58
+        enabled: false
+      paragraph_image_text:
+        weight: 59
+        enabled: false
+      paragraph_image_text_description:
+        weight: 60
+        enabled: false
+      paragraph_just_image:
+        weight: 61
+        enabled: false
+      paragraph_left_aligned_text_bloc:
+        weight: 62
+        enabled: false
+      paragraph_overview_image_text_li:
+        weight: 63
+        enabled: false
+      paragraph_quicklinks:
+        weight: 64
+        enabled: false
+      paragraph_quicklinks_description:
+        weight: 65
+        enabled: false
+      paragraph_quote_block:
+        weight: 66
+        enabled: false
+      paragraph_reference_block:
+        weight: 67
+        enabled: false
+      paragraph_tabbed_block:
+        weight: 68
+        enabled: false
+      paragraph_team_block:
+        weight: 69
+        enabled: false
+      paragraph_test:
+        weight: 70
+        enabled: false
+      paragraph_testimonial_quote_bloc:
+        weight: 71
+        enabled: false
+      paragraph_text_block:
+        weight: 72
+        enabled: false
+      paragraph_text_block_two_columns:
+        weight: 73
+        enabled: false
+      paragraph_text_image_right_slide:
+        weight: 74
+        enabled: false
+      paragraph_title_description:
+        weight: 75
+        enabled: false
+      request_a_quote:
+        weight: 76
+        enabled: false
+      service_block:
+        weight: 77
+        enabled: false
+      service_icon:
+        weight: 78
+        enabled: false
+      service_icons:
+        weight: 79
+        enabled: false
+      services_blocks:
+        weight: 80
+        enabled: false
+      uw_find_out_more:
+        weight: 81
+        enabled: false
+      uw_text_block:
+        weight: 82
+        enabled: false
+      uw_text_blocks_with_logo:
+        weight: 83
+        enabled: false
+      video_and_text:
+        weight: 84
+        enabled: false
+field_type: entity_reference_revisions

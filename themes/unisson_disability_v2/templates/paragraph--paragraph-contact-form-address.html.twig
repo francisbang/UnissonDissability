@@ -45,41 +45,46 @@
       	<div class="wrapper">
 	      	<div class="contact-fields">
 	      		{{ content.field_contact_us_block_reference }}
-	      	</div>
-	      	<div class="contact-info">
-	      		<h2>{{ content.field_contact_us_heading|field_value }}</h2>
-	      		{{ content.field_contact_us_address|field_value }}
-	      		<p>
-	      		{% if content.field_contact_us_telephone|render is not empty %}
-	      			<strong>T</strong> {{ content.field_contact_us_telephone|field_value }}
-	      		{% endif %}
-	      			<br>
-	      		{% if content.field_contact_us_fax_number|render is not empty %}
-	      			<strong>F</strong> {{ content.field_contact_us_fax_number|field_value }}
-	      		{% endif %}
-	      		<br>
-	      		{% if content.field_contact_us_email|render is not empty %}
-	      			<strong>E</strong> <a href="mailto:{{ content.field_contact_us_email|field_value }}">{{ content.field_contact_us_email|field_value }}</a>
-	      		{% endif %}
-	      		<br>
-	      		{% if content.field_abn|render is not empty %}
-	      			<strong>ABN</strong> {{ content.field_abn|field_value }}
-	      		{% endif %}
-	      		<br>
-	      		{% if content.field_contact_us_|render is not empty %}
-	      			<strong>ACN</strong> {{ content.field_contact_us_|field_value }}
-	      		{% endif %}
-	      		<br>
-	      		{% if content.field_contact_us_misc_text|render is not empty %}
-	      			{{ content.field_contact_us_misc_text|field_value }}
-	      		{% endif %}
-	      		</p>
-	      		
-	      		{% if content.field_contact_us_link_text|render is not empty %}
-	      			<a href="{{ content.field_contact_us_link|field_value }}" class="button">{{content.field_contact_us_link_text|field_value}}</a>
-	      		{% endif %}
-	      	</div>
-      	</div>
+			  </div>
+			<div class="sidebar-data">
+				<div class="contact-info">
+					<h2>{{ content.field_contact_us_heading|field_value }}</h2>
+					{{ content.field_contact_us_address|field_value }}
+					<p>
+					{% if content.field_contact_us_telephone|render is not empty %}
+						<strong>T</strong> {{ content.field_contact_us_telephone|field_value }}
+					{% endif %}
+						<br>
+					{% if content.field_contact_us_fax_number|render is not empty %}
+						<strong>F</strong> {{ content.field_contact_us_fax_number|field_value }}
+					{% endif %}
+					<br>
+					{% if content.field_contact_us_email|render is not empty %}
+						<strong>E</strong> <a href="mailto:{{ content.field_contact_us_email|field_value }}">{{ content.field_contact_us_email|field_value }}</a>
+					{% endif %}
+					<br>
+					{% if content.field_abn|render is not empty %}
+						<strong>ABN</strong> {{ content.field_abn|field_value }}
+					{% endif %}
+					<br>
+					{% if content.field_contact_us_|render is not empty %}
+						<strong>ACN</strong> {{ content.field_contact_us_|field_value }}
+					{% endif %}
+					<br>
+					{% if content.field_contact_us_misc_text|render is not empty %}
+						{{ content.field_contact_us_misc_text|field_value }}
+					{% endif %}
+					</p>
+					
+					{% if content.field_contact_us_link_text|render is not empty %}
+						<a href="{{ content.field_contact_us_link|field_value }}" class="button">{{content.field_contact_us_link_text|field_value}}</a>
+					{% endif %}
+				</div>
+				<div class="contact-other-links">
+					{{ content.field_contact_us_another_form_li }}
+				</div>
+			</div>
+		</div>
       </section>
     {% endblock %}
 </div>

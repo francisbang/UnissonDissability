@@ -142,7 +142,8 @@ function unisson_disability_v2_form_alter(&$form, \Drupal\Core\Form\FormStateInt
     $form['field_property_geolocation_proximity']['value']['#step'] = 1;
     $form['field_property_geolocation_proximity']['value']['#attributes']['placeholder'] = 'Units in km';
     $form['field_property_geolocation_proximity']['source_configuration']['origin_address']['#attributes']['placeholder'][] = 'Type a city, suburb or a pincode';
- 
+
+    $form['field_property_type_target_id']['#options']['All'] =  'All Types';
          
     //print('<pre>');print_r($form);die;
 

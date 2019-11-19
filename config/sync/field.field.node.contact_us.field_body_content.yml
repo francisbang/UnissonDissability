@@ -38,12 +38,12 @@ settings:
       paragraph_icon_heading_descripti:
         weight: 16
         enabled: false
-      paragraph_icon_text_link_block:
-        weight: 17
-        enabled: false
       paragraph_contact_form_address:
         enabled: true
         weight: 17
+      paragraph_icon_text_link_block:
+        weight: 17
+        enabled: false
       paragraph_image_left_right_text_:
         weight: 18
         enabled: false
@@ -80,6 +80,9 @@ settings:
       paragraph_careers:
         weight: 41
         enabled: false
+      general_sidebar_link:
+        weight: 43
+        enabled: false
       paragraph_faq_fields:
         weight: 44
         enabled: false
@@ -92,8 +95,14 @@ settings:
       paragraph_home_page_slider:
         weight: 47
         enabled: false
+      paragraph_content_block:
+        weight: 50
+        enabled: false
       paragraph_image_text:
         weight: 51
+        enabled: false
+      paragraph_featured_accomodations:
+        weight: 52
         enabled: false
       paragraph_image_text_description:
         weight: 52
@@ -109,6 +118,12 @@ settings:
         enabled: false
       paragraph_reference_block:
         weight: 57
+        enabled: false
+      paragraph_quicklinks:
+        weight: 64
+        enabled: false
+      paragraph_quicklinks_description:
+        weight: 65
         enabled: false
       paragraph_title_description:
         weight: 65

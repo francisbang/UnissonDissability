@@ -1,0 +1,23 @@
+uuid: 1f7b4f4b-e1fd-4c01-8e3f-027afe293386
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contact_us_link
+    - paragraphs.paragraphs_type.general_sidebar_link
+  module:
+    - link
+id: paragraph.general_sidebar_link.field_contact_us_link
+field_name: field_contact_us_link
+entity_type: paragraph
+bundle: general_sidebar_link
+label: 'Contact Us - Link'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

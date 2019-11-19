@@ -1,0 +1,9 @@
+uuid: 4553a00e-589f-40b4-a044-ea76da037594
+langcode: en
+status: true
+dependencies: {  }
+id: general_sidebar_link
+label: 'General Sidebar Link'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

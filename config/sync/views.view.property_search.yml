@@ -121,8 +121,8 @@ display:
           id: 0
           total_pages: null
           tags:
-            previous: ‹‹
-            next: ››
+            previous: '‹ Previous'
+            next: 'Next ›'
           expose:
             items_per_page: false
             items_per_page_label: 'Items per page'
@@ -132,7 +132,7 @@ display:
             offset: false
             offset_label: Offset
           views_infinite_scroll:
-            button_text: 'View All'
+            button_text: 'Load More'
             automatically_load_content: false
       style:
         type: default
@@ -900,6 +900,9 @@ display:
         groups:
           1: AND
       use_ajax: true
+      use_more: false
+      use_more_always: true
+      use_more_text: more
     cache_metadata:
       max-age: -1
       contexts:
