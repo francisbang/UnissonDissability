@@ -21,7 +21,11 @@
  * @ingroup themeable
  */
 #}
-<li>        
-<a href="{{ content.field_icon_link.0['#url'] }}"><img src="{{ content.field_icon_image|render|striptags|trim }}" width="50" height="50"></a>
-<span>{{ content.field_icon_text|field_value }}</span>
+<li>      
+    <a href="{{ content.field_icon_link.0['#url'] }}">
+        <div class="icon-holder">
+              <img src="{{ content.field_icon_image|render|striptags|trim }}">
+        </div>
+        <span>{{ content.field_icon_text|field_value }}</span>
+    </a>
 </li>
