@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 _core:
   default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
-name: 'News Article'
+name: News
 type: article
 description: 'This is used to add news articles to the website'
 help: ''

@@ -17,7 +17,8 @@
         "drupal/gtranslate": "^1.13",
         "drupal/high_contrast": "^1.0",
         "drupal/menu_block": "^1.5",
-        "drupal/text_resize": "^1.1"
+        "drupal/text_resize": "^1.1",
+        "drupal/link_class": "^1.4"
     },
     "replace": {
         "drupal/core": "^8.6"

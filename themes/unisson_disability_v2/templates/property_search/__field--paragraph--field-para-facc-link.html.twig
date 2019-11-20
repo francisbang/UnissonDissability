@@ -46,9 +46,8 @@
       'field--label-' ~ label_display,
     ]
 %}
-<div{{ attributes.addClass(classes, 'field__items') }}>
-    {% for item in items %}
-    <div{{ item.attributes.addClass('field__item property-content') }}>{{ item.content }}</div>
-    {% endfor %}
-</div>
+
+{% for item in items %}
+  <div{{ attributes.addClass(classes, 'field__item') }}>{{ item.content }}</div>
+{% endfor %}
 
