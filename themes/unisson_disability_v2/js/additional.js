@@ -83,7 +83,7 @@ jQuery(document).ready(function() {
 		/******************************************/
 		/*********** Accessibility Dropdown***********/
 		/******************************************/
-		var acc_clicked = jQuery('.btn-accessibility.clicked'),
+		/* var acc_clicked = jQuery('.btn-accessibility.clicked'),
 			acc = jQuery('.btn-accessibility'),
 			options = jQuery('.accessibility-list');
 
@@ -92,7 +92,7 @@ jQuery(document).ready(function() {
 			e.stopPropagation();
 			options.toggle();
 		});
-
+ */
 		
 		jQuery(".gtranslate select option[value='']").text('Google Translate');
 		
