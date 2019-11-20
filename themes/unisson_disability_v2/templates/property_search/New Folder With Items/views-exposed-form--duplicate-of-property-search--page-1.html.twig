@@ -1,0 +1,71 @@
+{#
+/**
+ * @file
+ * Theme override for a views exposed form.
+ *
+ * Available variables:
+ * - form: A render element representing the form.
+ *
+ * @see template_preprocess_views_exposed_form()
+ */
+#}
+{% if q is not empty %}
+  {#
+    This ensures that, if clean URLs are off, the 'q' is added first,
+    as a hidden form element, so that it shows up first in the POST URL.
+  #}
+{{ q }}
+{% endif %}
+<div class="form--inline clearfix">
+  {#{{ form }}#}
+  <div class="form-row">
+      <h4>Location</h4>
+      <div class="form-group location">
+        {{ form.field_property_geolocation_proximity }}
+        <div id="current-location">
+          <a href="#" onClick="getLocation();"  class="button button-secondary">Use Current Location</a>
+        </div>
+      </div>
+  </div>
+  {#<div class="advanced-search">
+    <div class="form-row">
+      {{ form|without('field_property_geolocation_proximity') }}
+    </div>
+  </div>
+  #}
+  <div class="advanced-search">
+    <div class="form-row">
+        <div class="form-col">
+            <h4>Property type</h4>
+            <div class="form-group property">
+                {{ form.field_property_type_target_id }}
+            </div>
+        </div>
+        <div class="form-col">
+            <h4>Number of bedrooms</h4>
+            <div class="form-group bedrooms">
+                {{ form.field_number_of_bedrooms_value }}
+            </div>
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-col">
+            <h4>Property Requirements</h4>
+            <div class="form-group property-req">
+                {{ form.field_property_features_target_id }}
+            </div>   
+        </div>
+        <div class="form-col">
+            <h4>Keywords</h4>
+            <div class="form-group keyword">
+                {{ form.combine }}
+            </div>
+        </div>
+    </div>
+  </div>
+  <div class="btn-holder">
+    {{ form.actions }}
+  </div>
+  <a href="" class="advanced-search-opener">Advanced Search Options</a>
+
+</div>
