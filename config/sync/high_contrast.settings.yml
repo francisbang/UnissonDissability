@@ -1,6 +1,6 @@
-colors_background: '#000000'
-colors_text: '#ffffff'
-colors_hyperlinks: '#ffff00'
+colors_background: '#ffffff'
+colors_text: '#000000'
+colors_hyperlinks: '#929292'
 default_logo: true
 logo_path: null
 _core:

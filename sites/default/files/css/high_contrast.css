@@ -1,34 +1,34 @@
 
 * {
-  background-color: #000000 !important;
+  background-color: #ffffff !important;
   background-image: none !important;
-  color: #ffffff !important;
+  color: #000000 !important;
   line-height: 1.5em !important;
   text-shadow: none !important;
 }
 
 a, a * {
-  background-color: #000000 !important;
-  color: #ffff00 !important;
+  background-color: #ffffff !important;
+  color: #929292 !important;
   text-decoration: underline !important;
 }
 
 a:hover, a:hover * {
-  background-color: #ffff00 !important;
-  color: #000000 !important;
+  background-color: #929292 !important;
+  color: #ffffff !important;
   text-decoration: none !important;
 }
 
 input {
-  background-color: #ffffff !important;
-  color: #000000 !important;
+  background-color: #000000 !important;
+  color: #ffffff !important;
 }
 
 input[type=submit],
 input[type=button],
 button {
-  background-color: #ffff00 !important;
-  color: #000000 !important;
+  background-color: #929292 !important;
+  color: #ffffff !important;
 }
 
 input[type=submit]:hover,
@@ -39,5 +39,5 @@ button:hover {
   
 ::selection {
   background-color: cyan !important;
-  color: #000000 !important;
+  color: #ffffff !important;
 }

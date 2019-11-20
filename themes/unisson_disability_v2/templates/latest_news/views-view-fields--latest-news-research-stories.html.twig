@@ -33,12 +33,12 @@
 
 
     <div class="img-holder">
-       {{ fields.field_property_images.content }}
+       {{ fields.field_feature_image.content }}
     </div>
     <div class="text-holder">
-        <span class="number">{{ fields.field_number_of_room_available.content }}</span>
-        <h3>{{ fields.field_property_location.content }}</h3>
-        {{ fields.body.content }}
+        <span class="number">{{ fields.type.content }}</span>
+        <h3>{{ fields.title.content }}</h3>
+        {{ fields.field_overview_snippet.content }}
         <a href="{{ fields.view_node.content|striptags }}" class="button button-primary">Read more</a>
     </div>
 
