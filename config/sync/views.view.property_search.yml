@@ -880,20 +880,7 @@ display:
             label: ''
           granularity: second
       title: 'Property - Search'
-      header:
-        area:
-          id: area
-          table: views
-          field: area
-          relationship: none
-          group_type: group
-          admin_label: ''
-          empty: true
-          tokenize: false
-          content:
-            value: '<h3>Use the search function below to filter our available shared living vacancies</h3>'
-            format: full_html
-          plugin_id: text
+      header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }

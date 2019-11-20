@@ -1,0 +1,31 @@
+uuid: d6c96c98-0f86-4c4f-adb2-218318596154
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_general_block.field_heading_pa
+    - field.field.paragraph.paragraph_general_block.field_para_exposed_filter_block
+    - paragraphs.paragraphs_type.paragraph_general_block
+id: paragraph.paragraph_general_block.default
+targetEntityType: paragraph
+bundle: paragraph_general_block
+mode: default
+content:
+  field_heading_pa:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_para_exposed_filter_block:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

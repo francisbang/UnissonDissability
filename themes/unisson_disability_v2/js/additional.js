@@ -79,41 +79,10 @@ jQuery(document).ready(function() {
 		//var cl = jQuery("#current-location").wrap('<p/>').parent().html();
 		//jQuery('.form-item-field-property-geolocation-proximity-value').after(cl);
 		jQuery( "#current-location" ).insertAfter( jQuery( ".form-item-field-property-geolocation-proximity-value" ) );
-
-		/******************************************/
-		/*********** Accessibility Dropdown***********/
-		/******************************************/
-		/* var acc_clicked = jQuery('.btn-accessibility.clicked'),
-			acc = jQuery('.btn-accessibility'),
-			options = jQuery('.accessibility-list');
-
-
-		acc.click(function (e) { 
-			e.stopPropagation();
-			options.toggle();
-		});
- */
 		
-		jQuery(".gtranslate select option[value='']").text('Google Translate');
+		jQuery(".gtranslate select option[value=''], .gtranslate .jcf-select-text").text('Google Translate');
 		
 
-		/*acc.click(function (e) {
-			e.stopPropagation();
-			options.hide();
-		});*/
-		/*jQuery('body').click(function (e) {
-			options.hide();
-		});*/
-
-		//options.children('div').click(function (e) {
-		   // e.stopPropagation();
-		   // txt.text(jQuery(this).text());
-		   // $(this).addClass('selected').siblings('div').removeClass('selected');
-		   // options.show();
-		//});
-
-		
-		
 });
 
 

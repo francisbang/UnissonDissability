@@ -27,6 +27,7 @@ settings:
     comment: 0
     content: 0
     block_content: 0
+    duplicate_of_property_search: 0
     file_entity_browser: 0
     files: 0
     frontpage: 0
@@ -67,12 +68,12 @@ settings:
     autocompletion_callbacks_words: 0
   allowed_display_types:
     block: block
+    page: page
     autocompletion_callback: 0
     embed: 0
     entity_browser: 0
     feed: 0
     default: 0
-    page: 0
   handler: 'default:view'
   handler_settings: {  }
 field_type: viewfield

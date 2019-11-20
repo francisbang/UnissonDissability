@@ -131,7 +131,7 @@ function unisson_disability_v2_form_alter(&$form, \Drupal\Core\Form\FormStateInt
       
   }
 
-  if ($form_id == 'views_exposed_form' && $form['#id'] == 'views-exposed-form-property-search-block-1') {
+  if ($form_id == 'views_exposed_form' && $form['#id'] == 'views-exposed-form-property-search-page-1') {
     //var_dump($form);
    
     $form['#attributes']['class'][] = 'accomodation-search-form';

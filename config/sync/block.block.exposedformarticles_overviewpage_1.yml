@@ -1,0 +1,23 @@
+uuid: f43c6cba-3699-4704-a0dc-4f63e8b378d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.articles_overview
+  module:
+    - views
+  theme:
+    - unisson_disability_v2
+id: exposedformarticles_overviewpage_1
+theme: unisson_disability_v2
+region: hidden
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:articles_overview-page_1'
+settings:
+  id: 'views_exposed_filter_block:articles_overview-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: 'News Article - Overview'
+visibility: {  }

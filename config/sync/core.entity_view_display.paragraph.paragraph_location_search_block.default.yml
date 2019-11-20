@@ -1,0 +1,31 @@
+uuid: d1054e19-7f33-4408-b9e4-e0fa08a24697
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_location_search_block.field_heading_pa
+    - field.field.paragraph.paragraph_location_search_block.field_para_exposed_filter_block
+    - paragraphs.paragraphs_type.paragraph_location_search_block
+id: paragraph.paragraph_location_search_block.default
+targetEntityType: paragraph
+bundle: paragraph_location_search_block
+mode: default
+content:
+  field_heading_pa:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_para_exposed_filter_block:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }
