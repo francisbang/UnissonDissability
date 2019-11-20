@@ -1,0 +1,19 @@
+uuid: 715b71d0-1a0b-4275-905f-fa0eac1c3680
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_heading_pa
+    - paragraphs.paragraphs_type.paragraph_general_block
+id: paragraph.paragraph_general_block.field_heading_pa
+field_name: field_heading_pa
+entity_type: paragraph
+bundle: paragraph_general_block
+label: Heading
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,23 @@
+uuid: b5cda464-b526-46b4-af55-ff8d8417a085
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.property_search
+  module:
+    - views
+  theme:
+    - unisson_disability_v2
+id: exposedformproperty_searchpage_1
+theme: unisson_disability_v2
+region: hidden
+weight: 0
+provider: null
+plugin: 'views_exposed_filter_block:property_search-page_1'
+settings:
+  id: 'views_exposed_filter_block:property_search-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: 'Property - Search'
+visibility: {  }

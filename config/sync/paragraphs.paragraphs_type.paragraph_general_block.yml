@@ -1,0 +1,9 @@
+uuid: bd4108ee-2de8-4e46-98f7-e6011223a99a
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_general_block
+label: 'Paragraph - General Block'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

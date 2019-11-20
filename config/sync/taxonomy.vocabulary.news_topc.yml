@@ -1,0 +1,8 @@
+uuid: 397804dc-6230-4406-9d10-477d949f2823
+langcode: en
+status: true
+dependencies: {  }
+name: 'News Topics'
+vid: news_topc
+description: ''
+weight: 0

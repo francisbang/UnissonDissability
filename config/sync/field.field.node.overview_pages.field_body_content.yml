@@ -7,9 +7,11 @@ dependencies:
     - node.type.overview_pages
     - paragraphs.paragraphs_type.paragraph_add_view
     - paragraphs.paragraphs_type.paragraph_call_to_action
+    - paragraphs.paragraphs_type.paragraph_general_block
     - paragraphs.paragraphs_type.paragraph_icon_text_link_block
     - paragraphs.paragraphs_type.paragraph_image_left_right_text_
     - paragraphs.paragraphs_type.paragraph_image_text_description
+    - paragraphs.paragraphs_type.paragraph_location_search_block
     - paragraphs.paragraphs_type.paragraph_overview_image_text_li
     - paragraphs.paragraphs_type.paragraph_reference_block
     - paragraphs.paragraphs_type.paragraph_text_block
@@ -40,6 +42,8 @@ settings:
       paragraph_add_view: paragraph_add_view
       paragraph_reference_block: paragraph_reference_block
       paragraph_image_text_description: paragraph_image_text_description
+      paragraph_general_block: paragraph_general_block
+      paragraph_location_search_block: paragraph_location_search_block
     target_bundles_drag_drop:
       paragraph_test:
         weight: 3
@@ -83,10 +87,10 @@ settings:
       paragraph_contact_form_address:
         weight: 25
         enabled: false
-      paragraph_text_block_two_columns:
+      paragraph_find_us:
         weight: 26
         enabled: false
-      paragraph_find_us:
+      paragraph_text_block_two_columns:
         weight: 26
         enabled: false
       paragraph_add_view:
@@ -101,18 +105,18 @@ settings:
       paragraph_just_image:
         weight: 31
         enabled: false
+      paragraph_history_block:
+        weight: 33
+        enabled: false
       paragraph_quote_block:
         weight: 33
         enabled: false
-      paragraph_history_block:
-        weight: 33
+      paragraph_home_page_slider:
+        weight: 34
         enabled: false
       paragraph_reference_block:
         enabled: true
         weight: 34
-      paragraph_home_page_slider:
-        weight: 34
-        enabled: false
       paragraph_attach_form:
         weight: 39
         enabled: false
@@ -125,8 +129,29 @@ settings:
       paragraph_left_aligned_text_bloc:
         weight: 43
         enabled: false
+      general_sidebar_link:
+        weight: 44
+        enabled: false
+      paragraph_content_block:
+        weight: 51
+        enabled: false
+      paragraph_featured_accomodations:
+        weight: 53
+        enabled: false
+      paragraph_general_block:
+        enabled: true
+        weight: 58
+      paragraph_location_search_block:
+        enabled: true
+        weight: 64
+      paragraph_quicklinks:
+        weight: 66
+        enabled: false
       request_a_quote:
         weight: 66
+        enabled: false
+      paragraph_quicklinks_description:
+        weight: 67
         enabled: false
       services_blocks:
         weight: 67

@@ -1,0 +1,20 @@
+uuid: f1c97a8d-b406-4d4f-8c2d-2d750b9a5f86
+langcode: en
+status: true
+dependencies:
+  module:
+    - block
+    - paragraphs
+id: paragraph.field_para_exposed_filter_block
+field_name: field_para_exposed_filter_block
+entity_type: paragraph
+type: entity_reference
+settings:
+  target_type: block
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

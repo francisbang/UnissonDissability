@@ -1,0 +1,9 @@
+uuid: bd83eb22-126c-4ef6-8a8a-719300cbe2de
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_location_search_block
+label: 'Paragraph - Location Search Block'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }
