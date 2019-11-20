@@ -49,9 +49,9 @@
   <div{{ attributes.addClass(classes) }}>
     {% block content %}
       <section class="{{ content.field_icon_text_link_block_backg|field_value }}" id="section-link-block">
-      	  {% if 'yes' in content.field_icon_text_link_block_i_opt|render|striptags %}
+      	  {# {% if 'yes' in content.field_icon_text_link_block_i_opt|render|striptags %}
       	  	<img src="{{ content.field_icon_text_link_block_image|render|striptags|trim }}" class="s-shape" alt="Unisson">	
-      	  {% endif %}	
+      	  {% endif %}	 #}
 	      <h2>{{ content.field_icon_text_link_block_headi|field_value }}</h2>
 	      {% if content.field_icon_text_link_block_descr|render|striptags|trim is not empty %}
 	      <div class="wrapper-text">
