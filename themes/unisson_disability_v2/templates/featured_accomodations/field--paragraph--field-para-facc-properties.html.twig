@@ -47,7 +47,7 @@
       'property-holder'
     ]
 %}
-<div{{ attributes.addClass(classes, 'field__items') }}>
+<div{{ attributes.addClass(classes, 'field__items, column-holder') }}>
     {% for item in items %}
     <div{{ item.attributes.addClass('field__item column-content') }}>{{ item.content }}</div>
     {% endfor %}
