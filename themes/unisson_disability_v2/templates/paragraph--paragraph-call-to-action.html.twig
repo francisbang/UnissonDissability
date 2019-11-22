@@ -50,8 +50,8 @@
     {% block content %}
       <section class="cta" id="cta">
       	<div class="wrapper">
-	      	<h1>{{ content.field_call_to_action_text_fie_1|field_value }}<br><span>{{ content.field_call_to_action_text_fie_2|field_value }}</span></h1>
-	      	<a href="{{ content.field_call_to_action_link|field_value }}" class="cta-link">{{ content.field_call_to_action_link_text|field_value }}</a>
+	      	<h2>{{ content.field_call_to_action_text_fie_1|field_value }}<br><span>{{ content.field_call_to_action_text_fie_2|field_value }}</span></h2>
+	      	<a href="{{ content.field_call_to_action_link|field_value }}" class="button button-secondary">{{ content.field_call_to_action_link_text|field_value }}</a>
       	</div>
       </section>
     {% endblock %}

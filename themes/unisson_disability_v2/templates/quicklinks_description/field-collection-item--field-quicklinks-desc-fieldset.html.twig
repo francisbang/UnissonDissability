@@ -23,9 +23,10 @@
 #}
 <li>        
     <a href="{{ content.field_icon_link.0['#url'] }}">
-        <img src="{{ content.field_icon_image|render|striptags|trim }}" width="50" height="50">
+        <div class="icon-holder">
+            <img src="{{ content.field_icon_image|render|striptags|trim }}">
+        </div>
+        <span>{{ content.field_icon_text|field_value }}</span>
+        <p>{{ content.field_icon_text_block_text_field|field_value }}</p>
     </a>
-    <span>{{ content.field_icon_text|field_value }}</span>
-    {{ content.field_icon_text_block_text_field|field_value }}
-
 </li>

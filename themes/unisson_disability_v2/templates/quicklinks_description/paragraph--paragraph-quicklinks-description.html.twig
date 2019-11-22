@@ -48,7 +48,7 @@
   ]
 %}
 
-<section class="info-block quick-links">
+<section class="info-block quick-links-desc">
     {% block paragraph %}
       <div{{ attributes.addClass(classes) }}>
         {% block content %}
@@ -58,7 +58,7 @@
             </div>
             <div class="bottom-block">
               <ul>
-                {{ content.field_quicklinks_fieldset|field_value }}
+                {{ content.field_quicklinks_desc_fieldset|field_value }}
               </ul>
             </div>
           </div>
