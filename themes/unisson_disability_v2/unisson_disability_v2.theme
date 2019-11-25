@@ -136,7 +136,7 @@ function unisson_disability_v2_form_alter(&$form, \Drupal\Core\Form\FormStateInt
    
     $form['#attributes']['class'][] = 'accomodation-search-form';
 
-    $form['actions']['submit']['#attributes']['class'][] = 'button-primary';
+    $form['actions']['submit']['#attributes']['class'][] = 'button-secondary';
 
     $form['field_property_geolocation_proximity']['value']['#min'] = 1;
     $form['field_property_geolocation_proximity']['value']['#step'] = 1;
@@ -149,6 +149,9 @@ function unisson_disability_v2_form_alter(&$form, \Drupal\Core\Form\FormStateInt
 
   if ($form_id == 'views_exposed_form' && $form['#id'] == 'views-exposed-form-articles-overview-page-1') {
     
+   $form['#attributes']['class'][] = 'news-search-form';
+
+    $form['actions']['submit']['#attributes']['class'][] = 'button-secondary';
 
     $options = [
       '1' => t('- All -'),

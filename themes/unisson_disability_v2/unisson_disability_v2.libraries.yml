@@ -7,9 +7,10 @@ global-styling:
       css/bootstrap.min.css: {}
       css/magnific-popup.css: {}
       css/flexslider.css: {}
+      css/jcf.css: {}
       css/styles.css: {}
       css/styles-additional.css: {}
-      css/jcf.css: {}
+      
   js:
     js/jquery.validate.min.js: {}
     js/bootstrap.min.js: {}
