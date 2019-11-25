@@ -1,0 +1,28 @@
+uuid: eadf2425-7c74-40bb-a0d3-0c17edc53d53
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_reference_content
+    - node.type.article
+    - paragraphs.paragraphs_type.paragraph_related_content
+id: paragraph.paragraph_related_content.field_reference_content
+field_name: field_reference_content
+entity_type: paragraph
+bundle: paragraph_related_content
+label: 'Reference - content'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      article: article
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

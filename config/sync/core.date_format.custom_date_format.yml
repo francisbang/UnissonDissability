@@ -1,0 +1,8 @@
+uuid: 497ec6ac-b31d-4b90-a4ed-4e99cf0503e3
+langcode: en
+status: true
+dependencies: {  }
+id: custom_date_format
+label: 'Custom Date Format'
+locked: false
+pattern: 'j F, Y'

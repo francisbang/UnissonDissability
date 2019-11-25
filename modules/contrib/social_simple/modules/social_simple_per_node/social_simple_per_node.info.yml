@@ -1,0 +1,12 @@
+name: Social Simple per Node
+type: module
+description: Provide the ability to enable/disable simple social share links per node.
+# core: 8.x
+dependencies:
+  - social_simple:social_simple
+
+# Information added by Drupal.org packaging script on 2019-07-27
+version: '8.x-1.7'
+core: '8.x'
+project: 'social_simple'
+datestamp: 1564240987

@@ -797,9 +797,9 @@ $settings['entity_update_batch_size'] = 50;
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $databases['default']['default'] = array (
-  'database' => 'unisson-backend',
+  'database' => 'unissondisability',
   'username' => 'root',
-  'password' => 'Bang2018!',
+  'password' => 'bang2018',
   'prefix' => '',
   'host' => 'localhost',
   'port' => '3306',

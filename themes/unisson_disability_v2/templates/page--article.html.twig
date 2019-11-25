@@ -69,14 +69,15 @@
       <section class="latest-news">
      	 <div class="post-content">
 	 	 		{{ page.content }}
-	 	 		<div class="post-navigation">
+	 	 		{#<div class="post-navigation">
 	 	 		{% if page.page_navigation %}
 		 	 		{{ page.page_navigation }}
 	 	 		{% endif %}
-	 	 		</div>
-	 	 		{% if page.related_content %}
+          </div>
+          
+       		{% if page.related_content %}
 		 	 		{{ page.related_content }}
-	 	 		{% endif %}
+	 	 		{% endif %}#}
 	 	 	</div>
       </section>
     </div>{# /.layout-content #}

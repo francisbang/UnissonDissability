@@ -1,0 +1,9 @@
+uuid: e949fbd1-3334-4ab3-a62e-93c5329a2218
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_related_content
+label: 'Paragraph - Related Content'
+icon_uuid: null
+description: 'It is 2 column related content, currently being used for news feeds only'
+behavior_plugins: {  }

@@ -144,12 +144,57 @@ function unisson_disability_v2_form_alter(&$form, \Drupal\Core\Form\FormStateInt
     $form['field_property_geolocation_proximity']['source_configuration']['origin_address']['#attributes']['placeholder'][] = 'Type a city, suburb or a pincode';
 
     $form['field_property_type_target_id']['#options']['All'] =  'All Types';
-         
-    //print('<pre>');print_r($form);die;
-
+  
   }
-   	  
+
+  if ($form_id == 'views_exposed_form' && $form['#id'] == 'views-exposed-form-articles-overview-page-1') {
+    
+
+    $options = [
+      '1' => t('- All -'),
+    ];
+
+    for($i = date("Y")-3; $i <= date("Y"); $i++){
+      $options += array($i => $i);
+    }
+
+    $form['year'] = [
+      '#title' => 'By year',
+      '#type' => 'select',
+      '#options' => $options,
+      '#size' => NULL,
+      '#default_value' => 'all',
+    ];
+
+    $options2 = [
+      '1' => t('- All -'),
+      '01' => 'Jan',
+      '02' => 'Feb',
+      '03' => 'Mar',
+      '04' => 'Apr',
+      '05' => 'May',
+      '06' => 'Jun',
+      '07' => 'Jul',
+      '08' => 'Aug',
+      '09' => 'Sep',
+      '10' => 'Oct',
+      '11' => 'Nov',
+      '12' => 'Dec',
+    ];
+
+    $form['month'] = [
+      '#title' => 'By month',
+      '#type' => 'select',
+      '#options' => $options2,
+      '#size' => NULL,
+      '#default_value' => 'all',
+    ];
+
+  // print('<pre>');print($form_id);print_r($form);die;
+        
+  }
 }
+
 
 /**********************************/
 /**************** Link ************/

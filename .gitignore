@@ -10,4 +10,7 @@ Thumbs.db
 
 .vscode/
 
+git config core.fileMode false
+
 sites/default/files/php/twig/
+sites/default/settings.php

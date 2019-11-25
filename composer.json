@@ -18,7 +18,10 @@
         "drupal/high_contrast": "^1.0",
         "drupal/menu_block": "^1.5",
         "drupal/text_resize": "^1.1",
-        "drupal/link_class": "^1.4"
+        "drupal/link_class": "^1.4",
+        "drupal/social_media": "^1.6",
+        "drupal/social_simple": "^1.7",
+        "drupal/twig_tweak": "^2.4"
     },
     "replace": {
         "drupal/core": "^8.6"

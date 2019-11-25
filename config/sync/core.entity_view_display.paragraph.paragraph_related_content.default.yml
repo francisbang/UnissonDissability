@@ -1,0 +1,31 @@
+uuid: ed78ac5e-b2c7-47bf-be37-72502d9309b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_related_content.field_heading_prh
+    - field.field.paragraph.paragraph_related_content.field_reference_content
+    - paragraphs.paragraphs_type.paragraph_related_content
+id: paragraph.paragraph_related_content.default
+targetEntityType: paragraph
+bundle: paragraph_related_content
+mode: default
+content:
+  field_heading_prh:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_reference_content:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: teaser
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

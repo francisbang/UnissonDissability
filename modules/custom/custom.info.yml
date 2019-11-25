@@ -1,0 +1,6 @@
+name: Custom
+type: module
+description: 'Custom module - exposed filter changes'
+package: Custom
+core: 8.x
+version: 8.x

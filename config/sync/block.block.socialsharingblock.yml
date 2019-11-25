@@ -1,0 +1,28 @@
+uuid: 82a027d6-219b-451d-9900-e843af07ffc2
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - social_media
+  theme:
+    - unisson_disability_v2
+id: socialsharingblock
+theme: unisson_disability_v2
+region: hidden
+weight: 0
+provider: null
+plugin: social_sharing_block
+settings:
+  id: social_sharing_block
+  label: 'Social Sharing block'
+  provider: social_media
+  label_display: '0'
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      article: article
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

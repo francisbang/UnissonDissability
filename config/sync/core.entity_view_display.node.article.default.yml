@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.article.field_body_content
+    - field.field.node.article.field_call_to_action
     - field.field.node.article.field_feature_image
     - field.field.node.article.field_header_image
     - field.field.node.article.field_header_image_mobile
@@ -32,6 +33,15 @@ content:
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
     region: content
+  field_call_to_action:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
   field_meta_tags:
     weight: 1
     label: hidden
@@ -39,14 +49,15 @@ content:
     third_party_settings: {  }
     type: metatag_empty_formatter
     region: content
-  field_news_topics:
-    weight: 3
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
+  field_related_content:
+    type: entity_reference_revisions_entity_view
+    weight: 4
     region: content
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
   links:
     weight: 0
     region: content
@@ -56,5 +67,5 @@ hidden:
   field_feature_image: true
   field_header_image: true
   field_header_image_mobile: true
+  field_news_topics: true
   field_overview_snippet: true
-  field_related_content: true

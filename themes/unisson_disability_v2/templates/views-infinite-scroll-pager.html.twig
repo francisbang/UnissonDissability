@@ -6,9 +6,12 @@
 #}
 
 {% if items.next %}
-{#<ul{{ attributes }}>
-  <li class="pager__item"> #}
-    <a class="button button-secondary" href="{{ items.next.href }}" title="{{ 'Go to next page'|t }}" rel="next">{{ options.button_text }}</a>
-  {#</li>
-</ul>#}
+<div class="more-block">
+      <ul{{ attributes }}>
+        <li class="pager__item">
+          <a class="btn" href="{{ items.next.href }}" title="{{ 'Go to next page'|t }}" rel="next">{{ options.button_text }}</a>
+        </li>
+      </ul>
+</div>
 {% endif %}
+

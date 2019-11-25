@@ -27,7 +27,6 @@ visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:
-      article: article
       research: research
       stories: stories
     negate: false
