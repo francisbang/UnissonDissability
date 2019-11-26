@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.paragraph_attach_form.field_attac
     - field.field.paragraph.paragraph_attach_form.field_attach_form_heading
+    - field.field.paragraph.paragraph_attach_form.field_sidebar_block
     - paragraphs.paragraphs_type.paragraph_attach_form
   module:
     - field_group
@@ -24,6 +25,18 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Attach Forms - Fields'
+    group_sidebar_block:
+      children:
+        - field_sidebar_block
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Sidebar Block'
 id: paragraph.paragraph_attach_form.default
 targetEntityType: paragraph
 bundle: paragraph_attach_form
@@ -43,6 +56,15 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: string_textfield
+    region: content
+  field_sidebar_block:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
 hidden:
   created: true

@@ -1,0 +1,26 @@
+uuid: f2bcf506-8eee-4b48-8856-0f06f4165efe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.field_collection_item.field_slider_video
+    - field_collection.field_collection.field_slider_fields
+  module:
+    - video
+id: field_collection_item.field_slider_fields.field_slider_video
+field_name: field_slider_video
+entity_type: field_collection_item
+bundle: field_slider_fields
+label: 'Slider - Video'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: ''
+  file_directory: 'videos/[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: video

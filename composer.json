@@ -21,7 +21,8 @@
         "drupal/link_class": "^1.4",
         "drupal/social_media": "^1.6",
         "drupal/social_simple": "^1.7",
-        "drupal/twig_tweak": "^2.4"
+        "drupal/twig_tweak": "^2.4",
+        "drupal/video": "^1.4"
     },
     "replace": {
         "drupal/core": "^8.6"

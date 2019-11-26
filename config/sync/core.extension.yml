@@ -86,6 +86,7 @@ module:
   twig_tweak: 0
   update: 0
   user: 0
+  video: 0
   viewfield: 0
   views_field_view: 0
   views_infinite_scroll: 0

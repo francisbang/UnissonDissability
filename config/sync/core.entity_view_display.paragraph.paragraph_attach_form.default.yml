@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.paragraph_attach_form.field_attac
     - field.field.paragraph.paragraph_attach_form.field_attach_form_heading
+    - field.field.paragraph.paragraph_attach_form.field_sidebar_block
     - paragraphs.paragraphs_type.paragraph_attach_form
   module:
     - webform
@@ -28,5 +29,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_sidebar_block:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
     region: content
 hidden: {  }

@@ -6,7 +6,6 @@ dependencies:
     - field.field.paragraph.paragraph_contact_form_address.field_abn
     - field.field.paragraph.paragraph_contact_form_address.field_contact_us_
     - field.field.paragraph.paragraph_contact_form_address.field_contact_us_address
-    - field.field.paragraph.paragraph_contact_form_address.field_contact_us_another_form_li
     - field.field.paragraph.paragraph_contact_form_address.field_contact_us_background_imag
     - field.field.paragraph.paragraph_contact_form_address.field_contact_us_block_reference
     - field.field.paragraph.paragraph_contact_form_address.field_contact_us_email
@@ -18,7 +17,6 @@ dependencies:
     - field.field.paragraph.paragraph_contact_form_address.field_contact_us_telephone
     - paragraphs.paragraphs_type.paragraph_contact_form_address
   module:
-    - entity_reference_revisions
     - image
     - link
     - text
@@ -49,15 +47,6 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: text_default
-    region: content
-  field_contact_us_another_form_li:
-    type: entity_reference_revisions_entity_view
-    weight: 13
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
     region: content
   field_contact_us_background_imag:
     weight: 1
