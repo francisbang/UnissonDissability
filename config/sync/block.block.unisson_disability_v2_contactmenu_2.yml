@@ -15,7 +15,7 @@ third_party_settings:
 id: unisson_disability_v2_contactmenu_2
 theme: unisson_disability_v2
 region: header_tools
-weight: -7
+weight: -27
 provider: null
 plugin: 'system_menu_block:contact-menu'
 settings:

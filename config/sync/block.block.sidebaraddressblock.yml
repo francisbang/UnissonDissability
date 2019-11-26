@@ -1,0 +1,25 @@
+uuid: 6171feb9-5185-4bc7-bb00-f221c124a844
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:80e1d130-8803-4fd1-9f0b-c01dd5a0884b'
+  module:
+    - block_content
+  theme:
+    - unisson_disability_v2
+id: sidebaraddressblock
+theme: unisson_disability_v2
+region: hidden
+weight: 0
+provider: null
+plugin: 'block_content:80e1d130-8803-4fd1-9f0b-c01dd5a0884b'
+settings:
+  id: 'block_content:80e1d130-8803-4fd1-9f0b-c01dd5a0884b'
+  label: 'Sidebar Address Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: b8d33f63-4156-4b79-8b1c-69624d26a502
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6ce7f7b4-9657-488b-a393-6bfe11149900'
+  module:
+    - block_content
+  theme:
+    - unisson_disability_v2
+id: generalenquiriesblock
+theme: unisson_disability_v2
+region: hidden
+weight: 0
+provider: null
+plugin: 'block_content:6ce7f7b4-9657-488b-a393-6bfe11149900'
+settings:
+  id: 'block_content:6ce7f7b4-9657-488b-a393-6bfe11149900'
+  label: 'General Enquiries Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

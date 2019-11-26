@@ -1,6 +1,6 @@
 uuid: cc3ef7e7-c2eb-4376-9672-96ced4047fd0
 langcode: en
-status: false
+status: true
 dependencies:
   module:
     - block_class
@@ -13,7 +13,7 @@ third_party_settings:
 id: unisson_disability_v2_openreadspeakerblock_2
 theme: unisson_disability_v2
 region: header_tools
-weight: -8
+weight: -25
 provider: null
 plugin: open_readspeaker_block
 settings:

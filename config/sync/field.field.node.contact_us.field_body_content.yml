@@ -6,7 +6,6 @@ dependencies:
     - field.storage.node.field_body_content
     - node.type.contact_us
     - paragraphs.paragraphs_type.paragraph_attach_form
-    - paragraphs.paragraphs_type.paragraph_contact_form_address
     - paragraphs.paragraphs_type.paragraph_text_block
   module:
     - entity_reference_revisions
@@ -25,7 +24,6 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      paragraph_contact_form_address: paragraph_contact_form_address
       paragraph_text_block: paragraph_text_block
       paragraph_attach_form: paragraph_attach_form
     target_bundles_drag_drop:
@@ -39,8 +37,8 @@ settings:
         weight: 16
         enabled: false
       paragraph_contact_form_address:
-        enabled: true
         weight: 17
+        enabled: false
       paragraph_icon_text_link_block:
         weight: 17
         enabled: false
@@ -119,17 +117,23 @@ settings:
       paragraph_reference_block:
         weight: 57
         enabled: false
+      paragraph_general_block:
+        weight: 57
+        enabled: false
       paragraph_quicklinks:
         weight: 64
-        enabled: false
-      paragraph_quicklinks_description:
-        weight: 65
         enabled: false
       paragraph_title_description:
         weight: 65
         enabled: false
+      paragraph_quicklinks_description:
+        weight: 65
+        enabled: false
       request_a_quote:
         weight: 66
+        enabled: false
+      paragraph_location_search_block:
+        weight: 67
         enabled: false
       service_block:
         weight: 67
@@ -148,6 +152,9 @@ settings:
         enabled: false
       uw_text_block:
         weight: 72
+        enabled: false
+      paragraph_related_content:
+        weight: 73
         enabled: false
       uw_text_blocks_with_logo:
         weight: 73

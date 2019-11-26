@@ -1,0 +1,25 @@
+uuid: af1814b8-da4c-4575-9405-a09c64b624fc
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:131d2f9c-32ac-4096-b9da-8f8c8f826304'
+  module:
+    - block_content
+  theme:
+    - unisson_disability_v2
+id: feedbackandcomplaintsblock
+theme: unisson_disability_v2
+region: hidden
+weight: 0
+provider: null
+plugin: 'block_content:131d2f9c-32ac-4096-b9da-8f8c8f826304'
+settings:
+  id: 'block_content:131d2f9c-32ac-4096-b9da-8f8c8f826304'
+  label: 'Feedback and Complaints Block'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

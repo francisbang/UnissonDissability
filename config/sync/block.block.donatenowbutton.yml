@@ -1,0 +1,25 @@
+uuid: 3b7cdd92-41af-4cb7-825b-acb5d1378481
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8d98c775-3a83-4b3d-b9a2-6cc936ea89e1'
+  module:
+    - block_content
+  theme:
+    - unisson_disability_v2
+id: donatenowbutton
+theme: unisson_disability_v2
+region: primary_menu
+weight: 0
+provider: null
+plugin: 'block_content:8d98c775-3a83-4b3d-b9a2-6cc936ea89e1'
+settings:
+  id: 'block_content:8d98c775-3a83-4b3d-b9a2-6cc936ea89e1'
+  label: 'Donate Now Button'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

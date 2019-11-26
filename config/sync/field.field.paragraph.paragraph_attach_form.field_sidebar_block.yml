@@ -1,0 +1,21 @@
+uuid: 864e857a-93a1-4c8a-bd52-3bd92298a03e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_sidebar_block
+    - paragraphs.paragraphs_type.paragraph_attach_form
+id: paragraph.paragraph_attach_form.field_sidebar_block
+field_name: field_sidebar_block
+entity_type: paragraph
+bundle: paragraph_attach_form
+label: 'Form Sidebar Block'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:block'
+  handler_settings: {  }
+field_type: entity_reference

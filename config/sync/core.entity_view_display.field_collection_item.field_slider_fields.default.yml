@@ -9,11 +9,13 @@ dependencies:
     - field.field.field_collection_item.field_slider_fields.field_slider_link_text
     - field.field.field_collection_item.field_slider_fields.field_slider_main_heading
     - field.field.field_collection_item.field_slider_fields.field_slider_sub_heading
+    - field.field.field_collection_item.field_slider_fields.field_slider_video
     - field_collection.field_collection.field_slider_fields
     - image.style.home_page_slider_image
   module:
     - image
     - link
+    - video
 id: field_collection_item.field_slider_fields.default
 targetEntityType: field_collection_item
 bundle: field_slider_fields
@@ -35,7 +37,7 @@ content:
     type: image_url
     region: content
   field_slider_link:
-    weight: 5
+    weight: 6
     label: hidden
     settings:
       trim_length: 80
@@ -47,7 +49,7 @@ content:
     type: link
     region: content
   field_slider_link_text:
-    weight: 4
+    weight: 5
     label: hidden
     settings:
       link_to_entity: false
@@ -69,5 +71,19 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
+  field_slider_video:
+    weight: 4
+    label: hidden
+    settings:
+      width: '854'
+      height: '480'
+      controls: true
+      autoplay: true
+      preload: auto
+      loop: false
+      muted: false
+    third_party_settings: {  }
+    type: video_player
     region: content
 hidden: {  }
