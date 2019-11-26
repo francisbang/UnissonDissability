@@ -205,10 +205,10 @@ function unisson_disability_v2_form_alter(&$form, \Drupal\Core\Form\FormStateInt
 function unisson_disability_v2_preprocess_links(&$variables) {
     if ($node = \Drupal::routeMatch()->getParameter('node')) {
       $content_type = $node->bundle();
-    }
+   }
+    if (isset($variables['links']['node-readmore'])) {    
 
-    if (isset($variables['links']['node-readmore'])) {
-      $variables['links']['node-readmore']['link']['#options']['attributes']['class'][] = 'button button-primary';
+      $variables['links']['node-readmore']['link']['#options']['attributes']['class'][] = 'button button-secondary';
     }
 
 }

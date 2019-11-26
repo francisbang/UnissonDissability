@@ -35,6 +35,9 @@
 	<a href="{{ content.field_slider_link|field_value }}" class="button button-3">{{ content.field_slider_link_text|field_value }}</a>
 	{% endif %}
 </div>
+{% if content.field_slider_video|render is not empty %}
+{{ content.field_slider_video|field_value }}
+{% else %}
 <img src="{{ content.field_slider_image|field_value }}" alt="{{ content.field_slider_main_heading|field_value }} {{ content.field_slider_main_heading|field_value }}"/>
-
+{% endif %}
 

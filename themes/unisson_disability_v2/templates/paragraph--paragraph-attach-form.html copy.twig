@@ -40,32 +40,16 @@
 #}
 <div{{ attributes.addClass(classes) }}>
     {% block content %}
-       {#} <section class="add-form">
+        <section class="add-form">
             <img src="/sites/default/files/default_images/s_1.png" class="s-shape">
-            <div class="wrapper">
-                
-                
-                {{ content.field_attac }} 
-                
-                
-
-            </div>
-        </section> #}
-        
-        <section class="contact-form">
             <div class="wrapper">
                 <div class="white-heading center-align">
                     <div class="wrapper-text">
-                            <h2>{{ content.field_attach_form_heading }}</h2>
-                    </div>
+      	      	        <h2>{{ content.field_attach_form_heading }}</h2>
                 </div>
-                <div class="contact-fields">
-                    {{ content.field_attac }}
-                </div> <!-- end.contact-fields -->
-                <div class="contact-info">
-                    {{ content.field_sidebar_block }}
-                </div> <!-- end.contact-info -->
-            </div> <!-- end.wrapper -->
-        </section> <!-- end.contact-form -->
+	            </div>
+                {{ content.field_attac }}        
+            </div>
+        </section>
     {% endblock %}
 </div>
