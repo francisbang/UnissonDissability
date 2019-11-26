@@ -644,6 +644,8 @@ section.add-form {
     margin: 0 auto;    
 }
 
+section.contact-form .js-webform-select-other{display: none !important;}
+
 @media (max-width: 1023px) {
     .webform-submission-feedback-complaints-form-form {
         padding-left: 20px;
@@ -692,25 +694,10 @@ footer .newsletter-block .newsletter-form{
 	display:inline-block;
 }
 
-footer .newsletter-block .newsletter-form div.form-item,footer .newsletter-block .newsletter-form div.form-actions {
+footer .newsletter-block .newsletter-form .form-item,
+footer .newsletter-block .newsletter-form .form-actions {
 	float:left;
 }
-
-footer .policy a{
-text-transform: uppercase;
-}
-
-
-footer .policy a.is-active {
-    color: #fcc411;
-}
-
-footer #block-unisson-disability-v2-copyrightblock .field--name-field-text-block-description{
-	line-height: 22px;
-    font-size: 14px;
-}
-
-
 
 /******************************************/
 /************ ACCOMODATION CSS ************/

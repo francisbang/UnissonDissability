@@ -51,8 +51,8 @@
       {% if 'grey' in content.field_text_block_background|render|striptags|trim %}
 	      <section class="two-colums {{ content.field_text_block_background|field_value }}" id="two-colums-section">
       {% else %}
-      	  <section class="two-colums {{ content.field_text_block_background|field_value }}">	
-      	  <img src="{{ content.field_text_block_background_imag|render|striptags|trim }}" class="s-shape" alt="Unisson">	
+		<section class="two-colums {{ content.field_text_block_background|field_value }}">	
+		{# <img src="{{ content.field_text_block_background_imag|render|striptags|trim }}" class="s-shape" alt="Unisson">	 #}
       {% endif %}
       	 <div class="wrapper">
       	 <h2 class="{{ content.field_text_alignment|field_value }}">{{ content.field_text_block_heading|field_value }}</h2>	
