@@ -810,6 +810,29 @@ footer .newsletter-block .newsletter-form .form-actions {
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.content-overview .field--type-link{text-align: center;}
+.content-overview .field--type-link a{
+    display: inline-block;
+    font-size:14px;
+	line-height:50px;
+	height: 50px;
+	padding: 0 50px;
+	text-transform: uppercase;
+	border-radius: 25px;
+	font-family: 'GothamRounded-Book';
+	text-align: center;
+	border:none;
+	color: #fff;
+	background: #650d6b;
+}
+.content-overview .field--type-link a:hover,
+.content-overview .field--type-link a:focus{
+    border: none;
+    outline: none;
+    color: #fff;
+    text-decoration: none;
+    background: #ff6926;
+}
 
 
 
