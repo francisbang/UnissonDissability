@@ -1,0 +1,9 @@
+uuid: 3087753a-2cf9-4a06-98b0-5631dd7eca75
+langcode: en
+status: true
+dependencies: {  }
+id: paragraph_property_enqform
+label: 'Paragraph - Property Enquiry Form'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

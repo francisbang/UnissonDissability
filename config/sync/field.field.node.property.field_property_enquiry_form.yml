@@ -1,13 +1,13 @@
-uuid: 1ab7ba4c-ae13-489c-965d-adead0e40608
+uuid: fea36193-1982-455b-ae67-b097ba5bf51d
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_property_enquiry_form
     - node.type.property
-    - webform.webform.accomodation_enquiry_form
+    - paragraphs.paragraphs_type.paragraph_property_enqform
   module:
-    - webform
+    - entity_reference_revisions
 id: node.property.field_property_enquiry_form
 field_name: field_property_enquiry_form
 entity_type: node
@@ -16,17 +16,151 @@ label: 'Property Enquiry Form'
 description: ''
 required: false
 translatable: false
-default_value:
-  -
-    default_data: 'propertyid: ''[webform_submission:node:field_property_id]'''
-    status: open
-    open: ''
-    close: ''
-    target_uuid: e786c410-c262-4fa6-8074-f26f4fa1c9f2
+default_value: {  }
 default_value_callback: ''
 settings:
-  handler: 'default:webform'
+  handler: 'default:paragraph'
   handler_settings:
-    target_bundles: null
-    auto_create: false
-field_type: webform
+    negate: 0
+    target_bundles:
+      paragraph_property_enqform: paragraph_property_enqform
+    target_bundles_drag_drop:
+      general_sidebar_link:
+        weight: 47
+        enabled: false
+      paragraph_add_view:
+        weight: 48
+        enabled: false
+      paragraph_attach_form:
+        weight: 49
+        enabled: false
+      paragraph_call_to_action:
+        weight: 50
+        enabled: false
+      paragraph_careers:
+        weight: 51
+        enabled: false
+      paragraph_center_image_text_bloc:
+        weight: 52
+        enabled: false
+      paragraph_contact_form_address:
+        weight: 53
+        enabled: false
+      paragraph_content_block:
+        weight: 54
+        enabled: false
+      paragraph_faq_fields:
+        weight: 55
+        enabled: false
+      paragraph_featured_accomodations:
+        weight: 56
+        enabled: false
+      paragraph_find_us:
+        weight: 57
+        enabled: false
+      paragraph_general_block:
+        weight: 58
+        enabled: false
+      paragraph_history_block:
+        weight: 59
+        enabled: false
+      paragraph_home_page_slider:
+        weight: 60
+        enabled: false
+      paragraph_icon_heading_descripti:
+        weight: 61
+        enabled: false
+      paragraph_icon_text_link_block:
+        weight: 62
+        enabled: false
+      paragraph_image_left_right_text_:
+        weight: 63
+        enabled: false
+      paragraph_image_text:
+        weight: 64
+        enabled: false
+      paragraph_image_text_description:
+        weight: 65
+        enabled: false
+      paragraph_just_image:
+        weight: 66
+        enabled: false
+      paragraph_left_aligned_text_bloc:
+        weight: 67
+        enabled: false
+      paragraph_location_search_block:
+        weight: 68
+        enabled: false
+      paragraph_overview_image_text_li:
+        weight: 69
+        enabled: false
+      paragraph_property_enqform:
+        enabled: true
+        weight: 70
+      paragraph_quicklinks:
+        weight: 71
+        enabled: false
+      paragraph_quicklinks_description:
+        weight: 72
+        enabled: false
+      paragraph_quote_block:
+        weight: 73
+        enabled: false
+      paragraph_reference_block:
+        weight: 74
+        enabled: false
+      paragraph_related_content:
+        weight: 75
+        enabled: false
+      paragraph_tabbed_block:
+        weight: 76
+        enabled: false
+      paragraph_team_block:
+        weight: 77
+        enabled: false
+      paragraph_test:
+        weight: 78
+        enabled: false
+      paragraph_testimonial_quote_bloc:
+        weight: 79
+        enabled: false
+      paragraph_text_block:
+        weight: 80
+        enabled: false
+      paragraph_text_block_two_columns:
+        weight: 81
+        enabled: false
+      paragraph_text_image_right_slide:
+        weight: 82
+        enabled: false
+      paragraph_title_description:
+        weight: 83
+        enabled: false
+      request_a_quote:
+        weight: 84
+        enabled: false
+      services_blocks:
+        weight: 85
+        enabled: false
+      service_block:
+        weight: 86
+        enabled: false
+      service_icon:
+        weight: 87
+        enabled: false
+      service_icons:
+        weight: 88
+        enabled: false
+      uw_find_out_more:
+        weight: 89
+        enabled: false
+      uw_text_block:
+        weight: 90
+        enabled: false
+      uw_text_blocks_with_logo:
+        weight: 91
+        enabled: false
+      video_and_text:
+        weight: 92
+        enabled: false
+field_type: entity_reference_revisions

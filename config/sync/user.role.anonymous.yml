@@ -36,6 +36,7 @@ permissions:
   - 'view paragraph content paragraph_left_aligned_text_bloc'
   - 'view paragraph content paragraph_location_search_block'
   - 'view paragraph content paragraph_overview_image_text_li'
+  - 'view paragraph content paragraph_property_enqform'
   - 'view paragraph content paragraph_quicklinks'
   - 'view paragraph content paragraph_quicklinks_description'
   - 'view paragraph content paragraph_quote_block'

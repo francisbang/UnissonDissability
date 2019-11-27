@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - block.block.exposedformproperty_searchpage_1
     - field.storage.paragraph.field_para_exposed_filter_block
     - paragraphs.paragraphs_type.paragraph_general_block
 id: paragraph.paragraph_general_block.field_para_exposed_filter_block
@@ -14,9 +13,7 @@ label: 'Paragraph - Exposed Filter Block'
 description: ''
 required: false
 translatable: false
-default_value:
-  -
-    target_uuid: b5cda464-b526-46b4-af55-ff8d8417a085
+default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:block'

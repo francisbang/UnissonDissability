@@ -12,7 +12,7 @@ dependencies:
 id: unisson_disability_v2_searchresultsheaderblock
 theme: unisson_disability_v2
 region: page_header
-weight: -20
+weight: -27
 provider: null
 plugin: 'block_content:88100609-a0ad-462f-ad09-ec71abc2c2fe'
 settings:

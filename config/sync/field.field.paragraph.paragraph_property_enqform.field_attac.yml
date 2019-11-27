@@ -1,0 +1,32 @@
+uuid: 2e8f4850-3cff-4836-ae37-0fd9682d770c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_attac
+    - paragraphs.paragraphs_type.paragraph_property_enqform
+    - webform.webform.accomodation_enquiry_form
+  module:
+    - webform
+id: paragraph.paragraph_property_enqform.field_attac
+field_name: field_attac
+entity_type: paragraph
+bundle: paragraph_property_enqform
+label: 'Attach Form'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_data: 'propertyid: ''[webform_submission:node:field_property_id]'''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: e786c410-c262-4fa6-8074-f26f4fa1c9f2
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

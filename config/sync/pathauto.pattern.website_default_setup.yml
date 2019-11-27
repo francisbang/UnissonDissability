@@ -9,23 +9,24 @@ label: 'Website - Default Setup'
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  faceb9de-c513-4ba1-be02-47d7d19b1bbe:
+  f1a81c89-88d6-4f9f-a3d6-e17448121233:
     id: node_type
     bundles:
-      system_pages: system_pages
       article: article
       contact_us: contact_us
       general_pages: general_pages
       home_page: home_page
       overview_pages: overview_pages
       page: page
+      property: property
       research: research
       stories: stories
+      system_pages: system_pages
       team_members: team_members
     negate: false
     context_mapping:
       node: node
-    uuid: faceb9de-c513-4ba1-be02-47d7d19b1bbe
+    uuid: f1a81c89-88d6-4f9f-a3d6-e17448121233
 selection_logic: and
 weight: -5
 relationships: {  }

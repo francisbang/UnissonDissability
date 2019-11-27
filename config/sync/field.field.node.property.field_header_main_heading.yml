@@ -1,0 +1,19 @@
+uuid: 418c13a5-f232-4755-9df1-a68b1988563e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_header_main_heading
+    - node.type.property
+id: node.property.field_header_main_heading
+field_name: field_header_main_heading
+entity_type: node
+bundle: property
+label: 'Header - First Line'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

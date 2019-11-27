@@ -1,0 +1,74 @@
+uuid: null
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_property_enqform.field_attac
+    - field.field.paragraph.paragraph_property_enqform.field_attach_form_heading
+    - field.field.paragraph.paragraph_property_enqform.field_sidebar_block
+    - paragraphs.paragraphs_type.paragraph_property_enqform
+  module:
+    - field_group
+    - webform
+third_party_settings:
+  field_group:
+    group_attach_pdfs_fields:
+      children:
+        - field_attach_form_heading
+        - field_attac
+      parent_name: ''
+      weight: 0
+      format_type: details
+      format_settings:
+        label: 'Attach Forms - Fields'
+        open: true
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Attach Forms - Fields'
+    group_sidebar_block:
+      children:
+        - field_sidebar_block
+      parent_name: ''
+      weight: 1
+      format_type: details
+      format_settings:
+        label: 'Sidebar Block'
+        open: true
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Sidebar Block'
+id: paragraph.paragraph_property_enqform.default
+targetEntityType: paragraph
+bundle: paragraph_property_enqform
+mode: default
+content:
+  field_attac:
+    weight: 2
+    settings:
+      default_data: true
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+  field_attach_form_heading:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_sidebar_block:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

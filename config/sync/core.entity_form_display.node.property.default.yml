@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.property.body
+    - field.field.node.property.field_body_content
+    - field.field.node.property.field_header_main_heading
+    - field.field.node.property.field_header_sub_heading
     - field.field.node.property.field_number_of_bathrooms
     - field.field.node.property.field_number_of_bedrooms
     - field.field.node.property.field_number_of_room_available
@@ -18,12 +21,73 @@ dependencies:
     - node.type.property
   module:
     - address
+    - field_group
     - geofield
     - image
+    - paragraphs
     - path
     - serial
     - text
-    - webform
+third_party_settings:
+  field_group:
+    group_property_details:
+      children:
+        - field_property_id
+        - field_property_type
+        - field_number_of_bedrooms
+        - field_number_of_bathrooms
+        - field_number_of_room_available
+        - field_property_features
+      parent_name: ''
+      weight: 9
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Property Details'
+    group_property_content:
+      children:
+        - field_body_content
+      parent_name: ''
+      weight: 13
+      format_type: details
+      format_settings:
+        label: 'Property Content'
+        open: true
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Property Content'
+    group_property_enquiry_form:
+      children:
+        - field_property_enquiry_form
+      parent_name: ''
+      weight: 14
+      format_type: details
+      format_settings:
+        label: 'Property Enquiry Form'
+        open: true
+        required_fields: true
+        id: ''
+        classes: ''
+      label: 'Property Enquiry Form'
+    group_page_overview:
+      children:
+        - title
+        - field_header_main_heading
+        - field_header_sub_heading
+        - body
+      parent_name: ''
+      weight: 6
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Page - Overview'
 id: node.property.default
 targetEntityType: node
 bundle: property
@@ -31,7 +95,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 8
+    weight: 9
     settings:
       rows: 9
       summary_rows: 3
@@ -40,10 +104,38 @@ content:
     region: content
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_body_content:
+    weight: 14
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
+    region: content
+  field_header_main_heading:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_header_sub_heading:
+    weight: 8
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_number_of_bathrooms:
     weight: 11
     settings: {  }
@@ -64,14 +156,16 @@ content:
     type: number
     region: content
   field_property_enquiry_form:
-    weight: 17
+    type: entity_reference_paragraphs
+    weight: 15
     settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-      default_data: true
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: paragraph_property_enqform
     third_party_settings: {  }
-    type: webform_entity_reference_autocomplete
     region: content
   field_property_features:
     weight: 13
@@ -80,20 +174,20 @@ content:
     type: options_buttons
     region: content
   field_property_geolocation:
-    weight: 16
+    weight: 12
     settings:
       html5_geolocation: false
     third_party_settings: {  }
     type: geofield_latlon
     region: content
   field_property_id:
-    weight: 1
+    weight: 8
     settings: {  }
     third_party_settings: {  }
     type: serial_default_widget
     region: content
   field_property_images:
-    weight: 14
+    weight: 10
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -101,7 +195,7 @@ content:
     type: image_image
     region: content
   field_property_location:
-    weight: 15
+    weight: 11
     settings: {  }
     third_party_settings: {  }
     type: address_default
@@ -114,7 +208,7 @@ content:
     region: content
   path:
     type: path
-    weight: 6
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -122,26 +216,26 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 4
+    weight: 2
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 7
+    weight: 5
     region: content
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 5
+    weight: 3
     region: content
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: 6
     region: content
     settings:
       size: 60
@@ -149,7 +243,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 0
     settings:
       match_operator: CONTAINS
       size: 60

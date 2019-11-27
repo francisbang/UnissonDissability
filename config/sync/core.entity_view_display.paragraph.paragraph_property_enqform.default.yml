@@ -1,0 +1,42 @@
+uuid: 4e43d3a7-5ae7-428b-938b-95698df85fcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_property_enqform.field_attac
+    - field.field.paragraph.paragraph_property_enqform.field_attach_form_heading
+    - field.field.paragraph.paragraph_property_enqform.field_sidebar_block
+    - paragraphs.paragraphs_type.paragraph_property_enqform
+  module:
+    - webform
+id: paragraph.paragraph_property_enqform.default
+targetEntityType: paragraph
+bundle: paragraph_property_enqform
+mode: default
+content:
+  field_attac:
+    weight: 1
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: content
+  field_attach_form_heading:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_sidebar_block:
+    weight: 2
+    label: hidden
+    settings:
+      link: true
+      view_mode: default
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+hidden: {  }

@@ -26,7 +26,27 @@ function unisson_disability_v2_preprocess_item_list(&$variables) {
   
 }
 
-function unisson_disability_v2_preprocess_page(&$variables) {
+/* function unisson_disability_v2_preprocess(&$variables, $hook) {
+
+  
+}
+*/
+function unisson_disability_v2_preprocess_node(&$variables){
+  
+  $vid = 'property_features';
+  $term_data = [];
+  $terms =\Drupal::entityTypeManager()->getStorage('taxonomy_term')->loadTree($vid);
+  
+  foreach ($terms as $key => $term) {
+    /*$term_data[$key] = array(
+    'id' => $term->tid,
+    'name' => $term->name
+    );*/
+    $term_data[$term->tid] = $term->name;
+  }
+
+  $variables['property_features_list']= $term_data;
+
 }
 
 function unisson_disability_v2_preprocess(&$variables)
@@ -40,7 +60,6 @@ function unisson_disability_v2_preprocess(&$variables)
     $variables['base_path'] = base_path();
     $variables['uid']       = \Drupal::currentUser()->id();
     $variables['#cache']['max-age'] = 0;
-
 
 }
 

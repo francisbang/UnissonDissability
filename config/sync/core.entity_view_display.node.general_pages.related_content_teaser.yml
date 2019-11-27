@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.general_pages.field_header_sub_heading
     - field.field.node.general_pages.field_meta_tags
     - field.field.node.general_pages.field_overview_snippet
+    - image.style.file_entity_browser_thumbnail
     - node.type.general_pages
   module:
     - image
@@ -27,7 +28,7 @@ content:
     region: content
     label: hidden
     settings:
-      image_style: ''
+      image_style: file_entity_browser_thumbnail
       image_link: ''
     third_party_settings: {  }
 hidden:

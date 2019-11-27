@@ -1,0 +1,165 @@
+uuid: 068668d7-7747-459f-bfcd-68596894c15d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body_content
+    - node.type.property
+    - paragraphs.paragraphs_type.paragraph_text_block
+    - paragraphs.paragraphs_type.paragraph_title_description
+  module:
+    - entity_reference_revisions
+id: node.property.field_body_content
+field_name: field_body_content
+entity_type: node
+bundle: property
+label: 'Body Content'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      paragraph_text_block: paragraph_text_block
+      paragraph_title_description: paragraph_title_description
+    target_bundles_drag_drop:
+      general_sidebar_link:
+        weight: 46
+        enabled: false
+      paragraph_add_view:
+        weight: 47
+        enabled: false
+      paragraph_attach_form:
+        weight: 48
+        enabled: false
+      paragraph_call_to_action:
+        weight: 49
+        enabled: false
+      paragraph_careers:
+        weight: 50
+        enabled: false
+      paragraph_center_image_text_bloc:
+        weight: 51
+        enabled: false
+      paragraph_contact_form_address:
+        weight: 52
+        enabled: false
+      paragraph_content_block:
+        weight: 53
+        enabled: false
+      paragraph_faq_fields:
+        weight: 54
+        enabled: false
+      paragraph_featured_accomodations:
+        weight: 55
+        enabled: false
+      paragraph_find_us:
+        weight: 56
+        enabled: false
+      paragraph_general_block:
+        weight: 57
+        enabled: false
+      paragraph_history_block:
+        weight: 58
+        enabled: false
+      paragraph_home_page_slider:
+        weight: 59
+        enabled: false
+      paragraph_icon_heading_descripti:
+        weight: 60
+        enabled: false
+      paragraph_icon_text_link_block:
+        weight: 61
+        enabled: false
+      paragraph_image_left_right_text_:
+        weight: 62
+        enabled: false
+      paragraph_image_text:
+        weight: 63
+        enabled: false
+      paragraph_image_text_description:
+        weight: 64
+        enabled: false
+      paragraph_just_image:
+        weight: 65
+        enabled: false
+      paragraph_left_aligned_text_bloc:
+        weight: 66
+        enabled: false
+      paragraph_location_search_block:
+        weight: 67
+        enabled: false
+      paragraph_overview_image_text_li:
+        weight: 68
+        enabled: false
+      paragraph_quicklinks:
+        weight: 69
+        enabled: false
+      paragraph_quicklinks_description:
+        weight: 70
+        enabled: false
+      paragraph_quote_block:
+        weight: 71
+        enabled: false
+      paragraph_reference_block:
+        weight: 72
+        enabled: false
+      paragraph_related_content:
+        weight: 73
+        enabled: false
+      paragraph_tabbed_block:
+        weight: 74
+        enabled: false
+      paragraph_team_block:
+        weight: 75
+        enabled: false
+      paragraph_test:
+        weight: 76
+        enabled: false
+      paragraph_testimonial_quote_bloc:
+        weight: 77
+        enabled: false
+      paragraph_text_block:
+        enabled: true
+        weight: 78
+      paragraph_text_block_two_columns:
+        weight: 79
+        enabled: false
+      paragraph_text_image_right_slide:
+        weight: 80
+        enabled: false
+      paragraph_title_description:
+        enabled: true
+        weight: 81
+      request_a_quote:
+        weight: 82
+        enabled: false
+      service_block:
+        weight: 83
+        enabled: false
+      service_icon:
+        weight: 84
+        enabled: false
+      service_icons:
+        weight: 85
+        enabled: false
+      services_blocks:
+        weight: 86
+        enabled: false
+      uw_find_out_more:
+        weight: 87
+        enabled: false
+      uw_text_block:
+        weight: 88
+        enabled: false
+      uw_text_blocks_with_logo:
+        weight: 89
+        enabled: false
+      video_and_text:
+        weight: 90
+        enabled: false
+field_type: entity_reference_revisions

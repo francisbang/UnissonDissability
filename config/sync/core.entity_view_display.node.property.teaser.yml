@@ -5,10 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.property.body
+    - field.field.node.property.field_body_content
     - field.field.node.property.field_number_of_bathrooms
     - field.field.node.property.field_number_of_bedrooms
     - field.field.node.property.field_number_of_room_available
-    - field.field.node.property.field_property_enquiry_form
     - field.field.node.property.field_property_features
     - field.field.node.property.field_property_geolocation
     - field.field.node.property.field_property_id
@@ -77,9 +77,9 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
+  field_body_content: true
   field_number_of_bathrooms: true
   field_number_of_bedrooms: true
-  field_property_enquiry_form: true
   field_property_features: true
   field_property_geolocation: true
   field_property_id: true

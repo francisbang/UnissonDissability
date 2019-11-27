@@ -5,5 +5,5 @@ dependencies: {  }
 id: general_sidebar_link
 label: 'General Sidebar Link'
 icon_uuid: null
-description: ''
+description: 'not used'
 behavior_plugins: {  }

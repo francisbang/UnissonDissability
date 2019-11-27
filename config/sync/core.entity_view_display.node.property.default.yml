@@ -4,6 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.property.body
+    - field.field.node.property.field_body_content
+    - field.field.node.property.field_header_main_heading
+    - field.field.node.property.field_header_sub_heading
     - field.field.node.property.field_number_of_bathrooms
     - field.field.node.property.field_number_of_bedrooms
     - field.field.node.property.field_number_of_room_available
@@ -17,13 +20,13 @@ dependencies:
     - node.type.property
   module:
     - address
+    - entity_reference_revisions
     - geofield_map
     - image
     - options
     - serial
     - text
     - user
-    - webform
 id: node.property.default
 targetEntityType: node
 bundle: property
@@ -36,22 +39,47 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
+  field_body_content:
+    weight: 11
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
+    region: content
+  field_header_main_heading:
+    weight: 14
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_header_sub_heading:
+    weight: 15
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_number_of_bathrooms:
-    weight: 5
+    weight: 6
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_number_of_bedrooms:
-    weight: 4
+    weight: 5
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: content
   field_number_of_room_available:
-    weight: 6
+    weight: 7
     label: hidden
     settings:
       thousand_separator: ''
@@ -60,23 +88,23 @@ content:
     type: number_integer
     region: content
   field_property_enquiry_form:
-    weight: 10
+    type: entity_reference_revisions_entity_view
+    weight: 13
     label: hidden
     settings:
-      source_entity: true
+      view_mode: default
+      link: ''
     third_party_settings: {  }
-    type: webform_entity_reference_entity_view
     region: content
   field_property_features:
-    weight: 9
+    weight: 10
     label: hidden
-    settings:
-      link: true
+    settings: {  }
     third_party_settings: {  }
-    type: entity_reference_label
+    type: entity_reference_entity_id
     region: content
   field_property_geolocation:
-    weight: 8
+    weight: 9
     label: hidden
     settings:
       map_dimensions:
@@ -231,13 +259,13 @@ content:
     region: content
   field_property_id:
     type: serial_default_formatter
-    weight: 11
+    weight: 12
     region: content
     label: hidden
     settings: {  }
     third_party_settings: {  }
   field_property_images:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       image_style: ''
@@ -246,17 +274,17 @@ content:
     type: image
     region: content
   field_property_location:
-    weight: 7
+    weight: 8
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: address_default
     region: content
   field_property_type:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
     region: content

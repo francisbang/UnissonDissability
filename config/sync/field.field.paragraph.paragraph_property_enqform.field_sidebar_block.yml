@@ -1,0 +1,29 @@
+uuid: dc3bc5c4-c3e6-4da5-9ef6-1671937f07a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - block.block.generalenquiriesblock
+    - block.block.sidebaraddressblock
+    - field.storage.paragraph.field_sidebar_block
+    - paragraphs.paragraphs_type.paragraph_property_enqform
+id: paragraph.paragraph_property_enqform.field_sidebar_block
+field_name: field_sidebar_block
+entity_type: paragraph
+bundle: paragraph_property_enqform
+label: 'Form Sidebar Block'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 6171feb9-5185-4bc7-bb00-f221c124a844
+  -
+    target_uuid: b8d33f63-4156-4b79-8b1c-69624d26a502
+default_value_callback: ''
+settings:
+  handler: 'default:block'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: entity_reference

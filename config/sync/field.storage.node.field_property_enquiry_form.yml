@@ -1,17 +1,18 @@
-uuid: 432a0573-4e01-4b0c-98cc-4ac30832512a
+uuid: e88dd602-78e7-4f92-b7d7-9a0d76331ac0
 langcode: en
 status: true
 dependencies:
   module:
+    - entity_reference_revisions
     - node
-    - webform
+    - paragraphs
 id: node.field_property_enquiry_form
 field_name: field_property_enquiry_form
 entity_type: node
-type: webform
+type: entity_reference_revisions
 settings:
-  target_type: webform
-module: webform
+  target_type: paragraph
+module: entity_reference_revisions
 locked: false
 cardinality: 1
 translatable: true
