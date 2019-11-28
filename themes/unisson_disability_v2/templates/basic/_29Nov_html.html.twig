@@ -1,0 +1,157 @@
+{#
+/**
+ * @file
+ * Theme override for the basic structure of a single Drupal page.
+ *
+ * Variables:
+ * - logged_in: A flag indicating if user is logged in.
+ * - root_path: The root path of the current page (e.g., node, admin, user).
+ * - node_type: The content type for the current node, if the page is a node.
+ * - head_title: List of text elements that make up the head_title variable.
+ *   May contain one or more of the following:
+ *   - title: The title of the page.
+ *   - name: The name of the site.
+ *   - slogan: The slogan of the site.
+ * - page_top: Initial rendered markup. This should be printed before 'page'.
+ * - page: The rendered page markup.
+ * - page_bottom: Closing rendered markup. This variable should be printed after
+ *   'page'.
+ * - db_offline: A flag indicating if the database is offline.
+ * - placeholder_token: The token for generating head, css, js and js-bottom
+ *   placeholders.
+ *
+ * @see template_preprocess_html()
+ */
+#}
+{%
+  set body_classes = [
+    logged_in ? 'user-logged-in',
+    not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
+    node_type ? 'page-node-type-' ~ node_type|clean_class,
+    db_offline ? 'db-offline',
+  ]
+%}
+<!DOCTYPE html>
+<html{{ html_attributes }}>
+  <head>
+    <head-placeholder token="{{ placeholder_token }}">
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    <css-placeholder token="{{ placeholder_token }}">
+    <js-placeholder token="{{ placeholder_token }}">
+   
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109150952-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-109150952-1');
+	</script>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5TDDPX2');</script>
+<!-- End Google Tag Manager -->
+  </head>
+  <body{{ attributes.addClass(body_classes) }}>
+    <!--Start of DoubleClick Floodlight Tag: Please do not remove
+Activity name of this tag: Unisson Disability_Conversion
+URL of the webpage where the tag is expected to be placed: http://unissondisability.org.au
+This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
+Creation Date: 12/03/2017-->
+<script type="text/javascript">
+var axel = Math.random() + "";
+var a = axel * 10000000000000;
+document.write('<img src="https://ad.doubleclick.net/ddm/activity/src=8283105;type=invmedia;cat=dmzjrquu;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" alt=""/>');
+</script>
+<noscript>
+<img src="https://ad.doubleclick.net/ddm/activity/src=8283105;type=invmedia;cat=dmzjrquu;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?" width="1" height="1" alt=""/>
+</noscript>
+<!-- End of DoubleClick Floodlight Tag: Please do not remove -->  
+    {#
+      Keyboard navigation/accessibility link to main content section in
+      page.html.twig.
+    #}
+    <a href="#main-content" class="visually-hidden focusable skip-link">
+      {{ 'Skip to main content'|t }}
+    </a>
+    <div class="layout-container">
+
+      <header role="banner">
+        <section class="top-nav">
+        <div class="wrapper">
+            {{ page.header }}
+            <div class="tools">
+                <div class="accessibility-bar">
+                    <div class="button button-primary button-accessibility">Accessibility</div>
+                    <div class="options accessibility-list" style="display:none;">
+                        {{ page.header_tools_left }}	
+                    </div>
+                </div>
+              {{ page.header_tools }}	
+            </div>
+            <div class="tools-mobile">
+              {{ page.header_tools_mobile }}	
+            </div>
+            
+            <div class="mob-menu-container">
+              <div class="search-mobile">
+                {{ page.header_search_mobile }}
+              </div>
+            </div>
+        </div>
+        </section>
+      </header>
+      
+      <section class="main-nav">
+        {{ page.primary_menu }}
+      </section>
+      
+      {{ page.secondary_menu }}
+      {{ page.breadcrumb }}
+      {{ page.highlighted }}
+      {{ page.help }}
+
+
+            {{ page_top }}
+            {{ page }}
+            {{ page_bottom }}
+
+
+
+      <footer role="contentinfo">
+        <div class="newsletter-block">
+            <div class="wrapper">
+                {{ page.footer_top }}
+            </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="wrapper">
+            <div class="cols">	
+              <div class="col1">
+              {{ page.footer_first }}
+              </div>
+              <div class="col2">
+              {{ page.footer_second }}
+              </div>
+              <div class="col3">
+              {{ page.footer_third }}
+              </div>
+            </div>
+            {#<div class="footer-logo">
+              {{ page.footer_logo }}
+            </div>
+            <div class="footer-white">
+              {{ page.footer_copyright }}
+            </div>#}
+          </div>
+        </div>
+      </footer>
+        
+    </div>{# /.layout-container #}  
+
+    <js-bottom-placeholder token="{{ placeholder_token }}">
+  </body>
+</html>

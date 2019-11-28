@@ -168,7 +168,7 @@ footer .cols .col3 input.form-email {
 	background: none;
 }
 
-footer form.webform-submission-form{position: relative;max-width: 250px;}
+/*footer form.webform-submission-form{position: relative;max-width: 250px;}*/
 
 footer .cols .col3 input.webform-button--submit {
 	position: absolute;
@@ -239,7 +239,7 @@ section.team .tab-pane.active .col:first-child {
 div.contact-fields .messages--error {
 	margin-bottom: 30px;
 }
-
+/*
 .webform-submission-feedback-complaints-form-form label, section.contact-form label {
 	display: inline-block;
 }
@@ -249,17 +249,17 @@ div.contact-fields .messages--error {
 	display: inline-block;
 	vertical-align: top;
 } */
-
+/*
 .webform-submission-feedback-complaints-form-form .js-form-type-textarea, section.contact-form .js-form-type-textarea {
 	/* display: inline; */
 }
-
+*/
 /* .webform-submission-feedback-complaints-form-form fieldset.form-item, section.contact-form fieldset.form-item {
 	margin-top: 40px;
     display: inline-block;
 }
  */
-.webform-submission-feedback-complaints-form-form .form-item input.error, .webform-submission-feedback-complaints-form-form .form-item textarea.error, .webform-submission-feedback-complaints-form-form .form-item select.error, section.contact-form .form-item input.error, section.contact-form .form-item textarea.error, section.contact-form .form-item select.error {
+/*.webform-submission-feedback-complaints-form-form .form-item input.error, .webform-submission-feedback-complaints-form-form .form-item textarea.error, .webform-submission-feedback-complaints-form-form .form-item select.error, section.contact-form .form-item input.error, section.contact-form .form-item textarea.error, section.contact-form .form-item select.error {
 	    border: 1px solid red !important;
 }
 
@@ -273,7 +273,7 @@ section.contact-form .js-form-item-sign-up-for-newsletter-yes label {
 	display: inline-block;
 }
 
-/* .webform-submission-feedback-complaints-form-form input[type=checkbox],
+ .webform-submission-feedback-complaints-form-form input[type=checkbox],
 section.contact-form input[type=checkbox] {
 	cursor: pointer;
     margin-left: 0px;
@@ -497,13 +497,14 @@ footer .footer-white ul li::after {
     font-size: 13px;
     padding: 0px;
 }
+/* 26th Nov, 2019
 .pager ul li.pager__item--next a{
 	width: 100%;
     border-radius: 0;
     padding-left: 20px;
     padding-right: 20px;
     border: 0px;
-}
+}*/
 
 .panel-group .panel .field__label {
 	display: none;
@@ -698,6 +699,27 @@ footer .newsletter-block .newsletter-form .form-actions {
 	float:left;
 }
 
+
+/******************************************/
+/************ Latest News ************/
+/******************************************/
+.view-id-articles_overview .pager .pager__items {
+     float: none;
+}
+
+.view-id-articles_overview .pager ul li a {
+    /* display: block; */
+    background: #6d6e71;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    color: #fff;
+    line-height: 22px;
+    /* border-radius: 100%; */
+    font-size: 13px;
+    /* padding: 0px; */
+}
+
 /******************************************/
 /************ ACCOMODATION CSS ************/
 /******************************************/
@@ -735,40 +757,6 @@ footer .newsletter-block .newsletter-form .form-actions {
     color: #FF6926;
 }
 
-
-/*
-.accomodation-search-form .form-group.bedrooms div.form-item {
-    float: left;
-    width: calc(16.6% - 1px);
-    margin-left: 1px;
-}
-
-.accomodation-search-form .form-group.bedrooms .jcf-radio {
-    position: absolute;
-    opacity: 0;
-}
-
-.accomodation-search-form .form-group.bedrooms .jcf-radio.jcf-checked ~ label {
-    background: #FF6926;
-    color: #fff;
-}
-
-.accomodation-search-form .form-group.bedrooms label {
-    width: 100%;
-    padding: 10px;
-    text-align: center;
-    background: #ffff;
-    color: #929292;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.accomodation-search-form .form-group.property-req div.form-item{
-	margin-bottom: 15px;
-    width: 240px;
-    float: left;
-}
-*/
 
 .form-item-field-property-geolocation-proximity-value label, .form-item-field-property-geolocation-proximity-value .description {
 	display:none;
@@ -834,6 +822,8 @@ footer .newsletter-block .newsletter-form .form-actions {
 }
 
 
+<<<<<<< HEAD
+=======
 
 /******************************************/
 /***********Header menu Dropdown***********/
@@ -1022,3 +1012,4 @@ section.top-nav .tools .accessibility-bar .accessibility-list {
 @media(max-width: 767px){
 	footer form.webform-submission-form{margin: 0 auto;}
 }
+>>>>>>> be65bca9be51e4443b3579886773960386df0dd9
