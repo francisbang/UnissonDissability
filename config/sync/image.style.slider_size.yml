@@ -1,0 +1,14 @@
+uuid: ef29ee59-16d5-4e06-801b-5f87ff4e3d15
+langcode: en
+status: true
+dependencies: {  }
+name: slider_size
+label: 'Slider Size (680*680)'
+effects:
+  3deff42d-8509-4149-ad65-e338e460258e:
+    uuid: 3deff42d-8509-4149-ad65-e338e460258e
+    id: image_resize
+    weight: 1
+    data:
+      width: 680
+      height: 680

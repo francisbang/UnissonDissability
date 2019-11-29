@@ -13,4 +13,5 @@ Thumbs.db
 git config core.fileMode false
 
 sites/default/files/php/twig/
+sites/default/files/css/
 sites/default/settings.php

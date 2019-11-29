@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.property.field_property_images
     - field.field.node.property.field_property_location
     - field.field.node.property.field_property_type
+    - image.style.slider_size
     - node.type.property
   module:
     - address
@@ -268,7 +269,7 @@ content:
     weight: 4
     label: hidden
     settings:
-      image_style: ''
+      image_style: slider_size
       image_link: ''
     third_party_settings: {  }
     type: image

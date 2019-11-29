@@ -82,8 +82,10 @@
 %}
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
-
+<div class="property">
     <div class="property-gallery">
+        <!-- The slides -->
+        <div class="property-gallery-slider">
         {% for image in node.field_property_images %}
          
               <div class="slide">
@@ -91,7 +93,12 @@
               </div>
            
         {% endfor %}
-     </div>
+        </div>
+        <!-- Slider pagination -->
+        <div class="property-gallery-paging"></div>
+
+    </div>
+
     <div class="property-overview">
         <div class="wrapper">
             <div class="property-stats">
@@ -125,6 +132,7 @@
             </div>
         </div>
     </div>
+
     <div class="property-features">
         <div class="wrapper">
             <h2>Property Features</h2>
@@ -158,6 +166,7 @@
             {{ content.field_body_content|field_value }}
         </div>
     </div>
+
     <div class="property-location">
         <div class="wrapper">
             <h2>Location</h2>
@@ -166,6 +175,7 @@
             </div>
         </div>
     </div>
+
     <section class="contact-form">
         <h2></h2>
         <!-- <img class="s-shape" src="css/images/s.png" alt="Unisson"> -->
@@ -173,4 +183,5 @@
             {{ content.field_property_enquiry_form }}
         </div> <!-- end.wrapper -->
     </section> <!-- end.contact-form -->
+</div>    
 </article>
