@@ -1313,13 +1313,45 @@ footer .newsletter-block .newsletter-form .form-actions {
 /************ ACCOMODATION CSS ************/
 /******************************************/
 
+.jcf-checkbox input[type="checkbox"] {
+opacity:100%!important;
+}
 
-.form-composite > legend, .label {
-	font-family: "GothamRounded-Medium";
-    color: #222222;
-    font-size: 18px;
-    line-height: 26px;
-    margin-bottom: 20px;
+.accomodation-search-form .form-group.property .form-type-checkbox.form-item-field-property-type-target-id-6 .jcf-checkbox:before {
+    content: '';
+    font-size: 13px;
+    width: 21px;
+    height: 21px;
+    background: url(images/prop-home.png) no-repeat;
+    background-size: contain;
+}
+
+.accomodation-search-form .form-group.property .form-type-checkbox.form-item-field-property-type-target-id-7 .jcf-checkbox:before {
+    content: '';
+    font-size: 13px;
+    width: 25px;
+    height: 27px;
+    background: url(images/prop-apartment.png) no-repeat;
+    background-size: contain;
+}
+
+.accomodation-search-form .form-group.property .form-type-checkbox.form-item-field-property-type-target-id-8 .jcf-checkbox:before {
+    content: '';
+    font-size: 13px;
+    width: 27px;
+    height: 29px;
+    background: url(images/prop-townhouse.png) no-repeat;
+    background-size: contain;
+}
+
+
+.accomodation-search-form .form-group.property .form-type-checkbox.form-item-field-property-type-target-id-9 .jcf-checkbox:before {
+    content: '';
+    font-size: 13px;
+    width: 27px;
+    height: 29px;
+    background: url(images/prop-villa.png) no-repeat;
+    background-size: contain;
 }
 
 .accomodation-search-form .form-group.property div.form-item {
@@ -1346,6 +1378,13 @@ footer .newsletter-block .newsletter-form .form-actions {
     color: #FF6926;
 }
 
+.form-composite > legend, .label {
+	font-family: "GothamRounded-Medium";
+    color: #222222;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
 
 /*
 .accomodation-search-form .form-group.bedrooms div.form-item {

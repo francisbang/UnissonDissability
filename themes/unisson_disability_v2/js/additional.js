@@ -82,7 +82,36 @@ jQuery(document).ready(function() {
 		
 		jQuery(".gtranslate select option[value=''], .gtranslate .jcf-select-text").text('Google Translate');
 		
-
+		//Property All types selection
+		
+		//jQuery("#edit-field-property-type-target-id a.bef-toggle").wrap('<div id="prop-type-all" class="form-item form-type-checkbox prop-all"><span class="jcf-checkbox jcf-checked"></span></div>');
+		//jQuery("#edit-field-property-type-target-id a.bef-toggle").wrap('<div id="prop-type-all" class="form-item form-type-checkbox prop-all"></div>');
+		//jQuery( "#edit-field-property-type-target-id #edit-field-property-type-target-id--wrapper" ).prepend(jQuery("#prop-type-all"));
+		//jQuery("#prop-type-all").append( "<label>All Types</label>" );
+		
+		var pAllId = "#edit-field-property-type-target-id a.bef-toggle";
+		jQuery(pAllId).addClass("jcf-checkbox jcf-checked");
+		jQuery("<label>All Types</label>").insertAfter(jQuery(pAllId));
+		
+		jQuery('#edit-field-property-type-target-id input[type="checkbox"]').click(function(){
+			//jQuery(pAllId).trigger( "click" );
+ 			jQuery(pAllId).removeClass('jcf-checked');
+            jQuery(pAllId).addClass('jcf-unchecked');
+        });
+        
+        jQuery(pAllId).click(function(){
+        	jQuery(pAllId).removeClass('jcf-unchecked');
+            jQuery(pAllId).addClass('jcf-checked');
+            
+            jQuery('#edit-field-property-type-target-id input[type=checkbox]').each(function () {
+            	if(jQuery(this).parent().hasClass( "jcf-checked" )){
+            		jQuery(this).parent().removeClass('jcf-checked');
+            		jQuery(this).parent().addClass('jcf-unchecked');
+            	}
+            })
+        });
+		
+		
 });
 
 
