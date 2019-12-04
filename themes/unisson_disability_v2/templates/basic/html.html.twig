@@ -85,10 +85,30 @@ document.write('<img src="https://ad.doubleclick.net/ddm/activity/src=8283105;ty
             {{ page.header }}
             <div class="tools">
                 <div class="accessibility-bar">
+                    <!--<div class="button button-primary button-accessibility">Accessibility</div>
+                    <div class="options accessibility-list" style="display:none;">
+                       {#} {{ page.header_tools_left }}	#}
+                    </div>-->
+
                     <div class="button button-primary button-accessibility">Accessibility</div>
                     <div class="options accessibility-list" style="display:none;">
-                        {{ page.header_tools_left }}	
+                        <div class="accessibility-row high-contrast">
+                            <a href="">High Contrast</a>
+                        </div>
+                        <div class="accessibility-row">
+                            <nav>
+                                <ul>
+                                    <li><a href="#" class="larger-text">text larger</a></li>
+                                    <li><a href="#" class="smaller-text">text smaller</a></li>
+                                    <li><a href="#" class="dyslexic-font">dyslexic font</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="accessibility-row google-translate">
+                          {{ page.header_tools_left }}
+                        </div>
                     </div>
+
                 </div>
               {{ page.header_tools }}	
             </div>
