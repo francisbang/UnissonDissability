@@ -1,4 +1,7 @@
 jQuery(document).ready(function() {
+
+		var GMAP_API_KEY = "AIzaSyBajU4dTEtH8BL2ReVe2vIVLbeVfL-HLd4";
+		
 		jQuery(".team .tab-pane .col").unwrap();
 		/*jQuery("section.contact-form input[type='email']").unwrap();
 		jQuery("section.contact-form input[type='text']").unwrap();*/
@@ -57,31 +60,105 @@ jQuery(document).ready(function() {
 	            //validateEmail(email);
 	        }
 		});*/
+		
+		
+		/***************************************************/
+		/*-------------- GTRANSLATE CHANGES ---------------*/
+		/***************************************************/
+
+		jQuery(".gtranslate select option[value=''], .gtranslate .jcf-select-text").text('Google Translate');
 
 
 		/******************************************/
 		/***********Get Current location***********/
 		/******************************************/
+		
+		/* This code works for https only
 		var x = document.getElementById("edit-field-property-geolocation-proximity-source-configuration-origin-address");
-		function getLocation() { 
+		
+		jQuery('#current-location a').click(function(){
 		  if (navigator.geolocation) { 
 			navigator.geolocation.getCurrentPosition(showPosition);
 		  } else {
 			x.value = "Geolocation is not supported by this browser.";
 		  }
-		}
+		});
 
-		function showPosition(position) { 
+		function showPosition(position) { //console.log(position);
 		  x.value = "Latitude: " + position.coords.latitude +
 		  "<br>Longitude: " + position.coords.longitude;
-		}
+		}*/
+		
+		/***************************************************/
+		/*----------GMap Code - Current Location-----------*/
+		/***************************************************/
+		var apiGeolocationSuccess = function(position) {
+			//alert("API geolocation success!\n\nlat = " + position.coords.latitude + "\nlng = " + position.coords.longitude);
+			jQuery.ajax({
+				url:'https://maps.googleapis.com/maps/api/geocode/json?latlng='+ position.coords.latitude +','+ position.coords.longitude +'&key=' + GMAP_API_KEY,
+				dataType: 'json',
+				success: function(json){ 
+					console.log(json);//alert("Postal Code:" + json.results[0].address_components[6].long_name);
+					var address = json.results[5].formatted_address;
+					jQuery('#edit-field-property-geolocation-proximity-source-configuration-origin-address').val(address);
+	   			}
+			});
+         };
 
-		//var cl = jQuery("#current-location").wrap('<p/>').parent().html();
-		//jQuery('.form-item-field-property-geolocation-proximity-value').after(cl);
-		//jQuery( "#current-location" ).insertAfter( jQuery( ".form-item-field-property-geolocation-proximity-value" ) );
+		var tryAPIGeolocation = function() {
+				jQuery.post( "https://www.googleapis.com/geolocation/v1/geolocate?key="+ GMAP_API_KEY, function(success) {
+				//console.log(success);
+				apiGeolocationSuccess({coords: {latitude: success.location.lat, longitude: success.location.lng}});
+		  })
+		  .fail(function(err) {
+				alert("API Geolocation error! \n\n"+err);
+		  });
+		};
+
+		var browserGeolocationSuccess = function(position) {
+			alert("Browser geolocation success!\n\nlat = " + position.coords.latitude + "\nlng = " + position.coords.longitude);
+		};
+
+		var browserGeolocationFail = function(error) {
+		  switch (error.code) {
+			case error.TIMEOUT:
+			  alert("Browser geolocation error !\n\nTimeout.");
+			  break;
+			case error.PERMISSION_DENIED:
+			  if(error.message.indexOf("Only secure origins are allowed") == 0) {
+				tryAPIGeolocation();
+			  }
+			  break;
+			case error.POSITION_UNAVAILABLE:
+			  alert("Browser geolocation error !\n\nPosition unavailable.");
+			  break;
+		  }
+		};
+
+		var tryGeolocation = function() {
+		  if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(
+				browserGeolocationSuccess,
+			  browserGeolocationFail,
+			  {maximumAge: 50000, timeout: 20000, enableHighAccuracy: true});
+		  }
+		};
+
+		//Calling Gmap function
+		jQuery('#current-location a').click(function(){
+			tryGeolocation();
+		});
+
+
+		/***************************************************/
+		/*------- End GMap Code - Current Location --------*/
+		/***************************************************/
+				
+
 		
-		jQuery(".gtranslate select option[value=''], .gtranslate .jcf-select-text").text('Google Translate');
-		
+		/***************************************************/
+		/*--------------  PROPERYTY SEARCH  ---------------*/
+		/***************************************************/
 		//Property All types selection
 		
 		//jQuery("#edit-field-property-type-target-id a.bef-toggle").wrap('<div id="prop-type-all" class="form-item form-type-checkbox prop-all"><span class="jcf-checkbox jcf-checked"></span></div>');
@@ -89,43 +166,18 @@ jQuery(document).ready(function() {
 		//jQuery( "#edit-field-property-type-target-id #edit-field-property-type-target-id--wrapper" ).prepend(jQuery("#prop-type-all"));
 		//jQuery("#prop-type-all").append( "<label>All Types</label>" );
 		
-		var pAllId = "#edit-field-property-type-target-id a.bef-toggle";
-		jQuery(pAllId).addClass("jcf-checkbox jcf-checked");
-		jQuery("<label>All Types</label>").insertAfter(jQuery(pAllId));
-		
-		jQuery('#edit-field-property-type-target-id input[type="checkbox"]').click(function(){
-			//jQuery(pAllId).trigger( "click" );
- 			jQuery(pAllId).removeClass('jcf-checked');
-            jQuery(pAllId).addClass('jcf-unchecked');
-        });
-        
-        jQuery(pAllId).click(function(){
-        	jQuery(pAllId).removeClass('jcf-unchecked');
-            jQuery(pAllId).addClass('jcf-checked');
-            
-            jQuery('#edit-field-property-type-target-id input[type=checkbox]').each(function () {
-            	if(jQuery(this).parent().hasClass( "jcf-checked" )){
-            		jQuery(this).parent().removeClass('jcf-checked');
-            		jQuery(this).parent().addClass('jcf-unchecked');
-            	}
-            })
-        });
-        
-        
-		/* jQuery('#edit-loc-distance').click(function(){
-		 		alert(jQuery(this).val());
-		 });*/
-		 
-		 jQuery("select#edit-loc-distance").change(function(){
+		//Assign value to geolocation distance proximity search field
+		jQuery("select#edit-loc-distance").change(function(){
 			var sVal = jQuery(this). children("option:selected"). val();
 			jQuery('#edit-field-property-geolocation-proximity-value').val(sVal);
 			
 		});
+ 
+		/***************************************************/
+		/*------------ END PROPERTY SEARCH  ---------------*/
+		/***************************************************/
 		
 });
-
-
-
 
 /*check data for empty starts here*/
 String.prototype.enhancedTrimLeft = function (charList) {
