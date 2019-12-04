@@ -78,7 +78,7 @@ jQuery(document).ready(function() {
 
 		//var cl = jQuery("#current-location").wrap('<p/>').parent().html();
 		//jQuery('.form-item-field-property-geolocation-proximity-value').after(cl);
-		jQuery( "#current-location" ).insertAfter( jQuery( ".form-item-field-property-geolocation-proximity-value" ) );
+		//jQuery( "#current-location" ).insertAfter( jQuery( ".form-item-field-property-geolocation-proximity-value" ) );
 		
 		jQuery(".gtranslate select option[value=''], .gtranslate .jcf-select-text").text('Google Translate');
 		
@@ -110,7 +110,17 @@ jQuery(document).ready(function() {
             	}
             })
         });
-		
+        
+        
+		/* jQuery('#edit-loc-distance').click(function(){
+		 		alert(jQuery(this).val());
+		 });*/
+		 
+		 jQuery("select#edit-loc-distance").change(function(){
+			var sVal = jQuery(this). children("option:selected"). val();
+			jQuery('#edit-field-property-geolocation-proximity-value').val(sVal);
+			
+		});
 		
 });
 

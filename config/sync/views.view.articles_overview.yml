@@ -104,7 +104,7 @@ display:
       row:
         type: fields
         options:
-          default_field_elements: false
+          default_field_elements: true
           inline: {  }
           separator: ''
           hide_empty: false
@@ -602,7 +602,20 @@ display:
       title: 'Research - Overview'
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<h4>No result found</h4>'
+            format: full_html
+          plugin_id: text
       relationships: {  }
       arguments:
         created_year:
@@ -634,10 +647,10 @@ display:
             sort_order: asc
             number_of_records: 0
             format: default_summary
-          specify_validation: true
+          specify_validation: false
           validate:
             type: none
-            fail: ignore
+            fail: 'not found'
           validate_options: {  }
           entity_type: node
           plugin_id: date_year
@@ -670,10 +683,10 @@ display:
             sort_order: asc
             number_of_records: 0
             format: default_summary
-          specify_validation: true
+          specify_validation: false
           validate:
             type: none
-            fail: ignore
+            fail: 'not found'
           validate_options: {  }
           entity_type: node
           plugin_id: date_month
@@ -689,7 +702,7 @@ display:
       use_more: false
       use_more_always: true
       use_more_text: more
-      show_admin_links: false
+      show_admin_links: true
     cache_metadata:
       max-age: -1
       contexts:

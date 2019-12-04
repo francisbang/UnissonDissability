@@ -162,13 +162,31 @@ function unisson_disability_v2_form_alter(&$form, \Drupal\Core\Form\FormStateInt
     $form['field_property_geolocation_proximity']['value']['#attributes']['placeholder'] = 'Units in km';
     $form['field_property_geolocation_proximity']['source_configuration']['origin_address']['#attributes']['placeholder'][] = 'Type a city, suburb or a pincode';
 
+    $options3 = [
+      '' => t('- Select Distance -'),
+      '5' => 'Within 5Km',
+      '10' => 'Within 10Km',
+      '15' => 'Within 15Km',
+      '25' => 'Within 25Km',
+      '50' => 'Within 50Km',
+      '100' => 'Within 100Km',
+    ];
+
+    $form['loc_distance'] = [
+      '#title' => '',
+      '#type' => 'select',
+      '#options' => $options3,
+      '#default_value' => '',
+    ];
+
+   // print_r($form);die;
     /*$form['field_property_type_target_id']['#options']['All'] =  'All Types';*/
   
   }
 
   if ($form_id == 'views_exposed_form' && $form['#id'] == 'views-exposed-form-articles-overview-page-1') {
     
-   $form['#attributes']['class'][] = 'news-search-form';
+    $form['#attributes']['class'][] = 'news-search-form';
 
     $form['actions']['submit']['#attributes']['class'][] = 'button-secondary';
 

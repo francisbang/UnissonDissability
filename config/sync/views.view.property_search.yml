@@ -716,16 +716,36 @@ display:
             reduce: false
           is_grouped: false
           group_info:
-            label: ''
+            label: 'Property Type (field_property_type)'
             description: ''
-            identifier: ''
+            identifier: field_property_type_target_id
             optional: true
-            widget: select
-            multiple: false
+            widget: radios
+            multiple: true
             remember: false
             default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
+            default_group_multiple:
+              All: 0
+            group_items:
+              1:
+                title: Apartment
+                operator: or
+                value:
+                  7: '7'
+              2:
+                title: House
+                operator: or
+                value:
+                  6: '6'
+              3:
+                title: TownHouse
+                operator: or
+                value:
+                  8: '8'
+              4:
+                title: ''
+                operator: and
+                value: {  }
           reduce_duplicates: false
           type: select
           limit: true
@@ -882,7 +902,20 @@ display:
       title: 'Property - Search'
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: '<h4> No result found </h4>'
+            format: full_html
+          plugin_id: text
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
