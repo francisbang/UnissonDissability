@@ -1433,25 +1433,11 @@ opacity:100%!important;
 	margin:0px;	
 }
 
-.form-item-field-property-geolocation-proximity-source-configuration-origin-address input{
- /*   float: left;
-    width: 60%;*/
-}
 
 .accomodation-search-form .form-item.form-item-field-property-geolocation-proximity-source-configuration-origin-address{
 	margin:0px;
 }
 
-.accomodation-search-form .form-group.location .button {
-    /* padding: 12px 20px; */
-    margin-right: 15px;
-    float: right;
-}
-
-.accomodation-search-form .form-group.location input[type="text"] {
- /*   width: 100%;
-    margin-right: 15px;*/
-}
 
 .content-overview .views-infinite-scroll-content-wrapper{
     text-align: left;
