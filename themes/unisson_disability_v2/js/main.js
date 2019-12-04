@@ -178,6 +178,13 @@
         /*****************  Accomodation section    *****************/
         // Custom form styling 
         jcf.replaceAll('.accomodation-search-form, .contact-form, .google-translate');
+        jcf.setOptions('Select', {
+            wrapNative: false,
+            wrapNativeOnMobile: false,
+            fakeDropInBody: false,
+            maxVisibleItems: 5
+        });
+        jcf.replaceAll('.news-search-form');
         $('.advanced-search-opener').click(function(ev){
             ev.preventDefault();
             if($(this).hasClass('checked')){
