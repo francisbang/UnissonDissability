@@ -1314,7 +1314,7 @@ footer .newsletter-block .newsletter-form .form-actions {
 /******************************************/
 
 .jcf-checkbox input[type="checkbox"] {
-opacity:100%!important;
+/*opacity:100%!important;*/
 }
 
 .accomodation-search-form .form-group.property .form-type-checkbox.form-item-field-property-type-target-id-6 .jcf-checkbox:before {
@@ -1420,8 +1420,12 @@ opacity:100%!important;
 }
 */
 
-.form-item-field-property-geolocation-proximity-value label, .form-item-field-property-geolocation-proximity-value .description {
+/*.form-item-field-property-geolocation-proximity-value label, .form-item-field-property-geolocation-proximity-value .description {
 	display:none;
+}*/
+
+.accomodation-search-form .form-group.location fieldset .form-item-field-property-geolocation-proximity-value {
+    display: none;
 }
 
 .form-item-field-property-geolocation-proximity-source-configuration-origin-address label, .form-item-field-property-geolocation-proximity-source-configuration-origin-address .description{

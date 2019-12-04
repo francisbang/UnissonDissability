@@ -100,7 +100,14 @@ jQuery(document).ready(function() {
 				success: function(json){ 
 					console.log(json);//alert("Postal Code:" + json.results[0].address_components[6].long_name);
 					var address = json.results[5].formatted_address;
-					jQuery('#edit-field-property-geolocation-proximity-source-configuration-origin-address').val(address);
+					if(address != ''){
+						jQuery('#edit-field-property-geolocation-proximity-source-configuration-origin-address').val(address);
+					
+						//Set Distance Value
+						var sVal = jQuery('#edit-loc-distance'). children("option:selected"). val();
+						setDistanceLocation(sVal);
+					}
+					
 	   			}
 			});
          };
@@ -169,9 +176,21 @@ jQuery(document).ready(function() {
 		//Assign value to geolocation distance proximity search field
 		jQuery("select#edit-loc-distance").change(function(){
 			var sVal = jQuery(this). children("option:selected"). val();
-			jQuery('#edit-field-property-geolocation-proximity-value').val(sVal);
+			setDistanceLocation(sVal);
 			
 		});
+		
+		function setDistanceLocation(sVal){
+			var lVal = jQuery('#edit-field-property-geolocation-proximity-source-configuration-origin-address').val();
+			
+			if(lVal != '' && sVal != ''){
+				jQuery('#edit-field-property-geolocation-proximity-value').val(sVal);
+			}else if(lVal != '' && sVal == ''){
+				jQuery('#edit-field-property-geolocation-proximity-value').val(1);
+			}else{
+				jQuery('#edit-field-property-geolocation-proximity-value').val('');
+			}
+		}
  
 		/***************************************************/
 		/*------------ END PROPERTY SEARCH  ---------------*/
