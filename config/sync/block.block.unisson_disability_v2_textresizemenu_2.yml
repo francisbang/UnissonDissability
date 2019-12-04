@@ -1,6 +1,6 @@
 uuid: 6cfbbb59-5a1c-4037-aa69-f84c5ec75a09
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - system.menu.text-resize---menu
