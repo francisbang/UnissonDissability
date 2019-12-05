@@ -88,7 +88,6 @@ module:
   user: 0
   video: 0
   viewfield: 0
-  views_ajax_history: 0
   views_field_view: 0
   views_infinite_scroll: 0
   views_ui: 0

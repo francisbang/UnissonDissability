@@ -35,8 +35,8 @@ settings:
     target_bundles:
       paragraph_call_to_action: paragraph_call_to_action
       paragraph_contact_form_address: paragraph_contact_form_address
-      paragraph_tabbed_block: paragraph_tabbed_block
       paragraph_just_image: paragraph_just_image
+      paragraph_tabbed_block: paragraph_tabbed_block
       paragraph_image_text: paragraph_image_text
       paragraph_text_block: paragraph_text_block
       paragraph_quote_block: paragraph_quote_block
@@ -72,10 +72,10 @@ settings:
       paragraph_overview_image_text_li:
         weight: 25
         enabled: false
-      paragraph_tabbed_block:
+      paragraph_just_image:
         enabled: true
         weight: 26
-      paragraph_just_image:
+      paragraph_tabbed_block:
         enabled: true
         weight: 26
       paragraph_team_block:
@@ -102,12 +102,12 @@ settings:
       paragraph_text_block_two_columns:
         weight: 31
         enabled: false
-      paragraph_faq_fields:
-        weight: 32
-        enabled: false
       paragraph_text_image_right_slide:
         enabled: true
         weight: 32
+      paragraph_faq_fields:
+        weight: 32
+        enabled: false
       paragraph_history_block:
         weight: 34
         enabled: false
@@ -126,9 +126,21 @@ settings:
       paragraph_reference_block:
         weight: 44
         enabled: false
+      general_sidebar_link:
+        weight: 47
+        enabled: false
       paragraph_image_text_description:
         enabled: true
         weight: 52
+      paragraph_content_block:
+        weight: 54
+        enabled: false
+      paragraph_featured_accomodations:
+        weight: 56
+        enabled: false
+      paragraph_general_block:
+        weight: 58
+        enabled: false
       request_a_quote:
         weight: 66
         enabled: false
@@ -138,14 +150,26 @@ settings:
       service_icon:
         weight: 68
         enabled: false
+      paragraph_location_search_block:
+        weight: 68
+        enabled: false
       service_icons:
         weight: 69
         enabled: false
       services_blocks:
         weight: 70
         enabled: false
+      paragraph_property_enqform:
+        weight: 70
+        enabled: false
+      paragraph_quicklinks:
+        weight: 71
+        enabled: false
       uw_find_out_more:
         weight: 71
+        enabled: false
+      paragraph_quicklinks_description:
+        weight: 72
         enabled: false
       uw_text_block:
         weight: 72
@@ -155,5 +179,8 @@ settings:
         enabled: false
       video_and_text:
         weight: 74
+        enabled: false
+      paragraph_related_content:
+        weight: 75
         enabled: false
 field_type: entity_reference_revisions
