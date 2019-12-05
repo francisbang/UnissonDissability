@@ -627,7 +627,7 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           units: GEOFIELD_KILOMETERS
-          source: geofield_geocode_origin
+          source: geofield_geocode_origin_autocomplete
           source_configuration:
             exposed_summary: 0
             origin_address: ''
@@ -686,6 +686,10 @@ display:
               yandex:
                 weight: '0'
                 checked: 0
+            settings:
+              min_terms: '4'
+              delay: '800'
+              options: ''
           plugin_id: geofield_proximity_filter
         field_property_type_target_id:
           id: field_property_type_target_id

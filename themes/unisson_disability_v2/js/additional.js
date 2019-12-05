@@ -201,7 +201,20 @@ jQuery(document).ready(function() {
 				jQuery( loc_proxdistance ).val('');
 			}
 		}
- 
+		
+		/* jQuery('#edit-submit-property-search--2').trigger('click');
+		 setTimeout(function() { //alert('pp');
+        jQuery('#edit-submit-property-search--2').trigger('click');
+      },2)
+		 
+		 window.onload = function() { //alert('test');
+  jQuery('#edit-submit-property-search--2').trigger('click');
+};
+		 
+		  jQuery(window).on('popstate', function(event) {
+ //alert("pop");
+});
+ */
 		/***************************************************/
 		/*------------ END PROPERTY SEARCH  ---------------*/
 		/***************************************************/

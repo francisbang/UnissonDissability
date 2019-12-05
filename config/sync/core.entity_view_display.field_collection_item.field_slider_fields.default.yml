@@ -8,10 +8,11 @@ dependencies:
     - field.field.field_collection_item.field_slider_fields.field_slider_link
     - field.field.field_collection_item.field_slider_fields.field_slider_link_text
     - field.field.field_collection_item.field_slider_fields.field_slider_main_heading
+    - field.field.field_collection_item.field_slider_fields.field_slider_mobile_image
     - field.field.field_collection_item.field_slider_fields.field_slider_sub_heading
     - field.field.field_collection_item.field_slider_fields.field_slider_video
     - field_collection.field_collection.field_slider_fields
-    - image.style.home_page_slider_image
+    - image.style.home_page_slider_mobile_image
   module:
     - image
     - link
@@ -37,7 +38,7 @@ content:
     type: image_url
     region: content
   field_slider_link:
-    weight: 6
+    weight: 7
     label: hidden
     settings:
       trim_length: 80
@@ -49,7 +50,7 @@ content:
     type: link
     region: content
   field_slider_link_text:
-    weight: 5
+    weight: 6
     label: hidden
     settings:
       link_to_entity: false
@@ -64,6 +65,14 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_slider_mobile_image:
+    weight: 4
+    label: hidden
+    settings:
+      image_style: home_page_slider_mobile_image
+    third_party_settings: {  }
+    type: image_url
+    region: content
   field_slider_sub_heading:
     weight: 1
     label: hidden
@@ -73,7 +82,7 @@ content:
     type: string
     region: content
   field_slider_video:
-    weight: 4
+    weight: 5
     label: hidden
     settings:
       width: '854'
