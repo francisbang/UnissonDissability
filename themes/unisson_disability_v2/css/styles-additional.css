@@ -1325,6 +1325,11 @@ footer .newsletter-block .newsletter-form .form-actions {
     background: url(images/prop-home.png) no-repeat;
     background-size: contain;
 }
+.accomodation-search-form .form-group.property .form-type-checkbox.form-item-field-property-type-target-id-6 .jcf-checkbox.jcf-checked:before {
+    background: url(images/prop-home-hover.png) no-repeat;
+    background-size: contain;
+}
+
 
 .accomodation-search-form .form-group.property .form-type-checkbox.form-item-field-property-type-target-id-7 .jcf-checkbox:before {
     content: '';
@@ -1332,6 +1337,10 @@ footer .newsletter-block .newsletter-form .form-actions {
     width: 25px;
     height: 27px;
     background: url(images/prop-apartment.png) no-repeat;
+    background-size: contain;
+}
+.accomodation-search-form .form-group.property .form-type-checkbox.form-item-field-property-type-target-id-7 .jcf-checkbox.jcf-checked:before {
+    background: url(images/prop-apartment-hover.png) no-repeat;
     background-size: contain;
 }
 
@@ -1343,7 +1352,10 @@ footer .newsletter-block .newsletter-form .form-actions {
     background: url(images/prop-townhouse.png) no-repeat;
     background-size: contain;
 }
-
+.accomodation-search-form .form-group.property .form-type-checkbox.form-item-field-property-type-target-id-8 .jcf-checkbox.jcf-checked:before {
+    background: url(images/prop-townhouse-hover.png) no-repeat;
+    background-size: contain;
+}
 
 .accomodation-search-form .form-group.property .form-type-checkbox.form-item-field-property-type-target-id-9 .jcf-checkbox:before {
     content: '';
@@ -1353,6 +1365,10 @@ footer .newsletter-block .newsletter-form .form-actions {
     background: url(images/prop-villa.png) no-repeat;
     background-size: contain;
 }
+.accomodation-search-form .form-group.property .form-type-checkbox.form-item-field-property-type-target-id-9 .jcf-checkbox.jcf-checked:before {
+    background: url(images/prop-villa-hover.png) no-repeat;
+    background-size: contain;
+}
 
 .accomodation-search-form .form-group.property div.form-item {
     display: inline-block;
@@ -1360,12 +1376,12 @@ footer .newsletter-block .newsletter-form .form-actions {
     text-align: center;
 }
     
-.accomodation-search-form .form-group.property .jcf-checkbox.jcf-checked {
+/* .accomodation-search-form .form-group.property .jcf-checkbox.jcf-checked {
     background: #FF6926;
     color: #fff;
-}
+} */
 
-.accomodation-search-form .form-group.property .jcf-checkbox {
+/* .accomodation-search-form .form-group.property .jcf-checkbox {
     display: block;
     margin: 0 auto 30px;
     position: relative;
@@ -1376,7 +1392,7 @@ footer .newsletter-block .newsletter-form .form-actions {
     cursor: pointer;
     background: #FFF;
     color: #FF6926;
-}
+} */
 
 .form-composite > legend, .label {
 	font-family: "GothamRounded-Medium";

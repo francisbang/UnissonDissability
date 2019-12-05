@@ -82,29 +82,35 @@
 %}
 {{ attach_library('classy/node') }}
 <article{{ attributes.addClass(classes) }}>
-  {% if display_submitted %}
+  <div class="wrapper">
+  {# {% if display_submitted %}
     <div{{ author_attributes.addClass('node__submitted') }}>
       {% set createdDate = node.getCreatedTime|format_date('custom_date_format') %}
       {% trans %}{{ createdDate }} - {{ node.type.entity.label }} {% endtrans %}
     </div>
-  {% endif %}
+  {% endif %} #}
 
-  {{ title_prefix }}
-  {#{% if label and not page %}#}
+  
+{#   {{ title_prefix }}
+  {% if label and not page %}
+  {% endif %}
   {% if label and page %}
     <h2{{ title_attributes }}>
       {{ label }}
     </h2>
   {% endif %}
-  {{ title_suffix }} 
+  {{ title_suffix }}  #}
 
-  <div{{ content_attributes.addClass('node__content') }}>
-    {{ content|without('field_related_content','field_call_to_action') }}
+    <div{{ content_attributes.addClass('node__content') }}>
+      {{ content|without('field_related_content','field_call_to_action') }}
 
-    {{ drupal_entity('block', 'socialsharingblock') }}
-
-    {{ content.field_call_to_action|field_value }}
-    {{ content.field_related_content|field_value }}
+    
+      {{ drupal_entity('block', 'socialsharingblock') }}  
+    </div>
   </div>
 
 </article>
+{{ content.field_call_to_action|field_value }}
+<div class="related-content wrapper">
+  {{ content.field_related_content|field_value }}
+</div>
