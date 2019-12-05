@@ -1637,6 +1637,67 @@
         }
     },
     {
+        "name": "drupal/geocoder_autocomplete",
+        "version": "1.0.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/geocoder_autocomplete.git",
+            "reference": "8.x-1.0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/geocoder_autocomplete-8.x-1.0.zip",
+            "reference": "8.x-1.0",
+            "shasum": "5e900f4126c9944df9b569dcd129ba397a1540bb"
+        },
+        "require": {
+            "drupal/core": "~8.0"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.0",
+                "datestamp": "1484303583",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "anrikun",
+                "homepage": "https://www.drupal.org/user/410199"
+            },
+            {
+                "name": "itamair",
+                "homepage": "https://www.drupal.org/user/1179076"
+            },
+            {
+                "name": "sanduhrs",
+                "homepage": "https://www.drupal.org/user/28074"
+            }
+        ],
+        "description": "Provides an autocomplete widget for textfields via the Google Geocoder API..",
+        "homepage": "https://www.drupal.org/project/geocoder_autocomplete",
+        "keywords": [
+            "Drupal"
+        ],
+        "support": {
+            "source": "http://cgit.drupalcode.org/geocoder_autocomplete",
+            "issues": "http://drupal.org/project/issues/geocoder_autocomplete"
+        }
+    },
+    {
         "name": "drupal/geofield",
         "version": "1.6.0",
         "version_normalized": "1.6.0.0",
@@ -1769,6 +1830,71 @@
         "support": {
             "source": "https://git.drupalcode.org/project/geofield_map",
             "issues": "https://www.drupal.org/project/issues/geofield_map"
+        }
+    },
+    {
+        "name": "drupal/geolocation",
+        "version": "3.0.0-rc2",
+        "version_normalized": "3.0.0.0-RC2",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/geolocation.git",
+            "reference": "8.x-3.0-rc2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/geolocation-8.x-3.0-rc2.zip",
+            "reference": "8.x-3.0-rc2",
+            "shasum": "89ce643d83e5754b782000f82c3d611e5fa109cf"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "require-dev": {
+            "drupal/address": "*",
+            "drupal/geofield": "*",
+            "drupal/geolocation_demo": "*",
+            "drupal/geolocation_google_maps": "*",
+            "drupal/geolocation_google_maps_demo": "*",
+            "drupal/geolocation_google_static_maps": "*",
+            "drupal/geolocation_leaflet": "*",
+            "drupal/search_api": "*",
+            "drupal/search_api_location": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-3.x": "3.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-3.0-rc2",
+                "datestamp": "1572433684",
+                "security-coverage": {
+                    "status": "not-covered",
+                    "message": "RC releases are not covered by Drupal security advisories."
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0+"
+        ],
+        "authors": [
+            {
+                "name": "derjochenmeyer",
+                "homepage": "https://www.drupal.org/u/derjochenmeyer"
+            },
+            {
+                "name": "cadamski",
+                "homepage": "https://www.drupal.org/u/cadamski"
+            }
+        ],
+        "description": "Provides a simple geolocation Drupal field type to store and display location data (lat, lng).",
+        "homepage": "https://www.drupal.org/project/geolocation",
+        "support": {
+            "source": "http://git.drupal.org/project/geolocation.git",
+            "issues": "https://www.drupal.org/project/issues/geolocation"
         }
     },
     {
@@ -2402,6 +2528,67 @@
         "homepage": "https://www.drupal.org/project/video",
         "support": {
             "source": "https://git.drupalcode.org/project/video"
+        }
+    },
+    {
+        "name": "drupal/views_ajax_history",
+        "version": "1.2.0",
+        "version_normalized": "1.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://git.drupalcode.org/project/views_ajax_history.git",
+            "reference": "8.x-1.2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://ftp.drupal.org/files/projects/views_ajax_history-8.x-1.2.zip",
+            "reference": "8.x-1.2",
+            "shasum": "97c19dd21327025a58deec6200e008b3c794b022"
+        },
+        "require": {
+            "drupal/core": "*"
+        },
+        "type": "drupal-module",
+        "extra": {
+            "branch-alias": {
+                "dev-1.x": "1.x-dev"
+            },
+            "drupal": {
+                "version": "8.x-1.2",
+                "datestamp": "1562339886",
+                "security-coverage": {
+                    "status": "covered",
+                    "message": "Covered by Drupal's security advisory policy"
+                }
+            }
+        },
+        "installation-source": "dist",
+        "notification-url": "https://packages.drupal.org/8/downloads",
+        "license": [
+            "GPL-2.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "amateescu",
+                "homepage": "https://www.drupal.org/user/729614"
+            },
+            {
+                "name": "joelpittet",
+                "homepage": "https://www.drupal.org/user/160302"
+            },
+            {
+                "name": "kalman.hosszu",
+                "homepage": "https://www.drupal.org/user/267481"
+            },
+            {
+                "name": "nod_",
+                "homepage": "https://www.drupal.org/user/598310"
+            }
+        ],
+        "description": "Add bookmarking abilities to AJAX Views.",
+        "homepage": "https://www.drupal.org/project/views_ajax_history",
+        "support": {
+            "source": "https://git.drupalcode.org/project/views_ajax_history"
         }
     },
     {

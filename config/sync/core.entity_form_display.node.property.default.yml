@@ -17,6 +17,7 @@ dependencies:
     - field.field.node.property.field_property_images
     - field.field.node.property.field_property_location
     - field.field.node.property.field_property_type
+    - field.field.node.property.field_related_content
     - image.style.thumbnail
     - node.type.property
   module:
@@ -88,6 +89,18 @@ third_party_settings:
         open: false
         required_fields: true
       label: 'Page - Overview'
+    group_property_related_content:
+      children:
+        - field_related_content
+      parent_name: ''
+      weight: 20
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Property Related Content'
 id: node.property.default
 targetEntityType: node
 bundle: property
@@ -205,6 +218,18 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: options_select
+    region: content
+  field_related_content:
+    weight: 26
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
     region: content
   path:
     type: path

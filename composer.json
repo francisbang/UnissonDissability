@@ -22,7 +22,10 @@
         "drupal/social_media": "^1.6",
         "drupal/social_simple": "^1.7",
         "drupal/twig_tweak": "^2.4",
-        "drupal/video": "^1.4"
+        "drupal/video": "^1.4",
+        "drupal/views_ajax_history": "^1.2",
+        "drupal/geocoder_autocomplete": "^1.0",
+        "drupal/geolocation": "^3.0"
     },
     "replace": {
         "drupal/core": "^8.6"

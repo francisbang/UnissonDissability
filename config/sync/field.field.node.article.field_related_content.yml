@@ -5,11 +5,7 @@ dependencies:
   config:
     - field.storage.node.field_related_content
     - node.type.article
-    - paragraphs.paragraphs_type.paragraph_attach_form
-    - paragraphs.paragraphs_type.paragraph_reference_block
     - paragraphs.paragraphs_type.paragraph_related_content
-    - paragraphs.paragraphs_type.paragraph_text_block
-    - paragraphs.paragraphs_type.paragraph_title_description
   module:
     - entity_reference_revisions
 id: node.article.field_related_content
@@ -27,24 +23,20 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      paragraph_attach_form: paragraph_attach_form
-      paragraph_reference_block: paragraph_reference_block
-      paragraph_text_block: paragraph_text_block
-      paragraph_title_description: paragraph_title_description
       paragraph_related_content: paragraph_related_content
     target_bundles_drag_drop:
       paragraph_attach_form:
-        enabled: true
         weight: -91
+        enabled: false
       paragraph_reference_block:
-        enabled: true
         weight: -90
+        enabled: false
       paragraph_text_block:
-        enabled: true
         weight: -89
+        enabled: false
       paragraph_title_description:
-        enabled: true
         weight: -88
+        enabled: false
       paragraph_related_content:
         enabled: true
         weight: -87
@@ -167,5 +159,8 @@ settings:
         enabled: false
       video_and_text:
         weight: -47
+        enabled: false
+      paragraph_property_enqform:
+        weight: 70
         enabled: false
 field_type: entity_reference_revisions

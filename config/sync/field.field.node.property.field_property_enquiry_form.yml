@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_property_enquiry_form
     - node.type.property
     - paragraphs.paragraphs_type.paragraph_property_enqform
+    - paragraphs.paragraphs_type.paragraph_related_content
   module:
     - entity_reference_revisions
 id: node.property.field_property_enquiry_form
@@ -24,6 +25,7 @@ settings:
     negate: 0
     target_bundles:
       paragraph_property_enqform: paragraph_property_enqform
+      paragraph_related_content: paragraph_related_content
     target_bundles_drag_drop:
       general_sidebar_link:
         weight: 47
@@ -110,8 +112,8 @@ settings:
         weight: 74
         enabled: false
       paragraph_related_content:
+        enabled: true
         weight: 75
-        enabled: false
       paragraph_tabbed_block:
         weight: 76
         enabled: false
