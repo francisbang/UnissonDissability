@@ -1,0 +1,15 @@
+uuid: 05b4cb22-3273-4bc5-991c-e3688226dcbc
+langcode: en
+status: true
+dependencies: {  }
+name: home_page_slider_mobile_image
+label: 'Home Page Slider - Mobile Image'
+effects:
+  16434f6a-4448-4058-b966-a78446a2edf4:
+    uuid: 16434f6a-4448-4058-b966-a78446a2edf4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 380
+      height: 530
+      anchor: center-center

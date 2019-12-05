@@ -92,6 +92,11 @@ jQuery(document).ready(function() {
 		/***************************************************/
 		/*----------GMap Code - Current Location-----------*/
 		/***************************************************/
+		
+		var loc_field = '#edit-field-property-geolocation-proximity-source-configuration-origin-address';
+		var loc_distance = '#edit-loc-distance';
+		var loc_proxdistance = '#edit-field-property-geolocation-proximity-value';
+		
 		var apiGeolocationSuccess = function(position) {
 			//alert("API geolocation success!\n\nlat = " + position.coords.latitude + "\nlng = " + position.coords.longitude);
 			jQuery.ajax({
@@ -101,10 +106,10 @@ jQuery(document).ready(function() {
 					console.log(json);//alert("Postal Code:" + json.results[0].address_components[6].long_name);
 					var address = json.results[5].formatted_address;
 					if(address != ''){
-						jQuery('#edit-field-property-geolocation-proximity-source-configuration-origin-address').val(address);
+						jQuery(loc_field).val(address);
 					
 						//Set Distance Value
-						var sVal = jQuery('#edit-loc-distance'). children("option:selected"). val();
+						var sVal = jQuery(loc_distance). children("option:selected"). val();
 						setDistanceLocation(sVal);
 					}
 					
@@ -174,24 +179,42 @@ jQuery(document).ready(function() {
 		//jQuery("#prop-type-all").append( "<label>All Types</label>" );
 		
 		//Assign value to geolocation distance proximity search field
-		jQuery("select#edit-loc-distance").change(function(){
+		jQuery( loc_distance ).change(function(){
 			var sVal = jQuery(this). children("option:selected"). val();
 			setDistanceLocation(sVal);
 			
 		});
+
+		jQuery( loc_field ).keyup(function() {
+		  var sVal = jQuery( loc_distance ). children("option:selected"). val();
+		  setDistanceLocation(sVal);
+		});
 		
 		function setDistanceLocation(sVal){
-			var lVal = jQuery('#edit-field-property-geolocation-proximity-source-configuration-origin-address').val();
-			
+			var lVal = jQuery(loc_field).val();
+
 			if(lVal != '' && sVal != ''){
-				jQuery('#edit-field-property-geolocation-proximity-value').val(sVal);
+				jQuery( loc_proxdistance ).val(sVal);
 			}else if(lVal != '' && sVal == ''){
-				jQuery('#edit-field-property-geolocation-proximity-value').val(1);
+				jQuery( loc_proxdistance ).val(1);
 			}else{
-				jQuery('#edit-field-property-geolocation-proximity-value').val('');
+				jQuery( loc_proxdistance ).val('');
 			}
 		}
- 
+		
+		/* jQuery('#edit-submit-property-search--2').trigger('click');
+		 setTimeout(function() { //alert('pp');
+        jQuery('#edit-submit-property-search--2').trigger('click');
+      },2)
+		 
+		 window.onload = function() { //alert('test');
+  jQuery('#edit-submit-property-search--2').trigger('click');
+};
+		 
+		  jQuery(window).on('popstate', function(event) {
+ //alert("pop");
+});
+ */
 		/***************************************************/
 		/*------------ END PROPERTY SEARCH  ---------------*/
 		/***************************************************/

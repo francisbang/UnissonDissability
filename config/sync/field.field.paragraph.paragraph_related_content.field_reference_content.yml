@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.storage.paragraph.field_reference_content
     - node.type.article
+    - node.type.property
     - paragraphs.paragraphs_type.paragraph_related_content
 id: paragraph.paragraph_related_content.field_reference_content
 field_name: field_reference_content
@@ -21,8 +22,9 @@ settings:
   handler_settings:
     target_bundles:
       article: article
+      property: property
     sort:
       field: _none
     auto_create: false
-    auto_create_bundle: ''
+    auto_create_bundle: article
 field_type: entity_reference

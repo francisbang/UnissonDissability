@@ -22,7 +22,11 @@
         "drupal/social_media": "^1.6",
         "drupal/social_simple": "^1.7",
         "drupal/twig_tweak": "^2.4",
-        "drupal/video": "^1.4"
+        "drupal/video": "^1.4",
+        "drupal/views_ajax_history": "^1.2",
+        "drupal/geocoder_autocomplete": "^1.0",
+        "drupal/geolocation": "^3.0",
+        "cweagans/composer-patches": "~1.0"
     },
     "replace": {
         "drupal/core": "^8.6"
@@ -57,6 +61,15 @@
             "drush/contrib/{$name}": ["type:drupal-drush"],
             "modules/custom/{$name}": ["type:drupal-custom-module"],
             "themes/custom/{$name}": ["type:drupal-custom-theme"]
+        },
+        "enable-patching": true,
+        "patches": {
+            "drupal/geocoder": {
+                "Autocomplete Geofield Proximity Fiter Patch": "https://www.drupal.org/files/issues/2019-10-18/geocoder_origin_with_autocomplete_geofield_proximity_filter_source_3088801_1.diff"
+            },
+            "drupal/views_ajax_history": {
+                "Views Ajax Patch": "https://www.drupal.org/files/issues/2019-10-28/views_ajax_history-3066673-3.patch"
+            }
         }
     },
     "autoload": {
