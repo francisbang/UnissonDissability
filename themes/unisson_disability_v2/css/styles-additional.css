@@ -63,30 +63,18 @@ section.main-nav ul.submenu li.active::after {
 /************ Readspeaker changes ************/
 /******************************************/
 .readspeaker {
-	display: inline-block;
+	position: absolute;
+    top: 250px;
+    left: 0;
 }
 
 .rsbtn{
-    position: relative;
+    
     height: 50px !important;
+    box-shadow: 0px 3px 6px #00000029;
+    -webkit-box-shadow: 0px 3px 6px #00000029;
+    border-radius:30px;
 }
-/* .rsbtn:before,
-.rsbtn:after{
-    position: absolute;
-    content:'';
-    width: 50px;
-    top: 0;
-    bottom: 0;
-    border-radius:100%;
-}
-.rsbtn:before{
-    left: -25px;
-    background: #f1f1f1;
-}
-.rsbtn:after{
-    right: -25px;
-    background:#B687B9;
-} */
 .rsbtn .rsbtn_play{
     height: 50px;
 }
@@ -135,22 +123,148 @@ section.main-nav ul.submenu li.active::after {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
-
-div.open-readspeaker-ui {
-	position: relative;
+.rsbtn.rsexpanded.rsplaying .rsbtn_pause,
+.rsbtn.rsexpanded.rsstopped .rsbtn_pause, 
+.rsbtn.rsexpanded.rspaused .rsbtn_pause{
+    background:#B687B9 !important;
+    width: 50px !important;
+    position: relative !important;
 }
-div.rsexpanded {
+.rsbtn.rsexpanded.rsplaying .rsbtn_pause:after{
     position: absolute;
-    top: -20px;
-    left: -225px;
+    content:'';
+    width: 12px;
+    border-left:4px solid #ffff;
+    border-right:4px solid #ffff;
+    height: 15px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
+.rsbtn.rsexpanded.rsstopped .rsbtn_pause:after,
+.rsbtn.rsexpanded.rspaused .rsbtn_pause:after{
+    position: absolute;
+    content: '';
+    border-width: 10px 0 10px 15px;
+    /* background: #fff; */
+    border-style: solid;
+    border-color: transparent transparent transparent #ffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.rsbtn .rsbtn_stop.rsimg{
+    width: 50px !important;
+    position: relative !important;
+    background:#f1f1f1 !important;
+}
+.rsbtn .rsbtn_stop.rsimg:before{
+    position: absolute;
+    content:'';
+    width: 15px;
+    height: 15px;
+    background:#ff6826;
+    border-radius: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.rsbtn .rsbtn_stop.rsimg:after{
+    position: absolute;
+    content:'';
+    width: 1px;
+    background:#650d6b;
+    top: 1px;
+    bottom: 1px;
+    right: 1px;
+}
+.rsbtn .rsbtn_volume.rsimg{
+    width: 50px !important;
+    height: 50px !important;
+    background-position:0 0 !important;
+    margin:0 !important;
+    background:#f1f1f1 !important;
+}
+.rsbtn .rsbtn_volume.rsimg:after{
+    position: absolute;
+    content:'';
+    width: 24px;
+    height: 24px;
+    background: url(images/icon-volume@2x.png) no-repeat;
+    background-size: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.rsbtn .rsbtn_volume.rsimg:before,
+.rsbtn .rsbtn_settings.rsimg:before, 
+.rsbtn .rsbtn_dl.rsimg:before{
+    position: absolute;
+    content:'';
+    width: 1px;
+    background:#650d6b;
+    top: 1px;
+    bottom: 1px;left: 1px;
+}
+.rsbtn .rsbtn_settings.rsimg, 
+.rsbtn .rsbtn_dl.rsimg{
+    width: 50px !important;
+    height: 50px !important;
+    background-position:0 0 !important;
+    position: relative !important;
+    margin: 0 !important;
+    background:#f1f1f1 !important;
+}
+.rsbtn .rsbtn_settings.rsimg:after{
+    position: absolute;
+    content:'';
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} 
+.rsbtn .rsbtn_closer.rsimg{
+    width: 67px !important;
+    height: 50px !important;
+    background:#B687B9 !important;
+    position: relative !important;
+    border-radius: 0 30px 30px 0;
+}
+.rsbtn .rsbtn_closer.rsimg:before{
+    position: absolute;
+    content:'';
+    width: 15px;
+    height: 15px;
+    background: url(images/icon_rs_close.png) no-repeat;
+    background-size: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.rsbtn .rsbtn_progress_container.rsimg{
+    margin: 18px 7px 0 15px !important;
+}
+.rsbtn .rsbtn_progress_container .rsbtn_progress_handle.rsimg{
+    position: absolute;
+    width: 20px !important;
+    height: 20px !important;
+    background:#B687B9 !important;
+    top: -6px!important;
+    border-radius:100%;
+    /* border-width: 10px 0 10px 15px;
+    border-style: solid;
+    border-color: transparent transparent transparent #B687B9; */
+}
+.rsbtn .rsbtn_player.rsimg{background:#f1f1f1;}
 
 .rsbtn_exp span.rsbtn_status_overlay{
-    display: none !important;
+    width: 83% !important;
+    height: 100% !important;
 }
-
+.rsbtn .rsbtn_powered{
+    top: 105% !important;
+}
 
 .contextual-region {
 	position: inherit;
