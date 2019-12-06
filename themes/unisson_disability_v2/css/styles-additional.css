@@ -916,7 +916,7 @@ section.contact-form select{
 /*opacity:100%!important;*/
 }
 
-.accomodation-search-form .form-group.property .form-type-checkbox.form-item-field-property-type-target-id-6 .jcf-checkbox:before {
+.accomodation-search-form .form-group.property .form-type-checkbox.form-item-ptype-6 .jcf-checkbox:before {
     content: '';
     font-size: 13px;
     width: 21px;
@@ -924,13 +924,13 @@ section.contact-form select{
     background: url(images/prop-home.png) no-repeat;
     background-size: contain;
 }
-.accomodation-search-form .form-group.property .form-type-checkbox.form-item-field-property-type-target-id-6 .jcf-checkbox.jcf-checked:before {
+.accomodation-search-form .form-group.property .form-type-checkbox.form-item-ptype-6 .jcf-checkbox.jcf-checked:before {
     background: url(images/prop-home-hover.png) no-repeat;
     background-size: contain;
 }
 
 
-.accomodation-search-form .form-group.property .form-type-checkbox.form-item-field-property-type-target-id-7 .jcf-checkbox:before {
+.accomodation-search-form .form-group.property .form-type-checkbox.form-item-ptype-7 .jcf-checkbox:before {
     content: '';
     font-size: 13px;
     width: 25px;
@@ -938,12 +938,12 @@ section.contact-form select{
     background: url(images/prop-apartment.png) no-repeat;
     background-size: contain;
 }
-.accomodation-search-form .form-group.property .form-type-checkbox.form-item-field-property-type-target-id-7 .jcf-checkbox.jcf-checked:before {
+.accomodation-search-form .form-group.property .form-type-checkbox.form-item-ptype-7 .jcf-checkbox.jcf-checked:before {
     background: url(images/prop-apartment-hover.png) no-repeat;
     background-size: contain;
 }
 
-.accomodation-search-form .form-group.property .form-type-checkbox.form-item-field-property-type-target-id-8 .jcf-checkbox:before {
+.accomodation-search-form .form-group.property .form-type-checkbox.form-item-ptype-8 .jcf-checkbox:before {
     content: '';
     font-size: 13px;
     width: 27px;
@@ -951,12 +951,12 @@ section.contact-form select{
     background: url(images/prop-townhouse.png) no-repeat;
     background-size: contain;
 }
-.accomodation-search-form .form-group.property .form-type-checkbox.form-item-field-property-type-target-id-8 .jcf-checkbox.jcf-checked:before {
+.accomodation-search-form .form-group.property .form-type-checkbox.form-item-ptype-8 .jcf-checkbox.jcf-checked:before {
     background: url(images/prop-townhouse-hover.png) no-repeat;
     background-size: contain;
 }
 
-.accomodation-search-form .form-group.property .form-type-checkbox.form-item-field-property-type-target-id-9 .jcf-checkbox:before {
+.accomodation-search-form .form-group.property .form-type-checkbox.form-item-ptype-9 .jcf-checkbox:before {
     content: '';
     font-size: 13px;
     width: 27px;
@@ -964,7 +964,7 @@ section.contact-form select{
     background: url(images/prop-villa.png) no-repeat;
     background-size: contain;
 }
-.accomodation-search-form .form-group.property .form-type-checkbox.form-item-field-property-type-target-id-9 .jcf-checkbox.jcf-checked:before {
+.accomodation-search-form .form-group.property .form-type-checkbox.form-item-ptype-9 .jcf-checkbox.jcf-checked:before {
     background: url(images/prop-villa-hover.png) no-repeat;
     background-size: contain;
 }
@@ -1039,21 +1039,21 @@ section.contact-form select{
 	display:none;
 }*/
 
-.accomodation-search-form .form-group.location fieldset .form-item-field-property-geolocation-proximity-value {
+.accomodation-search-form .form-group.location fieldset .form-item-plocation-value {
     display: none;
 }
 
-.form-item-field-property-geolocation-proximity-source-configuration-origin-address label, .form-item-field-property-geolocation-proximity-source-configuration-origin-address .description{
+.form-item-plocation-source-configuration-origin-address label, .form-item-plocation-source-configuration-origin-address .description{
 	display:none;
 }
 
-.form-item-field-property-geolocation-proximity-value input{
+.form-item-plocation-value input{
 	float:right;
 	margin:0px;	
 }
 
 
-.accomodation-search-form .form-item.form-item-field-property-geolocation-proximity-source-configuration-origin-address{
+.accomodation-search-form .form-item.form-item-plocation-source-configuration-origin-address{
 	margin:0px;
 }
 

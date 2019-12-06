@@ -696,6 +696,11 @@ class ViewExecutable {
           unset($this->exposed_input[$key]);
         }
       }
+      
+      // Bang - When posting via AJAX, we want to make sure $_SESSION values are not
+      // used as unset values will never be stored and at least 1 value is
+      // always restored.
+      $use_stored = !\Drupal::request()->request->get('ajax_page_state', FALSE);
 
       // If we have no input at all, check for remembered input via session.
 
@@ -705,7 +710,8 @@ class ViewExecutable {
       // remember settings.
       $display_id = ($this->display_handler->isDefaulted('filters')) ? 'default' : $this->current_display;
 
-      if (empty($this->exposed_input) && !empty($_SESSION['views'][$this->storage->id()][$display_id])) {
+      //Bang - if (empty($this->exposed_input) && !empty($_SESSION['views'][$this->storage->id()][$display_id])) {
+      if ($use_stored && empty($this->exposed_input) && !empty($_SESSION['views'][$this->storage->id()][$display_id])) {
         $this->exposed_input = $_SESSION['views'][$this->storage->id()][$display_id];
       }
     }

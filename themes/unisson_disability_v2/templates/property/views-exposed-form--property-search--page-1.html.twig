@@ -21,7 +21,7 @@
   <div class="form-row">
       <h4>Location</h4>
       <div class="form-group location">
-        {{ form.field_property_geolocation_proximity }}
+        {{ form.plocation }}
         <div id="current-location">
           <a href="#" class="button button-secondary">Use Current Location</a>
         </div>
@@ -39,13 +39,13 @@
         <div class="form-col">
             <h4>Property type</h4>
             <div class="form-group property">
-                {{ form.field_property_type_target_id }}
+                {{ form.ptype }}
             </div>
         </div>
         <div class="form-col">
             <h4>Number of bedrooms</h4>
             <div class="form-group bedrooms">
-                {{ form.field_number_of_bedrooms_value }}
+                {{ form.pbeds }}
             </div>
         </div>
     </div>
@@ -53,13 +53,13 @@
         <div class="form-col">
             <h4>Property Requirements</h4>
             <div class="form-group property-req">
-                {{ form.field_property_features_target_id }}
+                {{ form.pfeatures }}
             </div>   
         </div>
         <div class="form-col">
             <h4>Keywords</h4>
             <div class="form-group keyword">
-                {{ form.combine }}
+                {{ form.pkeyword }}
             </div>
         </div>
     </div>

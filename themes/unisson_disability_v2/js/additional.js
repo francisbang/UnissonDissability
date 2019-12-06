@@ -93,9 +93,9 @@ jQuery(document).ready(function() {
 		/*----------GMap Code - Current Location-----------*/
 		/***************************************************/
 		
-		var loc_field = '#edit-field-property-geolocation-proximity-source-configuration-origin-address';
+		var loc_field = '#edit-plocation-source-configuration-origin-address';
 		var loc_distance = '#edit-loc-distance';
-		var loc_proxdistance = '#edit-field-property-geolocation-proximity-value';
+		var loc_proxdistance = '#edit-plocation-value';
 		
 		var apiGeolocationSuccess = function(position) {
 			//alert("API geolocation success!\n\nlat = " + position.coords.latitude + "\nlng = " + position.coords.longitude);
@@ -202,19 +202,7 @@ jQuery(document).ready(function() {
 			}
 		}
 		
-		/* jQuery('#edit-submit-property-search--2').trigger('click');
-		 setTimeout(function() { //alert('pp');
-        jQuery('#edit-submit-property-search--2').trigger('click');
-      },2)
-		 
-		 window.onload = function() { //alert('test');
-  jQuery('#edit-submit-property-search--2').trigger('click');
-};
-		 
-		  jQuery(window).on('popstate', function(event) {
- //alert("pop");
-});
- */
+		
 		/***************************************************/
 		/*------------ END PROPERTY SEARCH  ---------------*/
 		/***************************************************/

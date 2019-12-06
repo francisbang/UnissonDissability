@@ -154,13 +154,12 @@ function unisson_disability_v2_form_alter(&$form, \Drupal\Core\Form\FormStateInt
     //var_dump($form);
    
     $form['#attributes']['class'][] = 'accomodation-search-form';
-
     $form['actions']['submit']['#attributes']['class'][] = 'button-secondary';
 
-    $form['field_property_geolocation_proximity']['value']['#min'] = 1;
-    $form['field_property_geolocation_proximity']['value']['#step'] = 1;
-    $form['field_property_geolocation_proximity']['value']['#attributes']['placeholder'] = 'Units in km';
-    $form['field_property_geolocation_proximity']['source_configuration']['origin_address']['#attributes']['placeholder'][] = 'Type a city, suburb or a pincode';
+    //$form['field_property_geolocation_proximity']['value']['#min'] = 1;
+    //$form['field_property_geolocation_proximity']['value']['#step'] = 1;
+    //$form['field_property_geolocation_proximity']['value']['#attributes']['placeholder'] = 'Units in km';
+    $form['plocation']['source_configuration']['origin_address']['#attributes']['placeholder'][] = 'Type a pincode, city or suburb';
 
     $options3 = [
       '' => t('- Select Distance -'),
@@ -211,7 +210,7 @@ function unisson_disability_v2_form_alter(&$form, \Drupal\Core\Form\FormStateInt
       '#type' => 'select',
       '#options' => $options2,
       '#size' => NULL,
-      '#default_value' => 'all',
+      '#default_value' => '1',
     ];
 
     $options = [
@@ -227,7 +226,7 @@ function unisson_disability_v2_form_alter(&$form, \Drupal\Core\Form\FormStateInt
       '#type' => 'select',
       '#options' => $options,
       '#size' => NULL,
-      '#default_value' => 'all',
+      '#default_value' => '1',
     ];
 
     
