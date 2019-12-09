@@ -109,7 +109,9 @@
                         <li class="property-bed">{{ content.field_number_of_bedrooms|field_value }} Bedrooms</li>
                     </ul>
                 </div>
-                {{ drupal_entity('block', 'socialsharingblock') }}
+                <div class="social-share top">
+                    {{ drupal_entity('block', 'socialsharingblock') }}
+                </div>
                 {#<nav class="social">
                     <ul>
                         <li><a href="#">facebook</a></li>
@@ -176,7 +178,16 @@
         </div>
     </div>
 
-    <div><a href="#" onclick="window.history.back();" >Back To Search</a></div>
+    <div class="property-bottom">
+        <div class="wrapper">
+            <div class="social-share bottom">
+                <strong>Share now</strong>
+                {{ drupal_entity('block', 'socialsharingblock') }}
+            </div>
+            <div><a href="#" class="link-back" onclick="window.history.back();" >Back To Search</a></div>
+        </div>
+    </div>
+    
 
     {{ content.field_property_enquiry_form }}
     {{ content.field_related_content }}
