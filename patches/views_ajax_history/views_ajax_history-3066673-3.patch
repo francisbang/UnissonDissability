@@ -1,0 +1,30 @@
+diff --git a/js/views_ajax_history.js b/js/views_ajax_history.js
+index a5058ac..cf8f7a8 100644
+--- a/js/views_ajax_history.js
++++ b/js/views_ajax_history.js
+@@ -12,6 +12,12 @@ (function ($, Drupal, drupalSettings) {
+     query: window.location.search || ''
+   };
+ 
++  window.onpageshow = function (event) {
++    if (event.persisted) {
++      window.location.reload()
++    }
++  };
++
+   /**
+    * Keep the original beforeSubmit method to use it later.
+    */
+@@ -58,6 +58,6 @@ (function ($, Drupal, drupalSettings) { 
+        pair = pairs[i].split('='); 
+        // Ignore the 'q' path argument, if present.
+        if (pair[0] != 'q' && pair[1]) {
++        	//Ignore page arg due to infinite scroll option
++       	if(pair[0] != 'page'){
+			  key = decodeURIComponent(pair[0].replace(/\+/g, ' '));
+@@ -74,6 +74,5 @@ (function ($, Drupal, drupalSettings) {
+			  else {
+				args[key] = value;
+			  }
++			} //Close if for Ignore page arg due to infinite scroll option
+        }			  

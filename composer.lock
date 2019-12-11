@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c4c4da55df921c7b12d5a3fdc7a1ed9",
+    "content-hash": "0ee852a4a39ad026903882bb87c4c4a7",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2212,9 +2212,7 @@
                         "message": "Covered by Drupal's security advisory policy"
                     }
                 },
-                "patches_applied": {
-                    "Views Ajax Patch": "https://www.drupal.org/files/issues/2019-10-28/views_ajax_history-3066673-3.patch"
-                }
+                "patches_applied": []
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [

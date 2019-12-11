@@ -604,13 +604,13 @@ display:
             operator: field_property_geolocation_proximity_op
             identifier: plocation
             required: false
-            remember: true
+            remember: false
             multiple: false
             remember_roles:
               anonymous: anonymous
               authenticated: authenticated
-              administrator: '0'
-              content_author: '0'
+              administrator: administrator
+              content_author: content_author
             placeholder: ''
             min_placeholder: ''
             max_placeholder: ''
@@ -627,7 +627,7 @@ display:
             default_group_multiple: {  }
             group_items: {  }
           units: GEOFIELD_KILOMETERS
-          source: geofield_geocode_origin_autocomplete
+          source: geofield_geocode_origin
           source_configuration:
             exposed_summary: 0
             origin_address: ''
@@ -638,9 +638,6 @@ display:
               openstreetmap:
                 checked: '1'
                 weight: '1'
-              geoplugin:
-                checked: '1'
-                weight: '2'
               arcgisonline:
                 weight: '0'
                 checked: 0
@@ -648,6 +645,9 @@ display:
                 weight: '0'
                 checked: 0
               freegeoip:
+                weight: '0'
+                checked: 0
+              geoplugin:
                 weight: '0'
                 checked: 0
               geoip:
@@ -686,10 +686,6 @@ display:
               yandex:
                 weight: '0'
                 checked: 0
-            settings:
-              min_terms: '4'
-              delay: '800'
-              options: ''
           plugin_id: geofield_proximity_filter
         field_property_type_target_id:
           id: field_property_type_target_id
@@ -710,13 +706,13 @@ display:
             operator: field_property_type_target_id_op
             identifier: ptype
             required: false
-            remember: true
+            remember: false
             multiple: true
             remember_roles:
               anonymous: anonymous
-              authenticated: '0'
-              administrator: '0'
-              content_author: '0'
+              authenticated: authenticated
+              administrator: administrator
+              content_author: content_author
             reduce: false
           is_grouped: false
           group_info:
@@ -776,13 +772,13 @@ display:
             operator: field_number_of_bedrooms_value_op
             identifier: pbeds
             required: false
-            remember: true
+            remember: false
             multiple: false
             remember_roles:
               anonymous: anonymous
-              authenticated: '0'
-              administrator: '0'
-              content_author: '0'
+              authenticated: authenticated
+              administrator: administrator
+              content_author: content_author
             reduce: false
           is_grouped: false
           group_info:
@@ -817,13 +813,13 @@ display:
             operator: field_property_features_target_id_op
             identifier: pfeatures
             required: false
-            remember: true
+            remember: false
             multiple: true
             remember_roles:
               anonymous: anonymous
-              authenticated: '0'
-              administrator: '0'
-              content_author: '0'
+              authenticated: authenticated
+              administrator: administrator
+              content_author: content_author
             reduce: false
           is_grouped: false
           group_info:
@@ -863,13 +859,13 @@ display:
             operator: combine_op
             identifier: pkeyword
             required: false
-            remember: true
+            remember: false
             multiple: false
             remember_roles:
               anonymous: anonymous
-              authenticated: '0'
-              administrator: '0'
-              content_author: '0'
+              authenticated: authenticated
+              administrator: administrator
+              content_author: content_author
             placeholder: 'eg. nearby shops or train station'
           is_grouped: false
           group_info:

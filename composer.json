@@ -68,7 +68,7 @@
                 "Autocomplete Geofield Proximity Fiter Patch": "https://www.drupal.org/files/issues/2019-10-18/geocoder_origin_with_autocomplete_geofield_proximity_filter_source_3088801_1.diff"
             },
             "drupal/views_ajax_history": {
-                "Views Ajax Patch": "https://www.drupal.org/files/issues/2019-10-28/views_ajax_history-3066673-3.patch"
+                "Views Ajax Patch": "patches/views_ajax_history/views_ajax_history-3066673-3.patch"
             }
         }
     },

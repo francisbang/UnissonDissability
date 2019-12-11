@@ -160,7 +160,49 @@ jQuery(document).ready(function() {
 		jQuery('#current-location a').click(function(){
 			tryGeolocation();
 		});
+		
+		
+		//Code to Autocomplete Locations from CSV
+		jQuery(function() {
+		  
+		  	// Storage for lists of CSV Data
+			var acList = [];
+			function processData(myTxt) {
+				var myLines = myTxt.split(/\r\n|\n/);
+				for (var i=1; i<myLines.length; i++) {
+					var entry = myLines[i].split(',');
+					var line = entry[1] + ', ' + entry[0] + ', ' + entry[2];
+					acList.push(line);
+				}
+				//console.log(acList);
+			}
 
+			// Get the CSV Content
+			var base_url = window.location.origin;
+			jQuery.get(base_url + "/australian_postcodes.csv", function(data) {
+				processData(data);
+			});
+
+			jQuery("#edit-plocation-source-configuration-origin-address").autocomplete({
+				minLength: 3,
+				source: acList
+				/*source: function( request, response ) {
+					var matches = jQuery.map( acList, function(acItem) {
+					  if ( acItem.toUpperCase().indexOf(request.term.toUpperCase()) === 0 ) {
+						return acItem;
+					  }
+					});
+					response(matches);
+				  }*/
+				/*select: function(event, ui) {
+				  $("#species").val(ui.item.label);
+				  $("#identifiant").val(ui.item.value);
+				  return false;
+				}*/
+			});
+		});
+
+		
 
 		/***************************************************/
 		/*------- End GMap Code - Current Location --------*/
