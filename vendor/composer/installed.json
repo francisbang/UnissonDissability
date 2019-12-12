@@ -2610,9 +2610,7 @@
                     "message": "Covered by Drupal's security advisory policy"
                 }
             },
-            "patches_applied": {
-                "Views Ajax Patch": "https://www.drupal.org/files/issues/2019-10-28/views_ajax_history-3066673-3.patch"
-            }
+            "patches_applied": []
         },
         "installation-source": "dist",
         "notification-url": "https://packages.drupal.org/8/downloads",
