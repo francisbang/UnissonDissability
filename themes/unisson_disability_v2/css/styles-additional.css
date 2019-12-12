@@ -64,16 +64,23 @@ section.main-nav ul.submenu li.active::after {
 /******************************************/
 .readspeaker {
 	position: absolute;
-    top: 250px;
+    top: 225px;
     left: 0;
+    width: 100%;
 }
 
 .rsbtn{
-    
+    display: inline-block !important;
     height: 50px !important;
     box-shadow: 0px 3px 6px #00000029;
     -webkit-box-shadow: 0px 3px 6px #00000029;
     border-radius:30px;
+    z-index: 5 !important;
+}
+.rsbtn span, 
+.rsbtn a{
+    color: #650d6b !important;
+    text-transform: uppercase !important;
 }
 .rsbtn .rsbtn_play{
     height: 50px;
@@ -108,14 +115,14 @@ section.main-nav ul.submenu li.active::after {
 }
 .rsbtn .rsbtn_right{
     background:#B687B9 !important;
-    width: 65px;
+    width: 65px !important;
     border-radius:0 30px 30px 0;
     position: relative;
 }
 .rsbtn .rsbtn_right:after{
     position: absolute;
     content: '';
-    border-width: 10px 0 10px 15px;
+    border-width: 8px 0 8px 14px;
     /* background: #fff; */
     border-style: solid;
     border-color: transparent transparent transparent #ffff;
@@ -265,6 +272,10 @@ section.main-nav ul.submenu li.active::after {
 .rsbtn .rsbtn_powered{
     top: 105% !important;
 }
+
+.rsbtn .rsbtn_powered .rsbtn_btnlabel,
+.rsbtn .rsbtn_powered .rsbtn_btnlabel a span.rsbtn_label_speaker{color:#999 !important;}
+.rsbtn .rsbtn_powered .rsbtn_btnlabel a span.rsbtn_label_read{color:#ff6826 !important;}
 
 .contextual-region {
 	position: inherit;
@@ -911,10 +922,6 @@ section.contact-form select{
 /******************************************/
 /************ ACCOMODATION CSS ************/
 /******************************************/
-
-.jcf-checkbox input[type="checkbox"] {
-/*opacity:100%!important;*/
-}
 
 .accomodation-search-form .form-group.property .form-type-checkbox.form-item-ptype-6 .jcf-checkbox:before {
     content: '';

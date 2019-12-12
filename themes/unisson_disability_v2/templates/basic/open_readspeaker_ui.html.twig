@@ -15,11 +15,13 @@
  */
   
 #}
-<div class="open-readspeaker-ui">
-  <div id="readspeaker_button" class="rs_skip rsbtn rs_preserve">
-    <a class="rsbtn_play {{ custom_style }}" title="{{ 'Listen to this page using ReadSpeaker'|t }}" accesskey="L" href="//app-eu.readspeaker.com/cgi-bin/rsent?customerid={{ accountid }}&lang={{ open_readspeaker_i18n }}&readid={{ open_readspeaker_reading_area }}&readclass={{ open_readspeaker_reading_area_class }}&url={{ request_path }}">
-      <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span> {{ button_text|t }}  </span></span></span>
-      <span class="rsbtn_right rsimg rsplay rspart"></span>
-    </a>
-  </div> 
+<div class="wrapper">
+  <div class="open-readspeaker-ui">
+    <div id="readspeaker_button" class="rs_skip rsbtn rs_preserve">
+      <a class="rsbtn_play {{ custom_style }}" title="{{ 'Listen to this page using ReadSpeaker'|t }}" accesskey="L" href="//app-eu.readspeaker.com/cgi-bin/rsent?customerid={{ accountid }}&lang={{ open_readspeaker_i18n }}&readid={{ open_readspeaker_reading_area }}&readclass={{ open_readspeaker_reading_area_class }}&url={{ request_path }}">
+        <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span> {{ button_text|t }}  </span></span></span>
+        <span class="rsbtn_right rsimg rsplay rspart"></span>
+      </a>
+    </div> 
+  </div>
 </div>
