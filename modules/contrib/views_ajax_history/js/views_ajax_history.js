@@ -11,6 +11,13 @@
     // @TODO integrate #1359798 without breaking history.js
     query: window.location.search || ''
   };
+  
+  window.onpageshow = function (event) {
+    if (event.persisted) {
+      window.location.reload()
+    }
+  };
+
 
   /**
    * Keep the original beforeSubmit method to use it later.
