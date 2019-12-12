@@ -11,7 +11,7 @@ dependencies:
 id: unisson_disability_v2_aboutunissondisability
 theme: unisson_disability_v2
 region: footer_first
-weight: -20
+weight: -26
 provider: null
 plugin: 'block_content:3cb8b35b-7222-4569-9e43-a3ebf9bb7f94'
 settings:

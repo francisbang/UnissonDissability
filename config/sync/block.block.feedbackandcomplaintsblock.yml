@@ -11,7 +11,7 @@ dependencies:
 id: feedbackandcomplaintsblock
 theme: unisson_disability_v2
 region: hidden
-weight: 0
+weight: -24
 provider: null
 plugin: 'block_content:131d2f9c-32ac-4096-b9da-8f8c8f826304'
 settings:

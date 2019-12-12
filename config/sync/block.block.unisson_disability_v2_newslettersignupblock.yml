@@ -15,7 +15,7 @@ third_party_settings:
 id: unisson_disability_v2_newslettersignupblock
 theme: unisson_disability_v2
 region: footer_top
-weight: -21
+weight: -28
 provider: null
 plugin: 'block_content:920598ce-9ef5-4255-8bad-f3dfdbc33ef2'
 settings:

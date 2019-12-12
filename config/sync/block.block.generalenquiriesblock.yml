@@ -11,7 +11,7 @@ dependencies:
 id: generalenquiriesblock
 theme: unisson_disability_v2
 region: hidden
-weight: 0
+weight: -23
 provider: null
 plugin: 'block_content:6ce7f7b4-9657-488b-a393-6bfe11149900'
 settings:

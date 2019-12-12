@@ -15,7 +15,7 @@ third_party_settings:
 id: mainnavigation
 theme: unisson_disability_v2
 region: footer_third
-weight: -23
+weight: -28
 provider: null
 plugin: 'menu_block:main'
 settings:
