@@ -159,7 +159,7 @@ function unisson_disability_v2_form_alter(&$form, \Drupal\Core\Form\FormStateInt
     //$form['field_property_geolocation_proximity']['value']['#min'] = 1;
     //$form['field_property_geolocation_proximity']['value']['#step'] = 1;
     //$form['field_property_geolocation_proximity']['value']['#attributes']['placeholder'] = 'Units in km';
-    $form['plocation']['source_configuration']['origin_address']['#attributes']['placeholder'][] = 'Type a pincode, city or suburb';
+    $form['plocation']['source_configuration']['origin_address']['#attributes']['placeholder'][] = 'Type a postcode, city or suburb';
 
     $options3 = [
       '' => t('- Select Distance -'),
@@ -178,7 +178,7 @@ function unisson_disability_v2_form_alter(&$form, \Drupal\Core\Form\FormStateInt
       '#default_value' => '',
     ];
 
-   // print_r($form);die;
+   //print_r($form);die;
     /*$form['field_property_type_target_id']['#options']['All'] =  'All Types';*/
   
   }
@@ -188,9 +188,12 @@ function unisson_disability_v2_form_alter(&$form, \Drupal\Core\Form\FormStateInt
     $form['#attributes']['class'][] = 'news-search-form';
 
     $form['actions']['submit']['#attributes']['class'][] = 'button-secondary';
+    $form['category']['#options']['All'] = '- NEWS TOPICS -';
+ 
+   
 
     $options2 = [
-      '1' => t('- All -'),
+      '1' => t('- Month -'),
       '01' => 'Jan',
       '02' => 'Feb',
       '03' => 'Mar',
@@ -214,10 +217,10 @@ function unisson_disability_v2_form_alter(&$form, \Drupal\Core\Form\FormStateInt
     ];
 
     $options = [
-      '1' => t('- All -'),
+      '1' => t('- Year -'),
     ];
 
-    for($i = date("Y")-3; $i <= date("Y"); $i++){
+    for($i = date("Y")-4; $i <= date("Y"); $i++){
       $options += array($i => $i);
     }
 
@@ -231,7 +234,9 @@ function unisson_disability_v2_form_alter(&$form, \Drupal\Core\Form\FormStateInt
 
     
 
-  // print('<pre>');print($form_id);print_r($form);die;
+ // print('<pre>');
+  //print($form_id);
+  //print_r($form);die;
         
   }
 }
