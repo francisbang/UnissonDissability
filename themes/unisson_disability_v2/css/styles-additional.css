@@ -541,7 +541,7 @@ footer .footer-white ul li::after {
 	display: none;
 }
 
-.pager li>a:hover {
+.pager ul li>a:hover {
 	background: #ff6826;
 }
 
@@ -918,6 +918,9 @@ section.contact-form select{
     font-size: 13px;
     /* padding: 0px; */
 }
+.view-id-articles_overview .pager ul li a:hover{
+    background: #ff6826;
+}
 
 /******************************************/
 /************ ACCOMODATION CSS ************/
@@ -1149,8 +1152,10 @@ section.contact-form select{
         top: 18px;
         right: 25px;
     }
+    .readspeaker{top: 105px;}
 }
 
 @media(max-width: 767px){
-	footer form.webform-submission-form{margin: 0 auto;}
+    footer form.webform-submission-form{margin: 0 auto;}
+    .readspeaker{display: none !important;}
 }
