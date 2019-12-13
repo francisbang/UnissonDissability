@@ -10,7 +10,7 @@ dependencies:
 id: socialsharingblock
 theme: unisson_disability_v2
 region: hidden
-weight: 0
+weight: -21
 provider: null
 plugin: social_sharing_block
 settings:

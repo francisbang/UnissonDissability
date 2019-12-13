@@ -12,7 +12,7 @@ dependencies:
 id: unisson_disability_v2_views_block__research_left_sidebar_block_1
 theme: unisson_disability_v2
 region: page_left_side_bar
-weight: -18
+weight: -28
 provider: null
 plugin: 'views_block:research_left_sidebar-block_1'
 settings:

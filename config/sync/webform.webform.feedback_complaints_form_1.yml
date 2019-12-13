@@ -1,3 +1,4 @@
+uuid: 073de3db-fa0e-43f3-b5dd-b82688c5253a
 langcode: en
 status: open
 dependencies: {  }
@@ -6,9 +7,9 @@ close: null
 weight: 0
 uid: 1433
 template: false
-archive: false
+archive: true
 id: feedback_complaints_form_1
-title: 'Feedback & Complaints - Form 1'
+title: '(Not Used) Feedback & Complaints - Form 1'
 description: ''
 category: ''
 elements: "first_name:\n  '#type': textfield\n  '#title': 'First Name'\n  '#title_display': invisible\n  '#placeholder': 'First Name'\n  '#required': true\nlast_name:\n  '#type': textfield\n  '#title': 'Last Name'\n  '#title_display': invisible\n  '#placeholder': 'Last Name'\n  '#required': true\nemail:\n  '#type': email\n  '#title': Email\n  '#title_display': invisible\n  '#placeholder': Email\n  '#required': true\n  '#required_error': 'This email is invalid. Please enter a valid email address.'\n  '#pattern': '^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$'\nphone:\n  '#type': textfield\n  '#title': Phone\n  '#title_display': invisible\n  '#maxlength': '10'\n  '#minlength': '8'\n  '#placeholder': Phone\n  '#required': true\nhow_did_you_hear_about_us_other:\n  '#type': webform_select_other\n  '#title': 'How did you hear about us?'\n  '#title_display': invisible\n  '#description_display': after\n  '#options':\n    'Web search': 'Web search'\n    'Referral from friend/family': 'Referral from friend/family'\n    'NDIS/healthcare provider': 'NDIS/healthcare provider'\n    'Online ad': 'Online ad'\n    'Social media': 'Social media'\n    Newspaper/magazine: Newspaper/magazine\n    Radio: Radio\n  '#empty_option': 'How did you hear about us?'\n  '#empty_value': '-Select'\n  '#required': true\nmessage:\n  '#type': textarea\n  '#title': Message\n  '#title_display': invisible\n  '#rows': '9'\n  '#placeholder': Message\n  '#required': true\nsign_up_for_newsletter:\n  '#type': checkboxes\n  '#title': 'Sign Up For Newsletter'\n  '#options': newsletter_signup\nactions:\n  '#type': webform_actions\n  '#title': Submit\n  '#submit__attributes':\n    class:\n      - edit-submit\n"
@@ -234,4 +235,3 @@ handlers:
       sender_mail: ''
       sender_name: ''
       theme_name: ''
-uuid: 073de3db-fa0e-43f3-b5dd-b82688c5253a

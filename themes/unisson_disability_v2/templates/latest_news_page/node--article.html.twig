@@ -106,11 +106,14 @@
 
     
       {{ drupal_entity('block', 'socialsharingblock') }}  
+      <div><a href="#" class="link-back" onclick="window.history.back();" >Back To Search</a></div>
     </div>
   </div>
 
 </article>
 {{ content.field_call_to_action|field_value }}
+{% if content.field_related_content[0] is not empty %}
 <div class="related-content wrapper">
   {{ content.field_related_content|field_value }}
 </div>
+{% endif %}

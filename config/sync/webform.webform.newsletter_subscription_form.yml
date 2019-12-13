@@ -1,7 +1,9 @@
 uuid: 0ee68ce2-9759-4809-bcde-660147f32e0d
 langcode: en
 status: open
-dependencies: {  }
+dependencies:
+  module:
+    - webform_mailchimp
 open: null
 close: null
 weight: 0
@@ -16,7 +18,7 @@ elements: "'#attributes':\n  class:\n    - newsletter-form\nfirst_name:\n  '#typ
 css: ''
 javascript: ''
 settings:
-  ajax: false
+  ajax: true
   ajax_scroll_top: form
   page: true
   page_submit_path: ''
@@ -201,3 +203,17 @@ handlers:
       sender_mail: ''
       sender_name: ''
       theme_name: ''
+  mailchimp:
+    id: mailchimp
+    label: MailChimp
+    handler_id: mailchimp
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      list: '[site:mail]'
+      email: enter_email_address_
+      double_optin: true
+      mergevars: ''
+      interest_groups: {  }
+      control: ''

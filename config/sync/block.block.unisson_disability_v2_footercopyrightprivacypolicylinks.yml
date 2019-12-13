@@ -15,7 +15,7 @@ third_party_settings:
 id: unisson_disability_v2_footercopyrightprivacypolicylinks
 theme: unisson_disability_v2
 region: footer_first
-weight: -22
+weight: -28
 provider: null
 plugin: 'system_menu_block:footer---copyright-privacy-'
 settings:

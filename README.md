@@ -58,3 +58,17 @@ Old reference doc: https://drive.google.com/file/d/1rigBlpaoD62McNnKjlNd6dPj1CpW
 
 
 
+### SMTP Settings
+
+Follow this link to correct SMTP settings: https://stevepolito.design/blog/drupal-configure-smtp-module-work-gmail-updated/
+
+#### Initially settings was (but is not working, even on live):
+
+![](https://tva1.sinaimg.cn/large/006tNbRwly1g9sre6wtm0j30u0115465.jpg)
+
+#### Tested with (working):
+
+![](https://tva1.sinaimg.cn/large/006tNbRwly1g9srda31txj30u016eah6.jpg)
+
+
+

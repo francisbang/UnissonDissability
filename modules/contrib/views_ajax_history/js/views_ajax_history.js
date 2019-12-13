@@ -11,6 +11,13 @@
     // @TODO integrate #1359798 without breaking history.js
     query: window.location.search || ''
   };
+  
+  window.onpageshow = function (event) {
+    if (event.persisted) {
+      window.location.reload()
+    }
+  };
+
 
   /**
    * Keep the original beforeSubmit method to use it later.
@@ -57,24 +64,24 @@
         pair = pairs[i].split('=');
         // Ignore the 'q' path argument, if present.
         if (pair[0] != 'q' && pair[1]) {
-        //Ignore 'page' argument due to infinite scroll option
-        if(pair[0] != 'page'){
-          key = decodeURIComponent(pair[0].replace(/\+/g, ' '));
-          value = decodeURIComponent(pair[1].replace(/\+/g, ' '));
-          // Field name ends with [], it's multivalues.
-          if (/\[\]$/.test(key)) {
-            if (!(key in args)) {
-              args[key] = [value];
-            }
-            // Don't duplicate values.
-            else if (!$.inArray(value, args[key]) !== -1) {
-              args[key].push(value);
-            }
-          }
-          else {
-            args[key] = value;
-          }
-        }
+			// Ignore the 'page' path argument, if present.
+			if (pair[0] != 'page') {
+			  key = decodeURIComponent(pair[0].replace(/\+/g, ' '));
+			  value = decodeURIComponent(pair[1].replace(/\+/g, ' '));
+			  // Field name ends with [], it's multivalues.
+			  if (/\[\]$/.test(key)) {
+				if (!(key in args)) {
+				  args[key] = [value];
+				}
+				// Don't duplicate values.
+				else if (!$.inArray(value, args[key]) !== -1) {
+				  args[key].push(value);
+				}
+			  }
+			  else {
+				args[key] = value;
+			  }
+			}
         }
       }
     }

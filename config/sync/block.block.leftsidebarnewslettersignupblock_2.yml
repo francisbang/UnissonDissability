@@ -1,0 +1,25 @@
+uuid: b65352ea-c962-4c70-a0eb-e003f90fd181
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:block_add_form:b730c80f-3604-4008-8953-cfcdd0645722'
+  module:
+    - block_content
+  theme:
+    - unisson_disability_v2
+id: leftsidebarnewslettersignupblock_2
+theme: unisson_disability_v2
+region: hidden
+weight: -27
+provider: null
+plugin: 'block_content:b730c80f-3604-4008-8953-cfcdd0645722'
+settings:
+  id: 'block_content:b730c80f-3604-4008-8953-cfcdd0645722'
+  label: 'Left Sidebar Newsletter Sign Up Block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
