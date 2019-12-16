@@ -1159,3 +1159,41 @@ section.contact-form select{
     footer form.webform-submission-form{margin: 0 auto;}
     .readspeaker{display: none !important;}
 }
+
+
+
+body.high-contrast .rsbtn .rsbtn_right{
+    background:#222 !important;
+}
+body.high-contrast .rsbtn span, .rsbtn a{
+    color:#222 !important;
+}
+body.high-contrast .rsbtn .rsbtn_closer.rsimg{
+    background:#222 !important;
+}
+body.high-contrast .rsbtn .rsbtn_left .rsbtn_text:before,
+body.high-contrast .rsbtn .rsbtn_volume.rsimg:after{
+    -webkit-filter: grayscale(100);
+    filter: grayscale(100);
+}
+body.high-contrast .rsbtn.rsexpanded.rsplaying .rsbtn_pause, 
+body.high-contrast .rsbtn.rsexpanded.rsstopped .rsbtn_pause, 
+body.high-contrast .rsbtn.rsexpanded.rspaused .rsbtn_pause{
+    background:#222 !important;
+}
+body.high-contrast .rsbtn .rsbtn_stop.rsimg:before{
+    background:#222 ;
+}  
+body.high-contrast .rsbtn .rsbtn_progress_container .rsbtn_progress_handle.rsimg{
+    background:#222 !important;
+}
+body.high-contrast .rsbtn .rsbtn_volume.rsimg:before, 
+body.high-contrast .rsbtn .rsbtn_settings.rsimg:before, 
+body.high-contrast .rsbtn .rsbtn_dl.rsimg:before{
+    background:#222 ;
+
+}
+body.high-contrast .rsbtn .rsbtn_powered .rsbtn_btnlabel,
+body.high-contrast .rsbtn .rsbtn_powered .rsbtn_btnlabel a span.rsbtn_label_speaker {
+    color: #000 !important;
+}  
