@@ -203,6 +203,28 @@ section.main-nav ul.submenu li.active::after {
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.rsbtn .rsbtn_dl.rsimg:after{
+    position: absolute;
+    content:'';
+    width: 24px;
+    height: 24px;
+    background: url(images/icon-download.png) no-repeat;
+    background-size: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.rsbtn .rsbtn_settings.rsimg:after{
+    position: absolute;
+    content:'';
+    width: 24px;
+    height: 24px;
+    background: url(images/icon-setting.png) no-repeat;
+    background-size: contain;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
 .rsbtn .rsbtn_volume.rsimg:before,
 .rsbtn .rsbtn_settings.rsimg:before, 
 .rsbtn .rsbtn_dl.rsimg:before{
@@ -1172,7 +1194,9 @@ body.high-contrast .rsbtn .rsbtn_closer.rsimg{
     background:#222 !important;
 }
 body.high-contrast .rsbtn .rsbtn_left .rsbtn_text:before,
-body.high-contrast .rsbtn .rsbtn_volume.rsimg:after{
+body.high-contrast .rsbtn .rsbtn_volume.rsimg:after,
+body.high-contrast .rsbtn .rsbtn_settings.rsimg:after,
+body.high-contrast .rsbtn .rsbtn_dl.rsimg:after{
     -webkit-filter: grayscale(100);
     filter: grayscale(100);
 }
