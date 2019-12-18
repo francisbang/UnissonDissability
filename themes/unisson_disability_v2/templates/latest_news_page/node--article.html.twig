@@ -102,18 +102,21 @@
   {{ title_suffix }}  #}
 
     <div{{ content_attributes.addClass('node__content') }}>
-      {{ content|without('field_related_content','field_call_to_action') }}
+      {{ content|without('field_news_related_content','field_call_to_action') }}
 
     
       {{ drupal_entity('block', 'socialsharingblock') }}  
-      <div><a href="#" class="link-back" onclick="window.history.back();" >Back To Search</a></div>
+      <div class="link-back"><button onclick="window.history.back();" >Back To Search</button></div>
     </div>
   </div>
+  {{ content.field_call_to_action|field_value }}
 
+  {% if content.field_news_related_content[0] is not empty %}
+  <section class="content-overview related-content">
+      <div class="wrapper">
+          <h2>View Similar Articles</h2>
+          {{ content.field_news_related_content }}
+      </div>
+  </section>
+  {% endif %}
 </article>
-{{ content.field_call_to_action|field_value }}
-{% if content.field_related_content[0] is not empty %}
-<div class="related-content wrapper">
-  {{ content.field_related_content|field_value }}
-</div>
-{% endif %}

@@ -185,13 +185,22 @@
                 <strong>Share now</strong>
                 {{ drupal_entity('block', 'socialsharingblock') }}
             </div>
-            <div><a href="#" class="link-back" onclick="window.history.back();" >Back To Search</a></div>
+            <div class="link-back"><button onclick="window.history.back();" >Back To Search</button></div>
         </div>
     </div>
     
 
     {{ content.field_property_enquiry_form }}
-    {{ content.field_related_content }}
+
+    {% if content.field_property_related_content[0] is not empty %}
+    <section class="content-overview related-content">
+        <div class="wrapper">
+            <h2>View Similar Properties</h2>
+            {{ content.field_property_related_content }}
+        </div>
+    </section>
+    {% endif %}
+    
     
 </div>    
 </article>

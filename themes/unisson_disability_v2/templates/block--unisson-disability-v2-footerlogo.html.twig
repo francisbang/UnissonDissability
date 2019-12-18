@@ -39,6 +39,8 @@
   {% endif %}
   {{ title_suffix }}
   {% block content %}
-    <a href="/"><img src="{{ content.field_footer_logo_image|field_value }}" width="134" height="36"></a>
+    <a href="/">
+      <img src="{{ content.field_footer_logo_image|field_value }}" width="134" height="36">
+    </a>
   {% endblock %}
 </div>
