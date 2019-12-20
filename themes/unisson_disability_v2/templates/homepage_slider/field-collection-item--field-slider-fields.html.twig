@@ -38,7 +38,7 @@
 {% if content.field_slider_video|render is not empty %}
 	{{ content.field_slider_video|field_value }}
 {% else %}
-	<img src="{{ content.field_slider_image|field_value }}" class="desktop-image" alt="{{content.field_slider_image|field_raw('alt')}}"/>
-	<img src="{{ content.field_slider_mobile_image|field_value }}" class="mobile-image" alt="{{content.field_slider_image|field_raw('alt')}}"/>
+	<img src="{{ content.field_slider_image|field_value }}" class="desktop-image" alt="{{ content.field_slider_main_heading|field_value }} {{ content.field_slider_main_heading|field_value }}"/>
+	<img src="{{ content.field_slider_mobile_image|field_value }}" class="mobile-image" alt="{{ content.field_slider_main_heading|field_value }} {{ content.field_slider_main_heading|field_value }}"/>
 {% endif %}
 
